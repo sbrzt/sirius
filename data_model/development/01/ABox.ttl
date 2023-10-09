@@ -1,0 +1,187 @@
+@prefix : <http://purl.org/sirius/ontology/development/01/data/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tbox: <http://purl.org/sirius/ontology/development/01/schema/> .
+@base <http://purl.org/sirius/ontology/development/01/data/> .
+
+<http://purl.org/sirius/ontology/development/01/data/> rdf:type owl:Ontology ;
+                                                        owl:imports <http://purl.org/sirius/ontology/development/01/schema> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.org/sirius/ontology/development/01/data/administrative-context-battistero-degli-ariani
+:administrative-context-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                                         tbox:Context ;
+                                                tbox:hasType tbox:administrative ;
+                                                tbox:hasContextDescription "Dal dicembre 2019 è gestito da Direzione regionale Musei dell’Emilia Romagna, sede di Ravenna."@it .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/assessment-battistero-degli-ariani
+:assessment-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                             tbox:RiskAssessmentActivity ;
+                                    tbox:assignsRiskTo :battistero-degli-ariani ;
+                                    tbox:involves :cittadinanza ,
+                                                  :comune-di-ravenna ,
+                                                  :fondazioni-locali ,
+                                                  :soprintendenza-di-ravenna ,
+                                                  :turisti ,
+                                                  :università-di-bologna .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/battistero-degli-ariani
+:battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                  tbox:HeritageAsset ;
+                         tbox:hasContext :administrative-context-battistero-degli-ariani ,
+                                         :economic-context-battistero-degli-ariani ,
+                                         :legal-context-battistero-degli-ariani ,
+                                         :physical-context-battistero-degli-ariani ,
+                                         :political-context-battistero-degli-ariani ,
+                                         :socio-cultural-context-battistero-degli-ariani ;
+                         tbox:isLocatedIn :piazzetta-degli-ariani ;
+                         tbox:hasAlternativeName "Oratorio di Santa Maria in Cosmedin"@it ;
+                         tbox:hasAssetDescription "Edificio a pianta ottagonale con copertura a spioventi, presenta quattro absidiole in corrispondenza dei punti cardinali (parzialmente interrate). La decorazione musiva è conservata sulla sola cupola, creando un sorprendente contrasto con la superficie grezza dei mattoni a vista nella parte inferiore. Il mosaico rappresenta al centro il battesimo di Cristo nel fiume Giordano, attorno ad esso una fascia con i dodici apostoli che sfilano in due teorie, incontrandosi presso il trono dell'etimasìa, simbolo della presenza invisibile di Cristo."@it ;
+                         tbox:hasAssetName "Battistero degli Ariani"@it .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/cittadinanza
+:cittadinanza rdf:type owl:NamedIndividual ,
+                       tbox:Stakeholder ;
+              tbox:hasStakeholderName "cittadinanza"@it .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/comune-di-ravenna
+:comune-di-ravenna rdf:type owl:NamedIndividual ,
+                            tbox:Stakeholder ;
+                   tbox:hasStakeholderName "Comune di Ravenna"@it .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/creation-battistero-degli-ariani
+:creation-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                           tbox:CreationEvent ;
+                                  tbox:creates :battistero-degli-ariani ;
+                                  tbox:hasTimeSpan :timespan-battistero-degli-ariani .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/document-1-battistero-degli-ariani
+:document-1-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                             tbox:Document ;
+                                    tbox:documents :political-context-battistero-degli-ariani ;
+                                    tbox:hasDocumentDescription "An article of Ravenna In Comune"@en ;
+                                    tbox:hasDocumentTitle "TELECAMERE DI SORVEGLIANZA ALL’ASSALTO DEL BATTISTERO DEGLI ARIANI"@it ;
+                                    tbox:hasLink "http://www.ravennaincomune.it/wp/index.php/2020/05/23/telecamere-di-sorveglianza-allassalto-del-battistero-degli-ariani" .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/document-2-battistero-degli-ariani
+:document-2-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                             tbox:Document ;
+                                    tbox:documents :political-context-battistero-degli-ariani ;
+                                    tbox:hasDocumentDescription "An article of Ravena Today"@en ;
+                                    tbox:hasDocumentTitle "Telecamere nelle millenarie mura del Battistero degli Ariani, protesta Italia Nostra"@it ;
+                                    tbox:hasLink "https://www.ravennatoday.it/cronaca/telecamere-nelle-millenarie-mura-del-battistero-degli-ariani-protesta-italia-nostra.html" .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/document-3-battistero-degli-ariani
+:document-3-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                             tbox:Document ;
+                                    tbox:documents :political-context-battistero-degli-ariani ;
+                                    tbox:hasDocumentDescription "An article of Ravenna e Dintorni"@en ;
+                                    tbox:hasDocumentTitle "Ravenna, polemica per le telecamere sui muri millenari del battistero degli Ariani"@it ;
+                                    tbox:hasLink "https://www.ravennaedintorni.it/societa/2020/05/30/telecamere-battistero-ariani/" .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/document-4-battistero-degli-ariani
+:document-4-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                             tbox:Document ;
+                                    tbox:documents :political-context-battistero-degli-ariani ;
+                                    tbox:hasDocumentDescription "An article of Ravennanotizie"@en ;
+                                    tbox:hasDocumentTitle "Italia Nostra Ravenna protesta per le telecamere al Battistero degli Ariani, uno “sfregio ai monumenti"@it ;
+                                    tbox:hasLink "https://www.ravennanotizie.it/cultura-spettacolo/2020/05/30/italia-nostra-ravenna-protesta-per-le-telecamere-al-battistero-degli-ariani-uno-sfregio-ai-monumenti/" .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/document-5-battistero-degli-ariani
+:document-5-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                             tbox:Document ;
+                                    tbox:documents :political-context-battistero-degli-ariani ;
+                                    tbox:hasDocumentDescription "An article of Corriere Romagna"@en ;
+                                    tbox:hasDocumentTitle "Ravenna, telecamere installate nelle millenarie mura del Battistero"@it ;
+                                    tbox:hasLink "https://www.corriereromagna.it/ravenna-telecamere-installate-nelle-millenarie-mura-del-battistero/" .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/economic-context-battistero-degli-ariani
+:economic-context-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                                   tbox:Context ;
+                                          tbox:hasType tbox:economic ;
+                                          tbox:hasContextDescription "La Legge n. 77 del 20 febbraio 2006, stabilisce che i siti UNESCO sono eccellenze del Patrimonio culturale, paesaggistico e naturale italiano, elementi fondanti della rappresentazione del nostro Paese a livello internazionale e afferma che gli interventi su di essi hanno la priorità anche in ordine all'assegnazione delle risorse finanziarie"@it .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/fondazioni-locali
+:fondazioni-locali rdf:type owl:NamedIndividual ,
+                            tbox:Stakeholder ;
+                   tbox:hasStakeholderName "Fondazioni locali"@it .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/legal-context-battistero-degli-ariani
+:legal-context-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                                tbox:Context ;
+                                       tbox:hasType tbox:legal ;
+                                       tbox:hasContextDescription "Di proprietà del Demanio di Stato / MiC. Dal 1996 fa parte della lista dei siti italiani patrimonio dell'umanità UNESCO («Monumenti paleocristiani di Ravenna»)."@it .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/physical-context-battistero-degli-ariani
+:physical-context-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                                   tbox:Context ;
+                                          tbox:hasType tbox:physical ;
+                                          tbox:hasContextDescription "Il Battistero è visibile esternamente sui lati N, NO, NE. Il lato O affaccia sui giardini di un’abitazione privata, mentre i lati S, SO, SE, affacciano sul giardino del Dipartimento di Beni Culturali (Università di Bologna)."@it .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/piazzetta-degli-ariani
+:piazzetta-degli-ariani rdf:type owl:NamedIndividual ,
+                                 tbox:Place ;
+                        tbox:hasCoordinates "44.41871491574331, 12.20247187841604" ;
+                        tbox:hasPlaceName "Piazzetta degli Ariani, 48121 Ravenna" .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/political-context-battistero-degli-ariani
+:political-context-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                                    tbox:Context ;
+                                           tbox:hasType tbox:political ;
+                                           tbox:hasContextDescription "Il monumento è spesso motivo di dibattito tra i vari partiti ed il Comune di Ravenna"@it .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/socio-cultural-context-battistero-degli-ariani
+:socio-cultural-context-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                                         tbox:Context ;
+                                                tbox:hasType tbox:socio-cultural ;
+                                                tbox:hasContextDescription "Sito monumentale di area urbana, visitabile dai turisti (previo biglietto d’ingresso). La Piazzetta in cui è collocato l’edificio risente di una cattiva fama, in quanto “zona a rischio sociale e luogo dimesso” (si riporta il caso di una rete da letto abbandonata di notte nella trincea del Battistero, 11.07.2006, Fonte: Zaccarini, 2015). Nonostante l’istituzione nel 2012 di una regolamentazione all’accesso dei veicoli alla Piazzetta, resta consentito il transito e la sosta per carico/scarico merci."@it .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/soprintendenza-di-ravenna
+:soprintendenza-di-ravenna rdf:type owl:NamedIndividual ,
+                                    tbox:Stakeholder ;
+                           tbox:hasStakeholderName "Soprintendenza di Ravenna"@it .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/timespan-battistero-degli-ariani
+:timespan-battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                           tbox:TimeSpan ;
+                                  tbox:fallsWithin "Late fifth century A.D."@en .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/turisti
+:turisti rdf:type owl:NamedIndividual ,
+                  tbox:Stakeholder ;
+         tbox:hasStakeholderName "Turisti"@it .
+
+
+###  http://purl.org/sirius/ontology/development/01/data/università-di-bologna
+:università-di-bologna rdf:type owl:NamedIndividual ,
+                                tbox:Stakeholder ;
+                       tbox:hasStakeholderName "Università di Bologna"@it .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
