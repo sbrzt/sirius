@@ -24,6 +24,12 @@
 ###  http://purl.org/sirius/ontology/development/01/data/assessment-battistero-degli-ariani
 :assessment-battistero-degli-ariani rdf:type owl:NamedIndividual ,
                                              tbox:RiskAssessmentActivity ;
+                                    tbox:hasContext :administrative-context-battistero-degli-ariani ,
+                                         :economic-context-battistero-degli-ariani ,
+                                         :legal-context-battistero-degli-ariani ,
+                                         :physical-context-battistero-degli-ariani ,
+                                         :political-context-battistero-degli-ariani ,
+                                         :socio-cultural-context-battistero-degli-ariani ;
                                     tbox:assignsRiskTo :battistero-degli-ariani ;
                                     tbox:involves :cittadinanza ,
                                                   :comune-di-ravenna ,
@@ -36,12 +42,6 @@
 ###  http://purl.org/sirius/ontology/development/01/data/battistero-degli-ariani
 :battistero-degli-ariani rdf:type owl:NamedIndividual ,
                                   tbox:HeritageAsset ;
-                         tbox:hasContext :administrative-context-battistero-degli-ariani ,
-                                         :economic-context-battistero-degli-ariani ,
-                                         :legal-context-battistero-degli-ariani ,
-                                         :physical-context-battistero-degli-ariani ,
-                                         :political-context-battistero-degli-ariani ,
-                                         :socio-cultural-context-battistero-degli-ariani ;
                          tbox:isLocatedIn :piazzetta-degli-ariani ;
                          tbox:hasAlternativeName "Oratorio di Santa Maria in Cosmedin"@it ;
                          tbox:hasAssetDescription "Edificio a pianta ottagonale con copertura a spioventi, presenta quattro absidiole in corrispondenza dei punti cardinali (parzialmente interrate). La decorazione musiva è conservata sulla sola cupola, creando un sorprendente contrasto con la superficie grezza dei mattoni a vista nella parte inferiore. Il mosaico rappresenta al centro il battesimo di Cristo nel fiume Giordano, attorno ad esso una fascia con i dodici apostoli che sfilano in due teorie, incontrandosi presso il trono dell'etimasìa, simbolo della presenza invisibile di Cristo."@it ;

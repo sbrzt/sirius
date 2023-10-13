@@ -35,7 +35,9 @@ PREFIX abox: <http://purl.org/sirius/ontology/development/01/data/>
 
 SELECT ?heritage_asset ?context_type ?context_description
 WHERE {
-    ?heritage_asset a tbox:HeritageAsset ;
+    ?heritage_asset a tbox:HeritageAsset .
+    ?riskAssessment a tbox:RiskAssessmentActivity ;
+                    tbox:assignsRiskTo ?heritage_asset ;
                     tbox:hasContext ?context .
     ?context a tbox:Context ;
                 tbox:hasType ?context_type ;
@@ -54,7 +56,9 @@ PREFIX abox: <http://purl.org/sirius/ontology/development/01/data/>
 
 SELECT ?heritage_asset ?context_type ?document ?document_link
 WHERE {
-    ?heritage_asset a tbox:HeritageAsset ;
+    ?heritage_asset a tbox:HeritageAsset .
+    ?riskAssessment a tbox:RiskAssessmentActivity ;
+                    tbox:assignsRiskTo ?heritage_asset ;
                     tbox:hasContext ?context .
     ?context a tbox:Context ;
                 tbox:hasType ?context_type .

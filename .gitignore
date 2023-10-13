@@ -2,4 +2,6 @@ venv/Lib/
 venv/Scripts/
 venv/share/
 data_model/
+data_model/data/
+data_model/development/
 data_model/docs/current/
