@@ -1,7 +1,7 @@
 # Iteration 01
 
 ## Name
-Context step (1)
+Contextualization
 
 ## Description
 This step involves the understanding of all relevant aspects of the context in which a heritage asset is situated.
