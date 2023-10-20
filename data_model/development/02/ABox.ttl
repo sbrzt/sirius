@@ -1,0 +1,95 @@
+@prefix : <http://purl.org/sirius/ontology/development/02/data/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tbox: <http://purl.org/sirius/ontology/development/02/schema/> .
+@base <http://purl.org/sirius/ontology/development/02/data/> .
+
+<http://purl.org/sirius/ontology/development/02/data> rdf:type owl:Ontology ;
+                                                       owl:imports <http://purl.org/sirius/ontology/development/02/schema> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani
+:battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                  tbox:HeritageAsset .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-01
+:battistero-degli-ariani-risk-01 rdf:type owl:NamedIndividual ,
+                                          tbox:Risk ;
+                                 tbox:causes tbox:collapse ,
+                                             tbox:feature-detachment ,
+                                             tbox:fissuring ;
+                                 tbox:isEmbodiedBy tbox:physical-forces ;
+                                 tbox:originatesFrom tbox:civil-works ,
+                                                     tbox:earthquake ,
+                                                     tbox:subsidence ,
+                                                     tbox:traffic-induced-vibration .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-02
+:battistero-degli-ariani-risk-02 rdf:type owl:NamedIndividual ,
+                                          tbox:Risk ;
+                                 tbox:causes tbox:information-loss ;
+                                 tbox:isEmbodiedBy tbox:dissociation ;
+                                 tbox:originatesFrom tbox:incorrect-data-management ;
+                                 tbox:hasSummary "Fragmentation of data related to previous incorrect monitoring and maintenance interventions provokes loss of important information related to the baptistery" .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-03
+:battistero-degli-ariani-risk-03 rdf:type owl:NamedIndividual ,
+                                          tbox:Risk ;
+                                 tbox:causes tbox:excrements ,
+                                             tbox:overgrowth ;
+                                 tbox:isEmbodiedBy tbox:pests ;
+                                 tbox:originatesFrom tbox:birds ,
+                                                     tbox:weeds .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-04
+:battistero-degli-ariani-risk-04 rdf:type owl:NamedIndividual ,
+                                          tbox:Risk ;
+                                 tbox:causes tbox:corrosion ;
+                                 tbox:isEmbodiedBy tbox:water ;
+                                 tbox:originatesFrom tbox:flood ,
+                                                     tbox:rainfall ;
+                                 tbox:hasSummary "Floods and heavy rains induce erosion of the baptistery walls" .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-05
+:battistero-degli-ariani-risk-05 rdf:type owl:NamedIndividual ,
+                                          tbox:Risk ;
+                                 tbox:isEmbodiedBy tbox:fire ;
+                                 tbox:originatesFrom tbox:equipment-malfunction .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-06
+:battistero-degli-ariani-risk-06 rdf:type owl:NamedIndividual ,
+                                          tbox:Risk ;
+                                 tbox:causes tbox:disfiguration ,
+                                             tbox:waste-accumulation ;
+                                 tbox:isEmbodiedBy tbox:thieves-and-vandals ;
+                                 tbox:originatesFrom tbox:economic-motivation ,
+                                                     tbox:ideological-motivation ,
+                                                     tbox:political-motivation ;
+                                 tbox:hasSummary "Various motivations cause the presence of graffiti and abandonment of objects in the area surrounding the baptistery" .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-assessment
+:battistero-degli-ariani-risk-assessment rdf:type owl:NamedIndividual ,
+                                                  tbox:RiskAssessment ;
+                                         tbox:assigns :battistero-degli-ariani-risk-01 ,
+                                                      :battistero-degli-ariani-risk-02 ,
+                                                      :battistero-degli-ariani-risk-03 ,
+                                                      :battistero-degli-ariani-risk-04 ,
+                                                      :battistero-degli-ariani-risk-05 ,
+                                                      :battistero-degli-ariani-risk-06 ;
+                                         tbox:assignsRiskTo :battistero-degli-ariani .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

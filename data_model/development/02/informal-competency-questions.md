@@ -57,7 +57,6 @@ List of: `risk`, `agent_of_deterioration`, `adverse_effect`
 * "Animal and plant colonization", `pests`, `excrements`
 * "Animal and plant colonization", `pests`, `overgrowth`
 * "Walls erosion", `water`, `corrosion`
-* "Fires due to equipment malfunction", `fire`, `non-assessable`
 
 ### Based on
 Example 1
