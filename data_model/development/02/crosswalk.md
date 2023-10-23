@@ -7,41 +7,45 @@
 |                       | `AgentOfDeterioration`      | HeRO      | `AgentOfDeterioration`          | http://purl.org/sirius/ontology/hero/AgentOfDeterioration        |
 |                       | `Hazard`                    | HeRO      | `Hazard`                        | http://purl.org/sirius/ontology/hero/Hazard                      |
 |                       | `AdverseEffect`             | HeRO      | `AdverseEffect`                 | http://purl.org/sirius/ontology/hero/AdverseEffect               |
+|                       | *                           | HeRO      | `HazardType`                    | http://purl.org/sirius/ontology/hero/HazardType                  |
+|                       | *                           | HeRO      | `AdverseEffectType`             | http://purl.org/sirius/ontology/hero/AdverseEffectType           |
 | **Object properties** |                             |           |                                 |                                                                  |
 |                       | `assignsRiskTo`             | HeRO      | `assignsRiskTo`                 | http://purl.org/sirius/ontology/hero/assignsRiskTo               |
 |                       | `assigns`                   | HeRO      | `assigns`                       | http://purl.org/sirius/ontology/hero/assigns                     |
-|                       | `isEmbodiedBy`              | HeRO      |                                 |                                                                  |
-|                       | `originatesFrom`            | HeRO      |                                 |                                                                  |
-|                       | `causes`                    | HeRO      |                                 |                                                                  |
+|                       | `isEmbodiedBy`              | HeRO      | `isDeterminedBy`                | http://purl.org/sirius/ontology/hero/isDeterminedBy              |
+|                       | `originatesFrom`            | HeRO      | `resultsFrom`                   | http://purl.org/sirius/ontology/hero/resultsFrom                 |
+|                       | `causes`                    | HeRO      | `entails`                       | http://purl.org/sirius/ontology/hero/entails                     |
+|                       | *                           | HeRO      | `hasHazardType`                 | http://purl.org/sirius/ontology/hero/hasHazardType               |
+|                       | *                           | Hero      | `hasAdverseEffectType`          | http://purl.org/sirius/ontology/hero/hasAdverseEffectType        |
 | **Data properties**   |                             |           |                                 |                                                                  |
-|                       | `hasSummary`                | HeRO      |                                 |                                                                  |
+|                       | `hasSummary`                | HeRO      | `hasDescription`                | http://purl.org/sirius/ontology/hero/hasDescription              |
+|                       | *                           | Hero      | `hasNote`                       | http://purl.org/sirius/ontology/hero/hasNote                     |
 | **Individuals**       |                             |           |                                 |                                                                  |
-|                       | `physical-forces`           | HeRO      | `physical-forces`               | http://purl.org/sirius/ontology/hero/physiacl-forces             |
+|                       | `physical-forces`           | HeRO      | `physical-forces`               | http://purl.org/sirius/ontology/hero/physical-forces             |
 |                       | `thieves-and-vandals`       | HeRO      | `theft-and-vandalism`           | http://purl.org/sirius/ontology/hero/theft-and-vandalism         |
 |                       | `fire`                      | HeRO      | `fire`                          | http://purl.org/sirius/ontology/hero/fire                        |
 |                       | `water`                     | HeRO      | `water`                         | http://purl.org/sirius/ontology/hero/water                       |
 |                       | `pests`                     | HeRO      | `pests`                         | http://purl.org/sirius/ontology/hero/pests                       |
 |                       | `dissociation`              | HeRO      | `dissociation`                  | http://purl.org/sirius/ontology/hero/dissociation                |
-|                       | `traffic-induced-vibration` | HeRO      |                                 |                                                                  |
-|                       | `civil-works`               | HeRO      |                                 |                                                                  |
-|                       | `earthquake`                | HeRO      | `earthquake`                    |                                                                  |
-|                       | `subsidence`                | HeRO      | `subsidence`                    |                                                                  |
-|                       | `fissuring`                 | HeRO      |                                 |                                                                  |
-|                       | `collapse`                  | HeRO      | `collapse`                      |                                                                  |
-|                       | `feature-detachment`        | HeRO      | `feature-detachment`            |                                                                  |
-|                       | `incorrect-data-management` | HeRO      |                                 |                                                                  |
-|                       | `information-loss`          | HeRO      | `information-loss`              |                                                                  |
-|                       | `birds`                     | HeRO      |                                 |                                                                  |
-|                       | `weeds`                     | HeRO      |                                 |                                                                  |
-|                       | `excrements`                | HeRO      |                                 |                                                                  |
-|                       | `overgrowth`                | HeRO      |                                 |                                                                  |
-|                       | `flood`                     | HeRO      | `flood`                         |                                                                  |
-|                       | `rainfall`                  | HeRO      | `rainfall`                      |                                                                  |
-|                       | `corrosion`                 | HeRO      | `corrosion`                     |                                                                  |
-|                       | `equipment-malfunction`     | HeRO      |                                 |                                                                  |
-|                       | `non-assessable`            | HeRO      |                                 |                                                                  |
-|                       | `political-motivation`      | HeRO      |                                 |                                                                  |
-|                       | `ideological-motivation`    | HeRO      |                                 |                                                                  |
-|                       | `economic-motivation`       | HeRO      |                                 |                                                                  |
-|                       | `disfiguration`             | HeRO      | `disfiguration`                 |                                                                  |
-|                       | `waste-accumulation`        | HeRO      |                                 |                                                                  |
+|                       | `traffic-induced-vibration` | HeRO      | `vibration`                     | http://purl.org/sirius/ontology/hero/vibration                   |
+|                       | `civil-works`               | HeRO      | `vibration`                     | http://purl.org/sirius/ontology/hero/vibration                   |
+|                       | `earthquake`                | HeRO      | `vibration`                     | http://purl.org/sirius/ontology/hero/vibration                   |
+|                       | `subsidence`                | HeRO      | `vibration`                     | http://purl.org/sirius/ontology/hero/vibration                   |
+|                       | `fissuring`                 | HeRO      | `breakage`                      | http://purl.org/sirius/ontology/hero/breakage                    |
+|                       | `collapse`                  | HeRO      | `collapse`                      | http://purl.org/sirius/ontology/hero/collapse                    |
+|                       | `feature-detachment`        | HeRO      | `detachment`                    | http://purl.org/sirius/ontology/hero/detachment                  |
+|                       | `incorrect-data-management` | HeRO      | `incorrect-action`              | http://purl.org/sirius/ontology/hero/incorrect-action            |
+|                       | `information-loss`          | HeRO      | `information-loss`              | http://purl.org/sirius/ontology/hero/information-loss            |
+|                       | `birds`                     | HeRO      | `aerial-animals`                | http://purl.org/sirius/ontology/hero/aerial-animals              |
+|                       | `weeds`                     | HeRO      | `plants`                        | http://purl.org/sirius/ontology/hero/plants                      |
+|                       | `excrements`                | HeRO      | `contamination`                 | http://purl.org/sirius/ontology/hero/contamination               |
+|                       | `overgrowth`                | HeRO      | `overgrowth`                    | http://purl.org/sirius/ontology/hero/overgrowth                  |
+|                       | `flood`                     | HeRO      | `flooding`                      | http://purl.org/sirius/ontology/hero/flooding                    |
+|                       | `rainfall`                  | HeRO      | `rainfall`                      | http://purl.org/sirius/ontology/hero/rainfall                    |
+|                       | `corrosion`                 | HeRO      | `corrosion`                     | http://purl.org/sirius/ontology/hero/corrosion                   |
+|                       | `equipment-malfunction`     | HeRO      | `electrical-source`             | http://purl.org/sirius/ontology/hero/electrical-source           |
+|                       | `political-motivation`      | HeRO      | `ideological-motivation`        | http://purl.org/sirius/ontology/hero/ideological-motivation      |
+|                       | `ideological-motivation`    | HeRO      | `ideological-motivation`        | http://purl.org/sirius/ontology/hero/ideological-motivation      |
+|                       | `economic-motivation`       | HeRO      | `financial-gain`                | http://purl.org/sirius/ontology/hero/financial-gain              |
+|                       | `disfiguration`             | HeRO      | `disfiguration`                 | http://purl.org/sirius/ontology/hero/disfiguration               |
+|                       | `waste-accumulation`        | HeRO      | `littering`                     | http://purl.org/sirius/ontology/hero/littering                   |
