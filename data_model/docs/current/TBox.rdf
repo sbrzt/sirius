@@ -10,10 +10,12 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:dcam="http://purl.org/dc/dcam/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:hero="http://purl.org/sirius/ontology/hero/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:data-view="http://www.w3.org/2003/g/data-view#">
     <owl:Ontology rdf:about="http://purl.org/sirius/ontology/model">
+        <owl:imports rdf:resource="http://purl.org/sirius/ontology/hero"/>
         <owl:imports rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
     </owl:Ontology>
     
@@ -833,168 +835,11 @@
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/dc/dcam/VocabularyEncodingScheme -->
-
-    <owl:Class rdf:about="http://purl.org/dc/dcam/VocabularyEncodingScheme"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/Agent -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/Agent"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/AgentClass -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/AgentClass"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/BibliographicResource -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/BibliographicResource"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/FileFormat -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/FileFormat">
-        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/MediaType"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/dc/terms/Frequency -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/Frequency"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/Jurisdiction -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/Jurisdiction">
-        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/LocationPeriodOrJurisdiction"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/dc/terms/LicenseDocument -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/LicenseDocument">
-        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/dc/terms/LinguisticSystem -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/LinguisticSystem"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/Location -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/Location">
-        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/LocationPeriodOrJurisdiction"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/dc/terms/LocationPeriodOrJurisdiction -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/LocationPeriodOrJurisdiction"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/MediaType -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/MediaType">
-        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/dc/terms/MediaTypeOrExtent -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/MethodOfAccrual -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/MethodOfAccrual"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/MethodOfInstruction -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/MethodOfInstruction"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/PeriodOfTime -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/PeriodOfTime">
-        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/LocationPeriodOrJurisdiction"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/dc/terms/PhysicalMedium -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/PhysicalMedium">
-        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/MediaType"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/dc/terms/PhysicalResource -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/PhysicalResource"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/Policy -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/Policy"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/ProvenanceStatement -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/ProvenanceStatement"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/RightsStatement -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/RightsStatement"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/SizeOrDuration -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/SizeOrDuration">
-        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/MediaTypeOrExtent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/dc/terms/Standard -->
-
-    <owl:Class rdf:about="http://purl.org/dc/terms/Standard"/>
+    <!-- http://purl.org/sirius/ontology/hero/hasNote -->
+
+    <rdf:Description rdf:about="http://purl.org/sirius/ontology/hero/hasNote">
+        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
+    </rdf:Description>
 </rdf:RDF>
 
 

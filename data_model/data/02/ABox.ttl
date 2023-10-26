@@ -1,0 +1,281 @@
+@prefix : <http://purl.org/sirius/ontology/02/data/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix hero: <http://purl.org/sirius/ontology/hero/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tbox: <http://purl.org/sirius/ontology/development/02/schema/> .
+@base <http://purl.org/sirius/ontology/02/data/> .
+
+<http://purl.org/sirius/ontology/02/data> rdf:type owl:Ontology ;
+                                           owl:imports <http://purl.org/sirius/ontology/hero> ,
+                                                       <http://purl.org/sirius/ontology/model> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani
+:battistero-degli-ariani rdf:type owl:NamedIndividual ,
+                                  crm:E24_Physical_Human-Made_Thing .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-01
+:battistero-degli-ariani-risk-01 rdf:type owl:NamedIndividual ,
+                                          hero:Risk ;
+                                 hero:entails :battistero-degli-ariani-risk-01-effect-01 ,
+                                              :battistero-degli-ariani-risk-01-effect-02 ,
+                                              :battistero-degli-ariani-risk-01-effect-03 ;
+                                 hero:isDeterminedBy hero:physical-forces ;
+                                 hero:resultsFrom :battistero-degli-ariani-risk-01-hazard-01 ,
+                                                  :battistero-degli-ariani-risk-01-hazard-02 ,
+                                                  :battistero-degli-ariani-risk-01-hazard-03 ,
+                                                  :battistero-degli-ariani-risk-01-hazard-04 .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-01-effect-01
+:battistero-degli-ariani-risk-01-effect-01 rdf:type owl:NamedIndividual ,
+                                                    hero:AdverseEffect ;
+                                           hero:hasAdverseEffectType hero:breakage ;
+                                           hero:hasNote "fissuring" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-01-effect-02
+:battistero-degli-ariani-risk-01-effect-02 rdf:type owl:NamedIndividual ,
+                                                    hero:AdverseEffect ;
+                                           hero:hasAdverseEffectType hero:collapse ;
+                                           hero:hasNote "collapse" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-01-effect-03
+:battistero-degli-ariani-risk-01-effect-03 rdf:type owl:NamedIndividual ,
+                                                    hero:AdverseEffect ;
+                                           hero:hasAdverseEffectType hero:detachment ;
+                                           hero:hasNote "feature detachment" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-01-hazard-01
+:battistero-degli-ariani-risk-01-hazard-01 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:vibration ;
+                                           hero:hasNote "traffic-induced virbation" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-01-hazard-02
+:battistero-degli-ariani-risk-01-hazard-02 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:vibration ;
+                                           hero:hasNote "civil construction works" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-01-hazard-03
+:battistero-degli-ariani-risk-01-hazard-03 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:vibration ;
+                                           hero:hasNote "earthquake" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-01-hazard-04
+:battistero-degli-ariani-risk-01-hazard-04 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:vibration ;
+                                           hero:hasNote "subsidence" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-02
+:battistero-degli-ariani-risk-02 rdf:type owl:NamedIndividual ,
+                                          hero:Risk ;
+                                 hero:entails :battistero-degli-ariani-risk-02-effect-01 ;
+                                 hero:isDeterminedBy hero:dissociation ;
+                                 hero:resultsFrom :battistero-degli-ariani-risk-02-hazard-01 ;
+                                 hero:hasDescription "Fragmentation of data related to previous incorrect monitoring and maintenance interventions provokes loss of important information related to the baptistery" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-02-effect-01
+:battistero-degli-ariani-risk-02-effect-01 rdf:type owl:NamedIndividual ,
+                                                    hero:AdverseEffect ;
+                                           hero:hasAdverseEffectType hero:information-loss .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-02-hazard-01
+:battistero-degli-ariani-risk-02-hazard-01 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:incorrect-action ;
+                                           hero:hasNote "incorrect data management" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-03
+:battistero-degli-ariani-risk-03 rdf:type owl:NamedIndividual ,
+                                          hero:Risk ;
+                                 hero:entails :battistero-degli-ariani-risk-03-effect-01 ,
+                                              :battistero-degli-ariani-risk-03-effect-02 ;
+                                 hero:isDeterminedBy hero:pests ;
+                                 hero:resultsFrom :battistero-degli-ariani-risk-03-hazard-01 ,
+                                                  :battistero-degli-ariani-risk-03-hazard-02 .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-03-effect-01
+:battistero-degli-ariani-risk-03-effect-01 rdf:type owl:NamedIndividual ,
+                                                    hero:AdverseEffect ;
+                                           hero:hasAdverseEffectType hero:aerial-animals ;
+                                           hero:hasNote "birds" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-03-effect-02
+:battistero-degli-ariani-risk-03-effect-02 rdf:type owl:NamedIndividual ,
+                                                    hero:AdverseEffect ;
+                                           hero:hasAdverseEffectType hero:plants ;
+                                           hero:hasNote "weeds" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-03-hazard-01
+:battistero-degli-ariani-risk-03-hazard-01 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:contamination ;
+                                           hero:hasNote "escrements" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-03-hazard-02
+:battistero-degli-ariani-risk-03-hazard-02 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:overgrowth ;
+                                           hero:hasNote "weed infestation" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-04
+:battistero-degli-ariani-risk-04 rdf:type owl:NamedIndividual ,
+                                          hero:Risk ;
+                                 hero:entails :battistero-degli-ariani-risk-04-effect-01 ;
+                                 hero:isDeterminedBy hero:water ;
+                                 hero:resultsFrom :battistero-degli-ariani-risk-04-hazard-01 ,
+                                                  :battistero-degli-ariani-risk-04-hazard-02 ;
+                                 hero:hasDescription "Floods and heavy rains induce erosion of the baptistery walls" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-04-effect-01
+:battistero-degli-ariani-risk-04-effect-01 rdf:type owl:NamedIndividual ,
+                                                    hero:AdverseEffect ;
+                                           hero:hasAdverseEffectType hero:corrosion ;
+                                           hero:hasNote "corrosion" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-04-hazard-01
+:battistero-degli-ariani-risk-04-hazard-01 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:flooding ;
+                                           hero:hasNote "floods" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-04-hazard-02
+:battistero-degli-ariani-risk-04-hazard-02 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:rainfall ;
+                                           hero:hasNote "heavy rains" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-05
+:battistero-degli-ariani-risk-05 rdf:type owl:NamedIndividual ,
+                                          hero:Risk ;
+                                 hero:isDeterminedBy hero:fire ;
+                                 hero:resultsFrom :battistero-degli-ariani-risk-05-hazard-01 .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-05-hazard-01
+:battistero-degli-ariani-risk-05-hazard-01 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:electrical-source ;
+                                           hero:hasNote "equipment malfunction" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-06
+:battistero-degli-ariani-risk-06 rdf:type owl:NamedIndividual ,
+                                          hero:Risk ;
+                                 hero:entails :battistero-degli-ariani-risk-06-effect-01 ,
+                                              :battistero-degli-ariani-risk-06-effect-02 ;
+                                 hero:isDeterminedBy hero:theft-and-vandalism ;
+                                 hero:resultsFrom :battistero-degli-ariani-risk-06-hazard-01 ,
+                                                  :battistero-degli-ariani-risk-06-hazard-02 ,
+                                                  :battistero-degli-ariani-risk-06-hazard-03 ;
+                                 hero:hasDescription "Various motivations cause the presence of graffiti and abandonment of objects in the area surrounding the baptistery" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-06-effect-01
+:battistero-degli-ariani-risk-06-effect-01 rdf:type owl:NamedIndividual ,
+                                                    hero:AdverseEffect ;
+                                           hero:hasAdverseEffectType hero:disfiguration ;
+                                           hero:hasNote "disfiguration of walls" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-06-effect-02
+:battistero-degli-ariani-risk-06-effect-02 rdf:type owl:NamedIndividual ,
+                                                    hero:AdverseEffect ;
+                                           hero:hasAdverseEffectType hero:littering ;
+                                           hero:hasNote "waste accumulation" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-06-hazard-01
+:battistero-degli-ariani-risk-06-hazard-01 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:ideological-motivation ;
+                                           hero:hasNote "ideological motivations" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-06-hazard-02
+:battistero-degli-ariani-risk-06-hazard-02 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:ideological-motivation ;
+                                           hero:hasNote "political motivations" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-06-hazard-03
+:battistero-degli-ariani-risk-06-hazard-03 rdf:type owl:NamedIndividual ,
+                                                    hero:Hazard ;
+                                           hero:hasHazardType hero:financial-gain ;
+                                           hero:hasNote "economic motivations" .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-assessment-01
+:battistero-degli-ariani-risk-assessment-01 rdf:type owl:NamedIndividual ,
+                                                     hero:RiskAssessment ;
+                                            hero:assigns :battistero-degli-ariani-risk-01 ;
+                                            hero:assignsRiskTo :battistero-degli-ariani .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-assessment-02
+:battistero-degli-ariani-risk-assessment-02 rdf:type owl:NamedIndividual ,
+                                                     hero:RiskAssessment ;
+                                            hero:assigns :battistero-degli-ariani-risk-02 ;
+                                            hero:assignsRiskTo :battistero-degli-ariani .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-assessment-03
+:battistero-degli-ariani-risk-assessment-03 rdf:type owl:NamedIndividual ,
+                                                     hero:RiskAssessment ;
+                                            hero:assigns :battistero-degli-ariani-risk-03 ;
+                                            hero:assignsRiskTo :battistero-degli-ariani .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-assessment-04
+:battistero-degli-ariani-risk-assessment-04 rdf:type owl:NamedIndividual ,
+                                                     hero:RiskAssessment ;
+                                            hero:assigns :battistero-degli-ariani-risk-04 ;
+                                            hero:assignsRiskTo :battistero-degli-ariani .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-assessment-05
+:battistero-degli-ariani-risk-assessment-05 rdf:type owl:NamedIndividual ,
+                                                     hero:RiskAssessment ;
+                                            hero:assigns :battistero-degli-ariani-risk-05 ;
+                                            hero:assignsRiskTo :battistero-degli-ariani .
+
+
+###  http://purl.org/sirius/ontology/02/data/battistero-degli-ariani-risk-assessment-06
+:battistero-degli-ariani-risk-assessment-06 rdf:type owl:NamedIndividual ,
+                                                     hero:RiskAssessment ;
+                                            hero:assigns :battistero-degli-ariani-risk-06 ;
+                                            hero:assignsRiskTo :battistero-degli-ariani .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

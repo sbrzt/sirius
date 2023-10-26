@@ -1,44 +1,17 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.w3.org/2002/07/owl"
+<rdf:RDF xmlns="http://purl.org/sirius/ontology/hero/"
+     xml:base="http://purl.org/sirius/ontology/hero/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:grddl="http://www.w3.org/2003/g/data-view#"
-     xmlns:location="http://www.w3.org/2002/07/owl">
-    <Ontology rdf:about="http://www.w3.org/2002/07/owl">
-        <versionIRI rdf:resource="http://www.w3.org/2002/07/owl"/>
-        <imports rdf:resource="http://www.w3.org/2000/01/rdf-schema"/>
-        <dc:title>The OWL 2 Schema vocabulary (OWL 2)</dc:title>
-        <rdfs:comment>
-  This ontology partially describes the built-in classes and
-  properties that together form the basis of the RDF/XML syntax of OWL 2.
-  The content of this ontology is based on Tables 6.1 and 6.2
-  in Section 6.4 of the OWL 2 RDF-Based Semantics specification,
-  available at http://www.w3.org/TR/owl2-rdf-based-semantics/.
-  Please note that those tables do not include the different annotations
-  (labels, comments and rdfs:isDefinedBy links) used in this file.
-  Also note that the descriptions provided in this ontology do not
-  provide a complete and correct formal description of either the syntax
-  or the semantics of the introduced terms (please see the OWL 2
-  recommendations for the complete and normative specifications).
-  Furthermore, the information provided by this ontology may be
-  misleading if not used with care. This ontology SHOULD NOT be imported
-  into OWL ontologies. Importing this file into an OWL 2 DL ontology
-  will cause it to become an OWL 2 Full ontology and may have other,
-  unexpected, consequences.
-   </rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/owl2-mapping-to-rdf/"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/owl2-rdf-based-semantics/"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/owl2-syntax/"/>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/owl2-rdf-based-semantics/#table-axiomatic-classes"/>
-        <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/owl2-rdf-based-semantics/#table-axiomatic-properties"/>
-        <versionInfo>$Date: 2009/11/15 10:54:12 $</versionInfo>
-        <grddl:namespaceTransformation rdf:resource="http://dev.w3.org/cvsweb/2009/owl-grddl/owx2rdf.xsl"/>
-    </Ontology>
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.org/sirius/ontology/hero">
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <dc:title xml:lang="en">Heritage Risk Assessment Ontology</dc:title>
+    </owl:Ontology>
     
 
 
@@ -55,97 +28,7 @@
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#backwardCompatibleWith -->
-
-    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#backwardCompatibleWith">
-        <rdfs:comment>The annotation property that indicates that a given ontology is backward compatible with another ontology.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>backwardCompatibleWith</rdfs:label>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    </AnnotationProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#deprecated -->
-
-    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated">
-        <rdfs:comment>The annotation property that indicates that a given entity has been deprecated.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>deprecated</rdfs:label>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    </AnnotationProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#imports -->
-
-    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#imports">
-        <rdfs:comment>The property that is used for importing other ontologies into a given ontology.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>imports</rdfs:label>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    </AnnotationProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#incompatibleWith -->
-
-    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#incompatibleWith">
-        <rdfs:comment>The annotation property that indicates that a given ontology is incompatible with another ontology.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>incompatibleWith</rdfs:label>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    </AnnotationProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#priorVersion -->
-
-    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#priorVersion">
-        <rdfs:comment>The annotation property that indicates the predecessor ontology of a given ontology.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>priorVersion</rdfs:label>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    </AnnotationProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
-
-    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI">
-        <rdfs:comment>The property that identifies the version IRI of an ontology.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>versionIRI</rdfs:label>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    </AnnotationProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
-
-    <AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
-        <rdfs:comment>The annotation property that provides version information for an ontology or another OWL construct.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>versionInfo</rdfs:label>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    </AnnotationProperty>
-    
-
-
-    <!-- http://www.w3.org/2003/g/data-view#namespaceTransformation -->
-
-    <AnnotationProperty rdf:about="http://www.w3.org/2003/g/data-view#namespaceTransformation"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -160,15 +43,83 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+    <!-- http://purl.org/sirius/ontology/hero/assigns -->
 
-    <ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment>The object property that relates every two individuals.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>topObjectProperty</rdfs:label>
-    </ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/assigns"/>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/assignsRiskTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/assignsRiskTo">
+        <rdfs:domain rdf:resource="http://purl.org/sirius/ontology/hero/RiskAssessment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/entails -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/entails">
+        <rdfs:label xml:lang="en">entails</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/hasAdverseEffectType -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/hasAdverseEffectType"/>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/hasHazardType -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/hasHazardType"/>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/isDeterminedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/isDeterminedBy">
+        <rdfs:label xml:lang="en">is determined by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/isInformedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/isInformedBy">
+        <rdfs:domain rdf:resource="http://purl.org/sirius/ontology/hero/RiskAssessment"/>
+        <rdfs:range rdf:resource="http://purl.org/sirius/ontology/hero/Observation"/>
+        <rdfs:label xml:lang="en">is informed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/observes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/observes">
+        <rdfs:domain rdf:resource="http://purl.org/sirius/ontology/hero/Observation"/>
+        <rdfs:range rdf:resource="http://purl.org/sirius/ontology/hero/Dimension"/>
+        <rdfs:label xml:lang="en">observes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/relatesTo -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/relatesTo">
+        <rdfs:domain rdf:resource="http://purl.org/sirius/ontology/hero/RiskAssessment"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:label xml:lang="en">relates to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/resultsFrom -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/resultsFrom">
+        <rdfs:label xml:lang="en">results from</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -183,15 +134,32 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+    <!-- http://purl.org/sirius/ontology/hero/hasContent -->
 
-    <DatatypeProperty rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/sirius/ontology/hero/hasContent">
+        <rdfs:domain rdf:resource="http://purl.org/sirius/ontology/hero/Observation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment>The data property that relates every individual to every data value.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>topDataProperty</rdfs:label>
-    </DatatypeProperty>
+        <rdfs:label xml:lang="en">has content</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sirius/ontology/hero/hasDescription">
+        <rdfs:domain rdf:resource="http://purl.org/sirius/ontology/hero/Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">has description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/hasNote -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sirius/ontology/hero/hasNote">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">has note</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -206,174 +174,588 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
+    <!-- http://purl.org/sirius/ontology/hero/AdverseEffect -->
 
-    <Class rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <rdfs:comment>The class of OWL individuals.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>Thing</rdfs:label>
-    </Class>
+    <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/AdverseEffect">
+        <rdfs:label xml:lang="en">Adverse effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/AdverseEffectType -->
+
+    <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/AdverseEffectType">
+        <rdfs:label xml:lang="en">Adverse effect type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/AgentOfDeterioration -->
+
+    <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/AgentOfDeterioration">
+        <rdfs:label xml:lang="en">Agent of deterioration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/Dimension -->
+
+    <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/Dimension">
+        <rdfs:label xml:lang="en">Dimension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/Hazard -->
+
+    <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/Hazard">
+        <rdfs:label xml:lang="en">Hazard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/HazardType -->
+
+    <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/HazardType">
+        <rdfs:label xml:lang="en">Hazard type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/Observation -->
+
+    <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/Observation">
+        <rdfs:label xml:lang="en">Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/Risk -->
+
+    <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/Risk">
+        <rdfs:label xml:lang="en">Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/RiskAssessment -->
+
+    <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/RiskAssessment">
+        <rdfs:label xml:lang="en">Risk assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
     
 
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotations
+    // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#allValuesFrom">
-        <rdfs:comment>The property that determines the class that a universal property restriction refers to.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>allValuesFrom</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#annotatedProperty">
-        <rdfs:comment>The property that determines the predicate of an annotated axiom or annotated annotation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>annotatedProperty</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#annotatedSource">
-        <rdfs:comment>The property that determines the subject of an annotated axiom or annotated annotation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>annotatedSource</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#annotatedTarget">
-        <rdfs:comment>The property that determines the object of an annotated axiom or annotated annotation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>annotatedTarget</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#assertionProperty">
-        <rdfs:comment>The property that determines the predicate of a negative property assertion.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>assertionProperty</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#complementOf">
-        <rdfs:comment>The property that determines that a given class is the complement of another class.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>complementOf</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#datatypeComplementOf">
-        <rdfs:comment>The property that determines that a given data range is the complement of another data range with respect to the data domain.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>datatypeComplementOf</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#disjointUnionOf">
-        <rdfs:comment>The property that determines that a given class is equivalent to the disjoint union of a collection of other classes.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>disjointUnionOf</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#disjointWith">
-        <rdfs:comment>The property that determines that two given classes are disjoint.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>disjointWith</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#distinctMembers">
-        <rdfs:comment>The property that determines the collection of pairwise different individuals in a owl:AllDifferent axiom.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>distinctMembers</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#equivalentClass">
-        <rdfs:comment>The property that determines that two given classes are equivalent, and that is used to specify datatype definitions.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>equivalentClass</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#equivalentProperty">
-        <rdfs:comment>The property that determines that two given properties are equivalent.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>equivalentProperty</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#hasKey">
-        <rdfs:comment>The property that determines the collection of properties that jointly build a key.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>hasKey</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#hasSelf">
-        <rdfs:comment>The property that determines the property that a self restriction refers to.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>hasSelf</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#hasValue">
-        <rdfs:comment>The property that determines the individual that a has-value restriction refers to.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>hasValue</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#intersectionOf">
-        <rdfs:comment>The property that determines the collection of classes or data ranges that build an intersection.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>intersectionOf</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#inverseOf">
-        <rdfs:comment>The property that determines that two given properties are inverse.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>inverseOf</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#members">
-        <rdfs:comment>The property that determines the collection of members in either a owl:AllDifferent, owl:AllDisjointClasses or owl:AllDisjointProperties axiom.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>members</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#onClass">
-        <rdfs:comment>The property that determines the class that a qualified object cardinality restriction refers to.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>onClass</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#onDataRange">
-        <rdfs:comment>The property that determines the data range that a qualified data cardinality restriction refers to.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>onDataRange</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#onDatatype">
-        <rdfs:comment>The property that determines the datatype that a datatype restriction refers to.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>onDatatype</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#onProperties">
-        <rdfs:comment>The property that determines the n-tuple of properties that a property restriction on an n-ary data range refers to.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>onProperties</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#onProperty">
-        <rdfs:comment>The property that determines the property that a property restriction refers to.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>onProperty</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#oneOf">
-        <rdfs:comment>The property that determines the collection of individuals or data values that build an enumeration.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>oneOf</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#propertyChainAxiom">
-        <rdfs:comment>The property that determines the n-tuple of properties that build a sub property chain of a given property.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>propertyChainAxiom</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#propertyDisjointWith">
-        <rdfs:comment>The property that determines that two given properties are disjoint.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>propertyDisjointWith</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#someValuesFrom">
-        <rdfs:comment>The property that determines the class that an existential property restriction refers to.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>someValuesFrom</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#targetValue">
-        <rdfs:comment>The property that determines the value of a negative data property assertion.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>targetValue</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#unionOf">
-        <rdfs:comment>The property that determines the collection of classes or data ranges that build a union.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>unionOf</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#withRestrictions">
-        <rdfs:comment>The property that determines the collection of facet-value pairs that define a datatype restriction.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#"/>
-        <rdfs:label>withRestrictions</rdfs:label>
-    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/abrasion -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/abrasion">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/administrative-environment -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/administrative-environment">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Dimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/aerial-animals -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/aerial-animals">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/arson -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/arson">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/biodegradation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/biodegradation">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/breakage -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/breakage">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/carelessness -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/carelessness">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/collapse -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/collapse">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/combustible-material -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/combustible-material">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/construction-work -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/construction-work">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/contamination -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/contamination">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/corrosion -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/corrosion">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/deformation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/deformation">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/destruction -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/destruction">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/detachment -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/detachment">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/disappearance -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/disappearance">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/disfiguration -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/disfiguration">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/dissociation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/dissociation">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/dissolution -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/dissolution">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/economic-environment -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/economic-environment">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Dimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/electrical-source -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/electrical-source">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/exterior-source -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/exterior-source">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/failure-to-act -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/failure-to-act">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/financial-gain -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/financial-gain">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/fire -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/fire">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/flooding -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/flooding">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/gnawing -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/gnawing">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/groundwater -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/groundwater">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/humidity -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/humidity">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/ideological-motivation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/ideological-motivation">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/impact -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/impact">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/incorrect-action -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/incorrect-action">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/information-loss -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/information-loss">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/insects -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/insects">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/interpretive-fire -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/interpretive-fire">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/legal-environment -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/legal-environment">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Dimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/littering -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/littering">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/microorganisms -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/microorganisms">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/moulding -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/moulding">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/object-dislocation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/object-dislocation">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/overgrowth -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/overgrowth">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/pests -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/pests">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/physical-environment -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/physical-environment">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Dimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/physical-forces -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/physical-forces">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/pipe-maintenance -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/pipe-maintenance">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/plants -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/plants">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/political-environment -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/political-environment">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Dimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/pressure -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/pressure">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/rainfall -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/rainfall">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/recognition -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/recognition">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/retaliation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/retaliation">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/rodents -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/rodents">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/salt-efflorescence -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/salt-efflorescence">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/shock -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/shock">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/socio-cultural-environment -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/socio-cultural-environment">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Dimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/staining -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/staining">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/tearing -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/tearing">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/theft-and-vandalism -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/theft-and-vandalism">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/vibration -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/vibration">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/water -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/water">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/weakening -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/weakening">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/wear -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/wear">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
