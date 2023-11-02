@@ -10,13 +10,13 @@ A heritage asset is a physical or tangible item, structure, site, or object that
 
 Each part of a heritage asset has some value assigned to it during a value assessment activity. A value is a single parameter that equates to relative significance, or relative importance of that asset. Each contributing value is characterized by a type, a name, a definition, a series of notes, a time interval with a start and a end date, a degree of occurrence, and its relative weight. A value exists within the context of a risk assessment activity. During the value assessment activity, the quantity of items relative to the asset, as well as its percentage of value, are assigned.
 
-The layers can be interpred as the series of locations that constitute the spatial context within the risk exists. They are:
-* Region: the location of hazards that we cannot avoid, but which we must understand, predict, and then mitigate appropriately;
-* Site: the location of outdoor hazards, but for which we have some degree of control;
+The layers can be interpred as the series of locations that constitute the spatial context the risk exists within. They are:
+* Region: the location of hazards that cannot be avoided;
+* Site: the location of outdoor hazards, but for which it is possible to have some degree of control;
 * Building: the fundamental built layer around any collection;
 * Room: the location of special controls as well as new hazards;
 * Fitting: the first movable layer, often part of a transition in responsibilities between the facilities manager and the conservator;
-* Support: the closest layers to the heritage asset, always intended as protective, but they may also be a source of new hazards.
+* Support: the closest layers to the heritage asset, always intended as protective, but which may also be a source of new hazards.
 
 ## Example 01
 A series of risk assessment activities assign a set of risks to the heritage asset "Battistero degli Ariani". The heritage asset is composed by:
