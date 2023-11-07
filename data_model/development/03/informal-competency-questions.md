@@ -33,6 +33,7 @@ Return the assets which have been assigned "Artistic" contributing values and ri
 List of: `asset`, `perc_value`
 
 ### Results
+- `building`, 40
 - `mosaics`, 40
 - `mural-paintings`, 15
 
