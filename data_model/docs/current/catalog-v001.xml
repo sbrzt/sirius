@@ -8,6 +8,6 @@
     <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="file:/C:/Users/Utente/Downloads/index.rdf"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/sirius/ontology/hero" uri="file:/C:/Users/Utente/Documents/Projects/sirius/data_model/hero.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1698241545145" name="http://purl.org/sirius/ontology/model/" uri="TBox.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1699461360690" name="http://purl.org/sirius/ontology/model/" uri="TBox.rdf"/>
     </group>
 </catalog>

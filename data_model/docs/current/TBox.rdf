@@ -684,18 +684,6 @@
     
 
 
-    <!-- http://purl.org/sirius/ontology/model/assignsRiskTo -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/model/assignsRiskTo"/>
-    
-
-
-    <!-- http://purl.org/sirius/ontology/model/creates -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/model/creates"/>
-    
-
-
     <!-- http://purl.org/sirius/ontology/model/hasContext -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/model/hasContext"/>
@@ -832,14 +820,6 @@
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/valid">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/sirius/ontology/hero/hasNote -->
-
-    <rdf:Description rdf:about="http://purl.org/sirius/ontology/hero/hasNote">
-        <rdfs:subPropertyOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/P3_has_note"/>
-    </rdf:Description>
 </rdf:RDF>
 
 
