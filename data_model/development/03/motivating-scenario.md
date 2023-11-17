@@ -18,6 +18,16 @@ The layers can be interpred as the series of locations that constitute the spati
 * Fitting: the first movable layer, often part of a transition in responsibilities between the facilities manager and the conservator;
 * Support: the closest layers to the heritage asset, always intended as protective, but which may also be a source of new hazards.
 
+--
+In terms of occurrence (timing), risks can be divided into two main groups: events and cumulative processes. For practical purposes, events can be further divided into rare and common events. The result is three practical types of risk occurrence: rare events, common events, and cumulative processes.
+
+“Rare” events occur less often than approximately once every 100 years (from the perspective of one heritage organization.) As a result, rare events are not part of the direct experience of most heritage organization staff. From the perspective of the total heritage of a nation, such events may happen every few years, and from a global perspective, these events can become routine.
+
+Common events occur many times per century. These are events that are part of the direct experience of many heritage organization staff or of people in the vicinity of the heritage organization.
+
+Cumulative processes can occur continuously or intermittently. Over the years, most heritage organization staff will have observed the cumulative effect of one or two such processes on some items, that is to say, they will have seen the item “age.” Very frequent events (more than once a year) can also be considered as cumulative processes for risk analysis.
+--
+
 ## Example 01
 A series of risk assessment activities assign a set of risks to the heritage asset "Battistero degli Ariani". The heritage asset is composed by:
 * a building

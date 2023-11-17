@@ -235,14 +235,6 @@
     
 
 
-    <!-- http://purl.org/sirius/ontology/hero/ratesValuePercentage -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/sirius/ontology/hero/ratesValuePercentage">
-        <rdfs:label xml:lang="en">rates value percentage</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
