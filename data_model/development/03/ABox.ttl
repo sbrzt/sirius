@@ -1,0 +1,169 @@
+@prefix : <http://purl.org/sirius/ontology/development/03/data/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tbox: <http://purl.org/sirius/ontology/development/03/schema/> .
+@base <http://purl.org/sirius/ontology/development/03/data/> .
+
+<http://purl.org/sirius/ontology/development/03/data/> rdf:type owl:Ontology ;
+                                                        owl:imports <http://purl.org/sirius/ontology/development/03/schema/> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.org/sirius/ontology/development/03/data/baptistery
+:baptistery rdf:type owl:NamedIndividual ,
+                     tbox:HeritageAsset .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/document-a
+:document-a rdf:type owl:NamedIndividual ,
+                     tbox:Document .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/document-b
+:document-b rdf:type owl:NamedIndividual ,
+                     tbox:Document .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/document-c
+:document-c rdf:type owl:NamedIndividual ,
+                     tbox:Document .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/museum
+:museum rdf:type owl:NamedIndividual ,
+                 tbox:HeritageAsset .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-01
+:risk-01 rdf:type owl:NamedIndividual ,
+                  tbox:Risk ;
+         tbox:atTime :2020-10-10 ;
+         tbox:isDocumentedBy :document-a ;
+         tbox:withType tbox:cumulative ;
+         tbox:withinLayer tbox:building .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-02
+:risk-02 rdf:type owl:NamedIndividual ,
+                  tbox:Risk ;
+         tbox:atTime :2020-10-10 ;
+         tbox:isDocumentedBy :document-b ;
+         tbox:withType tbox:rare ;
+         tbox:withinLayer tbox:site .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-03
+:risk-03 rdf:type owl:NamedIndividual ,
+                  tbox:Risk ;
+         tbox:atTime :2020-10-11 ;
+         tbox:isDocumentedBy :document-a ;
+         tbox:withType tbox:common ;
+         tbox:withinLayer tbox:region .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-04
+:risk-04 rdf:type owl:NamedIndividual ,
+                  tbox:Risk ;
+         tbox:atTime :2020-10-10 ;
+         tbox:isDocumentedBy :document-b ;
+         tbox:withType tbox:rare ;
+         tbox:withinLayer tbox:support .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-05
+:risk-05 rdf:type owl:NamedIndividual ,
+                  tbox:Risk ;
+         tbox:atTime :2020-10-11 ;
+         tbox:isDocumentedBy :document-c ;
+         tbox:withType tbox:rare ;
+         tbox:withinLayer tbox:fitting .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-06
+:risk-06 rdf:type owl:NamedIndividual ,
+                  tbox:Risk ;
+         tbox:atTime :2020-10-11 ;
+         tbox:isDocumentedBy :document-c ;
+         tbox:withType tbox:cumulative ;
+         tbox:withinLayer tbox:room .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-07
+:risk-07 rdf:type owl:NamedIndividual ,
+                  tbox:Risk ;
+         tbox:atTime :2020-10-11 ;
+         tbox:isDocumentedBy :document-a ;
+         tbox:withType tbox:rare ;
+         tbox:withinLayer tbox:region .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-01
+:risk-assessment-01 rdf:type owl:NamedIndividual ,
+                             tbox:RiskAssessment ;
+                    tbox:assignsRisk :risk-01 ;
+                    tbox:assignsRiskTo :baptistery .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-02
+:risk-assessment-02 rdf:type owl:NamedIndividual ,
+                             tbox:RiskAssessment ;
+                    tbox:assignsRisk :risk-02 ;
+                    tbox:assignsRiskTo :baptistery .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-03
+:risk-assessment-03 rdf:type owl:NamedIndividual ,
+                             tbox:RiskAssessment ;
+                    tbox:assignsRisk :risk-03 ;
+                    tbox:assignsRiskTo :baptistery .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-04
+:risk-assessment-04 rdf:type owl:NamedIndividual ,
+                             tbox:RiskAssessment ;
+                    tbox:assignsRisk :risk-04 ;
+                    tbox:assignsRiskTo :museum .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-05
+:risk-assessment-05 rdf:type owl:NamedIndividual ,
+                             tbox:RiskAssessment ;
+                    tbox:assignsRisk :risk-05 ;
+                    tbox:assignsRiskTo :museum .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-06
+:risk-assessment-06 rdf:type owl:NamedIndividual ,
+                             tbox:RiskAssessment ;
+                    tbox:assignsRisk :risk-06 ;
+                    tbox:assignsRiskTo :museum .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-07
+:risk-assessment-07 rdf:type owl:NamedIndividual ,
+                             tbox:RiskAssessment ;
+                    tbox:assignsRisk :risk-07 ;
+                    tbox:assignsRiskTo :museum .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/2020-10-10
+:2020-10-10 rdf:type owl:NamedIndividual ,
+                                                                          tbox:TimeInterval ;
+                                                                 tbox:hasEndDate "2020-10-10T23:59:59Z"^^xsd:dateTime ;
+                                                                 tbox:hasStartDate "2020-10-10T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/2020-10-11
+:2020-10-11 rdf:type owl:NamedIndividual ,
+                                                                          tbox:TimeInterval ;
+                                                                 tbox:hasEndDate "2020-10-11T23:59:59Z"^^xsd:dateTime ;
+                                                                 tbox:hasStartDate "2020-10-11T00:00:00Z"^^xsd:dateTime .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

@@ -1,4 +1,4 @@
-@prefix : <http://purl.org/sirius/ontology/03/data/> .
+@prefix : <http://purl.org/sirius/ontology/data/03/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix hero: <http://purl.org/sirius/ontology/hero/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -6,165 +6,167 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://purl.org/sirius/ontology/03/data/> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@base <http://purl.org/sirius/ontology/data/03/> .
 
-<http://purl.org/sirius/ontology/03/data/> rdf:type owl:Ontology ;
-                                            owl:imports <http://purl.org/sirius/ontology/model> .
+<http://purl.org/sirius/ontology/data/03/> rdf:type owl:Ontology ;
+                                                        owl:imports <http://purl.org/sirius/ontology/model/> .
+
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/03/data/battistero-building
-:battistero-building rdf:type owl:NamedIndividual ,
-                              <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> .
+###  http://purl.org/sirius/ontology/data/03/baptistery
+:baptistery rdf:type owl:NamedIndividual ,
+                     crm:E24_Physical_Human-Made_Thing .
 
 
-###  http://purl.org/sirius/ontology/03/data/battistero-degli-ariani
-:battistero-degli-ariani rdf:type owl:NamedIndividual ,
-                                  <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> ;
-                         <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> :battistero-building ,
-                                      :battistero-furniture ,
-                                      :battistero-mosaics ,
-                                      :battistero-mural-paintings .
+###  http://purl.org/sirius/ontology/data/03/document-a
+:document-a rdf:type owl:NamedIndividual ,
+                     crm:E31_Document .
 
 
-###  http://purl.org/sirius/ontology/03/data/battistero-furniture
-:battistero-furniture rdf:type owl:NamedIndividual ,
-                               <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> .
+###  http://purl.org/sirius/ontology/data/03/document-b
+:document-b rdf:type owl:NamedIndividual ,
+                     crm:E31_Document .
 
 
-###  http://purl.org/sirius/ontology/03/data/battistero-mosaics
-:battistero-mosaics rdf:type owl:NamedIndividual ,
-                             <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> .
+###  http://purl.org/sirius/ontology/data/03/document-c
+:document-c rdf:type owl:NamedIndividual ,
+                     crm:E31_Document .
 
 
-###  http://purl.org/sirius/ontology/03/data/battistero-mural-paintings
-:battistero-mural-paintings rdf:type owl:NamedIndividual ,
-                                     <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human-Made_Thing> .
+###  http://purl.org/sirius/ontology/data/03/museum
+:museum rdf:type owl:NamedIndividual ,
+                 crm:E24_Physical_Human-Made_Thing .
 
 
-###  http://purl.org/sirius/ontology/03/data/risk-01
+###  http://purl.org/sirius/ontology/data/03/risk-01
 :risk-01 rdf:type owl:NamedIndividual ,
                   hero:Risk ;
-         hero:existsWithin hero:region-layer ,
-                           hero:site-layer .
+         tvc:atTime :2020-10-10 ;
+         hero:isDocumentedBy :document-a ;
+         hero:withType hero:cumulative ;
+         hero:withinLayer hero:building .
 
 
-###  http://purl.org/sirius/ontology/03/data/risk-02
+###  http://purl.org/sirius/ontology/data/03/risk-02
 :risk-02 rdf:type owl:NamedIndividual ,
                   hero:Risk ;
-         hero:existsWithin hero:building-layer ,
-                           hero:region-layer ,
-                           hero:site-layer .
+         tvc:atTime :2020-10-10 ;
+         hero:isDocumentedBy :document-b ;
+         hero:withType hero:rare ;
+         hero:withinLayer hero:site .
 
 
-###  http://purl.org/sirius/ontology/03/data/risk-03
+###  http://purl.org/sirius/ontology/data/03/risk-03
 :risk-03 rdf:type owl:NamedIndividual ,
                   hero:Risk ;
-         hero:existsWithin hero:building-layer ,
-                           hero:region-layer ,
-                           hero:site-layer .
+         tvc:atTime :2020-10-11 ;
+         hero:isDocumentedBy :document-a ;
+         hero:withType hero:common ;
+         hero:withinLayer hero:region .
 
 
-###  http://purl.org/sirius/ontology/03/data/risk-04
+###  http://purl.org/sirius/ontology/data/03/risk-04
 :risk-04 rdf:type owl:NamedIndividual ,
                   hero:Risk ;
-         hero:existsWithin hero:building-layer ,
-                           hero:region-layer ,
-                           hero:site-layer .
+         tvc:atTime :2020-10-10 ;
+         hero:isDocumentedBy :document-b ;
+         hero:withType hero:rare ;
+         hero:withinLayer hero:support .
 
 
-###  http://purl.org/sirius/ontology/03/data/risk-assessment-01
+###  http://purl.org/sirius/ontology/data/03/risk-05
+:risk-05 rdf:type owl:NamedIndividual ,
+                  hero:Risk ;
+         tvc:atTime :2020-10-11 ;
+         hero:isDocumentedBy :document-c ;
+         hero:withType hero:rare ;
+         hero:withinLayer hero:fitting .
+
+
+###  http://purl.org/sirius/ontology/data/03/risk-06
+:risk-06 rdf:type owl:NamedIndividual ,
+                  hero:Risk ;
+         tvc:atTime :2020-10-11 ;
+         hero:isDocumentedBy :document-c ;
+         hero:withType hero:cumulative ;
+         hero:withinLayer hero:room .
+
+
+###  http://purl.org/sirius/ontology/data/03/risk-07
+:risk-07 rdf:type owl:NamedIndividual ,
+                  hero:Risk ;
+         tvc:atTime :2020-10-11 ;
+         hero:isDocumentedBy :document-a ;
+         hero:withType hero:rare ;
+         hero:withinLayer hero:region .
+
+
+###  http://purl.org/sirius/ontology/data/03/risk-assessment-01
 :risk-assessment-01 rdf:type owl:NamedIndividual ,
                              hero:RiskAssessment ;
                     hero:assignsRisk :risk-01 ;
-                    hero:assignsRiskTo :battistero-degli-ariani .
+                    hero:assignsRiskTo :baptistery .
 
 
-###  http://purl.org/sirius/ontology/03/data/risk-assessment-02
+###  http://purl.org/sirius/ontology/data/03/risk-assessment-02
 :risk-assessment-02 rdf:type owl:NamedIndividual ,
                              hero:RiskAssessment ;
                     hero:assignsRisk :risk-02 ;
-                    hero:assignsRiskTo :battistero-degli-ariani .
+                    hero:assignsRiskTo :baptistery .
 
 
-###  http://purl.org/sirius/ontology/03/data/risk-assessment-03
+###  http://purl.org/sirius/ontology/data/03/risk-assessment-03
 :risk-assessment-03 rdf:type owl:NamedIndividual ,
                              hero:RiskAssessment ;
                     hero:assignsRisk :risk-03 ;
-                    hero:assignsRiskTo :battistero-degli-ariani .
+                    hero:assignsRiskTo :baptistery .
 
 
-###  http://purl.org/sirius/ontology/03/data/risk-assessment-04
+###  http://purl.org/sirius/ontology/data/03/risk-assessment-04
 :risk-assessment-04 rdf:type owl:NamedIndividual ,
                              hero:RiskAssessment ;
                     hero:assignsRisk :risk-04 ;
-                    hero:assignsRiskTo :battistero-degli-ariani .
+                    hero:assignsRiskTo :museum .
 
 
-###  http://purl.org/sirius/ontology/03/data/value-01
-:value-01 rdf:type owl:NamedIndividual ,
-                   hero:ContributingValue ;
-          hero:withValueType hero:social ;
-          hero:hasDefinition "Objects have social significance if they are held in community esteem." ;
-          hero:hasNote "This may be demonstrated by social, spiritual, or cultural expressions that provide evidence of a community’s strong affection for an object or collection and of how it contributes to that community’s identity and social cohesion" ;
-          hero:hasRelativeWeight 1 .
+###  http://purl.org/sirius/ontology/data/03/risk-assessment-05
+:risk-assessment-05 rdf:type owl:NamedIndividual ,
+                             hero:RiskAssessment ;
+                    hero:assignsRisk :risk-05 ;
+                    hero:assignsRiskTo :museum .
 
 
-###  http://purl.org/sirius/ontology/03/data/value-02
-:value-02 rdf:type owl:NamedIndividual ,
-                   hero:ContributingValue ;
-          hero:withValueType hero:historical ;
-          hero:hasDefinition "An object may be historically significant for its association with people, events, places, or themes." ;
-          hero:hasNote "Historically significant objects range those associated with famous people and important events to those illustrating daily life, used by ordinary people" ;
-          hero:hasRelativeWeight 5 .
+###  http://purl.org/sirius/ontology/data/03/risk-assessment-06
+:risk-assessment-06 rdf:type owl:NamedIndividual ,
+                             hero:RiskAssessment ;
+                    hero:assignsRisk :risk-06 ;
+                    hero:assignsRiskTo :museum .
 
 
-###  http://purl.org/sirius/ontology/03/data/value-03
-:value-03 rdf:type owl:NamedIndividual ,
-                   hero:ContributingValue ;
-          hero:withValueType hero:artistic ;
-          hero:hasDefinition "An object may be aesthetically significant for its craftsmanship, style, technical excellence, beauty, demonstration of skill, or quality of design and execution" ;
-          hero:hasRelativeWeight 10 .
+###  http://purl.org/sirius/ontology/data/03/risk-assessment-07
+:risk-assessment-07 rdf:type owl:NamedIndividual ,
+                             hero:RiskAssessment ;
+                    hero:assignsRisk :risk-07 ;
+                    hero:assignsRiskTo :museum .
 
 
-###  http://purl.org/sirius/ontology/03/data/value-assessment-building
-:value-assessment-building rdf:type owl:NamedIndividual ,
-                                    hero:ValueAssessment ;
-                           hero:assignsValue :value-02 ,
-                                             :value-03 ;
-                           hero:assignsValueTo :battistero-building ;
-                           hero:ratesOccurrenceDegree 3 ;
-                           hero:ratesItemQuantity 1 .
+###  http://purl.org/sirius/ontology/data/03/2020-10-10
+:2020-10-10 rdf:type owl:NamedIndividual ,
+                                                                          ti:TimeInterval ;
+                                                                 ti:hasIntervalEndDate "2020-10-10T23:59:59Z"^^xsd:dateTime ;
+                                                                 ti:hasIntervalStartDate "2020-10-10T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/03/data/value-assessment-furniture
-:value-assessment-furniture rdf:type owl:NamedIndividual ,
-                                     hero:ValueAssessment ;
-                            hero:assignsValue :value-01 ,
-                                              :value-02 ;
-                            hero:assignsValueTo :battistero-furniture ;
-                            hero:ratesOccurrenceDegree 81 ;
-                            hero:ratesItemQuantity 5 .
-
-
-###  http://purl.org/sirius/ontology/03/data/value-assessment-mosaics
-:value-assessment-mosaics rdf:type owl:NamedIndividual ,
-                                   hero:ValueAssessment ;
-                          hero:assignsValue :value-03 ;
-                          hero:assignsValueTo :battistero-mosaics ;
-                          hero:ratesOccurrenceDegree 243 ;
-                          hero:ratesItemQuantity 10 .
-
-
-###  http://purl.org/sirius/ontology/03/data/value-assessment-mural-paintings
-:value-assessment-mural-paintings rdf:type owl:NamedIndividual ,
-                                           hero:ValueAssessment ;
-                                  hero:assignsValue :value-03 ;
-                                  hero:assignsValueTo :battistero-mural-paintings ;
-                                  hero:ratesOccurrenceDegree 243 ;
-                                  hero:ratesItemQuantity 5 .
+###  http://purl.org/sirius/ontology/data/03/2020-10-11
+:2020-10-11 rdf:type owl:NamedIndividual ,
+                                                                          ti:TimeInterval ;
+                                                                 ti:hasIntervalEndDate "2020-10-11T23:59:59Z"^^xsd:dateTime ;
+                                                                 ti:hasIntervalStartDate "2020-10-11T00:00:00Z"^^xsd:dateTime .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

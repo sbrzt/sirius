@@ -6,6 +6,10 @@ Analysis - Agents of deterioration
 ## Description
 This step consists in identifying during the risk assessment all the risks that threaten the heritage asset. This is done by examining the possible agents of deterioration that embody the possible risks and by framing such analysis via risk summary sentences.
 
+A heritage asset is a physical or tangible item, structure, site, or object that holds historical, cultural, architectural, archaeological, or artistic significance.
+
+A risk affecting a heritage asset is conceptualized as the possibility of a loss of value to the heritage asset, and is assigned to the asset through a risk assessment activity.
+
 The risk summary is a complete and meaningful sentence that describes a risk in term of the hazard, the agent of deterioration, the adverse effect, and the heritage asset affected.
 
 The 10 agents of deterioration are a classification scheme for all possible hazards to the heritage asset, made from the perspective of the heritage asset itself. They allow one to think where the hazard originates from and which adverse effects are caused. According to this framework, an agent of deterioration (e.g. "Physical Force") is a type of threat to a heritage asset that originates from a certain hazard (e.g. an earthquake) and causes an adverse effect (e.g. collapse).

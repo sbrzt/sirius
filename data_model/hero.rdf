@@ -171,7 +171,7 @@
     <!-- http://purl.org/sirius/ontology/hero/withDimension -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/withDimension">
-        <rdfs:label>with document</rdfs:label>
+        <rdfs:label xml:lang="en">with dimension</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -184,10 +184,10 @@
     
 
 
-    <!-- http://purl.org/sirius/ontology/hero/withValueType -->
+    <!-- http://purl.org/sirius/ontology/hero/withType -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/withValueType">
-        <rdfs:label xml:lang="en">with value type</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/withType">
+        <rdfs:label xml:lang="en">with type</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -196,6 +196,14 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/withinAspect">
         <rdfs:label xml:lang="en">within aspect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/withinLayer -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/hero/withinLayer">
+        <rdfs:label xml:lang="en">within layer</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -397,10 +405,10 @@
     
 
 
-    <!-- http://purl.org/sirius/ontology/hero/LayerOfEnclosure -->
+    <!-- http://purl.org/sirius/ontology/hero/Layer -->
 
-    <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/LayerOfEnclosure">
-        <rdfs:label xml:lang="en">Layer of enclosure</rdfs:label>
+    <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/Layer">
+        <rdfs:label xml:lang="en">Layer</rdfs:label>
     </owl:Class>
     
 
@@ -460,6 +468,14 @@
 
     <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/RiskMeasurement">
         <rdfs:label>Risk measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/RiskType -->
+
+    <owl:Class rdf:about="http://purl.org/sirius/ontology/hero/RiskType">
+        <rdfs:label xml:lang="en">Risk type</rdfs:label>
     </owl:Class>
     
 
@@ -547,10 +563,10 @@
     
 
 
-    <!-- http://purl.org/sirius/ontology/hero/building-layer -->
+    <!-- http://purl.org/sirius/ontology/hero/building -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/building-layer">
-        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/LayerOfEnclosure"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/building">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Layer"/>
     </owl:NamedIndividual>
     
 
@@ -579,6 +595,14 @@
     
 
 
+    <!-- http://purl.org/sirius/ontology/hero/common -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/common">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/RiskType"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/sirius/ontology/hero/construction-work -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/construction-work">
@@ -599,6 +623,14 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/corrosion">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/cumulative -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/cumulative">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/RiskType"/>
     </owl:NamedIndividual>
     
 
@@ -715,10 +747,10 @@
     
 
 
-    <!-- http://purl.org/sirius/ontology/hero/fitting-layer -->
+    <!-- http://purl.org/sirius/ontology/hero/fitting -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/fitting-layer">
-        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/LayerOfEnclosure"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/fitting">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Layer"/>
     </owl:NamedIndividual>
     
 
@@ -939,6 +971,14 @@
     
 
 
+    <!-- http://purl.org/sirius/ontology/hero/rare -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/rare">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/RiskType"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/sirius/ontology/hero/recognition -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/recognition">
@@ -947,10 +987,10 @@
     
 
 
-    <!-- http://purl.org/sirius/ontology/hero/region-layer -->
+    <!-- http://purl.org/sirius/ontology/hero/region -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/region-layer">
-        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/LayerOfEnclosure"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/region">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Layer"/>
     </owl:NamedIndividual>
     
 
@@ -971,10 +1011,10 @@
     
 
 
-    <!-- http://purl.org/sirius/ontology/hero/room-layer -->
+    <!-- http://purl.org/sirius/ontology/hero/room -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/room-layer">
-        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/LayerOfEnclosure"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/room">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Layer"/>
     </owl:NamedIndividual>
     
 
@@ -1011,10 +1051,10 @@
     
 
 
-    <!-- http://purl.org/sirius/ontology/hero/site-layer -->
+    <!-- http://purl.org/sirius/ontology/hero/site -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/site-layer">
-        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/LayerOfEnclosure"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/site">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Layer"/>
     </owl:NamedIndividual>
     
 
@@ -1051,10 +1091,10 @@
     
 
 
-    <!-- http://purl.org/sirius/ontology/hero/support-layer -->
+    <!-- http://purl.org/sirius/ontology/hero/support -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/support-layer">
-        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/LayerOfEnclosure"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/support">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Layer"/>
     </owl:NamedIndividual>
     
 
