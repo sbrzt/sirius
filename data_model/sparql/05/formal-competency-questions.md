@@ -11,7 +11,8 @@ SELECT ?asset ?asset_part ?percentage
 WHERE {
   ?asset a crm:E24_Physical_Human-Made_Thing ;
         crm:P46_is_composed_of ?asset_part .
-  ?asset_part hero:representsAssetPercentage ?percentage .
+  ?value_assessment hero:assignsValueTo ?asset_part ;
+                    hero:assessesPercentage ?percentage .
 }
 ```
 
@@ -25,20 +26,20 @@ PREFIX : <http://purl.org/sirius/ontology/data/05/>
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX hero: <http://purl.org/sirius/ontology/hero/>
 PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
-PREFIX tvc: <http://www.essepuntato.it/2012/04/tvc/>
+PREFIX tis: <http://ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#>
 
 SELECT DISTINCT ?asset_part ?value ?score ?dimension ?aspect ?note ?document ?time_interval_start ?time_interval_end
 WHERE {
     ?asset a crm:E24_Physical_Human-Made_Thing ;
             crm:P46_is_composed_of ?asset_part .
     ?value_assessment hero:assignsValueTo ?asset_part ;
-                        hero:assignsValue ?value .
-    ?value hero:hasScore ?score ;
-            hero:withDimension ?dimension ;
+                        hero:assignsValue ?value ;
+            hero:withinDimension ?dimension ;
             hero:withinAspect ?aspect ;
             hero:hasNote ?note ;
             hero:isDocumentedBy ?document ;
-            tvc:atTime ?time_interval .
+            tis:atTime ?time_interval .
+    ?value hero:hasScore ?score .
     ?time_interval ti:hasIntervalStartDate ?time_interval_start ;
                     ti:hasIntervalEndDate ?time_interval_end .
 }

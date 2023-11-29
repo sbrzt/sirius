@@ -9,7 +9,7 @@ PREFIX abox: <http://purl.org/sirius/ontology/development/02/data/>
 SELECT ?risk ?risk_summary ?agent_of_deterioration
 WHERE {
     ?risk_assessment a tbox:RiskAssessment ;
-                    tbox:assignsRiskTo abox:battistero-degli-ariani ;
+                    tbox:assignsRiskTo abox:baptistery ;
                     tbox:assigns ?risk .
     ?risk a tbox:Risk ;
         tbox:hasSummary ?risk_summary ;

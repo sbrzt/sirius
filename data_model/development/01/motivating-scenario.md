@@ -1,19 +1,19 @@
 # Iteration 01
 
 ## Name
-Contextualization
+Context
 
 ## Description
 This step involves the understanding of all relevant aspects of the context in which a heritage asset is situated.
 
 A heritage asset is a physical or tangible item, structure, site, or object that holds historical, cultural, architectural, archaeological, or artistic significance and is considered worthy of preservation and protection. A heritage asset may have a name, an alternative name, and a description. In addition, a heritage asset is located in a place, which is defined by spatial coordinates, and can be generally dated to a creation event identified by a certain time-span.
 
-The context in which a heritage asset is situated can be divided into different types and includes its physical, administrative, legal, political, socio-cultural, and economic environments. Each contextual information related to the heritage asset can be documented bya description and a series of documents. A document may be characterized a title, a description, and a link.
+The context in which a heritage asset is situated can be divided into different types and includes its physical, administrative, legal, political, socio-cultural, and economic environments. Each contextual information related to the heritage asset can be documented by a description and some documents. A document may be characterized a title, a description, and a link.
 
-In addition, there is also a series of stakeholders who are directly or indirectly involved in the risk assessment activity with respect to the heritage asset at hand.
+In addition, some stakeholders may be directly or indirectly involved in the risk assessment activity with respect to the heritage asset at hand.
 
 ## Example 01
-A heritage asset, known as "Battistero degli Ariani" and alternatively as "Oratorio di Santa Maria in Cosmedin", is located in "Piazzetta degli Ariani, 48121 Ravenna" (44.41871491574331, 12.20247187841604) and dates back to "late fifth century A.D.". Its description reads: "Edificio a pianta ottagonale con copertura a spioventi, presenta quattro absidiole in corrispondenza dei punti cardinali (parzialmente interrate). La decorazione musiva è conservata sulla sola cupola, creando un sorprendente contrasto con la superficie grezza dei mattoni a vista nella parte inferiore. Il mosaico rappresenta al centro il battesimo di Cristo nel fiume Giordano, attorno ad esso una fascia con i dodici apostoli che sfilano in due teorie, incontrandosi presso il trono dell'etimasìa, simbolo della presenza invisibile di Cristo." 
+A heritage asset, a baptistery known as "Battistero degli Ariani" and alternatively as "Oratorio di Santa Maria in Cosmedin", is located in "Piazzetta degli Ariani, 48121 Ravenna" (44.41871491574331, 12.20247187841604) and dates back to "late fifth century A.D.". Its description reads: "Edificio a pianta ottagonale con copertura a spioventi, presenta quattro absidiole in corrispondenza dei punti cardinali (parzialmente interrate). La decorazione musiva è conservata sulla sola cupola, creando un sorprendente contrasto con la superficie grezza dei mattoni a vista nella parte inferiore. Il mosaico rappresenta al centro il battesimo di Cristo nel fiume Giordano, attorno ad esso una fascia con i dodici apostoli che sfilano in due teorie, incontrandosi presso il trono dell'etimasìa, simbolo della presenza invisibile di Cristo." 
 
 Its contextual information is:
 * physical context: "Il Battistero è visibile esternamente sui lati N, NO, NE. Il lato O affaccia sui giardini di un’abitazione privata, mentre i lati S, SO, SE, affacciano sul giardino del Dipartimento di Beni Culturali (Università di Bologna)."

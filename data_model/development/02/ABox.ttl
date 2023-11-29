@@ -14,13 +14,13 @@
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani
-:battistero-degli-ariani rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/02/data/baptistery
+:baptistery rdf:type owl:NamedIndividual ,
                                   tbox:HeritageAsset .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-01
-:battistero-degli-ariani-risk-01 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-01
+:baptistery-risk-01 rdf:type owl:NamedIndividual ,
                                           tbox:Risk ;
                                  tbox:causes tbox:collapse ,
                                              tbox:feature-detachment ,
@@ -32,8 +32,8 @@
                                                      tbox:traffic-induced-vibration .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-02
-:battistero-degli-ariani-risk-02 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-02
+:baptistery-risk-02 rdf:type owl:NamedIndividual ,
                                           tbox:Risk ;
                                  tbox:causes tbox:information-loss ;
                                  tbox:isEmbodiedBy tbox:dissociation ;
@@ -41,8 +41,8 @@
                                  tbox:hasSummary "Fragmentation of data related to previous incorrect monitoring and maintenance interventions provokes loss of important information related to the baptistery" .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-03
-:battistero-degli-ariani-risk-03 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-03
+:baptistery-risk-03 rdf:type owl:NamedIndividual ,
                                           tbox:Risk ;
                                  tbox:causes tbox:excrements ,
                                              tbox:overgrowth ;
@@ -51,8 +51,8 @@
                                                      tbox:weeds .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-04
-:battistero-degli-ariani-risk-04 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-04
+:baptistery-risk-04 rdf:type owl:NamedIndividual ,
                                           tbox:Risk ;
                                  tbox:causes tbox:corrosion ;
                                  tbox:isEmbodiedBy tbox:water ;
@@ -61,15 +61,15 @@
                                  tbox:hasSummary "Floods and heavy rains induce erosion of the baptistery walls" .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-05
-:battistero-degli-ariani-risk-05 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-05
+:baptistery-risk-05 rdf:type owl:NamedIndividual ,
                                           tbox:Risk ;
                                  tbox:isEmbodiedBy tbox:fire ;
                                  tbox:originatesFrom tbox:equipment-malfunction .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-06
-:battistero-degli-ariani-risk-06 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-06
+:baptistery-risk-06 rdf:type owl:NamedIndividual ,
                                           tbox:Risk ;
                                  tbox:causes tbox:disfiguration ,
                                              tbox:waste-accumulation ;
@@ -80,16 +80,16 @@
                                  tbox:hasSummary "Various motivations cause the presence of graffiti and abandonment of objects in the area surrounding the baptistery" .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/battistero-degli-ariani-risk-assessment
-:battistero-degli-ariani-risk-assessment rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment
+:baptistery-risk-assessment rdf:type owl:NamedIndividual ,
                                                   tbox:RiskAssessment ;
-                                         tbox:assigns :battistero-degli-ariani-risk-01 ,
-                                                      :battistero-degli-ariani-risk-02 ,
-                                                      :battistero-degli-ariani-risk-03 ,
-                                                      :battistero-degli-ariani-risk-04 ,
-                                                      :battistero-degli-ariani-risk-05 ,
-                                                      :battistero-degli-ariani-risk-06 ;
-                                         tbox:assignsRiskTo :battistero-degli-ariani .
+                                         tbox:assigns :baptistery-risk-01 ,
+                                                      :baptistery-risk-02 ,
+                                                      :baptistery-risk-03 ,
+                                                      :baptistery-risk-04 ,
+                                                      :baptistery-risk-05 ,
+                                                      :baptistery-risk-06 ;
+                                         tbox:assignsRiskTo :baptistery .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

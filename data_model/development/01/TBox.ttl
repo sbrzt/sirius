@@ -1,10 +1,12 @@
-@base <http://purl.org/sirius/ontology/development/01/schema/> .
 @prefix : <http://purl.org/sirius/ontology/development/01/schema/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/sirius/ontology/development/01/schema/> .
+
+<http://purl.org/sirius/ontology/development/01/schema> rdf:type owl:Ontology .
 # 
 # 
 # #################################################################
@@ -14,20 +16,27 @@
 # #################################################################
 # 
 # 
-# http://purl.org/sirius/ontology/development/01/schema/assignsRiskTo
-# 
-# http://purl.org/sirius/ontology/development/01/schema/creates
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasContext
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasTimeSpan
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasType
-# 
-# http://purl.org/sirius/ontology/development/01/schema/involves
-# 
-# http://purl.org/sirius/ontology/development/01/schema/isLocatedIn
-# 
+### http://purl.org/sirius/ontology/development/01/schema/assignsRiskTo 
+:assignsRiskTo a owl:ObjectProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/creates
+:creates a owl:ObjectProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasContext
+:hasContext a owl:ObjectProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasTimeSpan
+:hasTimeSpan a owl:ObjectProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasType
+:hasType a owl:ObjectProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/involves
+:involves a owl:ObjectProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/isLocatedIn
+:isLocatedIn a owl:ObjectProperty .
+
 # 
 # 
 # #################################################################
@@ -37,28 +46,39 @@
 # #################################################################
 # 
 # 
-# http://purl.org/sirius/ontology/development/01/schema/fallsWithin
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasAlternativeName
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasAssetDescription
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasAssetName
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasContextDescription
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasCoordinates
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasDocumentDescription
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasDocumentTitle
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasLink
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasPlaceName
-# 
-# http://purl.org/sirius/ontology/development/01/schema/hasStakeholderName
-# 
+### http://purl.org/sirius/ontology/development/01/schema/fallsWithin
+:fallsWithin a owl:DatatypeProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasAlternativeName
+:hasAlternativeName a owl:DatatypeProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasAssetDescription
+:hasAssetDescription a owl:DatatypeProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasAssetName
+:hasAssetName a owl:DatatypeProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasContextDescription
+:hasContextDescription a owl:DatatypeProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasCoordinates
+:hasCoordinates a owl:DatatypeProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasDocumentDescription
+:hasDocumentDescription a owl:DatatypeProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasDocumentTitle
+:hasDocumentTitle a owl:DatatypeProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasLink
+:hasLink a owl:DatatypeProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasPlaceName
+:hasPlaceName a owl:DatatypeProperty .
+
+### http://purl.org/sirius/ontology/development/01/schema/hasStakeholderName
+:hasStakeholderName a owl:DatatypeProperty .
+
 # 
 # 
 # #################################################################
@@ -68,24 +88,33 @@
 # #################################################################
 # 
 # 
-# http://purl.org/sirius/ontology/development/01/schema/Context
-# 
-# http://purl.org/sirius/ontology/development/01/schema/ContextType
-# 
-# http://purl.org/sirius/ontology/development/01/schema/CreationEvent
-# 
-# http://purl.org/sirius/ontology/development/01/schema/Document
-# 
-# http://purl.org/sirius/ontology/development/01/schema/HeritageAsset
-# 
-# http://purl.org/sirius/ontology/development/01/schema/Place
-# 
-# http://purl.org/sirius/ontology/development/01/schema/RiskAssessmentActivity
-# 
-# http://purl.org/sirius/ontology/development/01/schema/Stakeholder
-# 
-# http://purl.org/sirius/ontology/development/01/schema/TimeSpan
-# 
+### http://purl.org/sirius/ontology/development/01/schema/Context
+:Context a owl:Class .
+
+### http://purl.org/sirius/ontology/development/01/schema/ContextType
+:ContextType a owl:Class .
+
+### http://purl.org/sirius/ontology/development/01/schema/CreationEvent
+:CreationEvent a owl:Class .
+
+### http://purl.org/sirius/ontology/development/01/schema/Document
+:Document a owl:Class .
+
+### http://purl.org/sirius/ontology/development/01/schema/HeritageAsset
+:HeritageAsset a owl:Class .
+
+### http://purl.org/sirius/ontology/development/01/schema/Place
+:Place a owl:Class .
+
+### http://purl.org/sirius/ontology/development/01/schema/RiskAssessmentActivity
+:RiskAssessmentActivity a owl:Class .
+
+### http://purl.org/sirius/ontology/development/01/schema/Stakeholder
+:Stakeholder a owl:Class .
+
+### http://purl.org/sirius/ontology/development/01/schema/TimeSpan
+:TimeSpan a owl:Class .
+
 # 
 # 
 # #################################################################
@@ -95,76 +124,16 @@
 # #################################################################
 # 
 # 
-# http://purl.org/sirius/ontology/development/01/schema/legal
-# 
-# http://purl.org/sirius/ontology/development/01/schema/physical
-# 
-# http://purl.org/sirius/ontology/development/01/schema/political
-# 
-# http://purl.org/sirius/ontology/development/01/schema/socio-cultural
-# 
-# Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
-
-<../schema> a owl:Ontology .
-
-:assignsRiskTo a owl:ObjectProperty .
-
-:creates a owl:ObjectProperty .
-
-:hasContext a owl:ObjectProperty .
-
-:hasTimeSpan a owl:ObjectProperty .
-
-:hasType a owl:ObjectProperty .
-
-:involves a owl:ObjectProperty .
-
-:isLocatedIn a owl:ObjectProperty .
-
-:fallsWithin a owl:DatatypeProperty .
-
-:hasAlternativeName a owl:DatatypeProperty .
-
-:hasAssetDescription a owl:DatatypeProperty .
-
-:hasAssetName a owl:DatatypeProperty .
-
-:hasContextDescription a owl:DatatypeProperty .
-
-:hasCoordinates a owl:DatatypeProperty .
-
-:hasDocumentDescription a owl:DatatypeProperty .
-
-:hasDocumentTitle a owl:DatatypeProperty .
-
-:hasLink a owl:DatatypeProperty .
-
-:hasPlaceName a owl:DatatypeProperty .
-
-:hasStakeholderName a owl:DatatypeProperty .
-
-:Context a owl:Class .
-
-:ContextType a owl:Class .
-
-:CreationEvent a owl:Class .
-
-:Document a owl:Class .
-
-:HeritageAsset a owl:Class .
-
-:Place a owl:Class .
-
-:RiskAssessmentActivity a owl:Class .
-
-:Stakeholder a owl:Class .
-
-:TimeSpan a owl:Class .
-
+### http://purl.org/sirius/ontology/development/01/schema/legal
 :legal a owl:NamedIndividual, :ContextType .
 
+### http://purl.org/sirius/ontology/development/01/schema/physical
 :physical a owl:NamedIndividual, :ContextType .
 
+### http://purl.org/sirius/ontology/development/01/schema/political
 :political a owl:NamedIndividual, :ContextType .
 
+### http://purl.org/sirius/ontology/development/01/schema/socio-cultural
 :socio-cultural a owl:NamedIndividual, :ContextType .
+
+# Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

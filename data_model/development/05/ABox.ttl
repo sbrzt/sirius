@@ -8,7 +8,7 @@
 @base <http://purl.org/sirius/ontology/development/05/data/> .
 
 <http://purl.org/sirius/ontology/development/05/data/> rdf:type owl:Ontology ;
-                                                        owl:imports tbox: .
+                                                        owl:imports <http://purl.org/sirius/ontology/development/05/schema/> .
 
 #################################################################
 #    Individuals
@@ -65,7 +65,7 @@
 ###  http://purl.org/sirius/ontology/development/05/data/value-1
 :value-1 rdf:type owl:NamedIndividual ,
                   tbox:ContributingValue ;
-         tbox:atTime <http://purl.org/sirius/ontology/development/05/data/2020-11-21> ;
+         tbox:atTime :2020-11-21 ;
          tbox:isDocumentedBy :document-a ;
          tbox:withDimension tbox:artistic ;
          tbox:withinAspect tbox:form ;
@@ -76,7 +76,7 @@
 ###  http://purl.org/sirius/ontology/development/05/data/value-10
 :value-10 rdf:type owl:NamedIndividual ,
                    tbox:ContributingValue ;
-          tbox:atTime <http://purl.org/sirius/ontology/development/05/data/2020-11-11> ;
+          tbox:atTime :2020-11-11 ;
           tbox:isDocumentedBy :document-c ;
           tbox:withDimension tbox:historic ;
           tbox:withinAspect tbox:setting ;
@@ -87,7 +87,7 @@
 ###  http://purl.org/sirius/ontology/development/05/data/value-2
 :value-2 rdf:type owl:NamedIndividual ,
                   tbox:ContributingValue ;
-         tbox:atTime <http://purl.org/sirius/ontology/development/05/data/2020-10-19> ;
+         tbox:atTime :2020-10-19 ;
          tbox:isDocumentedBy :document-a ;
          tbox:withDimension tbox:historic ;
          tbox:withinAspect tbox:form ;
@@ -98,7 +98,7 @@
 ###  http://purl.org/sirius/ontology/development/05/data/value-3
 :value-3 rdf:type owl:NamedIndividual ,
                   tbox:ContributingValue ;
-         tbox:atTime <http://purl.org/sirius/ontology/development/05/data/2021-01-03> ;
+         tbox:atTime :2021-01-03 ;
          tbox:isDocumentedBy :document-a ;
          tbox:withDimension tbox:social ;
          tbox:withinAspect tbox:function ;
@@ -109,7 +109,7 @@
 ###  http://purl.org/sirius/ontology/development/05/data/value-4
 :value-4 rdf:type owl:NamedIndividual ,
                   tbox:ContributingValue ;
-         tbox:atTime <http://purl.org/sirius/ontology/development/05/data/2020-11-21> ;
+         tbox:atTime :2020-11-21 ;
          tbox:isDocumentedBy :document-b ;
          tbox:withDimension tbox:scientific ;
          tbox:withinAspect tbox:form ;
@@ -120,7 +120,7 @@
 ###  http://purl.org/sirius/ontology/development/05/data/value-5
 :value-5 rdf:type owl:NamedIndividual ,
                   tbox:ContributingValue ;
-         tbox:atTime <http://purl.org/sirius/ontology/development/05/data/2021-01-05> ;
+         tbox:atTime :2021-01-05 ;
          tbox:isDocumentedBy :document-b ;
          tbox:withDimension tbox:artistic ;
          tbox:withinAspect tbox:substance ;
@@ -131,7 +131,7 @@
 ###  http://purl.org/sirius/ontology/development/05/data/value-6
 :value-6 rdf:type owl:NamedIndividual ,
                   tbox:ContributingValue ;
-         tbox:atTime <http://purl.org/sirius/ontology/development/05/data/2020-12-06> ;
+         tbox:atTime :2020-12-06 ;
          tbox:isDocumentedBy :document-b ;
          tbox:withDimension tbox:historic ;
          tbox:withinAspect tbox:function ;
@@ -142,7 +142,7 @@
 ###  http://purl.org/sirius/ontology/development/05/data/value-7
 :value-7 rdf:type owl:NamedIndividual ,
                   tbox:ContributingValue ;
-         tbox:atTime <http://purl.org/sirius/ontology/development/05/data/2020-11-12> ;
+         tbox:atTime :2020-11-12 ;
          tbox:isDocumentedBy :document-c ;
          tbox:withDimension tbox:social ;
          tbox:withinAspect tbox:tradition ;
@@ -153,7 +153,7 @@
 ###  http://purl.org/sirius/ontology/development/05/data/value-8
 :value-8 rdf:type owl:NamedIndividual ,
                   tbox:ContributingValue ;
-         tbox:atTime <http://purl.org/sirius/ontology/development/05/data/2020-10-18> ;
+         tbox:atTime :2020-10-18 ;
          tbox:isDocumentedBy :document-c ;
          tbox:withDimension tbox:scientific ;
          tbox:withinAspect tbox:tradition ;
@@ -164,7 +164,7 @@
 ###  http://purl.org/sirius/ontology/development/05/data/value-9
 :value-9 rdf:type owl:NamedIndividual ,
                   tbox:ContributingValue ;
-         tbox:atTime <http://purl.org/sirius/ontology/development/05/data/2020-11-21> ;
+         tbox:atTime :2020-11-21 ;
          tbox:isDocumentedBy :document-c ;
          tbox:withDimension tbox:social ;
          tbox:withinAspect tbox:setting ;
@@ -243,56 +243,56 @@
 
 
 ###  http://purl.org/sirius/ontology/development/05/data/2020-10-18
-<http://purl.org/sirius/ontology/development/05/data/2020-10-18> rdf:type owl:NamedIndividual ,
+:2020-10-18 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2020-10-18T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2020-10-18T00:00:00Z"^^xsd:dateTime .
 
 
 ###  http://purl.org/sirius/ontology/development/05/data/2020-10-19
-<http://purl.org/sirius/ontology/development/05/data/2020-10-19> rdf:type owl:NamedIndividual ,
+:2020-10-19 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2020-10-19T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2020-10-19T00:00:00Z"^^xsd:dateTime .
 
 
 ###  http://purl.org/sirius/ontology/development/05/data/2020-11-11
-<http://purl.org/sirius/ontology/development/05/data/2020-11-11> rdf:type owl:NamedIndividual ,
+:2020-11-11 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2020-11-21T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2020-11-21T00:00:00Z"^^xsd:dateTime .
 
 
 ###  http://purl.org/sirius/ontology/development/05/data/2020-11-12
-<http://purl.org/sirius/ontology/development/05/data/2020-11-12> rdf:type owl:NamedIndividual ,
+:2020-11-12 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2020-11-12T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2020-11-12T00:00:00Z"^^xsd:dateTime .
 
 
 ###  http://purl.org/sirius/ontology/development/05/data/2020-11-21
-<http://purl.org/sirius/ontology/development/05/data/2020-11-21> rdf:type owl:NamedIndividual ,
+:2020-11-21 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2020-11-21T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2020-11-21T00:00:00Z"^^xsd:dateTime .
 
 
 ###  http://purl.org/sirius/ontology/development/05/data/2020-12-06
-<http://purl.org/sirius/ontology/development/05/data/2020-12-06> rdf:type owl:NamedIndividual ,
+:2020-12-06 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2020-12-06T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2020-12-06T00:00:00Z"^^xsd:dateTime .
 
 
 ###  http://purl.org/sirius/ontology/development/05/data/2021-01-03
-<http://purl.org/sirius/ontology/development/05/data/2021-01-03> rdf:type owl:NamedIndividual ,
+:2021-01-03 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2021-01-03T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2021-01-03T00:00:00Z"^^xsd:dateTime .
 
 
 ###  http://purl.org/sirius/ontology/development/05/data/2021-01-05
-<http://purl.org/sirius/ontology/development/05/data/2021-01-05> rdf:type owl:NamedIndividual ,
+:2021-01-05 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2021-01-05T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2021-01-05T00:00:00Z"^^xsd:dateTime .

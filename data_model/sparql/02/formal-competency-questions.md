@@ -3,17 +3,17 @@
 Return the risk summaries and the agents of deterioration of the risks assigned to the "Battistero degli Ariani".
 
 ```SPARQL
-PREFIX : <http://purl.org/sirius/ontology/02/data/>
+PREFIX : <http://purl.org/sirius/ontology/data/02/>
 PREFIX hero: <http://purl.org/sirius/ontology/hero/>
 
 SELECT ?risk ?risk_summary ?agent_of_deterioration
 WHERE {
-    ?risk_assessment a hero:RiskAssessment ;
-                    hero:assignsRiskTo :battistero-degli-ariani ;
-                    hero:assigns ?risk .
+    ?risk_assessment a hero:Identification ;
+                    hero:identifiesRiskFor :baptistery ;
+                    hero:identifies ?risk .
     ?risk a hero:Risk ;
-        hero:hasDescription ?risk_summary ;
-        hero:isDeterminedBy ?agent_of_deterioration .
+        hero:hasNote ?risk_summary ;
+        hero:isClassifiedBy ?agent_of_deterioration .
 }
 ```
 
@@ -29,9 +29,9 @@ SELECT ?risk ?hazard_type
 WHERE {
     ?risk a hero:Risk ;
             hero:resultsFrom ?hazard ;
-            hero:isDeterminedBy hero:physical-forces .
+            hero:isClassifiedBy hero:physical-forces .
     ?hazard a hero:Hazard ;
-            hero:hasHazardType ?hazard_type .
+            hero:hasType ?hazard_type .
 }
 ```
 
@@ -47,9 +47,9 @@ SELECT ?risk ?agent_of_deterioration ?adverse_effect_type
 WHERE {
     ?risk a hero:Risk ;
             hero:entails ?adverse_effect ;
-            hero:isDeterminedBy ?agent_of_deterioration .
+            hero:isClassifiedBy ?agent_of_deterioration .
     ?adverse_effect a hero:AdverseEffect ;
-                    hero:hasAdverseEffectType ?adverse_effect_type .
+                    hero:hasType ?adverse_effect_type .
     FILTER (
     ?agent_of_deterioration = hero:pests || 
     ?agent_of_deterioration = hero:water || 

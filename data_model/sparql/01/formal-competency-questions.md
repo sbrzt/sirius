@@ -4,6 +4,7 @@ Return the information about the heritage asset, including its name, alternative
 
 ```SPARQL
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX hero: <http://purl.org/sirius/ontology/hero/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -12,7 +13,7 @@ WHERE {
     ?heritage_asset a crm:E24_Physical_Human-Made_Thing ;
                     dcterms:title ?asset_name ;
                     dcterms:alternative ?alt_name ;
-                    crm:P3_has_note ?description ;
+                    hero:hasNote ?description ;
                     crm:P55_has_current_location ?place .
     ?place a crm:E53_Place ;
             rdfs:label ?place_name ;
@@ -37,12 +38,12 @@ PREFIX hero: <http://purl.org/sirius/ontology/hero/>
 SELECT ?heritage_asset ?context_type ?context_description
 WHERE {
     ?heritage_asset a crm:E24_Physical_Human-Made_Thing .
-    ?riskAssessment a hero:RiskAssessment ;
-                    hero:assignsRiskTo ?heritage_asset ;
-                    hero:isInformedBy ?context .
+    ?riskAssessment a hero:Contextualization ;
+                    hero:providesContextFor ?heritage_asset ;
+                    hero:hasObservation ?context .
     ?context a hero:Observation ;
-                hero:observes ?context_type ;
-                hero:hasContent ?context_description .
+                hero:hasContextualParameter ?context_type ;
+                hero:hasNote ?context_description .
 }
 ```
 
@@ -53,19 +54,20 @@ Return the documents that document the contextual information of the heritage as
 
 ```SPARQL
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX hero: <http://purl.org/sirius/ontology/hero/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?heritage_asset ?context_type ?document ?document_link
 WHERE {
     ?heritage_asset a crm:E24_Physical_Human-Made_Thing .
-    ?riskAssessment a hero:RiskAssessment ;
-                    hero:assignsRiskTo ?heritage_asset ;
-                    hero:isInformedBy ?context .
+    ?riskAssessment a hero:Contextualization ;
+                    hero:providesContextFor ?heritage_asset ;
+                    hero:hasObservation ?context .
     ?context a hero:Observation ;
-                hero:observes ?context_type .
-    ?document a crm:E31_Document ;
-                crm:P70_documents ?context ;
+                hero:hasContextualParameter ?context_type .
+    ?document a foaf:Document ;
+                hero:documents ?context ;
                 rdfs:seeAlso ?document_link .
 }
 ```
@@ -83,9 +85,9 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 SELECT ?heritage_asset ?stakeholder_name
 WHERE {
     ?heritage_asset a crm:E24_Physical_Human-Made_Thing .
-    ?risk_assessment_activity a hero:RiskAssessment ;
-                                hero:assignsRiskTo ?heritage_asset ;
-                                hero:relatesTo ?stakeholder .
+    ?risk_assessment_activity a hero:Contextualization ;
+                                hero:providesContextFor ?heritage_asset ;
+                                hero:hasParticipant ?stakeholder .
     ?stakeholder a foaf:Agent ;
                 foaf:name ?stakeholder_name .
 }

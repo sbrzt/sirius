@@ -1,5 +1,6 @@
 @prefix : <http://purl.org/sirius/ontology/data/03/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix hero: <http://purl.org/sirius/ontology/hero/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -7,7 +8,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix tis: <http://ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#> .
 @base <http://purl.org/sirius/ontology/data/03/> .
 
 <http://purl.org/sirius/ontology/data/03/> rdf:type owl:Ontology ;
@@ -25,17 +26,17 @@
 
 ###  http://purl.org/sirius/ontology/data/03/document-a
 :document-a rdf:type owl:NamedIndividual ,
-                     crm:E31_Document .
+                     foaf:Document .
 
 
 ###  http://purl.org/sirius/ontology/data/03/document-b
 :document-b rdf:type owl:NamedIndividual ,
-                     crm:E31_Document .
+                     foaf:Document .
 
 
 ###  http://purl.org/sirius/ontology/data/03/document-c
 :document-c rdf:type owl:NamedIndividual ,
-                     crm:E31_Document .
+                     foaf:Document .
 
 
 ###  http://purl.org/sirius/ontology/data/03/museum
@@ -43,116 +44,116 @@
                  crm:E24_Physical_Human-Made_Thing .
 
 
-###  http://purl.org/sirius/ontology/data/03/risk-01
-:risk-01 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/data/03/baptistery-risk-01
+:baptistery-risk-01 rdf:type owl:NamedIndividual ,
                   hero:Risk ;
-         tvc:atTime :2020-10-10 ;
-         hero:isDocumentedBy :document-a ;
-         hero:withType hero:cumulative ;
-         hero:withinLayer hero:building .
+         hero:hasType hero:cumulative .
 
 
-###  http://purl.org/sirius/ontology/data/03/risk-02
-:risk-02 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/data/03/baptistery-risk-02
+:baptistery-risk-02 rdf:type owl:NamedIndividual ,
                   hero:Risk ;
-         tvc:atTime :2020-10-10 ;
-         hero:isDocumentedBy :document-b ;
-         hero:withType hero:rare ;
-         hero:withinLayer hero:site .
+         hero:hasType hero:rare .
 
 
-###  http://purl.org/sirius/ontology/data/03/risk-03
-:risk-03 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/data/03/baptistery-risk-03
+:baptistery-risk-03 rdf:type owl:NamedIndividual ,
                   hero:Risk ;
-         tvc:atTime :2020-10-11 ;
-         hero:isDocumentedBy :document-a ;
-         hero:withType hero:common ;
+         hero:hasType hero:common .
+
+
+###  http://purl.org/sirius/ontology/data/03/baptistery-risk-04
+:baptistery-risk-04 rdf:type owl:NamedIndividual ,
+                  hero:Risk ;
+         hero:hasType hero:rare .
+
+
+###  http://purl.org/sirius/ontology/data/03/baptistery-risk-05
+:baptistery-risk-05 rdf:type owl:NamedIndividual ,
+                  hero:Risk ;
+         hero:hasType hero:rare .
+
+
+###  http://purl.org/sirius/ontology/data/03/baptistery-risk-06
+:baptistery-risk-06 rdf:type owl:NamedIndividual ,
+                  hero:Risk ;
+         hero:hasType hero:cumulative .
+
+
+###  http://purl.org/sirius/ontology/data/03/baptistery-risk-07
+:baptistery-risk-07 rdf:type owl:NamedIndividual ,
+                  hero:Risk ;
+         hero:hasType hero:rare .
+
+
+###  http://purl.org/sirius/ontology/data/03/baptistery-identification-01
+:baptistery-identification-01 rdf:type owl:NamedIndividual ,
+                             hero:Identification ;
+                    hero:isDocumentedBy :document-a ;
+                    tis:atTime :2020-10-10 ;
+                    hero:identifies :baptistery-risk-01 ;
+                    hero:identifiesRiskFor :baptistery ;
+                    hero:withinLayer hero:building .
+
+
+###  http://purl.org/sirius/ontology/data/03/baptistery-identification-02
+:baptistery-identification-02 rdf:type owl:NamedIndividual ,
+                             hero:Identification ;
+                    hero:isDocumentedBy :document-b ;
+                    tis:atTime :2020-10-10 ;
+                    hero:identifies :baptistery-risk-02 ;
+                    hero:identifiesRiskFor :baptistery ;
+                    hero:withinLayer hero:site .
+
+
+###  http://purl.org/sirius/ontology/data/03/baptistery-identification-03
+:baptistery-identification-03 rdf:type owl:NamedIndividual ,
+                             hero:Identification ;
+                    hero:isDocumentedBy :document-a ;
+                    tis:atTime :2020-10-11 ;
+                    hero:identifies :baptistery-risk-03 ;
+                    hero:identifiesRiskFor :baptistery ;
          hero:withinLayer hero:region .
 
 
-###  http://purl.org/sirius/ontology/data/03/risk-04
-:risk-04 rdf:type owl:NamedIndividual ,
-                  hero:Risk ;
-         tvc:atTime :2020-10-10 ;
-         hero:isDocumentedBy :document-b ;
-         hero:withType hero:rare ;
+###  http://purl.org/sirius/ontology/data/03/baptistery-identification-04
+:baptistery-identification-04 rdf:type owl:NamedIndividual ,
+                             hero:Identification ;
+                    tis:atTime :2020-10-10 ;
+                    hero:isDocumentedBy :document-b ;
+                    hero:identifies :baptistery-risk-04 ;
+                    hero:identifiesRiskFor :museum ;
          hero:withinLayer hero:support .
 
 
-###  http://purl.org/sirius/ontology/data/03/risk-05
-:risk-05 rdf:type owl:NamedIndividual ,
-                  hero:Risk ;
-         tvc:atTime :2020-10-11 ;
-         hero:isDocumentedBy :document-c ;
-         hero:withType hero:rare ;
+###  http://purl.org/sirius/ontology/data/03/baptistery-identification-05
+:baptistery-identification-05 rdf:type owl:NamedIndividual ,
+                             hero:Identification ;
+                    tis:atTime :2020-10-11 ;
+                    hero:isDocumentedBy :document-c ;
+                    hero:identifies :baptistery-risk-05 ;
+                    hero:identifiesRiskFor :museum ;
          hero:withinLayer hero:fitting .
 
 
-###  http://purl.org/sirius/ontology/data/03/risk-06
-:risk-06 rdf:type owl:NamedIndividual ,
-                  hero:Risk ;
-         tvc:atTime :2020-10-11 ;
-         hero:isDocumentedBy :document-c ;
-         hero:withType hero:cumulative ;
+###  http://purl.org/sirius/ontology/data/03/baptistery-identification-06
+:baptistery-identification-06 rdf:type owl:NamedIndividual ,
+                             hero:Identification ;
+                    tis:atTime :2020-10-11 ;
+                    hero:isDocumentedBy :document-c ;
+                    hero:identifies :baptistery-risk-06 ;
+                    hero:identifiesRiskFor :museum ;
          hero:withinLayer hero:room .
 
 
-###  http://purl.org/sirius/ontology/data/03/risk-07
-:risk-07 rdf:type owl:NamedIndividual ,
-                  hero:Risk ;
-         tvc:atTime :2020-10-11 ;
-         hero:isDocumentedBy :document-a ;
-         hero:withType hero:rare ;
+###  http://purl.org/sirius/ontology/data/03/baptistery-identification-07
+:baptistery-identification-07 rdf:type owl:NamedIndividual ,
+                             hero:Identification ;
+                    tis:atTime :2020-10-11 ;
+                    hero:isDocumentedBy :document-a ;
+                    hero:identifies :baptistery-risk-07 ;
+                    hero:identifiesRiskFor :museum ;
          hero:withinLayer hero:region .
-
-
-###  http://purl.org/sirius/ontology/data/03/risk-assessment-01
-:risk-assessment-01 rdf:type owl:NamedIndividual ,
-                             hero:RiskAssessment ;
-                    hero:assignsRisk :risk-01 ;
-                    hero:assignsRiskTo :baptistery .
-
-
-###  http://purl.org/sirius/ontology/data/03/risk-assessment-02
-:risk-assessment-02 rdf:type owl:NamedIndividual ,
-                             hero:RiskAssessment ;
-                    hero:assignsRisk :risk-02 ;
-                    hero:assignsRiskTo :baptistery .
-
-
-###  http://purl.org/sirius/ontology/data/03/risk-assessment-03
-:risk-assessment-03 rdf:type owl:NamedIndividual ,
-                             hero:RiskAssessment ;
-                    hero:assignsRisk :risk-03 ;
-                    hero:assignsRiskTo :baptistery .
-
-
-###  http://purl.org/sirius/ontology/data/03/risk-assessment-04
-:risk-assessment-04 rdf:type owl:NamedIndividual ,
-                             hero:RiskAssessment ;
-                    hero:assignsRisk :risk-04 ;
-                    hero:assignsRiskTo :museum .
-
-
-###  http://purl.org/sirius/ontology/data/03/risk-assessment-05
-:risk-assessment-05 rdf:type owl:NamedIndividual ,
-                             hero:RiskAssessment ;
-                    hero:assignsRisk :risk-05 ;
-                    hero:assignsRiskTo :museum .
-
-
-###  http://purl.org/sirius/ontology/data/03/risk-assessment-06
-:risk-assessment-06 rdf:type owl:NamedIndividual ,
-                             hero:RiskAssessment ;
-                    hero:assignsRisk :risk-06 ;
-                    hero:assignsRiskTo :museum .
-
-
-###  http://purl.org/sirius/ontology/data/03/risk-assessment-07
-:risk-assessment-07 rdf:type owl:NamedIndividual ,
-                             hero:RiskAssessment ;
-                    hero:assignsRisk :risk-07 ;
-                    hero:assignsRiskTo :museum .
 
 
 ###  http://purl.org/sirius/ontology/data/03/2020-10-10

@@ -511,6 +511,16 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/abrasion">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Abrasion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/acidification -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/acidification">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Acidification</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -527,6 +537,25 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/aerial-animals">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Aerial animals</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/air-conditioning -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/air-conditioning">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Air conditioning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/airborne-pollution -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/airborne-pollution">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Airborne pollution</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -535,6 +564,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/arson">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Arson</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -551,6 +581,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/biodegradation">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Biodegradation</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -559,6 +590,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/breakage">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Breakage</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -575,6 +607,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/carelessness">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Carelessness</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -583,6 +616,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/collapse">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Collapse</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -591,6 +625,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/combustible-material">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Combustible material</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -607,6 +642,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/construction-work">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Construction work</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -615,6 +651,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/contamination">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Contamination</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -623,6 +660,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/corrosion">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Corrosion</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -639,6 +677,16 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/deformation">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Deformation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/delamination -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/delamination">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Delamination</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -647,6 +695,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/destruction">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Desctruction</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -655,6 +704,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/detachment">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Detachment</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -663,6 +713,16 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/disappearance">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Disappearance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/discoloration -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/discoloration">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Discoloration</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -671,6 +731,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/disfiguration">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Disfiguration</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -679,6 +740,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/dissociation">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:label xml:lang="en">Dissociation</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -687,6 +749,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/dissolution">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Dissolution</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -699,10 +762,20 @@
     
 
 
+    <!-- http://purl.org/sirius/ontology/hero/efflorescence -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/efflorescence">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Efflorescence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/sirius/ontology/hero/electrical-source -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/electrical-source">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Electrical source</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -711,6 +784,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/exterior-source">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Exterior source</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -719,6 +793,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/failure-to-act">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Failure to act</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -735,6 +810,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/financial-gain">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Financial gain</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -743,6 +819,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/fire">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:label xml:lang="en">Fire</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -759,6 +836,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/flooding">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Flooding</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -783,6 +861,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/gnawing">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Gnawing</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -791,6 +870,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/groundwater">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Groundwater</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -807,6 +887,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/humidity">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Humidity</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -815,6 +896,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/ideological-motivation">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Ideological motivation</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -823,6 +905,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/impact">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Impact</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -831,6 +914,25 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/incorrect-action">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Incorrect action</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/incorrect-relative-humitdity -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/incorrect-relative-humitdity">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:label xml:lang="en">Incorrect relative humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/incorrect-temperature -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/incorrect-temperature">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:label xml:lang="en">Incorrect temperature</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -839,6 +941,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/information-loss">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Information loss</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -847,6 +950,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/insects">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Insects</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -855,6 +959,16 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/interpretive-fire">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Interpretive fire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/intrinsic-pollution -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/intrinsic-pollution">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Intrinsic pollution</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -867,10 +981,38 @@
     
 
 
+    <!-- http://purl.org/sirius/ontology/hero/light-ultraviolet-infrared -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/light-ultraviolet-infrared">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:label xml:lang="en">Light, ultraviolet and infrared</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/sirius/ontology/hero/littering -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/littering">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Littering</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/local-climate -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/local-climate">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Local climate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/micro-climate -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/micro-climate">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Micro-climate</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -879,6 +1021,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/microorganisms">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Microorganisms</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -887,14 +1030,16 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/moulding">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Moulding</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/sirius/ontology/hero/object-dislocation -->
+    <!-- http://purl.org/sirius/ontology/hero/obsolescence -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/object-dislocation">
-        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/obsolescence">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Obsolescence</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -903,6 +1048,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/overgrowth">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Overgrowth</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -911,6 +1057,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/pests">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:label xml:lang="en">Pests</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -927,6 +1074,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/physical-forces">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:label xml:lang="en">Physical forces</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -935,6 +1083,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/pipe-maintenance">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Pipe maintenance</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -943,6 +1092,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/plants">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Plants</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -955,10 +1105,29 @@
     
 
 
+    <!-- http://purl.org/sirius/ontology/hero/pollutants -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/pollutants">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:label xml:lang="en">Pollutants</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/pollution-by-contact -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/pollution-by-contact">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Pollution by contact</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/sirius/ontology/hero/pressure -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/pressure">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Pressure</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -967,6 +1136,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/rainfall">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Rainfall</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -983,6 +1153,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/recognition">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Recognition</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -995,10 +1166,29 @@
     
 
 
+    <!-- http://purl.org/sirius/ontology/hero/relocation -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/relocation">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Relocation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/sirius/ontology/hero/retaliation -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/retaliation">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Retaliation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/retirement -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/retirement">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Retirement</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1007,6 +1197,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/rodents">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Rodents</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1019,18 +1210,19 @@
     
 
 
-    <!-- http://purl.org/sirius/ontology/hero/salt-efflorescence -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/salt-efflorescence">
-        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/sirius/ontology/hero/scientific -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/scientific">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Dimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/scratching -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/scratching">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Scratching</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1047,6 +1239,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/shock">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Shock</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1079,6 +1272,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/staining">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Staining</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1087,6 +1281,15 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/substance">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/Aspect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/sunlight -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/sunlight">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Sunlight</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1103,14 +1306,16 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/tearing">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Tearing</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.org/sirius/ontology/hero/theft-and-vandalism -->
+    <!-- http://purl.org/sirius/ontology/hero/theft-vandalism -->
 
-    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/theft-and-vandalism">
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/theft-vandalism">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:label xml:lang="en">Theft and vandalism</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1127,6 +1332,16 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/vibration">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Vibration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/sirius/ontology/hero/visitors -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/visitors">
+        <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/HazardType"/>
+        <rdfs:label xml:lang="en">Visitors</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1135,6 +1350,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/water">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:label xml:lang="en">Water</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1143,6 +1359,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/weakening">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Weakening</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1151,6 +1368,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.org/sirius/ontology/hero/wear">
         <rdf:type rdf:resource="http://purl.org/sirius/ontology/hero/AdverseEffectType"/>
+        <rdfs:label xml:lang="en">Wear</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

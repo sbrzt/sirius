@@ -40,8 +40,8 @@
                  tbox:HeritageAsset .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-01
-:risk-01 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-01
+:baptistery-risk-01 rdf:type owl:NamedIndividual ,
                   tbox:Risk ;
          tbox:atTime :2020-10-10 ;
          tbox:isDocumentedBy :document-a ;
@@ -49,8 +49,8 @@
          tbox:withinLayer tbox:building .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-02
-:risk-02 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-02
+:baptistery-risk-02 rdf:type owl:NamedIndividual ,
                   tbox:Risk ;
          tbox:atTime :2020-10-10 ;
          tbox:isDocumentedBy :document-b ;
@@ -58,8 +58,8 @@
          tbox:withinLayer tbox:site .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-03
-:risk-03 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-03
+:baptistery-risk-03 rdf:type owl:NamedIndividual ,
                   tbox:Risk ;
          tbox:atTime :2020-10-11 ;
          tbox:isDocumentedBy :document-a ;
@@ -67,8 +67,8 @@
          tbox:withinLayer tbox:region .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-04
-:risk-04 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-04
+:baptistery-risk-04 rdf:type owl:NamedIndividual ,
                   tbox:Risk ;
          tbox:atTime :2020-10-10 ;
          tbox:isDocumentedBy :document-b ;
@@ -76,8 +76,8 @@
          tbox:withinLayer tbox:support .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-05
-:risk-05 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-05
+:baptistery-risk-05 rdf:type owl:NamedIndividual ,
                   tbox:Risk ;
          tbox:atTime :2020-10-11 ;
          tbox:isDocumentedBy :document-c ;
@@ -85,8 +85,8 @@
          tbox:withinLayer tbox:fitting .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-06
-:risk-06 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-06
+:baptistery-risk-06 rdf:type owl:NamedIndividual ,
                   tbox:Risk ;
          tbox:atTime :2020-10-11 ;
          tbox:isDocumentedBy :document-c ;
@@ -94,8 +94,8 @@
          tbox:withinLayer tbox:room .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-07
-:risk-07 rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-07
+:baptistery-risk-07 rdf:type owl:NamedIndividual ,
                   tbox:Risk ;
          tbox:atTime :2020-10-11 ;
          tbox:isDocumentedBy :document-a ;
@@ -106,49 +106,49 @@
 ###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-01
 :risk-assessment-01 rdf:type owl:NamedIndividual ,
                              tbox:RiskAssessment ;
-                    tbox:assignsRisk :risk-01 ;
+                    tbox:assignsRisk :baptistery-risk-01 ;
                     tbox:assignsRiskTo :baptistery .
 
 
 ###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-02
 :risk-assessment-02 rdf:type owl:NamedIndividual ,
                              tbox:RiskAssessment ;
-                    tbox:assignsRisk :risk-02 ;
+                    tbox:assignsRisk :baptistery-risk-02 ;
                     tbox:assignsRiskTo :baptistery .
 
 
 ###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-03
 :risk-assessment-03 rdf:type owl:NamedIndividual ,
                              tbox:RiskAssessment ;
-                    tbox:assignsRisk :risk-03 ;
+                    tbox:assignsRisk :baptistery-risk-03 ;
                     tbox:assignsRiskTo :baptistery .
 
 
 ###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-04
 :risk-assessment-04 rdf:type owl:NamedIndividual ,
                              tbox:RiskAssessment ;
-                    tbox:assignsRisk :risk-04 ;
+                    tbox:assignsRisk :baptistery-risk-04 ;
                     tbox:assignsRiskTo :museum .
 
 
 ###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-05
 :risk-assessment-05 rdf:type owl:NamedIndividual ,
                              tbox:RiskAssessment ;
-                    tbox:assignsRisk :risk-05 ;
+                    tbox:assignsRisk :baptistery-risk-05 ;
                     tbox:assignsRiskTo :museum .
 
 
 ###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-06
 :risk-assessment-06 rdf:type owl:NamedIndividual ,
                              tbox:RiskAssessment ;
-                    tbox:assignsRisk :risk-06 ;
+                    tbox:assignsRisk :baptistery-risk-06 ;
                     tbox:assignsRiskTo :museum .
 
 
 ###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-07
 :risk-assessment-07 rdf:type owl:NamedIndividual ,
                              tbox:RiskAssessment ;
-                    tbox:assignsRisk :risk-07 ;
+                    tbox:assignsRisk :baptistery-risk-07 ;
                     tbox:assignsRiskTo :museum .
 
 
