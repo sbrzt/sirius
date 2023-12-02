@@ -19,6 +19,13 @@
     <owl:Ontology rdf:about="http://purl.org/sirius/ontology/model">
         <owl:imports rdf:resource="http://purl.org/sirius/ontology/hero"/>
         <owl:imports rdf:resource="http://www.cidoc-crm.org/cidoc-crm/"/>
+        <dc:creator>Barzaghi, Sebastian [0000-0002-0799-1527]</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-11-30</dc:date>
+        <dc:description xml:lang="en">The ATLAS data model is used to structure the knowledge graph storing the data used in the ATLAS web platform within the SIRIUS project.</dc:description>
+        <dc:language>en</dc:language>
+        <dc:rights>https://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dc:title xml:lang="en">ATLAS Data Model</dc:title>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -672,47 +679,6 @@
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/sirius/ontology/model/hasContext -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/model/hasContext"/>
-    
-
-
-    <!-- http://purl.org/sirius/ontology/model/hasTimeSpan -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/model/hasTimeSpan"/>
-    
-
-
-    <!-- http://purl.org/sirius/ontology/model/hasType -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/model/hasType"/>
-    
-
-
-    <!-- http://purl.org/sirius/ontology/model/involves -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/model/involves"/>
-    
-
-
-    <!-- http://purl.org/sirius/ontology/model/isLocatedIn -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/sirius/ontology/model/isLocatedIn"/>
     
 
 

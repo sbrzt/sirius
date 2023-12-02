@@ -10,7 +10,7 @@
     <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="file:/C:/Users/Utente/Downloads/index.rdf"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/sirius/ontology/hero" uri="file:/C:/Users/Utente/Documents/Projects/sirius/data_model/hero.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1701535635556" name="http://purl.org/sirius/ontology/model/" uri="TBox.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1701535635556" name="http://www.w3.org/2006/time" uri="TBox1.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1701540719153" name="http://purl.org/sirius/ontology/model" uri="atlas-model.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1701540719153" name="http://purl.org/sirius/ontology/model/" uri="atlas-model.rdf"/>
     </group>
 </catalog>
