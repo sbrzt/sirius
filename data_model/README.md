@@ -1,7 +1,7 @@
 # ATLAS Data Model
 
 ## Description
-The ATLAS data model is used to structure the knowledge graph storing the data used in the ATLAS web platform within the context of the SIRIUS project. It has been developed by using the **Simplified Agile Methodology for Ontology Development (SAMOD)**: 
+The ATLAS data model is used to structure the knowledge graph storing the data used in the ATLAS web platform within the SIRIUS project. It has been developed by using a slightly modified version of the **Simplified Agile Methodology for Ontology Development (SAMOD)**: 
 
     Peroni, S. (2016). SAMOD: an agile methodology for the development of ontologies. figshare. http://dx.doi.org/10.6084/m9.figshare.3189769
 
