@@ -10,29 +10,60 @@
 <http://purl.org/sirius/ontology/development/03/data/> rdf:type owl:Ontology ;
                                                         owl:imports <http://purl.org/sirius/ontology/development/03/schema/> .
 
-
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/03/data/baptistery
-:baptistery rdf:type owl:NamedIndividual ,
-                     tbox:HeritageAsset .
+###  http://purl.org/sirius/ontology/development/03/data/archive
+:archive rdf:type owl:NamedIndividual ,
+                  tbox:HeritageAsset .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/document-a
-:document-a rdf:type owl:NamedIndividual ,
-                     tbox:Document .
+###  http://purl.org/sirius/ontology/development/03/data/2020-10-10
+:2020-10-10 rdf:type owl:NamedIndividual ,
+                                  tbox:TimeInterval ;
+                         tbox:hasEndDate "2020-10-10T23:59:59Z"^^xsd:dateTime ;
+                         tbox:hasStartDate "2020-10-10T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/document-b
-:document-b rdf:type owl:NamedIndividual ,
-                     tbox:Document .
+###  http://purl.org/sirius/ontology/development/03/data/archive-deterioration
+:archive-deterioration rdf:type owl:NamedIndividual ,
+                                tbox:Risk .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/document-c
-:document-c rdf:type owl:NamedIndividual ,
-                     tbox:Document .
+###  http://purl.org/sirius/ontology/development/03/data/archive-deterioration-a
+:archive-deterioration-a rdf:type owl:NamedIndividual ,
+                                  tbox:Frequency ;
+                         tbox:hasHighEstimate 4 ;
+                         tbox:hasLowEstimate 3 ;
+                         tbox:hasNote "Deterioration by exposure to volatile substances released by cardboard boxes is a 'cumulative process' risk. For a period of 30 years, the A-score is A=3½."^^rdfs:Literal ;
+                         tbox:hasProbableEstimate 3.5 .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/archive-deterioration-b
+:archive-deterioration-b rdf:type owl:NamedIndividual ,
+                                  tbox:FractionalValueLoss ;
+                         tbox:hasHighEstimate 2.5 ;
+                         tbox:hasLowEstimate 1.5 ;
+                         tbox:hasNote "Observations on similar archival collections in the same kind of boxes show a tiny loss of value in each item affected over 30 years."^^rdfs:Literal ;
+                         tbox:hasProbableEstimate 2 .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/archive-deterioration-c
+:archive-deterioration-c rdf:type owl:NamedIndividual ,
+                                  tbox:Exposure ;
+                         tbox:hasHighEstimate 2.5 ;
+                         tbox:hasLowEstimate 1.5 ;
+                         tbox:hasNote "Only a tiny fraction of the heritage asset value is expected to be affected per event."^^rdfs:Literal ;
+                         tbox:hasProbableEstimate 2 .
+
+
+###  http://purl.org/sirius/ontology/development/03/data/archive-deterioration-mr
+:archive-deterioration-mr rdf:type owl:NamedIndividual ,
+                                   tbox:Magnitude ;
+                          tbox:hasHighEstimate 8 ;
+                          tbox:hasLowEstimate 7 ;
+                          tbox:hasProbableEstimate 7.5 .
 
 
 ###  http://purl.org/sirius/ontology/development/03/data/museum
@@ -40,130 +71,132 @@
                  tbox:HeritageAsset .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-01
-:baptistery-risk-01 rdf:type owl:NamedIndividual ,
-                  tbox:Risk ;
-         tbox:atTime :2020-10-10 ;
-         tbox:isDocumentedBy :document-a ;
-         tbox:withType tbox:cumulative ;
-         tbox:withinLayer tbox:building .
+###  http://purl.org/sirius/ontology/development/03/data/museum-fire
+:museum-fire rdf:type owl:NamedIndividual ,
+                      tbox:Risk .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-02
-:baptistery-risk-02 rdf:type owl:NamedIndividual ,
-                  tbox:Risk ;
-         tbox:atTime :2020-10-10 ;
-         tbox:isDocumentedBy :document-b ;
-         tbox:withType tbox:rare ;
-         tbox:withinLayer tbox:site .
+###  http://purl.org/sirius/ontology/development/03/data/museum-fire-a
+:museum-fire-a rdf:type owl:NamedIndividual ,
+                        tbox:Frequency ;
+               tbox:isDocumentedBy :national-statistics ;
+               tbox:hasHighEstimate 3 ;
+               tbox:hasLowEstimate 2 ;
+               tbox:hasNote "National statistics from different countries show that the average time between large fire events for museums with basic fire control measures is about 300 years. The A-score in this case would be A=2½, indicating an expectation of a large fire once every 300 years."^^rdfs:Literal ;
+               tbox:hasProbableEstimate 2.5 .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-03
-:baptistery-risk-03 rdf:type owl:NamedIndividual ,
-                  tbox:Risk ;
-         tbox:atTime :2020-10-11 ;
-         tbox:isDocumentedBy :document-a ;
-         tbox:withType tbox:common ;
-         tbox:withinLayer tbox:region .
+###  http://purl.org/sirius/ontology/development/03/data/museum-fire-b
+:museum-fire-b rdf:type owl:NamedIndividual ,
+                        tbox:FractionalValueLoss ;
+               tbox:hasHighEstimate 5 ;
+               tbox:hasLowEstimate 4.5 ;
+               tbox:hasNote "Considering the combustible nature of the museum building and its contents, a total or almost total loss of value is expected in each item affected by the fire."^^rdfs:Literal ;
+               tbox:hasProbableEstimate 5 .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-04
-:baptistery-risk-04 rdf:type owl:NamedIndividual ,
-                  tbox:Risk ;
-         tbox:atTime :2020-10-10 ;
-         tbox:isDocumentedBy :document-b ;
-         tbox:withType tbox:rare ;
-         tbox:withinLayer tbox:support .
+###  http://purl.org/sirius/ontology/development/03/data/museum-fire-c
+:museum-fire-c rdf:type owl:NamedIndividual ,
+                        tbox:Exposure ;
+               tbox:hasHighEstimate 5 ;
+               tbox:hasLowEstimate 4.5 ;
+               tbox:hasNote "Given the characteristics of the building and its contents, it is expected that all or most of the heritage asset and its value would be affected in the event of a large fire."^^rdfs:Literal ;
+               tbox:hasProbableEstimate 5 .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-05
-:baptistery-risk-05 rdf:type owl:NamedIndividual ,
-                  tbox:Risk ;
-         tbox:atTime :2020-10-11 ;
-         tbox:isDocumentedBy :document-c ;
-         tbox:withType tbox:rare ;
-         tbox:withinLayer tbox:fitting .
+###  http://purl.org/sirius/ontology/development/03/data/museum-fire-mr
+:museum-fire-mr rdf:type owl:NamedIndividual ,
+                         tbox:Magnitude ;
+                tbox:hasHighEstimate 13 ;
+                tbox:hasLowEstimate 12 ;
+                tbox:hasProbableEstimate 12.5 .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-06
-:baptistery-risk-06 rdf:type owl:NamedIndividual ,
-                  tbox:Risk ;
-         tbox:atTime :2020-10-11 ;
-         tbox:isDocumentedBy :document-c ;
-         tbox:withType tbox:cumulative ;
-         tbox:withinLayer tbox:room .
+###  http://purl.org/sirius/ontology/development/03/data/museum-theft
+:museum-theft rdf:type owl:NamedIndividual ,
+                       tbox:Risk .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/baptistery-risk-07
-:baptistery-risk-07 rdf:type owl:NamedIndividual ,
-                  tbox:Risk ;
-         tbox:atTime :2020-10-11 ;
-         tbox:isDocumentedBy :document-a ;
-         tbox:withType tbox:rare ;
-         tbox:withinLayer tbox:region .
+###  http://purl.org/sirius/ontology/development/03/data/museum-theft-a
+:museum-theft-a rdf:type owl:NamedIndividual ,
+                         tbox:Frequency ;
+                tbox:isDocumentedBy :staff-notes ;
+                tbox:hasHighEstimate 4 ;
+                tbox:hasLowEstimate 3 ;
+                tbox:hasNote "Staff memory indicates that the collection has suffered 3 theft events affecting objects on display in the past 75 years, estimating an average time of 25 years between theft events."^^rdfs:Literal ;
+                tbox:hasProbableEstimate 3.5 .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-01
-:risk-assessment-01 rdf:type owl:NamedIndividual ,
-                             tbox:RiskAssessment ;
-                    tbox:assignsRisk :baptistery-risk-01 ;
-                    tbox:assignsRiskTo :baptistery .
+###  http://purl.org/sirius/ontology/development/03/data/museum-theft-b
+:museum-theft-b rdf:type owl:NamedIndividual ,
+                         tbox:FractionalValueLoss ;
+                tbox:hasHighEstimate 5 ;
+                tbox:hasLowEstimate 4.5 ;
+                tbox:hasNote "A stolen item results in a complete loss of value for the museum and its public."^^rdfs:Literal ;
+                tbox:hasProbableEstimate 5 .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-02
-:risk-assessment-02 rdf:type owl:NamedIndividual ,
-                             tbox:RiskAssessment ;
-                    tbox:assignsRisk :baptistery-risk-02 ;
-                    tbox:assignsRiskTo :baptistery .
+###  http://purl.org/sirius/ontology/development/03/data/museum-theft-c
+:museum-theft-c rdf:type owl:NamedIndividual ,
+                         tbox:Exposure ;
+                tbox:hasHighEstimate 2.5 ;
+                tbox:hasLowEstimate 1.5 ;
+                tbox:hasNote "The most probable scenario is the opportunistic theft of a small, original object of the collection displayed without protection."^^rdfs:Literal ;
+                tbox:hasProbableEstimate 2 .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-03
-:risk-assessment-03 rdf:type owl:NamedIndividual ,
-                             tbox:RiskAssessment ;
-                    tbox:assignsRisk :baptistery-risk-03 ;
-                    tbox:assignsRiskTo :baptistery .
+###  http://purl.org/sirius/ontology/development/03/data/museum-theft-mr
+:museum-theft-mr rdf:type owl:NamedIndividual ,
+                          tbox:Magnitude ;
+                 tbox:hasHighEstimate 11 ;
+                 tbox:hasLowEstimate 10 ;
+                 tbox:hasProbableEstimate 10.5 .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-04
-:risk-assessment-04 rdf:type owl:NamedIndividual ,
-                             tbox:RiskAssessment ;
-                    tbox:assignsRisk :baptistery-risk-04 ;
-                    tbox:assignsRiskTo :museum .
+###  http://purl.org/sirius/ontology/development/03/data/national-statistics
+:national-statistics rdf:type owl:NamedIndividual ,
+                              tbox:Document .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-05
-:risk-assessment-05 rdf:type owl:NamedIndividual ,
-                             tbox:RiskAssessment ;
-                    tbox:assignsRisk :baptistery-risk-05 ;
-                    tbox:assignsRiskTo :museum .
+###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-deterioration
+:risk-assessment-deterioration rdf:type owl:NamedIndividual ,
+                                        tbox:AnalysisDescription ;
+                               tbox:analyses :archive-deterioration ;
+                               tbox:describes :archive ;
+                               tbox:atTime :2020-10-10 ;
+                       tbox:quantifies :archive-deterioration-a ,
+                                         :archive-deterioration-b ,
+                                         :archive-deterioration-c ,
+                                         :archive-deterioration-mr .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-06
-:risk-assessment-06 rdf:type owl:NamedIndividual ,
-                             tbox:RiskAssessment ;
-                    tbox:assignsRisk :baptistery-risk-06 ;
-                    tbox:assignsRiskTo :museum .
+###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-fire
+:risk-assessment-fire rdf:type owl:NamedIndividual ,
+                               tbox:AnalysisDescription ;
+                      tbox:analyses :museum-fire ;
+                      tbox:describes :museum ;
+                      tbox:atTime :2020-10-10 ;
+             tbox:quantifies :museum-fire-a ,
+                               :museum-fire-b ,
+                               :museum-fire-c ,
+                               :museum-fire-mr .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-07
-:risk-assessment-07 rdf:type owl:NamedIndividual ,
-                             tbox:RiskAssessment ;
-                    tbox:assignsRisk :baptistery-risk-07 ;
-                    tbox:assignsRiskTo :museum .
+###  http://purl.org/sirius/ontology/development/03/data/risk-assessment-theft
+:risk-assessment-theft rdf:type owl:NamedIndividual ,
+                                tbox:AnalysisDescription ;
+                       tbox:analyses :museum-theft ;
+                       tbox:describes :museum ;
+                       tbox:atTime :2020-10-10 ;
+              tbox:quantifies :museum-theft-a ,
+                                :museum-theft-b ,
+                                :museum-theft-c ,
+                                :museum-theft-mr .
 
 
-###  http://purl.org/sirius/ontology/development/03/data/2020-10-10
-:2020-10-10 rdf:type owl:NamedIndividual ,
-                                                                          tbox:TimeInterval ;
-                                                                 tbox:hasEndDate "2020-10-10T23:59:59Z"^^xsd:dateTime ;
-                                                                 tbox:hasStartDate "2020-10-10T00:00:00Z"^^xsd:dateTime .
-
-
-###  http://purl.org/sirius/ontology/development/03/data/2020-10-11
-:2020-10-11 rdf:type owl:NamedIndividual ,
-                                                                          tbox:TimeInterval ;
-                                                                 tbox:hasEndDate "2020-10-11T23:59:59Z"^^xsd:dateTime ;
-                                                                 tbox:hasStartDate "2020-10-11T00:00:00Z"^^xsd:dateTime .
+###  http://purl.org/sirius/ontology/development/03/data/staff-notes
+:staff-notes rdf:type owl:NamedIndividual ,
+                      tbox:Document .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

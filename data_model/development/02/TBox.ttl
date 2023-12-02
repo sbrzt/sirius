@@ -12,48 +12,60 @@
 #    Object Properties
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/02/schema/assigns
-:assigns rdf:type owl:ObjectProperty .
+###  http://purl.org/sirius/ontology/development/02/schema/identifies
+:identifies rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/assignsRiskTo
-:assignsRiskTo rdf:type owl:ObjectProperty .
+###  http://purl.org/sirius/ontology/development/02/schema/describes
+:describes rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/causes
-:causes rdf:type owl:ObjectProperty .
+###  http://purl.org/sirius/ontology/development/02/schema/isClassifiedBy
+:isClassifiedBy rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/isEmbodiedBy
-:isEmbodiedBy rdf:type owl:ObjectProperty .
+###  http://purl.org/sirius/ontology/development/02/schema/isClassifiedByAgent
+:isClassifiedByAgent rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/originatesFrom
-:originatesFrom rdf:type owl:ObjectProperty .
+###  http://purl.org/sirius/ontology/development/02/schema/isClassifiedByType
+:isClassifiedByType rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/isClassifiedByLayer
+:isClassifiedByLayer rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/atTime
+:atTime rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/isDocumentedBy
+:isDocumentedBy rdf:type owl:ObjectProperty .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/02/schema/hasSummary
-:hasSummary rdf:type owl:DatatypeProperty .
+###  http://purl.org/sirius/ontology/development/02/schema/hasNote
+:hasNote rdf:type owl:DatatypeProperty .
+
+
+### http://purl.org/sirius/ontology/development/02/schema/hasStartDate
+:hasStartDate a owl:DatatypeProperty .
+
+
+### http://purl.org/sirius/ontology/development/02/schema/hasEndDate
+:hasEndDate a owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/02/schema/AdverseEffect
-:AdverseEffect rdf:type owl:Class .
-
-
 ###  http://purl.org/sirius/ontology/development/02/schema/AgentOfDeterioration
 :AgentOfDeterioration rdf:type owl:Class .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/Hazard
-:Hazard rdf:type owl:Class .
 
 
 ###  http://purl.org/sirius/ontology/development/02/schema/HeritageAsset
@@ -64,107 +76,33 @@
 :Risk rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/RiskAssessment
-:RiskAssessment rdf:type owl:Class .
+###  http://purl.org/sirius/ontology/development/02/schema/IdentificationDescription
+:IdentificationDescription rdf:type owl:Class .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/Document
+:Document rdf:type owl:Class .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/Layer
+:Layer rdf:type owl:Class .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/TimeInterval
+:TimeInterval rdf:type owl:Class .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/RiskType
+:RiskType rdf:type owl:Class .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/02/schema/birds
-:birds rdf:type owl:NamedIndividual ,
-                :Hazard .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/civil-works
-:civil-works rdf:type owl:NamedIndividual ,
-                      :Hazard .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/collapse
-:collapse rdf:type owl:NamedIndividual ,
-                   :AdverseEffect .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/corrosion
-:corrosion rdf:type owl:NamedIndividual ,
-                    :AdverseEffect .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/disfiguration
-:disfiguration rdf:type owl:NamedIndividual ,
-                        :AdverseEffect .
-
-
 ###  http://purl.org/sirius/ontology/development/02/schema/dissociation
 :dissociation rdf:type owl:NamedIndividual ,
                        :AgentOfDeterioration .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/earthquake
-:earthquake rdf:type owl:NamedIndividual ,
-                     :Hazard .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/economic-motivation
-:economic-motivation rdf:type owl:NamedIndividual ,
-                              :Hazard .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/equipment-malfunction
-:equipment-malfunction rdf:type owl:NamedIndividual ,
-                                :Hazard .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/excrements
-:excrements rdf:type owl:NamedIndividual ,
-                     :AdverseEffect .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/feature-detachment
-:feature-detachment rdf:type owl:NamedIndividual ,
-                             :AdverseEffect .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/fire
-:fire rdf:type owl:NamedIndividual ,
-               :AgentOfDeterioration .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/fissuring
-:fissuring rdf:type owl:NamedIndividual ,
-                    :AdverseEffect .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/flood
-:flood rdf:type owl:NamedIndividual ,
-                :Hazard .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/ideological-motivation
-:ideological-motivation rdf:type owl:NamedIndividual ,
-                                 :Hazard .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/incorrect-data-management
-:incorrect-data-management rdf:type owl:NamedIndividual ,
-                                    :Hazard .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/information-loss
-:information-loss rdf:type owl:NamedIndividual ,
-                           :AdverseEffect .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/non-assessable
-:non-assessable rdf:type owl:NamedIndividual ,
-                         :AdverseEffect .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/overgrowth
-:overgrowth rdf:type owl:NamedIndividual ,
-                     :AdverseEffect .
 
 
 ###  http://purl.org/sirius/ontology/development/02/schema/pests
@@ -177,44 +115,54 @@
                           :AgentOfDeterioration .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/political-motivation
-:political-motivation rdf:type owl:NamedIndividual ,
-                               :Hazard .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/rainfall
-:rainfall rdf:type owl:NamedIndividual ,
-                   :Hazard .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/subsidence
-:subsidence rdf:type owl:NamedIndividual ,
-                     :Hazard .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/thieves-and-vandals
-:thieves-and-vandals rdf:type owl:NamedIndividual ,
-                              :AgentOfDeterioration .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/traffic-induced-vibration
-:traffic-induced-vibration rdf:type owl:NamedIndividual ,
-                                    :Hazard .
-
-
-###  http://purl.org/sirius/ontology/development/02/schema/waste-accumulation
-:waste-accumulation rdf:type owl:NamedIndividual ,
-                             :AdverseEffect .
-
-
 ###  http://purl.org/sirius/ontology/development/02/schema/water
 :water rdf:type owl:NamedIndividual ,
                 :AgentOfDeterioration .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/weeds
-:weeds rdf:type owl:NamedIndividual ,
-                :Hazard .
+###  http://purl.org/sirius/ontology/development/02/schema/building
+:building rdf:type owl:NamedIndividual ,
+                   :Layer .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/common
+:common rdf:type owl:NamedIndividual ,
+                 :RiskType .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/cumulative
+:cumulative rdf:type owl:NamedIndividual ,
+                     :RiskType .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/fitting
+:fitting rdf:type owl:NamedIndividual ,
+                  :Layer .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/rare
+:rare rdf:type owl:NamedIndividual ,
+               :RiskType .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/region
+:region rdf:type owl:NamedIndividual ,
+                 :Layer .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/room
+:room rdf:type owl:NamedIndividual ,
+               :Layer .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/site
+:site rdf:type owl:NamedIndividual ,
+               :Layer .
+
+
+###  http://purl.org/sirius/ontology/development/02/schema/support
+:support rdf:type owl:NamedIndividual ,
+                  :Layer .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

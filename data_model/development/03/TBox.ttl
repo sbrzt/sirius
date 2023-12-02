@@ -12,12 +12,16 @@
 #    Object Properties
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/03/schema/assignsRisk
-:assignsRisk rdf:type owl:ObjectProperty .
+###  http://purl.org/sirius/ontology/development/03/schema/analyses
+:analyses rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/03/schema/assignsRiskTo
-:assignsRiskTo rdf:type owl:ObjectProperty .
+###  http://purl.org/sirius/ontology/development/03/schema/describes
+:describes rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/sirius/ontology/development/03/schema/quantifies
+:quantifies rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.org/sirius/ontology/development/03/schema/atTime
@@ -28,105 +32,99 @@
 :isDocumentedBy rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/03/schema/withType
-:withType rdf:type owl:ObjectProperty .
-
-
-###  http://purl.org/sirius/ontology/development/03/schema/withinLayer
-:withinLayer rdf:type owl:ObjectProperty .
-
-
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/03/schema/hasEndDate
-:hasEndDate rdf:type owl:DatatypeProperty .
+###  http://purl.org/sirius/ontology/development/03/schema/hasHighEstimate
+:hasHighEstimate rdf:type owl:DatatypeProperty .
 
 
-###  http://purl.org/sirius/ontology/development/03/schema/hasStartDate
-:hasStartDate rdf:type owl:DatatypeProperty .
+###  http://purl.org/sirius/ontology/development/03/schema/hasLowEstimate
+:hasLowEstimate rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/sirius/ontology/development/03/schema/hasNote
+:hasNote rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/sirius/ontology/development/03/schema/hasProbableEstimate
+:hasProbableEstimate rdf:type owl:DatatypeProperty .
+
+
+### http://purl.org/sirius/ontology/development/03/schema/hasStartDate
+:hasStartDate a owl:DatatypeProperty .
+
+
+### http://purl.org/sirius/ontology/development/03/schema/hasEndDate
+:hasEndDate a owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/03/schema/Document
-:Document rdf:type owl:Class .
-
-
 ###  http://purl.org/sirius/ontology/development/03/schema/HeritageAsset
 :HeritageAsset rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/03/schema/Layer
-:Layer rdf:type owl:Class .
+###  http://purl.org/sirius/ontology/development/03/schema/Document
+:Document rdf:type owl:Class .
 
 
 ###  http://purl.org/sirius/ontology/development/03/schema/Risk
 :Risk rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/03/schema/RiskAssessment
-:RiskAssessment rdf:type owl:Class .
+###  http://purl.org/sirius/ontology/development/03/schema/AnalysisDescription
+:AnalysisDescription rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/03/schema/RiskType
-:RiskType rdf:type owl:Class .
+###  http://purl.org/sirius/ontology/development/03/schema/Frequency
+:Frequency rdf:type owl:Class ;
+               rdfs:subClassOf :Measure .
 
 
-###  http://purl.org/sirius/ontology/development/03/schema/TimeInterval
-:TimeInterval rdf:type owl:Class .
+###  http://purl.org/sirius/ontology/development/03/schema/FractionalValueLoss
+:FractionalValueLoss rdf:type owl:Class ;
+               rdfs:subClassOf :Measure .
+
+
+###  http://purl.org/sirius/ontology/development/03/schema/Exposure
+:Exposure rdf:type owl:Class ;
+               rdfs:subClassOf :Measure .
+
+
+###  http://purl.org/sirius/ontology/development/03/schema/Magnitude
+:Magnitude rdf:type owl:Class ;
+               rdfs:subClassOf :Measure .
+
+
+###  http://purl.org/sirius/ontology/development/03/schema/Measure
+:Measure rdf:type owl:Class .
+
+
+### http://purl.org/sirius/ontology/development/03/schema/TimeInterval
+:TimeInterval a owl:Class .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/03/schema/building
-:building rdf:type owl:NamedIndividual ,
-                   :Layer .
+###  http://purl.org/sirius/ontology/development/03/schema/frequency-or-rate
+:frequency-or-rate rdf:type owl:NamedIndividual ,
+                            :MeasureType .
 
 
-###  http://purl.org/sirius/ontology/development/03/schema/common
-:common rdf:type owl:NamedIndividual ,
-                 :RiskType .
+###  http://purl.org/sirius/ontology/development/03/schema/loss-of-value-in-asset
+:loss-of-value-in-asset rdf:type owl:NamedIndividual ,
+                                 :MeasureType .
 
 
-###  http://purl.org/sirius/ontology/development/03/schema/cumulative
-:cumulative rdf:type owl:NamedIndividual ,
-                     :RiskType .
-
-
-###  http://purl.org/sirius/ontology/development/03/schema/fitting
-:fitting rdf:type owl:NamedIndividual ,
-                  :Layer .
-
-
-###  http://purl.org/sirius/ontology/development/03/schema/rare
-:rare rdf:type owl:NamedIndividual ,
-               :RiskType .
-
-
-###  http://purl.org/sirius/ontology/development/03/schema/region
-:region rdf:type owl:NamedIndividual ,
-                 :Layer .
-
-
-###  http://purl.org/sirius/ontology/development/03/schema/room
-:room rdf:type owl:NamedIndividual ,
-               :Layer .
-
-
-###  http://purl.org/sirius/ontology/development/03/schema/site
-:site rdf:type owl:NamedIndividual ,
-               :Layer .
-
-
-###  http://purl.org/sirius/ontology/development/03/schema/support
-:support rdf:type owl:NamedIndividual ,
-                  :Layer .
+###  http://purl.org/sirius/ontology/development/03/schema/loss-of-value-per-item
+:loss-of-value-per-item rdf:type owl:NamedIndividual ,
+                                 :MeasureType .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

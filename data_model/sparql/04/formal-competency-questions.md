@@ -1,42 +1,46 @@
 # Formal Competency Questions
 ## CQ_4.1
-Return the probable estimate of the A-score, B-score, C-score for each risk affecting each heritage asset, as well as the sources of knowledge that witness them.
+Return the assets that are part of the `house` asset and the asset percentage they represent, in descending order.
 
 ```SPARQL
 PREFIX : <http://purl.org/sirius/ontology/data/04/>
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX hero: <http://purl.org/sirius/ontology/hero/>
 
-SELECT ?risk ?heritage_asset ?risk_component ?probable_estimate ?note ?knowledge_source
+SELECT DISTINCT ?asset ?asset_part ?percentage
 WHERE {
-  ?risk_assessment hero:providesAnalysisFor ?heritage_asset ;
-                    hero:analyses ?risk ;
-                    hero:quantifiesComponent ?risk_component . 
-  ?risk_component hero:hasProbableEstimate ?probable_estimate ;
-                  hero:hasNote ?note .
-  OPTIONAL {
-    ?risk_component hero:isDocumentedBy ?knowledge_source ;
-  }
+  ?asset a crm:E24_Physical_Human-Made_Thing ;
+        crm:P46_is_composed_of ?asset_part .
+  ?value_assessment hero:describes ?asset_part ;
+                    hero:assessesPercentage ?percentage .
 }
 ```
 
 ***
 
 ## CQ_4.2
-Return the low, probable, and high estimates of the magnitudes of risk for each risk of each heritage asset.
+Return the assets that are part of the `house` asset and the contributing values assigned to them, along with their score, dimension, aspect, note, documentation, and time interval.
 
 ```SPARQL
 PREFIX : <http://purl.org/sirius/ontology/data/04/>
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX hero: <http://purl.org/sirius/ontology/hero/>
+PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
+PREFIX tis: <http://ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#>
 
-SELECT ?risk ?heritage_asset ?low_estimate ?probable_estimate ?high_estimate
+SELECT DISTINCT ?asset_part ?value ?score ?dimension ?aspect ?note ?document ?time_interval_start ?time_interval_end
 WHERE {
-  ?risk_assessment hero:providesAnalysisFor ?heritage_asset ;
-                    hero:analyses ?risk ;
-                    hero:quantifiesMagnitude ?risk_magnitude .
-  ?risk_magnitude hero:hasLowEstimate ?low_estimate ;
-                  hero:hasProbableEstimate ?probable_estimate ;
-                  hero:hasHighEstimate ?high_estimate .
+    ?asset a crm:E24_Physical_Human-Made_Thing ;
+            crm:P46_is_composed_of ?asset_part .
+    ?value_assessment hero:describes ?asset_part ;
+                        hero:assigns ?value ;
+            hero:withinDimension ?dimension ;
+            hero:withinAspect ?aspect ;
+            hero:hasNote ?note ;
+            hero:isDocumentedBy ?document ;
+            tis:atTime ?time_interval .
+    ?value hero:hasScore ?score .
+    ?time_interval ti:hasIntervalStartDate ?time_interval_start ;
+                    ti:hasIntervalEndDate ?time_interval_end .
 }
 ```

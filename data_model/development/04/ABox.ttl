@@ -14,188 +14,294 @@
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/04/data/archive
-:archive rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/development/04/data/building
+:building rdf:type owl:NamedIndividual ,
+                   tbox:HeritageAsset .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/document-a
+:document-a rdf:type owl:NamedIndividual ,
+                     tbox:Document .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/document-b
+:document-b rdf:type owl:NamedIndividual ,
+                     tbox:Document .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/document-c
+:document-c rdf:type owl:NamedIndividual ,
+                     tbox:Document .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/furniture
+:furniture rdf:type owl:NamedIndividual ,
+                    tbox:HeritageAsset .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/house
+:house rdf:type owl:NamedIndividual ,
+                tbox:HeritageAsset ;
+       tbox:hasPart :building ,
+                    :furniture ,
+                    :mosaics ,
+                    :paintings .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/mosaics
+:mosaics rdf:type owl:NamedIndividual ,
                   tbox:HeritageAsset .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/archive-deterioration
-:archive-deterioration rdf:type owl:NamedIndividual ,
-                                tbox:Risk ;
-                       tbox:hasComponent :archive-deterioration-a ,
-                                         :archive-deterioration-b ,
-                                         :archive-deterioration-c ;
-                       tbox:hasMagnitude :archive-deterioration-mr .
+###  http://purl.org/sirius/ontology/development/04/data/paintings
+:paintings rdf:type owl:NamedIndividual ,
+                    tbox:HeritageAsset .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/archive-deterioration-a
-:archive-deterioration-a rdf:type owl:NamedIndividual ,
-                                  tbox:RiskComponent ;
-                         tbox:hasComponentType tbox:frequency-or-rate ;
-                         tbox:hasHighEstimate 4 ;
-                         tbox:hasLowEstimate 3 ;
-                         tbox:hasNote "Deterioration by exposure to volatile substances released by cardboard boxes is a 'cumulative process' risk. For a period of 30 years, the A-score is A=3½."^^rdfs:Literal ;
-                         tbox:hasProbableEstimate 3.5 .
+###  http://purl.org/sirius/ontology/development/04/data/value-1
+:value-01 rdf:type owl:NamedIndividual ,
+                  tbox:Value ;
+         tbox:hasScore 3.74 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/archive-deterioration-b
-:archive-deterioration-b rdf:type owl:NamedIndividual ,
-                                  tbox:RiskComponent ;
-                         tbox:hasComponentType tbox:loss-of-value-per-item ;
-                         tbox:hasHighEstimate 2.5 ;
-                         tbox:hasLowEstimate 1.5 ;
-                         tbox:hasNote "Observations on similar archival collections in the same kind of boxes show a tiny loss of value in each item affected over 30 years."^^rdfs:Literal ;
-                         tbox:hasProbableEstimate 2 .
+###  http://purl.org/sirius/ontology/development/04/data/value-10
+:value-10 rdf:type owl:NamedIndividual ,
+                   tbox:Value ;
+          tbox:hasScore 3.98 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/archive-deterioration-c
-:archive-deterioration-c rdf:type owl:NamedIndividual ,
-                                  tbox:RiskComponent ;
-                         tbox:hasComponentType tbox:loss-of-value-in-asset ;
-                         tbox:hasHighEstimate 2.5 ;
-                         tbox:hasLowEstimate 1.5 ;
-                         tbox:hasNote "Only a tiny fraction of the heritage asset value is expected to be affected per event."^^rdfs:Literal ;
-                         tbox:hasProbableEstimate 2 .
+###  http://purl.org/sirius/ontology/development/04/data/value-2
+:value-02 rdf:type owl:NamedIndividual ,
+                  tbox:Value ;
+         tbox:hasScore 3.33 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/archive-deterioration-mr
-:archive-deterioration-mr rdf:type owl:NamedIndividual ,
-                                   tbox:RiskMagnitude ;
-                          tbox:hasHighEstimate 8 ;
-                          tbox:hasLowEstimate 7 ;
-                          tbox:hasProbableEstimate 7.5 .
+###  http://purl.org/sirius/ontology/development/04/data/value-3
+:value-03 rdf:type owl:NamedIndividual ,
+                  tbox:Value ;
+         tbox:hasScore 3.26 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/museum
-:museum rdf:type owl:NamedIndividual ,
-                 tbox:HeritageAsset .
+###  http://purl.org/sirius/ontology/development/04/data/value-4
+:value-04 rdf:type owl:NamedIndividual ,
+                  tbox:Value ;
+         tbox:hasScore 3.38 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/museum-fire
-:museum-fire rdf:type owl:NamedIndividual ,
-                      tbox:Risk ;
-             tbox:hasComponent :museum-fire-a ,
-                               :museum-fire-b ,
-                               :museum-fire-c ;
-             tbox:hasMagnitude :museum-fire-mr .
+###  http://purl.org/sirius/ontology/development/04/data/value-5
+:value-05 rdf:type owl:NamedIndividual ,
+                  tbox:Value ;
+         tbox:hasScore 3.65 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/museum-fire-a
-:museum-fire-a rdf:type owl:NamedIndividual ,
-                        tbox:RiskComponent ;
-               tbox:hasComponentType tbox:frequency-or-rate ;
-               tbox:isDocumentedBy :national-statistics ;
-               tbox:hasHighEstimate 3 ;
-               tbox:hasLowEstimate 2 ;
-               tbox:hasNote "National statistics from different countries show that the average time between large fire events for museums with basic fire control measures is about 300 years. The A-score in this case would be A=2½, indicating an expectation of a large fire once every 300 years."^^rdfs:Literal ;
-               tbox:hasProbableEstimate 2.5 .
+###  http://purl.org/sirius/ontology/development/04/data/value-6
+:value-06 rdf:type owl:NamedIndividual ,
+                  tbox:Value ;
+         tbox:hasScore 3.75 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/museum-fire-b
-:museum-fire-b rdf:type owl:NamedIndividual ,
-                        tbox:RiskComponent ;
-               tbox:hasComponentType tbox:loss-of-value-per-item ;
-               tbox:hasHighEstimate 5 ;
-               tbox:hasLowEstimate 4.5 ;
-               tbox:hasNote "Considering the combustible nature of the museum building and its contents, a total or almost total loss of value is expected in each item affected by the fire."^^rdfs:Literal ;
-               tbox:hasProbableEstimate 5 .
+###  http://purl.org/sirius/ontology/development/04/data/value-7
+:value-07 rdf:type owl:NamedIndividual ,
+                  tbox:Value ;
+         tbox:hasScore 4 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/museum-fire-c
-:museum-fire-c rdf:type owl:NamedIndividual ,
-                        tbox:RiskComponent ;
-               tbox:hasComponentType tbox:loss-of-value-in-asset ;
-               tbox:hasHighEstimate 5 ;
-               tbox:hasLowEstimate 4.5 ;
-               tbox:hasNote "Given the characteristics of the building and its contents, it is expected that all or most of the heritage asset and its value would be affected in the event of a large fire."^^rdfs:Literal ;
-               tbox:hasProbableEstimate 5 .
+###  http://purl.org/sirius/ontology/development/04/data/value-8
+:value-08 rdf:type owl:NamedIndividual ,
+                  tbox:Value ;
+         tbox:hasScore 3.57 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/museum-fire-mr
-:museum-fire-mr rdf:type owl:NamedIndividual ,
-                         tbox:RiskMagnitude ;
-                tbox:hasHighEstimate 13 ;
-                tbox:hasLowEstimate 12 ;
-                tbox:hasProbableEstimate 12.5 .
+###  http://purl.org/sirius/ontology/development/04/data/value-9
+:value-09 rdf:type owl:NamedIndividual ,
+                  tbox:Value ;
+         tbox:hasScore 4.45 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/museum-theft
-:museum-theft rdf:type owl:NamedIndividual ,
-                       tbox:Risk ;
-              tbox:hasComponent :museum-theft-a ,
-                                :museum-theft-b ,
-                                :museum-theft-c ;
-              tbox:hasMagnitude :museum-theft-mr .
+###  http://purl.org/sirius/ontology/development/04/data/value-assessment-1
+:value-assessment-01 rdf:type owl:NamedIndividual ,
+                             tbox:ValueDescription ;
+                    tbox:assigns :value-01 ;
+                    tbox:assessesPercentage 50 ;
+                    tbox:atTime :2020-11-21 ;
+         tbox:isDocumentedBy :document-a ;
+         tbox:withinDimension tbox:artistic ;
+         tbox:withinAspect tbox:form ;
+         tbox:hasNote "With simplicity and minimal manipulation creatively retained and upgraded Kashani's house artistic values."^^rdfs:Literal ;
+                    tbox:describes :building .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/museum-theft-a
-:museum-theft-a rdf:type owl:NamedIndividual ,
-                         tbox:RiskComponent ;
-                tbox:hasComponentType tbox:frequency-or-rate ;
-                tbox:isDocumentedBy :staff-notes ;
-                tbox:hasHighEstimate 4 ;
-                tbox:hasLowEstimate 3 ;
-                tbox:hasNote "Staff memory indicates that the collection has suffered 3 theft events affecting objects on display in the past 75 years, estimating an average time of 25 years between theft events."^^rdfs:Literal ;
-                tbox:hasProbableEstimate 3.5 .
+###  http://purl.org/sirius/ontology/development/04/data/value-assessment-10
+:value-assessment-10 rdf:type owl:NamedIndividual ,
+                              tbox:ValueDescription ;
+                     tbox:assigns :value-10 ;
+                               tbox:atTime :2020-11-11 ;
+          tbox:isDocumentedBy :document-c ;
+          tbox:withinDimension tbox:historic ;
+          tbox:withinAspect tbox:setting ;
+          tbox:hasNote "It has revived the sense of a Qajar house in Kashan. Representing textile art caused Kashan people to take pride in their historical art."^^rdfs:Literal ;
+                     tbox:assessesPercentage 10 ;
+                     tbox:describes :paintings .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/museum-theft-b
-:museum-theft-b rdf:type owl:NamedIndividual ,
-                         tbox:RiskComponent ;
-                tbox:hasComponentType tbox:loss-of-value-per-item ;
-                tbox:hasHighEstimate 5 ;
-                tbox:hasLowEstimate 4.5 ;
-                tbox:hasNote "A stolen item results in a complete loss of value for the museum and its public."^^rdfs:Literal ;
-                tbox:hasProbableEstimate 5 .
+###  http://purl.org/sirius/ontology/development/04/data/value-assessment-2
+:value-assessment-02 rdf:type owl:NamedIndividual ,
+                             tbox:ValueDescription ;
+                    tbox:assigns :value-02 ;
+                             tbox:atTime :2020-10-19 ;
+         tbox:isDocumentedBy :document-a ;
+         tbox:withinDimension tbox:historic ;
+         tbox:withinAspect tbox:form ;
+         tbox:hasNote "It is an example of a Qajar house which has been refurbished like other contemporary houses based on historical documents and comparative studies."^^rdfs:Literal ;
+                    tbox:assessesPercentage 50 ;
+                    tbox:describes :building .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/museum-theft-c
-:museum-theft-c rdf:type owl:NamedIndividual ,
-                         tbox:RiskComponent ;
-                tbox:hasComponentType tbox:loss-of-value-in-asset ;
-                tbox:hasHighEstimate 2.5 ;
-                tbox:hasLowEstimate 1.5 ;
-                tbox:hasNote "The most probable scenario is the opportunistic theft of a small, original object of the collection displayed without protection."^^rdfs:Literal ;
-                tbox:hasProbableEstimate 2 .
+###  http://purl.org/sirius/ontology/development/04/data/value-assessment-3
+:value-assessment-03 rdf:type owl:NamedIndividual ,
+                             tbox:ValueDescription ;
+                    tbox:assigns :value-03 ;
+         tbox:atTime :2021-01-03 ;
+         tbox:isDocumentedBy :document-a ;
+         tbox:withinDimension tbox:social ;
+         tbox:withinAspect tbox:function ;
+         tbox:hasNote "The house design and decoration represents the middle social class in the Qajar era."^^rdfs:Literal ;
+                    tbox:assessesPercentage 50 ;
+                    tbox:describes :building .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/museum-theft-mr
-:museum-theft-mr rdf:type owl:NamedIndividual ,
-                          tbox:RiskMagnitude ;
-                 tbox:hasHighEstimate 11 ;
-                 tbox:hasLowEstimate 10 ;
-                 tbox:hasProbableEstimate 10.5 .
+###  http://purl.org/sirius/ontology/development/04/data/value-assessment-4
+:value-assessment-04 rdf:type owl:NamedIndividual ,
+                             tbox:ValueDescription ;
+                    tbox:assigns :value-04 ;
+                             tbox:atTime :2020-11-21 ;
+         tbox:isDocumentedBy :document-b ;
+         tbox:withinDimension tbox:scientific ;
+         tbox:withinAspect tbox:form ;
+         tbox:hasNote "The remains of the building forms and original shapes are the credible scientific source for recognition typology, structure and the idea of creating spaces in the historic Qajar houses of Kashan."^^rdfs:Literal ;
+                    tbox:assessesPercentage 20 ;
+                    tbox:describes :furniture .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/national-statistics
-:national-statistics rdf:type owl:NamedIndividual ,
-                              tbox:KnowledgeSource .
+###  http://purl.org/sirius/ontology/development/04/data/value-assessment-5
+:value-assessment-05 rdf:type owl:NamedIndividual ,
+                             tbox:ValueDescription ;
+                    tbox:assigns :value-05 ;
+                             tbox:atTime :2021-01-05 ;
+         tbox:isDocumentedBy :document-b ;
+         tbox:withinDimension tbox:artistic ;
+         tbox:withinAspect tbox:substance ;
+         tbox:hasNote "Used Original materials generally had a good condition and new materials used in a simple but innovative way in respect to historical values."^^rdfs:Literal ;
+                    tbox:assessesPercentage 20 ;
+                    tbox:describes :furniture .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/risk-assessment-deterioration
-:risk-assessment-deterioration rdf:type owl:NamedIndividual ,
-                                        tbox:RiskAssessment ;
-                               tbox:assignsRisk :archive-deterioration ;
-                               tbox:assignsRiskTo :archive .
+###  http://purl.org/sirius/ontology/development/04/data/value-assessment-6
+:value-assessment-06 rdf:type owl:NamedIndividual ,
+                             tbox:ValueDescription ;
+                    tbox:assigns :value-06 ;
+                             tbox:atTime :2020-12-06 ;
+         tbox:isDocumentedBy :document-b ;
+         tbox:withinDimension tbox:historic ;
+         tbox:withinAspect tbox:function ;
+         tbox:hasNote "Hotels for temporary residence are selected in accordance with the historical values of the house."^^rdfs:Literal ;
+                    tbox:assessesPercentage 20 ;
+                    tbox:describes :mosaics .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/risk-assessment-fire
-:risk-assessment-fire rdf:type owl:NamedIndividual ,
-                               tbox:RiskAssessment ;
-                      tbox:assignsRisk :museum-fire ;
-                      tbox:assignsRiskTo :museum .
+###  http://purl.org/sirius/ontology/development/04/data/value-assessment-7
+:value-assessment-07 rdf:type owl:NamedIndividual ,
+                             tbox:ValueDescription ;
+                    tbox:assigns :value-07 ;
+                             tbox:atTime :2020-11-12 ;
+         tbox:isDocumentedBy :document-c ;
+         tbox:withinDimension tbox:social ;
+         tbox:withinAspect tbox:tradition ;
+         tbox:hasNote "Taking advantage of professional craftsmen with different specialties played an important role in the construction and restoration of a historic house in Kashan. Weaving workshop has revived this art in Kashan"^^rdfs:Literal ;
+                    tbox:assessesPercentage 20 ;
+                    tbox:describes :mosaics .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/risk-assessment-theft
-:risk-assessment-theft rdf:type owl:NamedIndividual ,
-                                tbox:RiskAssessment ;
-                       tbox:assignsRisk :museum-theft ;
-                       tbox:assignsRiskTo :museum .
+###  http://purl.org/sirius/ontology/development/04/data/value-assessment-8
+:value-assessment-08 rdf:type owl:NamedIndividual ,
+                             tbox:ValueDescription ;
+                    tbox:assigns :value-08 ;
+                             tbox:atTime :2020-10-18 ;
+         tbox:isDocumentedBy :document-c ;
+         tbox:withinDimension tbox:scientific ;
+         tbox:withinAspect tbox:tradition ;
+         tbox:hasNote "The principal of scientific techniques and traditional construction process related to the formation period extensively displayed and made it possible to study them and showed traditional textile method to be taught."^^rdfs:Literal ;
+                    tbox:assessesPercentage 20 ;
+                    tbox:describes :mosaics .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/staff-notes
-:staff-notes rdf:type owl:NamedIndividual ,
-                      tbox:KnowledgeSource .
+###  http://purl.org/sirius/ontology/development/04/data/value-assessment-9
+:value-assessment-09 rdf:type owl:NamedIndividual ,
+                             tbox:ValueDescription ;
+                    tbox:assigns :value-09 ;
+                             tbox:atTime :2020-11-21 ;
+         tbox:isDocumentedBy :document-c ;
+         tbox:withinDimension tbox:social ;
+         tbox:withinAspect tbox:setting ;
+         tbox:hasNote "Social and security level of the neighborhood has been increased. Reuse prosperity in Kashan caused job creation in construction industry and services."^^rdfs:Literal ;
+                    tbox:assessesPercentage 10 ;
+                    tbox:describes :paintings .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/2020-10-18
+:2020-10-18 rdf:type owl:NamedIndividual ,
+                                                                          tbox:TimeInterval ;
+                                                                 tbox:hasEndDate "2020-10-18T23:59:59Z"^^xsd:dateTime ;
+                                                                 tbox:hasStartDate "2020-10-18T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/2020-10-19
+:2020-10-19 rdf:type owl:NamedIndividual ,
+                                                                          tbox:TimeInterval ;
+                                                                 tbox:hasEndDate "2020-10-19T23:59:59Z"^^xsd:dateTime ;
+                                                                 tbox:hasStartDate "2020-10-19T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/2020-11-11
+:2020-11-11 rdf:type owl:NamedIndividual ,
+                                                                          tbox:TimeInterval ;
+                                                                 tbox:hasEndDate "2020-11-21T23:59:59Z"^^xsd:dateTime ;
+                                                                 tbox:hasStartDate "2020-11-21T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/2020-11-12
+:2020-11-12 rdf:type owl:NamedIndividual ,
+                                                                          tbox:TimeInterval ;
+                                                                 tbox:hasEndDate "2020-11-12T23:59:59Z"^^xsd:dateTime ;
+                                                                 tbox:hasStartDate "2020-11-12T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/2020-11-21
+:2020-11-21 rdf:type owl:NamedIndividual ,
+                                                                          tbox:TimeInterval ;
+                                                                 tbox:hasEndDate "2020-11-21T23:59:59Z"^^xsd:dateTime ;
+                                                                 tbox:hasStartDate "2020-11-21T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/2020-12-06
+:2020-12-06 rdf:type owl:NamedIndividual ,
+                                                                          tbox:TimeInterval ;
+                                                                 tbox:hasEndDate "2020-12-06T23:59:59Z"^^xsd:dateTime ;
+                                                                 tbox:hasStartDate "2020-12-06T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/2021-01-03
+:2021-01-03 rdf:type owl:NamedIndividual ,
+                                                                          tbox:TimeInterval ;
+                                                                 tbox:hasEndDate "2021-01-03T23:59:59Z"^^xsd:dateTime ;
+                                                                 tbox:hasStartDate "2021-01-03T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/development/04/data/2021-01-05
+:2021-01-05 rdf:type owl:NamedIndividual ,
+                                                                          tbox:TimeInterval ;
+                                                                 tbox:hasEndDate "2021-01-05T23:59:59Z"^^xsd:dateTime ;
+                                                                 tbox:hasStartDate "2021-01-05T00:00:00Z"^^xsd:dateTime .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

@@ -1,44 +1,48 @@
 # Informal Competency Questions
 ## Question 1
+
 ### Identifier
-CQ 4.1
+CQ_4.1
 
 ### Question
-Return the probable estimate of the A-score, B-score, C-score for each risk affecting each heritage asset, as well as the sources of knowledge that witness them.
+Return the assets that are part of an asset and the asset percentage they represent, in descending order.
 
 ### Expected outcome
-List of: `risk`, `heritage_asset`, `risk_component`, `probable_estimate`, `note`, `knowledge_source`
+List of: `asset`, `asset_part`, `percentage`
 
-### Result
-* `museum-fire`, `museum`, `frequency-or-rate`, 2.5, "National statistics from different countries show that the average time between large fire events for museums with basic fire control measures is about 300 years. The A-score in this case would be A=2½, indicating an expectation of a large fire once every 300 years.", `national-statistics`
-* `museum-fire`, `museum`, `loss-of-value-per-item`, 5, "Considering the combustible nature of the museum building and its contents, a total or almost total loss of value is expected in each item affected by the fire."
-* `museum-fire`, `museum`, `loss-of-value-per-asset`, 5, "Given the characteristics of the building and its contents, it is expected that all or most of the heritage asset and its value would be affected in the event of a large fire."
-* `museum-theft`, `museum`, `frequency-or-rate`, 3.5, "Staff memory indicates that the collection has suffered 3 theft events affecting objects on display in the past 75 years, estimating an average time of 25 years between theft events.", `staff-notes`
-* `museum-theft`, `museum`, `loss-of-value-per-item`, 5, "A stolen item results in a complete loss of value for the museum and its public."
-* `museum-theft`, `museum`, `loss-of-value-per-asset`, 2, "The most probable scenario is the opportunistic theft of a small, original object of the collection displayed without protection."
-* `archive-deterioration`, `archive`, `frequency-or-rate`, 3.5, "Deterioration by exposure to volatile substances released by cardboard boxes is a 'cumulative process' risk. For a period of 30 years, the A-score is A=3½."
-* `archive-deterioration`, `archive`, `loss-of-value-per-item`, 2, "Observations on similar archival collections in the same kind of boxes show a tiny loss of value in each item affected over 30 years."
-* `archive-deterioration`, `archive`, `loss-of-value-per-asset`, 2, "Only a tiny fraction of the heritage asset value is expected to be affected per event."
+### Results
+- `house`, `building`, 50
+- `house`, `furniture`, 20
+- `house`, `mosaics`, 20
+- `house`, `paintings`, 10
 
-### Based on 
-Example 01, Example 02, Example 03
+### Based on
+Example 1
 
 ***
 
 ## Question 2
+
 ### Identifier
-CQ 4.2
+CQ_4.2
 
 ### Question
-Return the low, probable, and high estimates of the magnitudes of risk for each risk of each heritage asset.
+Return the assets that are part of the `house` asset and the contributing values assigned to them, along with their score, dimension, aspect, note, documentation, and time interval.
 
 ### Expected outcome
-List of: `risk`, `heritage_asset`, `low_estimate`, `probable_estimate`, `high_estimate`
+List of: `asset_part`, `contributing_value`, `score`, `dimension`, `aspect`, `note`, `document`, `time_interval_start`, `time_interval_end`
 
-### Result
-* `museum-fire`, `museum`, 12, 12.5, 13
-* `museum-theft`, `museum`, 10, 10.5, 11
-* `archive-deterioration`, `archive`, 7, 7.5, 8
+### Results
+- `building`, `value1`, 3.74, `artistic`, `form`, "With simplicity and minimal manipulation creatively retained and upgraded Kashani's house artistic values.", `document-a`, "2020-11-21T00:00:00Z", "2020-11-21T23:59:59Z";
+- `building`, `value2`, 3.33, `historic`, `form`, "It is an example of a Qajar house which has been refurbished like other contemporary houses based on historical documents and comparative studies.", `document-a`, at time "2020-10-19T00:00:00Z", "2020-10-19T23:59:59Z";
+- `building`, `value3`, 3.26, `social`, `function`, "The house design and decoration represents the middle social class in the Qajar era.", `document-a`, "2021-01-03T00:00:00Z", "2021-01-03T23:59:59Z";
+- `furniture`, `value4`, 3.38, `scientific`, `form`, "The remains of the building forms and original shapes are the credible scientific source for recognition typology, structure and the idea of creating spaces in the historic Qajar houses of Kashan.", `document-b`, "2020-11-21T00:00:00Z", "2020-11-21T23:59:59Z";
+- `furniture`, `value5`, 3.65, `artistic`, `substance`, "Used Original materials generally had a good condition and new materials used in a simple but innovative way in respect to historical values.", `document-b`, "2021-01-05T00:00:00Z", "2021-01-05T23:59:59Z";
+- `mosaics`, `value6`, 3.75, `historic`, `function`, "Hotels for temporary residence are selected in accordance with the historical values of the house.", `document-b`, "2020-12-06T00:00:00Z", "2020-12-06T23:59:59Z";
+- `mosaics`, `value7`, 4, `social`, `tradition`, "Taking advantage of professional craftsmen with different specialties played an important role in the construction and restoration of a historic house in Kashan. Weaving workshop has revived this art in Kashan", `document-b`,  "2020-11-12T00:00:00Z", "2020-11-12T23:59:59Z";
+- `mosaics`, `value8`, 3.57, `scientific`, `tradition`, "The principal of scientific techniques and traditional construction process related to the formation period extensively displayed and made it possible to study them and showed traditional textile method to be taught.", `document-c`, "2020-10-18T00:00:00Z", "2020-10-18T23:59:59Z";
+- `paintings`, `value9`, 4.45, `social`, `setting`, "Social and security level of the neighborhood has been increased. Reuse prosperity in Kashan caused job creation in construction industry and services.", `document-c`, "2020-11-11T00:00:00Z", "2020-11-11T23:59:59Z";
+- `paintings`, `value10`, 3.98, `historic`, `feeling`, "It has revived the sense of a Qajar house in Kashan. Representing textile art caused Kashan people to take pride in their historical art.", `document-c`, "2020-11-21T00:00:00Z", "2020-11-21T23:59:59Z".
 
-### Based on 
-Example 01, Example 02, Example 03
+### Based on
+Example 1

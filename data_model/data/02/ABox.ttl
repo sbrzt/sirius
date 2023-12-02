@@ -4,277 +4,118 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix hero: <http://purl.org/sirius/ontology/hero/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix tbox: <http://purl.org/sirius/ontology/development/02/schema/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix tis: <http://ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#> .
 @base <http://purl.org/sirius/ontology/data/02/> .
 
-<http://purl.org/sirius/ontology/02/data> rdf:type owl:Ontology ;
-                                           owl:imports <http://purl.org/sirius/ontology/model> .
+<http://purl.org/sirius/ontology/data/02/> rdf:type owl:Ontology ;
+                                                        owl:imports <http://purl.org/sirius/ontology/model> .
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/data/02/baptistery
+###  http://purl.org/sirius/ontology/development/02/data/baptistery
 :baptistery rdf:type owl:NamedIndividual ,
                                   crm:E24_Physical_Human-Made_Thing .
 
 
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-01
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-01
 :baptistery-risk-01 rdf:type owl:NamedIndividual ,
                                           hero:Risk ;
-                                 hero:entails :baptistery-risk-01-effect-01 ,
-                                              :baptistery-risk-01-effect-02 ,
-                                              :baptistery-risk-01-effect-03 ;
-                                 hero:isClassifiedBy hero:physical-forces ;
-                                 hero:resultsFrom :baptistery-risk-01-hazard-01 ,
-                                                  :baptistery-risk-01-hazard-02 ,
-                                                  :baptistery-risk-01-hazard-03 ,
-                                                  :baptistery-risk-01-hazard-04 .
+                                          hero:isClassifiedByType hero:cumulative ;
+         hero:isClassifiedByLayer hero:building ;
+                                 hero:isClassifiedByAgent hero:physical-forces .
 
 
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-01-effect-01
-:baptistery-risk-01-effect-01 rdf:type owl:NamedIndividual ,
-                                                    hero:AdverseEffect ;
-                                           hero:hasType hero:breakage ;
-                                           hero:hasNote "fissuring" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-01-effect-02
-:baptistery-risk-01-effect-02 rdf:type owl:NamedIndividual ,
-                                                    hero:AdverseEffect ;
-                                           hero:hasType hero:collapse ;
-                                           hero:hasNote "collapse" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-01-effect-03
-:baptistery-risk-01-effect-03 rdf:type owl:NamedIndividual ,
-                                                    hero:AdverseEffect ;
-                                           hero:hasType hero:detachment ;
-                                           hero:hasNote "feature detachment" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-01-hazard-01
-:baptistery-risk-01-hazard-01 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:vibration ;
-                                           hero:hasNote "traffic-induced virbation" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-01-hazard-02
-:baptistery-risk-01-hazard-02 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:vibration ;
-                                           hero:hasNote "civil construction works" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-01-hazard-03
-:baptistery-risk-01-hazard-03 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:vibration ;
-                                           hero:hasNote "earthquake" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-01-hazard-04
-:baptistery-risk-01-hazard-04 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:vibration ;
-                                           hero:hasNote "subsidence" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-02
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-02
 :baptistery-risk-02 rdf:type owl:NamedIndividual ,
+                    hero:Risk ;
+                    hero:isClassifiedByType hero:rare ;
+                    hero:isClassifiedByLayer hero:site ;
+                    hero:isClassifiedByAgent hero:dissociation .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-03
+:baptistery-risk-03 rdf:type owl:NamedIndividual ,
                                           hero:Risk ;
-                                 hero:entails :baptistery-risk-02-effect-01 ;
-                                 hero:isClassifiedBy hero:dissociation ;
-                                 hero:resultsFrom :baptistery-risk-02-hazard-01 ;
+                                          hero:isClassifiedByType hero:common ;
+         hero:isClassifiedByLayer hero:region ;
+                                 hero:isClassifiedByAgent hero:pests .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-04
+:baptistery-risk-04 rdf:type owl:NamedIndividual ,
+                                          hero:Risk ;
+                                          hero:isClassifiedByType hero:rare ;
+         hero:isClassifiedByLayer hero:region ;
+                                 hero:isClassifiedByAgent hero:water .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment-01
+:baptistery-risk-assessment-01 rdf:type owl:NamedIndividual ,
+                                                  hero:IdentificationDescription ;
+                                        tis:atTime :2020-10-10 ;
+                                        hero:isDocumentedBy :document-a ;
+                                         hero:identifies :baptistery-risk-01 ;
+                                         hero:describes :baptistery .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment-02
+:baptistery-risk-assessment-02 rdf:type owl:NamedIndividual ,
+                                                  hero:IdentificationDescription ;
+                                        tis:atTime :2020-10-10 ;
+                                        hero:isDocumentedBy :document-b ;
+                                         hero:identifies :baptistery-risk-02 ;
+                                         hero:describes :baptistery ;
                                  hero:hasNote "Fragmentation of data related to previous incorrect monitoring and maintenance interventions provokes loss of important information related to the baptistery" .
 
 
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-02-effect-01
-:baptistery-risk-02-effect-01 rdf:type owl:NamedIndividual ,
-                                                    hero:AdverseEffect ;
-                                           hero:hasType hero:information-loss .
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment-03
+:baptistery-risk-assessment-03 rdf:type owl:NamedIndividual ,
+                                                  hero:IdentificationDescription ;
+                                        tis:atTime :2020-10-11 ;
+                                        hero:isDocumentedBy :document-a ;
+                                         hero:identifies :baptistery-risk-03 ;
+                                         hero:describes :baptistery .
 
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-02-hazard-01
-:baptistery-risk-02-hazard-01 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:incorrect-action ;
-                                           hero:hasNote "incorrect data management" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-03
-:baptistery-risk-03 rdf:type owl:NamedIndividual ,
-                                          hero:Risk ;
-                                 hero:entails :baptistery-risk-03-effect-01 ,
-                                              :baptistery-risk-03-effect-02 ;
-                                 hero:isClassifiedBy hero:pests ;
-                                 hero:resultsFrom :baptistery-risk-03-hazard-01 ,
-                                                  :baptistery-risk-03-hazard-02 .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-03-effect-01
-:baptistery-risk-03-effect-01 rdf:type owl:NamedIndividual ,
-                                                    hero:AdverseEffect ;
-                                           hero:hasType hero:aerial-animals ;
-                                           hero:hasNote "birds" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-03-effect-02
-:baptistery-risk-03-effect-02 rdf:type owl:NamedIndividual ,
-                                                    hero:AdverseEffect ;
-                                           hero:hasType hero:plants ;
-                                           hero:hasNote "weeds" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-03-hazard-01
-:baptistery-risk-03-hazard-01 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:contamination ;
-                                           hero:hasNote "escrements" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-03-hazard-02
-:baptistery-risk-03-hazard-02 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:overgrowth ;
-                                           hero:hasNote "weed infestation" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-04
-:baptistery-risk-04 rdf:type owl:NamedIndividual ,
-                                          hero:Risk ;
-                                 hero:entails :baptistery-risk-04-effect-01 ;
-                                 hero:isClassifiedBy hero:water ;
-                                 hero:resultsFrom :baptistery-risk-04-hazard-01 ,
-                                                  :baptistery-risk-04-hazard-02 ;
+                                
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment-04
+:baptistery-risk-assessment-04 rdf:type owl:NamedIndividual ,
+                                                  hero:IdentificationDescription ;
+                                        tis:atTime :2020-10-10 ;
+                                        hero:isDocumentedBy :document-b ;
+                                         hero:identifies :baptistery-risk-04 ;
+                                         hero:describes :baptistery ;
                                  hero:hasNote "Floods and heavy rains induce erosion of the baptistery walls" .
 
 
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-04-effect-01
-:baptistery-risk-04-effect-01 rdf:type owl:NamedIndividual ,
-                                                    hero:AdverseEffect ;
-                                           hero:hasType hero:corrosion ;
-                                           hero:hasNote "corrosion" .
+###  http://purl.org/sirius/ontology/development/02/data/document-a
+:document-a rdf:type owl:NamedIndividual ,
+                     foaf:Document .
 
 
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-04-hazard-01
-:baptistery-risk-04-hazard-01 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:flooding ;
-                                           hero:hasNote "floods" .
+###  http://purl.org/sirius/ontology/development/02/data/document-b
+:document-b rdf:type owl:NamedIndividual ,
+                     foaf:Document .
 
 
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-04-hazard-02
-:baptistery-risk-04-hazard-02 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:rainfall ;
-                                           hero:hasNote "heavy rains" .
+###  http://purl.org/sirius/ontology/development/02/data/2020-10-10
+:2020-10-10 rdf:type owl:NamedIndividual ,
+                                                                          ti:TimeInterval ;
+                                                                 ti:hasIntervalEndDate "2020-10-10T23:59:59Z"^^xsd:dateTime ;
+                                                                 ti:hasIntervalStartDate "2020-10-10T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-05
-:baptistery-risk-05 rdf:type owl:NamedIndividual ,
-                                          hero:Risk ;
-                                 hero:isClassifiedBy hero:fire ;
-                                 hero:resultsFrom :baptistery-risk-05-hazard-01 .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-05-hazard-01
-:baptistery-risk-05-hazard-01 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:electrical-source ;
-                                           hero:hasNote "equipment malfunction" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-06
-:baptistery-risk-06 rdf:type owl:NamedIndividual ,
-                                          hero:Risk ;
-                                 hero:entails :baptistery-risk-06-effect-01 ,
-                                              :baptistery-risk-06-effect-02 ;
-                                 hero:isClassifiedBy hero:theft-and-vandalism ;
-                                 hero:resultsFrom :baptistery-risk-06-hazard-01 ,
-                                                  :baptistery-risk-06-hazard-02 ,
-                                                  :baptistery-risk-06-hazard-03 ;
-                                 hero:hasNote "Various motivations cause the presence of graffiti and abandonment of objects in the area surrounding the baptistery" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-06-effect-01
-:baptistery-risk-06-effect-01 rdf:type owl:NamedIndividual ,
-                                                    hero:AdverseEffect ;
-                                           hero:hasType hero:disfiguration ;
-                                           hero:hasNote "disfiguration of walls" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-06-effect-02
-:baptistery-risk-06-effect-02 rdf:type owl:NamedIndividual ,
-                                                    hero:AdverseEffect ;
-                                           hero:hasType hero:littering ;
-                                           hero:hasNote "waste accumulation" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-06-hazard-01
-:baptistery-risk-06-hazard-01 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:ideological-motivation ;
-                                           hero:hasNote "ideological motivations" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-06-hazard-02
-:baptistery-risk-06-hazard-02 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:ideological-motivation ;
-                                           hero:hasNote "political motivations" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-risk-06-hazard-03
-:baptistery-risk-06-hazard-03 rdf:type owl:NamedIndividual ,
-                                                    hero:Hazard ;
-                                           hero:hasType hero:financial-gain ;
-                                           hero:hasNote "economic motivations" .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-identification-01
-:baptistery-identification-01 rdf:type owl:NamedIndividual ,
-                                                     hero:Identification ;
-                                            hero:identifies :baptistery-risk-01 ;
-                                            hero:identifiesRiskFor :baptistery .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-identification-02
-:baptistery-identification-02 rdf:type owl:NamedIndividual ,
-                                                     hero:Identification ;
-                                            hero:identifies :baptistery-risk-02 ;
-                                            hero:identifiesRiskFor :baptistery .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-identification-03
-:baptistery-identification-03 rdf:type owl:NamedIndividual ,
-                                                     hero:Identification ;
-                                            hero:identifies :baptistery-risk-03 ;
-                                            hero:identifiesRiskFor :baptistery .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-identification-04
-:baptistery-identification-04 rdf:type owl:NamedIndividual ,
-                                                     hero:Identification ;
-                                            hero:identifies :baptistery-risk-04 ;
-                                            hero:identifiesRiskFor :baptistery .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-identification-05
-:baptistery-identification-05 rdf:type owl:NamedIndividual ,
-                                                     hero:Identification ;
-                                            hero:identifies :baptistery-risk-05 ;
-                                            hero:identifiesRiskFor :baptistery .
-
-
-###  http://purl.org/sirius/ontology/data/02/baptistery-identification-06
-:baptistery-identification-06 rdf:type owl:NamedIndividual ,
-                                                     hero:Identification ;
-                                            hero:identifies :baptistery-risk-06 ;
-                                            hero:identifiesRiskFor :baptistery .
+###  http://purl.org/sirius/ontology/development/02/data/2020-10-11
+:2020-10-11 rdf:type owl:NamedIndividual ,
+                                                                          ti:TimeInterval ;
+                                                                 ti:hasIntervalEndDate "2020-10-11T23:59:59Z"^^xsd:dateTime ;
+                                                                 ti:hasIntervalStartDate "2020-10-11T00:00:00Z"^^xsd:dateTime .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

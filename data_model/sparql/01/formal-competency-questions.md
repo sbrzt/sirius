@@ -38,11 +38,11 @@ PREFIX hero: <http://purl.org/sirius/ontology/hero/>
 SELECT ?heritage_asset ?context_type ?context_description
 WHERE {
     ?heritage_asset a crm:E24_Physical_Human-Made_Thing .
-    ?riskAssessment a hero:Contextualization ;
-                    hero:providesContextFor ?heritage_asset ;
+    ?riskAssessment a hero:ContextDescription ;
+                    hero:describes ?heritage_asset ;
                     hero:hasObservation ?context .
     ?context a hero:Observation ;
-                hero:hasContextualParameter ?context_type ;
+                hero:hasParameter ?context_type ;
                 hero:hasNote ?context_description .
 }
 ```
@@ -61,11 +61,11 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?heritage_asset ?context_type ?document ?document_link
 WHERE {
     ?heritage_asset a crm:E24_Physical_Human-Made_Thing .
-    ?riskAssessment a hero:Contextualization ;
-                    hero:providesContextFor ?heritage_asset ;
+    ?riskAssessment a hero:ContextDescription ;
+                    hero:describes ?heritage_asset ;
                     hero:hasObservation ?context .
     ?context a hero:Observation ;
-                hero:hasContextualParameter ?context_type .
+                hero:hasParameter ?context_type .
     ?document a foaf:Document ;
                 hero:documents ?context ;
                 rdfs:seeAlso ?document_link .
@@ -85,8 +85,8 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 SELECT ?heritage_asset ?stakeholder_name
 WHERE {
     ?heritage_asset a crm:E24_Physical_Human-Made_Thing .
-    ?risk_assessment_activity a hero:Contextualization ;
-                                hero:providesContextFor ?heritage_asset ;
+    ?risk_assessment_activity a hero:ContextDescription ;
+                                hero:describes ?heritage_asset ;
                                 hero:hasParticipant ?stakeholder .
     ?stakeholder a foaf:Agent ;
                 foaf:name ?stakeholder_name .

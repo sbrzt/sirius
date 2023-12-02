@@ -12,194 +12,300 @@
 @base <http://purl.org/sirius/ontology/data/04/> .
 
 <http://purl.org/sirius/ontology/data/04/> rdf:type owl:Ontology ;
-                                                        owl:imports <http://purl.org/sirius/ontology/model> .
+                                                        owl:imports <http://purl.org/sirius/ontology/model/> .
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/data/04/archive
-:archive rdf:type owl:NamedIndividual ,
+###  http://purl.org/sirius/ontology/data/04/building
+:building rdf:type owl:NamedIndividual ,
+                   crm:E24_Physical_Human-Made_Thing .
+
+
+###  http://purl.org/sirius/ontology/data/04/document-a
+:document-a rdf:type owl:NamedIndividual ,
+                     foaf:Document .
+
+
+###  http://purl.org/sirius/ontology/data/04/document-b
+:document-b rdf:type owl:NamedIndividual ,
+                     foaf:Document .
+
+
+###  http://purl.org/sirius/ontology/data/04/document-c
+:document-c rdf:type owl:NamedIndividual ,
+                     foaf:Document .
+
+
+###  http://purl.org/sirius/ontology/data/04/furniture
+:furniture rdf:type owl:NamedIndividual ,
+                    crm:E24_Physical_Human-Made_Thing .
+
+
+###  http://purl.org/sirius/ontology/data/04/house
+:house rdf:type owl:NamedIndividual ,
+                crm:E24_Physical_Human-Made_Thing ;
+       crm:P46_is_composed_of :building ,
+                    :furniture ,
+                    :mosaics ,
+                    :paintings .
+
+
+###  http://purl.org/sirius/ontology/data/04/mosaics
+:mosaics rdf:type owl:NamedIndividual ,
                   crm:E24_Physical_Human-Made_Thing .
 
 
-###  http://purl.org/sirius/ontology/data/04/archive-deterioration
-:archive-deterioration rdf:type owl:NamedIndividual ,
-                                hero:Risk .
+###  http://purl.org/sirius/ontology/data/04/paintings
+:paintings rdf:type owl:NamedIndividual ,
+                    crm:E24_Physical_Human-Made_Thing .
 
 
-###  http://purl.org/sirius/ontology/data/04/archive-deterioration-a
-:archive-deterioration-a rdf:type owl:NamedIndividual ,
-                                  hero:Frequency ;
-                         hero:hasHighEstimate 4 ;
-                         hero:hasLowEstimate 3 ;
-                         hero:hasNote "Deterioration by exposure to volatile substances released by cardboard boxes is a 'cumulative process' risk. For a period of 30 years, the A-score is A=3½."^^rdfs:Literal ;
-                         hero:hasProbableEstimate 3.5 .
+###  http://purl.org/sirius/ontology/data/04/value-01
+:value-01 rdf:type owl:NamedIndividual ,
+                  hero:Value ;
+         hero:hasScore 3.74 .
 
 
-###  http://purl.org/sirius/ontology/data/04/archive-deterioration-b
-:archive-deterioration-b rdf:type owl:NamedIndividual ,
-                                  hero:FractionalValueLoss ;
-                         hero:hasHighEstimate 2.5 ;
-                         hero:hasLowEstimate 1.5 ;
-                         hero:hasNote "Observations on similar archival collections in the same kind of boxes show a tiny loss of value in each item affected over 30 years."^^rdfs:Literal ;
-                         hero:hasProbableEstimate 2 .
+###  http://purl.org/sirius/ontology/data/04/value-10
+:value-10 rdf:type owl:NamedIndividual ,
+                   hero:Value ;
+          hero:hasScore 3.98 .
 
 
-###  http://purl.org/sirius/ontology/data/04/archive-deterioration-c
-:archive-deterioration-c rdf:type owl:NamedIndividual ,
-                                  hero:RiskImpactRatio ;
-                         hero:hasHighEstimate 2.5 ;
-                         hero:hasLowEstimate 1.5 ;
-                         hero:hasNote "Only a tiny fraction of the heritage asset value is expected to be affected per event."^^rdfs:Literal ;
-                         hero:hasProbableEstimate 2 .
+###  http://purl.org/sirius/ontology/data/04/value-02
+:value-02 rdf:type owl:NamedIndividual ,
+                  hero:Value ;
+         hero:hasScore 3.33 .
 
 
-###  http://purl.org/sirius/ontology/data/04/archive-deterioration-mr
-:archive-deterioration-mr rdf:type owl:NamedIndividual ,
-                                   hero:Magnitude ;
-                          hero:hasHighEstimate 8 ;
-                          hero:hasLowEstimate 7 ;
-                          hero:hasProbableEstimate 7.5 .
+###  http://purl.org/sirius/ontology/data/04/value-03
+:value-03 rdf:type owl:NamedIndividual ,
+                  hero:Value ;
+         hero:hasScore 3.26 .
 
 
-###  http://purl.org/sirius/ontology/data/04/museum
-:museum rdf:type owl:NamedIndividual ,
-                 crm:E24_Physical_Human-Made_Thing .
+###  http://purl.org/sirius/ontology/data/04/value-04
+:value-04 rdf:type owl:NamedIndividual ,
+                  hero:Value ;
+         hero:hasScore 3.38 .
 
 
-###  http://purl.org/sirius/ontology/data/04/museum-fire
-:museum-fire rdf:type owl:NamedIndividual ,
-                      hero:Risk .
+###  http://purl.org/sirius/ontology/data/04/value-05
+:value-05 rdf:type owl:NamedIndividual ,
+                  hero:Value ;
+         hero:hasScore 3.65 .
 
 
-###  http://purl.org/sirius/ontology/data/04/museum-fire-a
-:museum-fire-a rdf:type owl:NamedIndividual ,
-                        hero:Component ;
-               hero:isDocumentedBy :national-statistics ;
-               hero:hasHighEstimate 3 ;
-               hero:hasLowEstimate 2 ;
-               hero:hasNote "National statistics from different countries show that the average time between large fire events for museums with basic fire control measures is about 300 years. The A-score in this case would be A=2½, indicating an expectation of a large fire once every 300 years."^^rdfs:Literal ;
-               hero:hasProbableEstimate 2.5 .
+###  http://purl.org/sirius/ontology/data/04/value-06
+:value-06 rdf:type owl:NamedIndividual ,
+                  hero:Value ;
+         hero:hasScore 3.75 .
 
 
-###  http://purl.org/sirius/ontology/data/04/museum-fire-b
-:museum-fire-b rdf:type owl:NamedIndividual ,
-                        hero:Component ;
-               hero:hasHighEstimate 5 ;
-               hero:hasLowEstimate 4.5 ;
-               hero:hasNote "Considering the combustible nature of the museum building and its contents, a total or almost total loss of value is expected in each item affected by the fire."^^rdfs:Literal ;
-               hero:hasProbableEstimate 5 .
+###  http://purl.org/sirius/ontology/data/04/value-07
+:value-07 rdf:type owl:NamedIndividual ,
+                  hero:Value ;
+         hero:hasScore 4 .
 
 
-###  http://purl.org/sirius/ontology/data/04/museum-fire-c
-:museum-fire-c rdf:type owl:NamedIndividual ,
-                        hero:Component ;
-               hero:hasHighEstimate 5 ;
-               hero:hasLowEstimate 4.5 ;
-               hero:hasNote "Given the characteristics of the building and its contents, it is expected that all or most of the heritage asset and its value would be affected in the event of a large fire."^^rdfs:Literal ;
-               hero:hasProbableEstimate 5 .
+###  http://purl.org/sirius/ontology/data/04/value-08
+:value-08 rdf:type owl:NamedIndividual ,
+                  hero:Value ;
+         hero:hasScore 3.57 .
 
 
-###  http://purl.org/sirius/ontology/data/04/museum-fire-mr
-:museum-fire-mr rdf:type owl:NamedIndividual ,
-                         hero:Magnitude ;
-                hero:hasHighEstimate 13 ;
-                hero:hasLowEstimate 12 ;
-                hero:hasProbableEstimate 12.5 .
+###  http://purl.org/sirius/ontology/data/04/value-09
+:value-09 rdf:type owl:NamedIndividual ,
+                  hero:Value ;
+         hero:hasScore 4.45 .
 
 
-###  http://purl.org/sirius/ontology/data/04/museum-theft
-:museum-theft rdf:type owl:NamedIndividual ,
-                       hero:Risk .
+###  http://purl.org/sirius/ontology/data/04/value-assessment-01
+:value-assessment-01 rdf:type owl:NamedIndividual ,
+                             hero:ValueDescription ;
+                    hero:assigns :value-01 ;
+                    tis:atTime :2020-11-21 ;
+                    hero:isDocumentedBy :document-a ;
+                    hero:withinDimension hero:artistic ;
+                    hero:withinAspect hero:form ;
+                    hero:assessesPercentage 50 ;
+                    hero:hasNote "With simplicity and minimal manipulation creatively retained and upgraded Kashani's house artistic values."^^rdfs:Literal ;
+                    hero:describes :building .
 
 
-###  http://purl.org/sirius/ontology/data/04/museum-theft-a
-:museum-theft-a rdf:type owl:NamedIndividual ,
-                         hero:Component ;
-                hero:isDocumentedBy :staff-notes ;
-                hero:hasHighEstimate 4 ;
-                hero:hasLowEstimate 3 ;
-                hero:hasNote "Staff memory indicates that the collection has suffered 3 theft events affecting objects on display in the past 75 years, estimating an average time of 25 years between theft events."^^rdfs:Literal ;
-                hero:hasProbableEstimate 3.5 .
+###  http://purl.org/sirius/ontology/data/04/value-assessment-10
+:value-assessment-10 rdf:type owl:NamedIndividual ,
+                              hero:ValueDescription ;
+                     hero:assigns :value-10 ;
+                               tis:atTime :2020-11-11 ;
+          hero:isDocumentedBy :document-c ;
+          hero:withinDimension hero:historic ;
+          hero:withinAspect hero:setting ;
+          hero:assessesPercentage 10 ;
+          hero:hasNote "It has revived the sense of a Qajar house in Kashan. Representing textile art caused Kashan people to take pride in their historical art."^^rdfs:Literal ;
+                     hero:describes :paintings .
 
 
-###  http://purl.org/sirius/ontology/data/04/museum-theft-b
-:museum-theft-b rdf:type owl:NamedIndividual ,
-                         hero:Component ;
-                hero:hasHighEstimate 5 ;
-                hero:hasLowEstimate 4.5 ;
-                hero:hasNote "A stolen item results in a complete loss of value for the museum and its public."^^rdfs:Literal ;
-                hero:hasProbableEstimate 5 .
+###  http://purl.org/sirius/ontology/data/04/value-assessment-02
+:value-assessment-02 rdf:type owl:NamedIndividual ,
+                             hero:ValueDescription ;
+                    hero:assigns :value-02 ;
+                             tis:atTime :2020-10-19 ;
+         hero:isDocumentedBy :document-a ;
+         hero:withinDimension hero:historic ;
+         hero:withinAspect hero:form ;
+         hero:assessesPercentage 50 ;
+         hero:hasNote "It is an example of a Qajar house which has been refurbished like other contemporary houses based on historical documents and comparative studies."^^rdfs:Literal ;
+                    hero:describes :building .
 
 
-###  http://purl.org/sirius/ontology/data/04/museum-theft-c
-:museum-theft-c rdf:type owl:NamedIndividual ,
-                         hero:Component ;
-                hero:hasHighEstimate 2.5 ;
-                hero:hasLowEstimate 1.5 ;
-                hero:hasNote "The most probable scenario is the opportunistic theft of a small, original object of the collection displayed without protection."^^rdfs:Literal ;
-                hero:hasProbableEstimate 2 .
+###  http://purl.org/sirius/ontology/data/04/value-assessment-03
+:value-assessment-03 rdf:type owl:NamedIndividual ,
+                             hero:ValueDescription ;
+                    hero:assigns :value-03 ;
+                             tis:atTime :2021-01-03 ;
+         hero:isDocumentedBy :document-a ;
+         hero:withinDimension hero:social ;
+         hero:withinAspect hero:function ;
+         hero:assessesPercentage 50 ;
+         hero:hasNote "The house design and decoration represents the middle social class in the Qajar era."^^rdfs:Literal ;
+                    hero:describes :building .
 
 
-###  http://purl.org/sirius/ontology/data/04/museum-theft-mr
-:museum-theft-mr rdf:type owl:NamedIndividual ,
-                          hero:Magnitude ;
-                 hero:hasHighEstimate 11 ;
-                 hero:hasLowEstimate 10 ;
-                 hero:hasProbableEstimate 10.5 .
+###  http://purl.org/sirius/ontology/data/04/value-assessment-04
+:value-assessment-04 rdf:type owl:NamedIndividual ,
+                             hero:ValueDescription ;
+                    hero:assigns :value-04 ;
+                             tis:atTime :2020-11-21 ;
+         hero:isDocumentedBy :document-b ;
+         hero:withinDimension hero:scientific ;
+         hero:withinAspect hero:form ;
+         hero:assessesPercentage 20 ;
+         hero:hasNote "The remains of the building forms and original shapes are the credible scientific source for recognition typology, structure and the idea of creating spaces in the historic Qajar houses of Kashan."^^rdfs:Literal ;
+                    hero:describes :furniture .
 
 
-###  http://purl.org/sirius/ontology/data/04/national-statistics
-:national-statistics rdf:type owl:NamedIndividual ,
-                              foaf:Document .
+###  http://purl.org/sirius/ontology/data/04/value-assessment-05
+:value-assessment-05 rdf:type owl:NamedIndividual ,
+                             hero:ValueDescription ;
+                    hero:assigns :value-05 ;
+                             tis:atTime :2021-01-05 ;
+         hero:isDocumentedBy :document-b ;
+         hero:withinDimension hero:artistic ;
+         hero:withinAspect hero:substance ;
+         hero:assessesPercentage 20 ;
+         hero:hasNote "Used Original materials generally had a good condition and new materials used in a simple but innovative way in respect to historical values."^^rdfs:Literal ;
+                    hero:describes :furniture .
 
 
-###  http://purl.org/sirius/ontology/data/04/analysis-deterioration
-:analysis-deterioration rdf:type owl:NamedIndividual ,
-                                        hero:Analysis ;
-                               hero:analyses :archive-deterioration ;
-                               hero:providesAnalysisFor :archive ;
-                               tis:atTime :2020-10-10 ;
-                       hero:quantifiesComponent :archive-deterioration-a ,
-                                         :archive-deterioration-b ,
-                                         :archive-deterioration-c ;
-                       hero:quantifiesMagnitude :archive-deterioration-mr .
+###  http://purl.org/sirius/ontology/data/04/value-assessment-06
+:value-assessment-06 rdf:type owl:NamedIndividual ,
+                             hero:ValueDescription ;
+                    hero:assigns :value-06 ;
+                             tis:atTime :2020-12-06 ;
+         hero:isDocumentedBy :document-b ;
+         hero:withinDimension hero:historic ;
+         hero:withinAspect hero:function ;
+         hero:assessesPercentage 20 ;
+         hero:hasNote "Hotels for temporary residence are selected in accordance with the historical values of the house."^^rdfs:Literal ;
+                    hero:describes :mosaics .
 
 
-###  http://purl.org/sirius/ontology/data/04/analysis-fire
-:analysis-fire rdf:type owl:NamedIndividual ,
-                               hero:Analysis ;
-                      hero:analyses :museum-fire ;
-                      hero:providesAnalysisFor :museum ;
-                      tis:atTime :2020-10-10 ;
-             hero:quantifiesComponent :museum-fire-a ,
-                               :museum-fire-b ,
-                               :museum-fire-c ;
-             hero:quantifiesMagnitude :museum-fire-mr .
+###  http://purl.org/sirius/ontology/data/04/value-assessment-07
+:value-assessment-07 rdf:type owl:NamedIndividual ,
+                             hero:ValueDescription ;
+                    hero:assigns :value-07 ;
+                             tis:atTime :2020-11-12 ;
+         hero:isDocumentedBy :document-c ;
+         hero:withinDimension hero:social ;
+         hero:withinAspect hero:tradition ;
+         hero:assessesPercentage 20 ;
+         hero:hasNote "Taking advantage of professional craftsmen with different specialties played an important role in the construction and restoration of a historic house in Kashan. Weaving workshop has revived this art in Kashan"^^rdfs:Literal ;
+                    hero:describes :mosaics .
 
 
-###  http://purl.org/sirius/ontology/data/04/analysis-theft
-:analysis-theft rdf:type owl:NamedIndividual ,
-                                hero:Analysis ;
-                       hero:analyses :museum-theft ;
-                       hero:providesAnalysisFor :museum ;
-                       tis:atTime :2020-10-10 ;
-              hero:quantifiesComponent :museum-theft-a ,
-                                :museum-theft-b ,
-                                :museum-theft-c ;
-              hero:quantifiesMagnitude :museum-theft-mr .
+###  http://purl.org/sirius/ontology/data/04/value-assessment-08
+:value-assessment-08 rdf:type owl:NamedIndividual ,
+                             hero:ValueDescription ;
+                    hero:assigns :value-08 ;
+                             tis:atTime :2020-10-18 ;
+         hero:isDocumentedBy :document-c ;
+         hero:withinDimension hero:scientific ;
+         hero:withinAspect hero:tradition ;
+         hero:assessesPercentage 20 ;
+         hero:hasNote "The principal of scientific techniques and traditional construction process related to the formation period extensively displayed and made it possible to study them and showed traditional textile method to be taught."^^rdfs:Literal ;
+                    hero:describes :mosaics .
 
 
-###  http://purl.org/sirius/ontology/data/04/staff-notes
-:staff-notes rdf:type owl:NamedIndividual ,
-                      foaf:Document .
+###  http://purl.org/sirius/ontology/data/04/value-assessment-09
+:value-assessment-09 rdf:type owl:NamedIndividual ,
+                             hero:ValueDescription ;
+                    hero:assigns :value-09 ;
+                             tis:atTime :2020-11-21 ;
+         hero:isDocumentedBy :document-c ;
+         hero:withinDimension hero:social ;
+         hero:withinAspect hero:setting ;
+         hero:assessesPercentage 10 ;
+         hero:hasNote "Social and security level of the neighborhood has been increased. Reuse prosperity in Kashan caused job creation in construction industry and services."^^rdfs:Literal ;
+                    hero:describes :paintings .
 
 
-###  http://purl.org/sirius/ontology/data/04/2020-10-10
-:2020-10-10 rdf:type owl:NamedIndividual ,
-                      ti:TimeInterval ;
-            ti:hasIntervalEndDate "2020-10-10T23:59:59Z"^^xsd:dateTime ;
-            ti:hasIntervalStartDate "2020-10-10T00:00:00Z"^^xsd:dateTime .
+###  http://purl.org/sirius/ontology/data/04/2020-10-18
+:2020-10-18 rdf:type owl:NamedIndividual ,
+                                                                          ti:TimeInterval ;
+                                                                 ti:hasIntervalEndDate "2020-10-18T23:59:59Z"^^xsd:dateTime ;
+                                                                 ti:hasIntervalStartDate "2020-10-18T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/data/04/2020-10-19
+:2020-10-19 rdf:type owl:NamedIndividual ,
+                                                                          ti:TimeInterval ;
+                                                                 ti:hasIntervalEndDate "2020-10-19T23:59:59Z"^^xsd:dateTime ;
+                                                                 ti:hasIntervalStartDate "2020-10-19T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/data/04/2020-11-11
+:2020-11-11 rdf:type owl:NamedIndividual ,
+                                                                          ti:TimeInterval ;
+                                                                 ti:hasIntervalEndDate "2020-11-21T23:59:59Z"^^xsd:dateTime ;
+                                                                 ti:hasIntervalStartDate "2020-11-21T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/data/04/2020-11-12
+:2020-11-12 rdf:type owl:NamedIndividual ,
+                                                                          ti:TimeInterval ;
+                                                                 ti:hasIntervalEndDate "2020-11-12T23:59:59Z"^^xsd:dateTime ;
+                                                                 ti:hasIntervalStartDate "2020-11-12T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/data/04/2020-11-21
+:2020-11-21 rdf:type owl:NamedIndividual ,
+                                                                          ti:TimeInterval ;
+                                                                 ti:hasIntervalEndDate "2020-11-21T23:59:59Z"^^xsd:dateTime ;
+                                                                 ti:hasIntervalStartDate "2020-11-21T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/data/04/2020-12-06
+:2020-12-06 rdf:type owl:NamedIndividual ,
+                                                                          ti:TimeInterval ;
+                                                                 ti:hasIntervalEndDate "2020-12-06T23:59:59Z"^^xsd:dateTime ;
+                                                                 ti:hasIntervalStartDate "2020-12-06T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/data/04/2021-01-03
+:2021-01-03 rdf:type owl:NamedIndividual ,
+                                                                          ti:TimeInterval ;
+                                                                 ti:hasIntervalEndDate "2021-01-03T23:59:59Z"^^xsd:dateTime ;
+                                                                 ti:hasIntervalStartDate "2021-01-03T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/data/04/2021-01-05
+:2021-01-05 rdf:type owl:NamedIndividual ,
+                                                                          ti:TimeInterval ;
+                                                                 ti:hasIntervalEndDate "2021-01-05T23:59:59Z"^^xsd:dateTime ;
+                                                                 ti:hasIntervalStartDate "2021-01-05T00:00:00Z"^^xsd:dateTime .
+
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

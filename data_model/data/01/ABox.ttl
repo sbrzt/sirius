@@ -23,15 +23,14 @@
 :administrative-context-baptistery rdf:type owl:NamedIndividual ,
                                                          hero:Observation ;
                                                 hero:inDate "2020-10-11T00:00:00Z"^^xsd:dateTime ;
-                                                hero:hasContextualParameter hero:administrative ;
+                                                hero:hasParameter hero:administrative ;
                                                 hero:hasNote "Dal dicembre 2019 è gestito da Direzione regionale Musei dell’Emilia Romagna, sede di Ravenna."@it .
 
 
 ###  http://purl.org/sirius/ontology/data/01/contextualization-baptistery
 :contextualization-baptistery rdf:type owl:NamedIndividual ,
-                                             hero:Contextualization ;
-                                    hero:providesContextFor :baptistery ;
-                                    hero:examines :contributing-value-baptistery-01 ;
+                                             hero:ContextDescription ;
+                                    hero:describes :baptistery ;
                                     tis:atTime :2020-10-10 ;
                                     hero:hasObservation :administrative-context-baptistery ,
                                                       :economic-context-baptistery ,
@@ -45,11 +44,6 @@
                                                    :soprintendenza-di-ravenna ,
                                                    :turisti ,
                                                    :università-di-bologna .
-
-
-###  http://purl.org/sirius/ontology/data/01/contributing-value-baptistery-01
-:contributing-value-baptistery-01 rdf:type owl:NamedIndividual ,
-                                  hero:ContributingValue .
 
 
 ###  http://purl.org/sirius/ontology/data/01/2020-10-10
@@ -135,7 +129,7 @@
 ###  http://purl.org/sirius/ontology/data/01/economic-context-baptistery
 :economic-context-baptistery rdf:type owl:NamedIndividual ,
                                                    hero:Observation ;
-                                          hero:hasContextualParameter hero:economic ;
+                                          hero:hasParameter hero:economic ;
                                           hero:inDate "2020-10-11T00:00:00Z"^^xsd:dateTime ;
                                           hero:hasNote "La Legge n. 77 del 20 febbraio 2006, stabilisce che i siti UNESCO sono eccellenze del Patrimonio culturale, paesaggistico e naturale italiano, elementi fondanti della rappresentazione del nostro Paese a livello internazionale e afferma che gli interventi su di essi hanno la priorità anche in ordine all'assegnazione delle risorse finanziarie" .
 
@@ -149,7 +143,7 @@
 ###  http://purl.org/sirius/ontology/data/01/legal-context-baptistery
 :legal-context-baptistery rdf:type owl:NamedIndividual ,
                                                 hero:Observation ;
-                                       hero:hasContextualParameter hero:legal ;
+                                       hero:hasParameter hero:legal ;
                                        hero:inDate "2020-10-11T00:00:00Z"^^xsd:dateTime ;
                                        hero:hasNote "Di proprietà del Demanio di Stato / MiC. Dal 1996 fa parte della lista dei siti italiani patrimonio dell'umanità UNESCO («Monumenti paleocristiani di Ravenna»)." .
 
@@ -157,7 +151,7 @@
 ###  http://purl.org/sirius/ontology/data/01/physical-context-baptistery
 :physical-context-baptistery rdf:type owl:NamedIndividual ,
                                                    hero:Observation ;
-                                          hero:hasContextualParameter hero:physical ;
+                                          hero:hasParameter hero:physical ;
                                           hero:inDate "2020-10-11T00:00:00Z"^^xsd:dateTime ;
                                           hero:hasNote "Il Battistero è visibile esternamente sui lati N, NO, NE. Il lato O affaccia sui giardini di un’abitazione privata, mentre i lati S, SO, SE, affacciano sul giardino del Dipartimento di Beni Culturali (Università di Bologna)." .
 
@@ -172,14 +166,14 @@
 ###  http://purl.org/sirius/ontology/data/01/political-context-baptistery
 :political-context-baptistery rdf:type owl:NamedIndividual ,
                                                     hero:Observation ;
-                                           hero:hasContextualParameter hero:political ;
+                                           hero:hasParameter hero:political ;
                                            hero:hasNote "Il monumento è spesso motivo di dibattito tra i vari partiti ed il Comune di Ravenna" .
 
 
 ###  http://purl.org/sirius/ontology/data/01/socio-cultural-context-baptistery
 :socio-cultural-context-baptistery rdf:type owl:NamedIndividual ,
                                                          hero:Observation ;
-                                                hero:hasContextualParameter hero:socio-cultural ;
+                                                hero:hasParameter hero:socio-cultural ;
                                                 hero:inDate "2020-10-11T00:00:00Z"^^xsd:dateTime ;
                                                 hero:hasNote "Sito monumentale di area urbana, visitabile dai turisti (previo biglietto d’ingresso). La Piazzetta in cui è collocato l’edificio risente di una cattiva fama, in quanto “zona a rischio sociale e luogo dimesso” (si riporta il caso di una rete da letto abbandonata di notte nella trincea del Battistero, 11.07.2006, Fonte: Zaccarini, 2015). Nonostante l’istituzione nel 2012 di una regolamentazione all’accesso dei veicoli alla Piazzetta, resta consentito il transito e la sosta per carico/scarico merci." .
 

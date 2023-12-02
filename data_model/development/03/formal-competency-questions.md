@@ -1,41 +1,47 @@
 # Formal Competency Questions
 ## CQ_3.1
-Return all the risks with type "Cumulative process", the asset they are assiged to, the layers they exist within, and the documents that document them.
+Return the probable estimate of the A-score, B-score, C-score for each risk affecting each heritage asset, as well as the sources of knowledge that witness them.
 
 ```SPARQL
-PREFIX hero: <http://purl.org/sirius/ontology/hero/>
+PREFIX tbox: <http://purl.org/sirius/ontology/development/03/schema/>
+PREFIX abox: <http://purl.org/sirius/ontology/development/03/data/>
 
-SELECT ?risk ?asset ?layer ?document
+SELECT ?risk ?heritage_asset ?risk_component ?probable_estimate ?note ?knowledge_source
 WHERE {
-  ?risk_assessment a hero:RiskAssessment ;
-                  hero:assignsRisk ?risk ;
-                  hero:assignsRiskTo ?asset .
-  ?risk hero:withType hero:cumulative ;
-        hero:withinLayer ?layer ;
-        hero:isDocumentedBy ?document .
+  ?risk_assessment tbox:describes ?heritage_asset ;
+                    tbox:analyses ?risk ;
+                    tbox:quantifies ?risk_component .
+  ?risk_component a ?component_class ;
+                  tbox:hasProbableEstimate ?probable_estimate ;
+                  tbox:hasNote ?note .
+  OPTIONAL {
+    ?risk_component tbox:isDocumentedBy ?knowledge_source ;
+  }
+  FILTER (
+    ?component_class = tbox:Frequency ||
+    ?component_class = tbox:FractionalValueLoss ||
+    ?component_class = tbox:Exposure 
+  )
 }
 ```
 
 ***
 
 ## CQ_3.2
-Return all the risks existing with the layers "Region" or "Site", the asset they are assiged to, their type, and the start and end dates of the time intervals they exist in.
+Return the low, probable, and high estimates of the magnitudes of risk for each risk of each heritage asset.
 
 ```SPARQL
-PREFIX hero: <http://purl.org/sirius/ontology/hero/>
-PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
-PREFIX tvc: <http://www.essepuntato.it/2012/04/tvc/>
+PREFIX tbox: <http://purl.org/sirius/ontology/development/03/schema/>
+PREFIX abox: <http://purl.org/sirius/ontology/development/03/data/>
 
-SELECT ?risk ?asset ?type ?time_interval_start ?time_interval_end
+SELECT ?risk ?heritage_asset ?low_estimate ?probable_estimate ?high_estimate
 WHERE {
-    ?risk_assessment a hero:RiskAssessment ;
-                    hero:assignsRisk ?risk ;
-                    hero:assignsRiskTo ?asset .
-    ?risk hero:withType ?type ;
-          hero:withinLayer ?layer ;
-          tvc:atTime ?time_interval .
-    ?time_interval ti:hasIntervalStartDate ?time_interval_start ;
-                  ti:hasIntervalEndDate ?time_interval_end . 
-    FILTER ( ?layer = hero:region || ?layer = hero:site )
+  ?risk_assessment tbox:describes ?heritage_asset ;
+                    tbox:analyses ?risk ;
+                    tbox:quantifies ?risk_magnitude .
+  ?risk_magnitude a tbox:Magnitude ;
+                  tbox:hasLowEstimate ?low_estimate ;
+                  tbox:hasProbableEstimate ?probable_estimate ;
+                  tbox:hasHighEstimate ?high_estimate .
 }
 ```

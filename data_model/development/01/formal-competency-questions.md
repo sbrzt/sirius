@@ -9,12 +9,12 @@ PREFIX abox: <http://purl.org/sirius/ontology/development/01/data/>
 SELECT ?asset_name ?alt_name ?description ?place_name ?coordinates ?date
 WHERE {
     ?heritage_asset a tbox:HeritageAsset ;
-                    tbox:hasAssetName ?asset_name ;
+                    tbox:hasName ?asset_name ;
                     tbox:hasAlternativeName ?alt_name ;
-                    tbox:hasAssetDescription ?description ;
+                    tbox:hasDescription ?description ;
                     tbox:isLocatedIn ?place .
     ?place a tbox:Place ;
-            tbox:hasPlaceName ?place_name ;
+            tbox:hasName ?place_name ;
             tbox:hasCoordinates ?coordinates .
     ?creation_event a tbox:CreationEvent ;
                     tbox:creates ?heritage_asset ;
@@ -36,12 +36,12 @@ PREFIX abox: <http://purl.org/sirius/ontology/development/01/data/>
 SELECT ?heritage_asset ?context_type ?context_description
 WHERE {
     ?heritage_asset a tbox:HeritageAsset .
-    ?riskAssessment a tbox:RiskAssessmentActivity ;
-                    tbox:assignsRiskTo ?heritage_asset ;
-                    tbox:hasContext ?context .
-    ?context a tbox:Context ;
-                tbox:hasType ?context_type ;
-                tbox:hasContextDescription ?context_description .
+    ?riskAssessment a tbox:ContextDescription ;
+                    tbox:describes ?heritage_asset ;
+                    tbox:hasObservation ?context .
+    ?context a tbox:Observation ;
+                tbox:hasParameter  ?context_type ;
+                tbox:hasDescription ?context_description .
 }
 ```
 
@@ -57,11 +57,11 @@ PREFIX abox: <http://purl.org/sirius/ontology/development/01/data/>
 SELECT ?heritage_asset ?context_type ?document ?document_link
 WHERE {
     ?heritage_asset a tbox:HeritageAsset .
-    ?riskAssessment a tbox:RiskAssessmentActivity ;
-                    tbox:assignsRiskTo ?heritage_asset ;
-                    tbox:hasContext ?context .
-    ?context a tbox:Context ;
-                tbox:hasType ?context_type .
+    ?riskAssessment a tbox:ContextDescription ;
+                    tbox:describes ?heritage_asset ;
+                    tbox:hasObservation ?context .
+    ?context a tbox:Observation ;
+                tbox:hasParameter  ?context_type .
     ?document a tbox:Document ;
                 tbox:documents ?context ;
                 tbox:hasLink ?document_link .
@@ -80,10 +80,10 @@ PREFIX abox: <http://purl.org/sirius/ontology/development/01/data/>
 SELECT ?heritage_asset ?stakeholder_name
 WHERE {
     ?heritage_asset a tbox:HeritageAsset .
-    ?risk_assessment_activity a tbox:RiskAssessmentActivity ;
-                                tbox:assignsRiskTo ?heritage_asset ;
-                                tbox:involves ?stakeholder .
+    ?risk_assessment_activity a tbox:ContextDescription ;
+                                tbox:describes ?heritage_asset ;
+                                tbox:hasParticipant ?stakeholder .
     ?stakeholder a tbox:Stakeholder ;
-                tbox:hasStakeholderName ?stakeholder_name .
+                tbox:hasName ?stakeholder_name .
 }
 ```

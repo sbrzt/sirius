@@ -12,105 +12,142 @@
 #    Object Properties
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/04/schema/assignsRisk
-:assignsRisk rdf:type owl:ObjectProperty .
+###  http://purl.org/sirius/ontology/development/04/schema/assigns
+:assigns rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/assignsRiskTo
-:assignsRiskTo rdf:type owl:ObjectProperty .
+###  http://purl.org/sirius/ontology/development/04/schema/describes
+:describes rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/hasComponent
-:hasComponent rdf:type owl:ObjectProperty .
+###  http://purl.org/sirius/ontology/development/04/schema/atTime
+:atTime rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/hasComponentType
-:hasComponentType rdf:type owl:ObjectProperty .
-
-
-###  http://purl.org/sirius/ontology/development/04/schema/hasMagnitude
-:hasMagnitude rdf:type owl:ObjectProperty .
+###  http://purl.org/sirius/ontology/development/04/schema/hasPart
+:hasPart rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.org/sirius/ontology/development/04/schema/isDocumentedBy
 :isDocumentedBy rdf:type owl:ObjectProperty .
 
 
+###  http://purl.org/sirius/ontology/development/04/schema/withinDimension
+:withinDimension rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/withinAspect
+:withinAspect rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/04/schema/hasHighEstimate
-:hasHighEstimate rdf:type owl:DatatypeProperty .
-
-
-###  http://purl.org/sirius/ontology/development/04/schema/hasLowEstimate
-:hasLowEstimate rdf:type owl:DatatypeProperty .
+###  http://purl.org/sirius/ontology/development/04/schema/hasEndDate
+:hasEndDate rdf:type owl:DatatypeProperty .
 
 
 ###  http://purl.org/sirius/ontology/development/04/schema/hasNote
 :hasNote rdf:type owl:DatatypeProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/hasProbableEstimate
-:hasProbableEstimate rdf:type owl:DatatypeProperty .
+###  http://purl.org/sirius/ontology/development/04/schema/hasScore
+:hasScore rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/hasStartDate
+:hasStartDate rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/assessesPercentage
+:assessesPercentage rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
 
+###  http://purl.org/sirius/ontology/development/04/schema/Aspect
+:Aspect rdf:type owl:Class .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/Value
+:Value rdf:type owl:Class .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/Dimension
+:Dimension rdf:type owl:Class .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/Document
+:Document rdf:type owl:Class .
+
+
 ###  http://purl.org/sirius/ontology/development/04/schema/HeritageAsset
 :HeritageAsset rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/KnowledgeSource
-:KnowledgeSource rdf:type owl:Class .
+###  http://purl.org/sirius/ontology/development/04/schema/TimeInterval
+:TimeInterval rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/Risk
-:Risk rdf:type owl:Class .
-
-
-###  http://purl.org/sirius/ontology/development/04/schema/RiskAssessment
-:RiskAssessment rdf:type owl:Class .
-
-
-###  http://purl.org/sirius/ontology/development/04/schema/RiskComponent
-:RiskComponent rdf:type owl:Class ;
-               rdfs:subClassOf :RiskScore .
-
-
-###  http://purl.org/sirius/ontology/development/04/schema/RiskComponentType
-:RiskComponentType rdf:type owl:Class .
-
-
-###  http://purl.org/sirius/ontology/development/04/schema/RiskMagnitude
-:RiskMagnitude rdf:type owl:Class ;
-               rdfs:subClassOf :RiskScore .
-
-
-###  http://purl.org/sirius/ontology/development/04/schema/RiskScore
-:RiskScore rdf:type owl:Class .
+###  http://purl.org/sirius/ontology/development/04/schema/ValueDescription
+:ValueDescription rdf:type owl:Class .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/04/schema/frequency-or-rate
-:frequency-or-rate rdf:type owl:NamedIndividual ,
-                            :RiskComponentType .
+###  http://purl.org/sirius/ontology/development/04/schema/artistic
+:artistic rdf:type owl:NamedIndividual ,
+                   :Dimension .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/loss-of-value-in-asset
-:loss-of-value-in-asset rdf:type owl:NamedIndividual ,
-                                 :RiskComponentType .
+###  http://purl.org/sirius/ontology/development/04/schema/feeling
+:feeling rdf:type owl:NamedIndividual ,
+                  :Aspect .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/loss-of-value-per-item
-:loss-of-value-per-item rdf:type owl:NamedIndividual ,
-                                 :RiskComponentType .
+###  http://purl.org/sirius/ontology/development/04/schema/form
+:form rdf:type owl:NamedIndividual ,
+               :Aspect .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/function
+:function rdf:type owl:NamedIndividual ,
+                   :Aspect .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/historic
+:historic rdf:type owl:NamedIndividual ,
+                   :Dimension .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/scientific
+:scientific rdf:type owl:NamedIndividual ,
+                     :Dimension .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/setting
+:setting rdf:type owl:NamedIndividual ,
+                  :Aspect .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/social
+:social rdf:type owl:NamedIndividual ,
+                 :Dimension .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/substance
+:substance rdf:type owl:NamedIndividual ,
+                    :Aspect .
+
+
+###  http://purl.org/sirius/ontology/development/04/schema/tradition
+:tradition rdf:type owl:NamedIndividual ,
+                    :Aspect .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

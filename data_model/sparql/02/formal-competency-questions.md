@@ -1,59 +1,47 @@
 # Formal Competency Questions
 ## CQ_2.1
-Return the risk summaries and the agents of deterioration of the risks assigned to the "Battistero degli Ariani".
+Return the textual descriptions assigned to the risks, the agents of deterioration that classify them, and their types.
 
 ```SPARQL
-PREFIX : <http://purl.org/sirius/ontology/data/02/>
 PREFIX hero: <http://purl.org/sirius/ontology/hero/>
 
-SELECT ?risk ?risk_summary ?agent_of_deterioration
+SELECT ?risk ?agent_of_deterioration ?risk_type ?risk_summary
 WHERE {
-    ?risk_assessment a hero:Identification ;
-                    hero:identifiesRiskFor :baptistery ;
+    ?risk_assessment a hero:IdentificationDescription ;
                     hero:identifies ?risk .
     ?risk a hero:Risk ;
-        hero:hasNote ?risk_summary ;
-        hero:isClassifiedBy ?agent_of_deterioration .
+        hero:isClassifiedByAgent ?agent_of_deterioration ;
+        hero:isClassifiedByType ?risk_type .
+    OPTIONAL {
+        ?risk_assessment hero:hasNote ?risk_summary .
+    }
 }
 ```
 
 ***
 
 ## CQ_2.2
-Return the hazards originating the risk that are related to the agent of deterioration "Physical forces".
+Return the risks identified within the layers `site` or `region`, their types, the documents documenting them, and the start and end dates of the time intervals they have been identified in.
 
 ```SPARQL
 PREFIX hero: <http://purl.org/sirius/ontology/hero/>
+PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
+PREFIX tis: <http://ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#>
 
-SELECT ?risk ?hazard_type
+SELECT ?risk ?risk_type ?document ?start_date ?end_date
 WHERE {
+    ?risk_assessment a hero:IdentificationDescription ;
+                    hero:isDocumentedBy ?document ;
+                    tis:atTime ?time_interval ;
+                    hero:identifies ?risk .
+    ?time_interval ti:hasIntervalStartDate ?start_date ;
+                    ti:hasIntervalEndDate ?end_date .
     ?risk a hero:Risk ;
-            hero:resultsFrom ?hazard ;
-            hero:isClassifiedBy hero:physical-forces .
-    ?hazard a hero:Hazard ;
-            hero:hasType ?hazard_type .
-}
-```
-
-***
-
-## CQ_2.3
-Return the adverse effects of the risk that is related to the agents of deterioration "Pests", "Water" and "Fire".
-
-```SPARQL
-PREFIX hero: <http://purl.org/sirius/ontology/hero/>
-
-SELECT ?risk ?agent_of_deterioration ?adverse_effect_type
-WHERE {
-    ?risk a hero:Risk ;
-            hero:entails ?adverse_effect ;
-            hero:isClassifiedBy ?agent_of_deterioration .
-    ?adverse_effect a hero:AdverseEffect ;
-                    hero:hasType ?adverse_effect_type .
+            hero:isClassifiedByType ?risk_type ;
+            hero:isClassifiedByLayer ?layer .
     FILTER (
-    ?agent_of_deterioration = hero:pests || 
-    ?agent_of_deterioration = hero:water || 
-    ?agent_of_deterioration = hero:fire
+        ?layer = hero:site ||
+        ?layer = hero:region
     )
 }
 ```

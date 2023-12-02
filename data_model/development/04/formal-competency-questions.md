@@ -1,42 +1,42 @@
 # Formal Competency Questions
 ## CQ_4.1
-Return the probable estimate of the A-score, B-score, C-score for each risk affecting each heritage asset, as well as the sources of knowledge that witness them.
+Return the assets that are part of the `house` asset and the asset percentage they represent, in descending order.
 
 ```SPARQL
 PREFIX tbox: <http://purl.org/sirius/ontology/development/04/schema/>
 PREFIX abox: <http://purl.org/sirius/ontology/development/04/data/>
 
-SELECT ?risk ?heritage_asset ?risk_component ?probable_estimate ?note ?knowledge_source
+SELECT DISTINCT ?asset ?asset_part ?percentage
 WHERE {
-  ?risk_assessment tbox:assignsRiskTo ?heritage_asset ;
-                    tbox:assignsRisk ?risk .
-  ?risk tbox:hasComponent ?risk_component .
-  ?risk_component tbox:hasProbableEstimate ?probable_estimate ;
-                  tbox:hasNote ?note .
-  OPTIONAL {
-    ?risk_component tbox:isDocumentedBy ?knowledge_source ;
-  }
+  ?asset a tbox:HeritageAsset ;
+        tbox:hasPart ?asset_part .
+  ?value_assessment tbox:describes ?asset_part ;
+                        tbox:assessesPercentage ?percentage .
 }
 ```
 
 ***
 
 ## CQ_4.2
-Return the low, probable, and high estimates of the magnitudes of risk for each risk of each heritage asset.
+Return the assets that are part of the `house` asset and the contributing values assigned to them, along with their score, dimension, aspect, note, documentation, and time interval.
 
 ```SPARQL
 PREFIX tbox: <http://purl.org/sirius/ontology/development/04/schema/>
 PREFIX abox: <http://purl.org/sirius/ontology/development/04/data/>
 
-SELECT ?risk ?heritage_asset ?low_estimate ?probable_estimate ?high_estimate
+SELECT DISTINCT ?asset_part ?value ?score ?dimension ?aspect ?note ?document ?time_interval_start ?time_interval_end
 WHERE {
-  ?risk_assessment tbox:assignsRiskTo ?heritage_asset ;
-                    tbox:assignsRisk ?risk .
-  ?risk tbox:hasMagnitude ?risk_magnitude .
-  ?risk_magnitude tbox:hasLowEstimate ?low_estimate ;
-                  tbox:hasProbableEstimate ?probable_estimate ;
-                  tbox:hasHighEstimate ?high_estimate .
+    ?asset a tbox:HeritageAsset ;
+            tbox:hasPart ?asset_part .
+    ?value_assessment tbox:describes ?asset_part ;
+                        tbox:assigns ?value ;
+                        tbox:withinDimension ?dimension ;
+                        tbox:withinAspect ?aspect ;
+                        tbox:hasNote ?note ;
+                        tbox:isDocumentedBy ?document ;
+                        tbox:atTime ?time_interval .
+    ?value tbox:hasScore ?score .
+    ?time_interval tbox:hasStartDate ?time_interval_start ;
+                    tbox:hasEndDate ?time_interval_end .
 }
 ```
-
-***

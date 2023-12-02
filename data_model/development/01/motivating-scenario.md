@@ -1,14 +1,16 @@
 # Iteration 01
 
 ## Name
-Context
+Context step
 
 ## Description
-This step involves the understanding of all relevant aspects of the context in which a heritage asset is situated.
+This step involves the understanding of all relevant aspects of the context in which the heritage asset is being observed and assessed for risks. In particular, a contextualisation activity is a situation for an asset in which this asset is being observed within a certain period of time and the presence of some stakeholder that participates in such situation through some kind of observation on the basis of some contextual parameters, such as the physical environment, the sociocultural context, and so on. 
 
-A heritage asset is a physical or tangible item, structure, site, or object that holds historical, cultural, architectural, archaeological, or artistic significance and is considered worthy of preservation and protection. A heritage asset may have a name, an alternative name, and a description. In addition, a heritage asset is located in a place, which is defined by spatial coordinates, and can be generally dated to a creation event identified by a certain time-span.
+Anything can be documented by some document and by textual content in the form of descriptiove notes.
 
-The context in which a heritage asset is situated can be divided into different types and includes its physical, administrative, legal, political, socio-cultural, and economic environments. Each contextual information related to the heritage asset can be documented by a description and some documents. A document may be characterized a title, a description, and a link.
+A heritage asset is a physical or tangible item, structure, site, or object that holds historical, cultural, architectural, archaeological, or artistic significance and is considered worthy of preservation and protection. A heritage asset may have a name, an alternative name, and a description. In addition, a heritage asset is located in a place, which is defined by spatial coordinates, and can be generally dated to a creation event identified within a certain time-span.
+
+The contextual parameters considered by an observation can be divided into different types and include their physical, administrative, legal, political, socio-cultural, and economic environments. Each contextual information related to the heritage asset can be documented by a description and some documents. A document may be characterized a title, a description, and a link.
 
 In addition, some stakeholders may be directly or indirectly involved in the risk assessment activity with respect to the heritage asset at hand.
 

@@ -22,74 +22,95 @@
 ###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-01
 :baptistery-risk-01 rdf:type owl:NamedIndividual ,
                                           tbox:Risk ;
-                                 tbox:causes tbox:collapse ,
-                                             tbox:feature-detachment ,
-                                             tbox:fissuring ;
-                                 tbox:isEmbodiedBy tbox:physical-forces ;
-                                 tbox:originatesFrom tbox:civil-works ,
-                                                     tbox:earthquake ,
-                                                     tbox:subsidence ,
-                                                     tbox:traffic-induced-vibration .
+                                          tbox:isClassifiedByType tbox:cumulative ;
+         tbox:isClassifiedByLayer tbox:building ;
+                                 tbox:isClassifiedByAgent tbox:physical-forces .
 
 
 ###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-02
 :baptistery-risk-02 rdf:type owl:NamedIndividual ,
-                                          tbox:Risk ;
-                                 tbox:causes tbox:information-loss ;
-                                 tbox:isEmbodiedBy tbox:dissociation ;
-                                 tbox:originatesFrom tbox:incorrect-data-management ;
-                                 tbox:hasSummary "Fragmentation of data related to previous incorrect monitoring and maintenance interventions provokes loss of important information related to the baptistery" .
+                    tbox:Risk ;
+                    tbox:isClassifiedByType tbox:rare ;
+                    tbox:isClassifiedByLayer tbox:site ;
+                    tbox:isClassifiedByAgent tbox:dissociation .
 
 
 ###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-03
 :baptistery-risk-03 rdf:type owl:NamedIndividual ,
                                           tbox:Risk ;
-                                 tbox:causes tbox:excrements ,
-                                             tbox:overgrowth ;
-                                 tbox:isEmbodiedBy tbox:pests ;
-                                 tbox:originatesFrom tbox:birds ,
-                                                     tbox:weeds .
+                                          tbox:isClassifiedByType tbox:common ;
+         tbox:isClassifiedByLayer tbox:region ;
+                                 tbox:isClassifiedByAgent tbox:pests .
 
 
 ###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-04
 :baptistery-risk-04 rdf:type owl:NamedIndividual ,
                                           tbox:Risk ;
-                                 tbox:causes tbox:corrosion ;
-                                 tbox:isEmbodiedBy tbox:water ;
-                                 tbox:originatesFrom tbox:flood ,
-                                                     tbox:rainfall ;
-                                 tbox:hasSummary "Floods and heavy rains induce erosion of the baptistery walls" .
+                                          tbox:isClassifiedByType tbox:rare ;
+         tbox:isClassifiedByLayer tbox:region ;
+                                 tbox:isClassifiedByAgent tbox:water .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-05
-:baptistery-risk-05 rdf:type owl:NamedIndividual ,
-                                          tbox:Risk ;
-                                 tbox:isEmbodiedBy tbox:fire ;
-                                 tbox:originatesFrom tbox:equipment-malfunction .
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment-01
+:baptistery-risk-assessment-01 rdf:type owl:NamedIndividual ,
+                                                  tbox:IdentificationDescription ;
+                                        tbox:atTime :2020-10-10 ;
+                                        tbox:isDocumentedBy :document-a ;
+                                         tbox:identifies :baptistery-risk-01 ;
+                                         tbox:describes :baptistery .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-06
-:baptistery-risk-06 rdf:type owl:NamedIndividual ,
-                                          tbox:Risk ;
-                                 tbox:causes tbox:disfiguration ,
-                                             tbox:waste-accumulation ;
-                                 tbox:isEmbodiedBy tbox:thieves-and-vandals ;
-                                 tbox:originatesFrom tbox:economic-motivation ,
-                                                     tbox:ideological-motivation ,
-                                                     tbox:political-motivation ;
-                                 tbox:hasSummary "Various motivations cause the presence of graffiti and abandonment of objects in the area surrounding the baptistery" .
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment-02
+:baptistery-risk-assessment-02 rdf:type owl:NamedIndividual ,
+                                                  tbox:IdentificationDescription ;
+                                        tbox:atTime :2020-10-10 ;
+                                        tbox:isDocumentedBy :document-b ;
+                                         tbox:identifies :baptistery-risk-02 ;
+                                         tbox:describes :baptistery ;
+                                 tbox:hasNote "Fragmentation of data related to previous incorrect monitoring and maintenance interventions provokes loss of important information related to the baptistery" .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment
-:baptistery-risk-assessment rdf:type owl:NamedIndividual ,
-                                                  tbox:RiskAssessment ;
-                                         tbox:assigns :baptistery-risk-01 ,
-                                                      :baptistery-risk-02 ,
-                                                      :baptistery-risk-03 ,
-                                                      :baptistery-risk-04 ,
-                                                      :baptistery-risk-05 ,
-                                                      :baptistery-risk-06 ;
-                                         tbox:assignsRiskTo :baptistery .
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment-03
+:baptistery-risk-assessment-03 rdf:type owl:NamedIndividual ,
+                                                  tbox:IdentificationDescription ;
+                                        tbox:atTime :2020-10-11 ;
+                                        tbox:isDocumentedBy :document-a ;
+                                         tbox:identifies :baptistery-risk-03 ;
+                                         tbox:describes :baptistery .
+
+                                
+###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment-04
+:baptistery-risk-assessment-04 rdf:type owl:NamedIndividual ,
+                                                  tbox:IdentificationDescription ;
+                                        tbox:atTime :2020-10-10 ;
+                                        tbox:isDocumentedBy :document-b ;
+                                         tbox:identifies :baptistery-risk-04 ;
+                                         tbox:describes :baptistery ;
+                                 tbox:hasNote "Floods and heavy rains induce erosion of the baptistery walls" .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/document-a
+:document-a rdf:type owl:NamedIndividual ,
+                     tbox:Document .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/document-b
+:document-b rdf:type owl:NamedIndividual ,
+                     tbox:Document .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/2020-10-10
+:2020-10-10 rdf:type owl:NamedIndividual ,
+                                                                          tbox:TimeInterval ;
+                                                                 tbox:hasEndDate "2020-10-10T23:59:59Z"^^xsd:dateTime ;
+                                                                 tbox:hasStartDate "2020-10-10T00:00:00Z"^^xsd:dateTime .
+
+
+###  http://purl.org/sirius/ontology/development/02/data/2020-10-11
+:2020-10-11 rdf:type owl:NamedIndividual ,
+                                                                          tbox:TimeInterval ;
+                                                                 tbox:hasEndDate "2020-10-11T23:59:59Z"^^xsd:dateTime ;
+                                                                 tbox:hasStartDate "2020-10-11T00:00:00Z"^^xsd:dateTime .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

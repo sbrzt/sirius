@@ -5,15 +5,16 @@
 CQ_2.1
 
 ### Question
-Return the risk summaries and the agents of deterioration of the risks assigned to the "Battistero degli Ariani".
+Return the textual descriptions assigned to the risks, the agents of deterioration that classify them, and their types.
 
 ### Expected outcome
-List of: `risk`, `risk_summary`, `agent_of_deterioration`
+List of: `risk`, `agent_of_deterioration`, `risk_type`, `risk_summary`
 
 ### Results
-* "Fragmentation of data", "Fragmentation of data related to previous incorrect monitoring and maintenance interventions provokes loss of important information related to the baptistery", `dissociation`
-* "Walls erosion", "Floods and heavy rains induce erosion of the baptistery walls", `water`
-* "Anthropic activity", "Various motivations cause the presence of graffiti and abandonment of objects in the area surrounding the baptistery", `theft-and-vandalism`
+* `risk-01`, `"physical-forces`, `cumulative`, "";
+* `risk-02`, `dissociation`, `rare`, "Fragmentation of data related to previous incorrect monitoring and maintenance interventions provokes loss of important information related to the baptistery";
+* `risk-03`, `pests`, `common`, "";
+* `risk-04`, `water`, `rare`, "Floods and heavy rains induce erosion of the baptistery walls".
 
 ### Based on
 Example 1
@@ -26,37 +27,15 @@ Example 1
 CQ_2.2
 
 ### Question
-Return the hazards originating the risk that are related to the agent of deterioration "Physical forces".
+Return the risks identified within the layers `site` or `region`, their types, the documents documenting them, and the start and end dates of the time intervals they have been identified in.
 
 ### Expected outcome
-List of: `risk`, `hazard`
+List of: `risk`, `risk_type`, `document`, `start_date`, `end_date`
 
 ### Results
-* "Physical destruction", `traffic-induced-vibration`
-* "Physical destruction", `civil-works`
-* "Physical destruction", `earthquake`
-* "Physical destruction", `subsidence`
-
-### Based on
-Example 1
-
-***
-
-## Question 3
-
-### Identifier
-CQ_2.3
-
-### Question
-Return the adverse effects of the risk that is related to the agents of deterioration "Pests", "Water" and "Fire".
-
-### Expected outcome
-List of: `risk`, `agent_of_deterioration`, `adverse_effect`
-
-### Results
-* "Animal and plant colonization", `pests`, `excrements`
-* "Animal and plant colonization", `pests`, `overgrowth`
-* "Walls erosion", `water`, `corrosion`
+* `risk-02`, `rare`, `document-b`, "2020-10-10T00:00:00Z", "2020-10-10T23:59:59Z";
+* `risk-03`, `common`, `document-a`, "2020-10-11T00:00:00Z", "2020-10-11T23:59:59Z"
+* `risk-04`, `rare`, `document-b`, "2020-10-10T00:00:00Z", "2020-10-10T23:59:59Z".
 
 ### Based on
 Example 1
