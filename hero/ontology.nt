@@ -1,0 +1,1114 @@
+<http://purl.org/sirius/ontology/hero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/sirius/ontology/hero> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl> .
+<http://purl.org/sirius/ontology/hero> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl> .
+<http://purl.org/sirius/ontology/hero> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl> .
+<http://purl.org/sirius/ontology/hero> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/cp/owl/region.owl> .
+<http://purl.org/sirius/ontology/hero> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> .
+<http://purl.org/sirius/ontology/hero> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl> .
+<http://purl.org/sirius/ontology/hero> <http://purl.org/dc/elements/1.1/creator> "Barzaghi, Sebastian [0000-0002-0799-1527]" .
+<http://purl.org/sirius/ontology/hero> <http://purl.org/dc/elements/1.1/date> "2023-11-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/sirius/ontology/hero> <http://purl.org/dc/elements/1.1/description> "The Heritage Risk Assessment Ontology (HeRO, https://purl.org/sirius/ontology/hero) is an OWL 2 DL ontology that aims to provide a framework for the formal description of risk assessment activities related to heritage."@en .
+<http://purl.org/sirius/ontology/hero> <http://purl.org/dc/elements/1.1/title> "Heritage Risk Assessment Ontology"@en .
+<http://purl.org/sirius/ontology/hero> <http://purl.org/dc/terms/rights> "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)."@en .
+<http://purl.org/sirius/ontology/hero> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasAuthor
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasUnitTest
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasUnitTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/sirius/ontology/hero/analyses
+<http://purl.org/sirius/ontology/hero/analyses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/analyses> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/assesses> .
+<http://purl.org/sirius/ontology/hero/analyses> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/sirius/ontology/hero/isAnalysedIn> .
+<http://purl.org/sirius/ontology/hero/analyses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/AnalysisDescription> .
+<http://purl.org/sirius/ontology/hero/analyses> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/Risk> .
+<http://purl.org/sirius/ontology/hero/analyses> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an analysis and a risk that is being analysed."@en .
+<http://purl.org/sirius/ontology/hero/analyses> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/analyses> <http://www.w3.org/2000/01/rdf-schema#label> "analyses"@en .
+# 
+# http://purl.org/sirius/ontology/hero/assesses
+<http://purl.org/sirius/ontology/hero/assesses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/assesses> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity> .
+<http://purl.org/sirius/ontology/hero/assesses> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/sirius/ontology/hero/isAssessedIn> .
+<http://purl.org/sirius/ontology/hero/assesses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/AssessmentActivity> .
+<http://purl.org/sirius/ontology/hero/assesses> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/sirius/ontology/hero/assesses> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between an assessment activity and an entity assessed by it, such as a criterion."@en .
+<http://purl.org/sirius/ontology/hero/assesses> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/assesses> <http://www.w3.org/2000/01/rdf-schema#label> "assesses"@en .
+# 
+# http://purl.org/sirius/ontology/hero/assigns
+<http://purl.org/sirius/ontology/hero/assigns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/assigns> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/assesses> .
+<http://purl.org/sirius/ontology/hero/assigns> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/sirius/ontology/hero/isAssignedIn> .
+<http://purl.org/sirius/ontology/hero/assigns> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/ValueDescription> .
+<http://purl.org/sirius/ontology/hero/assigns> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/Value> .
+<http://purl.org/sirius/ontology/hero/assigns> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a value assessment and an asset value that is being assessed."@en .
+<http://purl.org/sirius/ontology/hero/assigns> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/assigns> <http://www.w3.org/2000/01/rdf-schema#label> "assigns"@en .
+# 
+# http://purl.org/sirius/ontology/hero/describes
+<http://purl.org/sirius/ontology/hero/describes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/describes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> .
+<http://purl.org/sirius/ontology/hero/describes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> .
+<http://purl.org/sirius/ontology/hero/describes> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/sirius/ontology/hero/isDescribedIn> .
+<http://purl.org/sirius/ontology/hero/describes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/AssessmentActivity> .
+<http://purl.org/sirius/ontology/hero/describes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/sirius/ontology/hero/describes> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an assessment activity and the entity described in that assessment, such as an asset."@en .
+<http://purl.org/sirius/ontology/hero/describes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/describes> <http://www.w3.org/2000/01/rdf-schema#label> "describes"@en .
+# 
+# http://purl.org/sirius/ontology/hero/documents
+<http://purl.org/sirius/ontology/hero/documents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/documents> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/sirius/ontology/hero/isDocumentedBy> .
+<http://purl.org/sirius/ontology/hero/documents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Document> .
+<http://purl.org/sirius/ontology/hero/documents> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/sirius/ontology/hero/documents> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a document and an entity documented by it."@en .
+<http://purl.org/sirius/ontology/hero/documents> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/documents> <http://www.w3.org/2000/01/rdf-schema#label> "documents"@en .
+# 
+# http://purl.org/sirius/ontology/hero/hasObservation
+<http://purl.org/sirius/ontology/hero/hasObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/hasObservation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/assesses> .
+<http://purl.org/sirius/ontology/hero/hasObservation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation> .
+<http://purl.org/sirius/ontology/hero/hasObservation> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/sirius/ontology/hero/isObservationOf> .
+<http://purl.org/sirius/ontology/hero/hasObservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/AssessmentActivity> .
+<http://purl.org/sirius/ontology/hero/hasObservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/Observation> .
+<http://purl.org/sirius/ontology/hero/hasObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an assessment activity and an observation occurring during said activity."@en .
+<http://purl.org/sirius/ontology/hero/hasObservation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/hasObservation> <http://www.w3.org/2000/01/rdf-schema#label> "has observation"@en .
+# 
+# http://purl.org/sirius/ontology/hero/hasParameter
+<http://purl.org/sirius/ontology/hero/hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/hasParameter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter> .
+<http://purl.org/sirius/ontology/hero/hasParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Observation> .
+<http://purl.org/sirius/ontology/hero/hasParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/Parameter> .
+<http://purl.org/sirius/ontology/hero/hasParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between an observation happening during a contextualisation activity and a contextual parameter that is being observed as part of the context."@en .
+<http://purl.org/sirius/ontology/hero/hasParameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/hasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "has parameter"@en .
+# 
+# http://purl.org/sirius/ontology/hero/hasParticipant
+<http://purl.org/sirius/ontology/hero/hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/hasParticipant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> .
+<http://purl.org/sirius/ontology/hero/hasParticipant> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/sirius/ontology/hero/isParticipantIn> .
+<http://purl.org/sirius/ontology/hero/hasParticipant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/AssessmentActivity> .
+<http://purl.org/sirius/ontology/hero/hasParticipant> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/sirius/ontology/hero/hasParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an assessment activity and a participant that takes part in it."@en .
+<http://purl.org/sirius/ontology/hero/hasParticipant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/hasParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "has participant"@en .
+# 
+# http://purl.org/sirius/ontology/hero/identifies
+<http://purl.org/sirius/ontology/hero/identifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/identifies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/assesses> .
+<http://purl.org/sirius/ontology/hero/identifies> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/sirius/ontology/hero/isIdentifiedIn> .
+<http://purl.org/sirius/ontology/hero/identifies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/IdentificationDescription> .
+<http://purl.org/sirius/ontology/hero/identifies> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/Risk> .
+<http://purl.org/sirius/ontology/hero/identifies> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a identification activity and a risk that is being identified."@en .
+<http://purl.org/sirius/ontology/hero/identifies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/identifies> <http://www.w3.org/2000/01/rdf-schema#label> "identifies"@en .
+# 
+# http://purl.org/sirius/ontology/hero/isAnalysedIn
+<http://purl.org/sirius/ontology/hero/isAnalysedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isAnalysedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/isAssessedIn> .
+<http://purl.org/sirius/ontology/hero/isAnalysedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Risk> .
+<http://purl.org/sirius/ontology/hero/isAnalysedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/AnalysisDescription> .
+<http://purl.org/sirius/ontology/hero/isAnalysedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a risk that is being analysed and an analysis activity."@en .
+<http://purl.org/sirius/ontology/hero/isAnalysedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isAnalysedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is analysed in"@en .
+# 
+# http://purl.org/sirius/ontology/hero/isAssessedIn
+<http://purl.org/sirius/ontology/hero/isAssessedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isAssessedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting> .
+<http://purl.org/sirius/ontology/hero/isAssessedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/sirius/ontology/hero/isAssessedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/AssessmentActivity> .
+<http://purl.org/sirius/ontology/hero/isAssessedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an entity, such as a criterion, and a assessment activity assessing it."@en .
+<http://purl.org/sirius/ontology/hero/isAssessedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isAssessedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is assessed in"@en .
+# 
+# http://purl.org/sirius/ontology/hero/isAssignedIn
+<http://purl.org/sirius/ontology/hero/isAssignedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isAssignedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/isAssessedIn> .
+<http://purl.org/sirius/ontology/hero/isAssignedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Value> .
+<http://purl.org/sirius/ontology/hero/isAssignedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/ValueDescription> .
+<http://purl.org/sirius/ontology/hero/isAssignedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an asset value that is being assessed and a value assessment."@en .
+<http://purl.org/sirius/ontology/hero/isAssignedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isAssignedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is assigned in"@en .
+# 
+# http://purl.org/sirius/ontology/hero/isClassifiedBy
+<http://purl.org/sirius/ontology/hero/isClassifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> .
+<http://purl.org/sirius/ontology/hero/isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/sirius/ontology/hero/isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> .
+<http://purl.org/sirius/ontology/hero/isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a risk and another concept that may classify it, such as an agent of deterioration, a layer, or a type."@en .
+<http://purl.org/sirius/ontology/hero/isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is classified by"@en .
+# 
+# http://purl.org/sirius/ontology/hero/isClassifiedByAgent
+<http://purl.org/sirius/ontology/hero/isClassifiedByAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByAgent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/isClassifiedBy> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByAgent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Risk> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByAgent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/AgentOfDeterioration> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByAgent> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a risk and an agent of deterioration."@en .
+<http://purl.org/sirius/ontology/hero/isClassifiedByAgent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByAgent> <http://www.w3.org/2000/01/rdf-schema#label> "is classified by agent"@en .
+# 
+# http://purl.org/sirius/ontology/hero/isClassifiedByLayer
+<http://purl.org/sirius/ontology/hero/isClassifiedByLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByLayer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/isClassifiedBy> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByLayer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Risk> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByLayer> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/Layer> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByLayer> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a risk and a layer."@en .
+<http://purl.org/sirius/ontology/hero/isClassifiedByLayer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByLayer> <http://www.w3.org/2000/01/rdf-schema#label> "is classified by layer"@en .
+# 
+# http://purl.org/sirius/ontology/hero/isClassifiedByType
+<http://purl.org/sirius/ontology/hero/isClassifiedByType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/isClassifiedBy> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Risk> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByType> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/RiskType> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByType> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a risk and a type."@en .
+<http://purl.org/sirius/ontology/hero/isClassifiedByType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isClassifiedByType> <http://www.w3.org/2000/01/rdf-schema#label> "is classified by type"@en .
+# 
+# http://purl.org/sirius/ontology/hero/isDescribedIn
+<http://purl.org/sirius/ontology/hero/isDescribedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isDescribedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> .
+<http://purl.org/sirius/ontology/hero/isDescribedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/sirius/ontology/hero/isDescribedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/AssessmentActivity> .
+<http://purl.org/sirius/ontology/hero/isDescribedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between the entity, such as an asset, and an assessment activity assessing it."@en .
+<http://purl.org/sirius/ontology/hero/isDescribedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isDescribedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is described in"@en .
+# 
+# http://purl.org/sirius/ontology/hero/isDocumentedBy
+<http://purl.org/sirius/ontology/hero/isDocumentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/sirius/ontology/hero/isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Document> .
+<http://purl.org/sirius/ontology/hero/isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between something and a Document that documents it."@en .
+<http://purl.org/sirius/ontology/hero/isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isDocumentedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is documented by" .
+# 
+# http://purl.org/sirius/ontology/hero/isIdentifiedIn
+<http://purl.org/sirius/ontology/hero/isIdentifiedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isIdentifiedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/isAssessedIn> .
+<http://purl.org/sirius/ontology/hero/isIdentifiedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Risk> .
+<http://purl.org/sirius/ontology/hero/isIdentifiedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/IdentificationDescription> .
+<http://purl.org/sirius/ontology/hero/isIdentifiedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a risk that is being identified and a identification activity."@en .
+<http://purl.org/sirius/ontology/hero/isIdentifiedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isIdentifiedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is identified in"@en .
+# 
+# http://purl.org/sirius/ontology/hero/isObservationOf
+<http://purl.org/sirius/ontology/hero/isObservationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isObservationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/isAssessedIn> .
+<http://purl.org/sirius/ontology/hero/isObservationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf> .
+<http://purl.org/sirius/ontology/hero/isObservationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Observation> .
+<http://purl.org/sirius/ontology/hero/isObservationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/AssessmentActivity> .
+<http://purl.org/sirius/ontology/hero/isObservationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an observation and an assessment activity."@en .
+<http://purl.org/sirius/ontology/hero/isObservationOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isObservationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is observation of"@en .
+# 
+# http://purl.org/sirius/ontology/hero/isParticipantIn
+<http://purl.org/sirius/ontology/hero/isParticipantIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> .
+<http://purl.org/sirius/ontology/hero/isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/sirius/ontology/hero/isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/AssessmentActivity> .
+<http://purl.org/sirius/ontology/hero/isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an agent and an assessment activity."@en .
+<http://purl.org/sirius/ontology/hero/isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#label> "is participant in"@en .
+# 
+# http://purl.org/sirius/ontology/hero/isQuantifiedBy
+<http://purl.org/sirius/ontology/hero/isQuantifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/isQuantifiedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> .
+<http://purl.org/sirius/ontology/hero/isQuantifiedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/sirius/ontology/hero/quantifies> .
+<http://purl.org/sirius/ontology/hero/isQuantifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Measure> .
+<http://purl.org/sirius/ontology/hero/isQuantifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/AnalysisDescription> .
+<http://purl.org/sirius/ontology/hero/isQuantifiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a measure and an analysis activity."@en .
+<http://purl.org/sirius/ontology/hero/isQuantifiedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/isQuantifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is quantified by"@en .
+# 
+# http://purl.org/sirius/ontology/hero/quantifies
+<http://purl.org/sirius/ontology/hero/quantifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/sirius/ontology/hero/quantifies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> .
+<http://purl.org/sirius/ontology/hero/quantifies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/AnalysisDescription> .
+<http://purl.org/sirius/ontology/hero/quantifies> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/sirius/ontology/hero/Measure> .
+<http://purl.org/sirius/ontology/hero/quantifies> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an analysis activity and a measure considered during the analysis."@en .
+<http://purl.org/sirius/ontology/hero/quantifies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/quantifies> <http://www.w3.org/2000/01/rdf-schema#label> "quantifies"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a Concept and an Entity, e.g. the Role 'student' classifies a Person 'John'." .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#label> "classifica"@it .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies> <http://www.w3.org/2000/01/rdf-schema#label> "classifies"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a Concept and an Entity, e.g. 'John is considered a typical rude man'; your last concert constitutes the achievement of a lifetime; '20-year-old means she's mature enough'." .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is classified by"@en .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "è classificato da"@it .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an entity and an Observation."@en .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation> <http://www.w3.org/2000/01/rdf-schema#label> "has observation"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an Observation and a Parameter."@en .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter> <http://www.w3.org/2000/01/rdf-schema#label> "has parameter"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an Observation and an entity it observes."@en .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is observation of"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a Parameter and an Observation."@en .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf> <http://www.w3.org/2000/01/rdf-schema#label> "is parameter of"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a Event and a Object participating in it."@en .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> <http://www.w3.org/2000/01/rdf-schema#label> "has participant"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an Object and an Event it participates in."@en .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> <http://www.w3.org/2000/01/rdf-schema#label> "is participant in"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between entities and regions, e.g. 'the number of wheels of that truck is 12'." .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/region.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#label> "ha regione"@it .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> <http://www.w3.org/2000/01/rdf-schema#label> "has region"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between entities and regions, e.g. 'the color of my car is red'." .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/region.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#label> "is region for"@en .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> <http://www.w3.org/2000/01/rdf-schema#label> "è un ragione di"@it .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a Situation and something it is the setting for."@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a Time indexed situation and a Time interval."@en .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime> <http://www.w3.org/2000/01/rdf-schema#label> "at time"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a Time indexed situation and something contextualised in it."@en .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity> <http://www.w3.org/2000/01/rdf-schema#label> "for entity"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between an entity and a Time indexed situation contextualising it."@en .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting> <http://www.w3.org/2000/01/rdf-schema#label> "has time indexed setting"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor> <http://www.w3.org/2000/01/rdf-schema#comment> "The relationship between a Time interval and a Time indexed situation."@en .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor> <http://www.w3.org/2000/01/rdf-schema#label> "is time index for"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/sirius/ontology/hero/assessesPercentage
+<http://purl.org/sirius/ontology/hero/assessesPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sirius/ontology/hero/assessesPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/ValueDescription> .
+<http://purl.org/sirius/ontology/hero/assessesPercentage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.org/sirius/ontology/hero/assessesPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "A property that assigns a value percentage to an asset which has been assigned a value in a value description."@en .
+<http://purl.org/sirius/ontology/hero/assessesPercentage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/assessesPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "assessesPercentage"@en .
+# 
+# http://purl.org/sirius/ontology/hero/hasEstimate
+<http://purl.org/sirius/ontology/hero/hasEstimate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sirius/ontology/hero/hasEstimate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> .
+<http://purl.org/sirius/ontology/hero/hasEstimate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Measure> .
+<http://purl.org/sirius/ontology/hero/hasEstimate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.org/sirius/ontology/hero/hasEstimate> <http://www.w3.org/2000/01/rdf-schema#comment> "A property that assigns a estimate value to a measure."@en .
+<http://purl.org/sirius/ontology/hero/hasEstimate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/hasEstimate> <http://www.w3.org/2000/01/rdf-schema#label> "has estimate"@en .
+# 
+# http://purl.org/sirius/ontology/hero/hasHighEstimate
+<http://purl.org/sirius/ontology/hero/hasHighEstimate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sirius/ontology/hero/hasHighEstimate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/hasEstimate> .
+<http://purl.org/sirius/ontology/hero/hasHighEstimate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Measure> .
+<http://purl.org/sirius/ontology/hero/hasHighEstimate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.org/sirius/ontology/hero/hasHighEstimate> <http://www.w3.org/2000/01/rdf-schema#comment> "A property that assigns a estimate value for the worst case scenario to a measure."@en .
+<http://purl.org/sirius/ontology/hero/hasHighEstimate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/hasHighEstimate> <http://www.w3.org/2000/01/rdf-schema#label> "has high estimate" .
+# 
+# http://purl.org/sirius/ontology/hero/hasLowEstimate
+<http://purl.org/sirius/ontology/hero/hasLowEstimate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sirius/ontology/hero/hasLowEstimate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/hasEstimate> .
+<http://purl.org/sirius/ontology/hero/hasLowEstimate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Measure> .
+<http://purl.org/sirius/ontology/hero/hasLowEstimate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.org/sirius/ontology/hero/hasLowEstimate> <http://www.w3.org/2000/01/rdf-schema#comment> "A property that assigns a estimate value for the best case scenario to a measure."@en .
+<http://purl.org/sirius/ontology/hero/hasLowEstimate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/hasLowEstimate> <http://www.w3.org/2000/01/rdf-schema#label> "has low estimate" .
+# 
+# http://purl.org/sirius/ontology/hero/hasNote
+<http://purl.org/sirius/ontology/hero/hasNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sirius/ontology/hero/hasNote> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/sirius/ontology/hero/hasNote> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/sirius/ontology/hero/hasNote> <http://www.w3.org/2000/01/rdf-schema#comment> "A property that assigns a textual description to something."@en .
+<http://purl.org/sirius/ontology/hero/hasNote> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/hasNote> <http://www.w3.org/2000/01/rdf-schema#label> "has note"@en .
+# 
+# http://purl.org/sirius/ontology/hero/hasProbableEstimate
+<http://purl.org/sirius/ontology/hero/hasProbableEstimate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sirius/ontology/hero/hasProbableEstimate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/sirius/ontology/hero/hasEstimate> .
+<http://purl.org/sirius/ontology/hero/hasProbableEstimate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Measure> .
+<http://purl.org/sirius/ontology/hero/hasProbableEstimate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://purl.org/sirius/ontology/hero/hasProbableEstimate> <http://www.w3.org/2000/01/rdf-schema#comment> "A property that assigns a estimate value for the most likely case scenario to a measure."@en .
+<http://purl.org/sirius/ontology/hero/hasProbableEstimate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/hasProbableEstimate> <http://www.w3.org/2000/01/rdf-schema#label> "has probable estimate" .
+# 
+# http://purl.org/sirius/ontology/hero/hasScore
+<http://purl.org/sirius/ontology/hero/hasScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sirius/ontology/hero/hasScore> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> .
+<http://purl.org/sirius/ontology/hero/hasScore> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Value> .
+<http://purl.org/sirius/ontology/hero/hasScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://purl.org/sirius/ontology/hero/hasScore> <http://www.w3.org/2000/01/rdf-schema#comment> "A property that assigns a numerical estimate to quantify an asset value."@en .
+<http://purl.org/sirius/ontology/hero/hasScore> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/hasScore> <http://www.w3.org/2000/01/rdf-schema#label> "has score"@en .
+# 
+# http://purl.org/sirius/ontology/hero/inDate
+<http://purl.org/sirius/ontology/hero/inDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/sirius/ontology/hero/inDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate> .
+<http://purl.org/sirius/ontology/hero/inDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/sirius/ontology/hero/Observation> .
+<http://purl.org/sirius/ontology/hero/inDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/sirius/ontology/hero/inDate> <http://www.w3.org/2000/01/rdf-schema#comment> "A property that assigns a datetime value to an observation."@en .
+<http://purl.org/sirius/ontology/hero/inDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/inDate> <http://www.w3.org/2000/01/rdf-schema#label> "in date"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate> <http://www.w3.org/2000/01/rdf-schema#comment> "A property that assigns a datetime to a Observation."@en .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate> <http://www.w3.org/2000/01/rdf-schema#label> "in date"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "A datatype property that encodes values for a Region, e.g. a float for the Region Height." .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/region.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "has region data value"@en .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "regione ha valore {it}" .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate> <http://www.w3.org/2000/01/rdf-schema#comment> "A datatype property that encodes values from xsd:date (or any other date-related xsd datatype) for a TimeInterval; a same TimeInterval can have more than one date value: begin date, end date, date at which the interval holds, as well as dates expressed in different formats: xsd:gYear, xsd:dateTime, etc." .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate> <http://www.w3.org/2000/01/rdf-schema#label> "has interval date"@en .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate> <http://www.w3.org/2000/01/rdf-schema#label> "intervallo ha data"@it .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The end date of a time interval." .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#label> "interval has end date"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The start date of a time interval." .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#label> "interval has start date"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/sirius/ontology/hero/AgentOfDeterioration
+<http://purl.org/sirius/ontology/hero/AgentOfDeterioration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/AgentOfDeterioration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> .
+<http://purl.org/sirius/ontology/hero/AgentOfDeterioration> <http://www.w3.org/2000/01/rdf-schema#comment> "A conceptualization used to classify a risk threatening an asset, made from the perspective of the asset itself."@en .
+<http://purl.org/sirius/ontology/hero/AgentOfDeterioration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/AgentOfDeterioration> <http://www.w3.org/2000/01/rdf-schema#label> "Agent of deterioration"@en .
+# 
+# http://purl.org/sirius/ontology/hero/AnalysisDescription
+<http://purl.org/sirius/ontology/hero/AnalysisDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/AnalysisDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sirius/ontology/hero/AssessmentActivity> .
+<http://purl.org/sirius/ontology/hero/AnalysisDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that involves the quantification of risks to understand their magnitude and potential impact with respect to an asset."@en .
+<http://purl.org/sirius/ontology/hero/AnalysisDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/AnalysisDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Analysis description"@en .
+# 
+# http://purl.org/sirius/ontology/hero/Aspect
+<http://purl.org/sirius/ontology/hero/Aspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/Aspect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> .
+<http://purl.org/sirius/ontology/hero/Aspect> <http://www.w3.org/2000/01/rdf-schema#comment> "A facet of the context that contributes to the overall understanding and assessment of the asset value."@en .
+<http://purl.org/sirius/ontology/hero/Aspect> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/Aspect> <http://www.w3.org/2000/01/rdf-schema#label> "Aspect"@en .
+# 
+# http://purl.org/sirius/ontology/hero/AssessmentActivity
+<http://purl.org/sirius/ontology/hero/AssessmentActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/AssessmentActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> .
+<http://purl.org/sirius/ontology/hero/AssessmentActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation> .
+<http://purl.org/sirius/ontology/hero/AssessmentActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "A situation consisting in the assessment of the risks related to an asset."@en .
+<http://purl.org/sirius/ontology/hero/AssessmentActivity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/AssessmentActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Assessment activity"@en .
+# 
+# http://purl.org/sirius/ontology/hero/ContextDescription
+<http://purl.org/sirius/ontology/hero/ContextDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/ContextDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sirius/ontology/hero/AssessmentActivity> .
+<http://purl.org/sirius/ontology/hero/ContextDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that involves the examination of the contextual information of an asset."@en .
+<http://purl.org/sirius/ontology/hero/ContextDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/ContextDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Context description"@en .
+# 
+# http://purl.org/sirius/ontology/hero/Criterion
+<http://purl.org/sirius/ontology/hero/Criterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/Criterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> .
+<http://purl.org/sirius/ontology/hero/Criterion> <http://www.w3.org/2000/01/rdf-schema#comment> "A conceptual category used as a basis for evaluating an asset during a risk assessment activity."@en .
+<http://purl.org/sirius/ontology/hero/Criterion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/Criterion> <http://www.w3.org/2000/01/rdf-schema#label> "Criterion"@en .
+# 
+# http://purl.org/sirius/ontology/hero/Dimension
+<http://purl.org/sirius/ontology/hero/Dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/Dimension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> .
+<http://purl.org/sirius/ontology/hero/Dimension> <http://www.w3.org/2000/01/rdf-schema#comment> "A facet of an asset that contributes to the overall understanding and assessment of its value."@en .
+<http://purl.org/sirius/ontology/hero/Dimension> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/Dimension> <http://www.w3.org/2000/01/rdf-schema#label> "Dimension"@en .
+# 
+# http://purl.org/sirius/ontology/hero/Exposure
+<http://purl.org/sirius/ontology/hero/Exposure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/Exposure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sirius/ontology/hero/Measure> .
+<http://purl.org/sirius/ontology/hero/Exposure> <http://www.w3.org/2000/01/rdf-schema#comment> "The size of the expected loss of value in the whole asset affected by the risk."@en .
+<http://purl.org/sirius/ontology/hero/Exposure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/Exposure> <http://www.w3.org/2000/01/rdf-schema#label> "Exposure"@en .
+# 
+# http://purl.org/sirius/ontology/hero/FractionalValueLoss
+<http://purl.org/sirius/ontology/hero/FractionalValueLoss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/FractionalValueLoss> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sirius/ontology/hero/Measure> .
+<http://purl.org/sirius/ontology/hero/FractionalValueLoss> <http://www.w3.org/2000/01/rdf-schema#comment> "The size of the expected loss of value in each part of the asset affected by the risk."@en .
+<http://purl.org/sirius/ontology/hero/FractionalValueLoss> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/FractionalValueLoss> <http://www.w3.org/2000/01/rdf-schema#label> "Fractional value loss" .
+# 
+# http://purl.org/sirius/ontology/hero/Frequency
+<http://purl.org/sirius/ontology/hero/Frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/Frequency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sirius/ontology/hero/Measure> .
+<http://purl.org/sirius/ontology/hero/Frequency> <http://www.w3.org/2000/01/rdf-schema#comment> "The likelihood or probability of a specific risk event occurring within a given period. It quantifies how often a particular risk is expected to materialize and helps assess the regularity or recurrence of the risk."@en .
+<http://purl.org/sirius/ontology/hero/Frequency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency" .
+# 
+# http://purl.org/sirius/ontology/hero/IdentificationDescription
+<http://purl.org/sirius/ontology/hero/IdentificationDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/IdentificationDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sirius/ontology/hero/AssessmentActivity> .
+<http://purl.org/sirius/ontology/hero/IdentificationDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that involves the identification of risks to understand their nature, causes, and consequences with respect to an asset."@en .
+<http://purl.org/sirius/ontology/hero/IdentificationDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/IdentificationDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Identification description"@en .
+# 
+# http://purl.org/sirius/ontology/hero/Layer
+<http://purl.org/sirius/ontology/hero/Layer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/Layer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> .
+<http://purl.org/sirius/ontology/hero/Layer> <http://www.w3.org/2000/01/rdf-schema#comment> "A conceptualization used to classify a risk threatening an asset on the basis of the spatial context in which the asset exists."@en .
+<http://purl.org/sirius/ontology/hero/Layer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/Layer> <http://www.w3.org/2000/01/rdf-schema#label> "Layer"@en .
+# 
+# http://purl.org/sirius/ontology/hero/Magnitude
+<http://purl.org/sirius/ontology/hero/Magnitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/Magnitude> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sirius/ontology/hero/Measure> .
+<http://purl.org/sirius/ontology/hero/Magnitude> <http://www.w3.org/2000/01/rdf-schema#comment> "The quantified extension of a risk, encompassing the overall impact and severity associated with it if it were to occur."@en .
+<http://purl.org/sirius/ontology/hero/Magnitude> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/Magnitude> <http://www.w3.org/2000/01/rdf-schema#label> "Magnitude"@en .
+# 
+# http://purl.org/sirius/ontology/hero/Measure
+<http://purl.org/sirius/ontology/hero/Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/Measure> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/sirius/ontology/hero/hasEstimate> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://purl.org/sirius/ontology/hero/Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> .
+<http://purl.org/sirius/ontology/hero/Measure> <http://www.w3.org/2000/01/rdf-schema#comment> "A quantifiable aspect of some entity, that expresses a more precise and standardised evaluation of it, based on assigning numerical values or metrics to some specific attributes."@en .
+<http://purl.org/sirius/ontology/hero/Measure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/Measure> <http://www.w3.org/2000/01/rdf-schema#label> "Measure"@en .
+# 
+# http://purl.org/sirius/ontology/hero/Observation
+<http://purl.org/sirius/ontology/hero/Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> .
+<http://purl.org/sirius/ontology/hero/Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "An observation about an asset during an assessment activity."@en .
+<http://purl.org/sirius/ontology/hero/Observation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
+# 
+# http://purl.org/sirius/ontology/hero/Parameter
+<http://purl.org/sirius/ontology/hero/Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter> .
+<http://purl.org/sirius/ontology/hero/Parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A contextual parameter used in an observation about an asset during an assessment activity."@en .
+<http://purl.org/sirius/ontology/hero/Parameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter"@en .
+# 
+# http://purl.org/sirius/ontology/hero/Risk
+<http://purl.org/sirius/ontology/hero/Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sirius/ontology/hero/Criterion> .
+<http://purl.org/sirius/ontology/hero/Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "The possibility of a loss of value to an asset."@en .
+<http://purl.org/sirius/ontology/hero/Risk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk"@en .
+# 
+# http://purl.org/sirius/ontology/hero/RiskType
+<http://purl.org/sirius/ontology/hero/RiskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/RiskType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> .
+<http://purl.org/sirius/ontology/hero/RiskType> <http://www.w3.org/2000/01/rdf-schema#comment> "A conceptualization used to classify a risk according to its type of occurrence."@en .
+<http://purl.org/sirius/ontology/hero/RiskType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/RiskType> <http://www.w3.org/2000/01/rdf-schema#label> "Risk type"@en .
+# 
+# http://purl.org/sirius/ontology/hero/Value
+<http://purl.org/sirius/ontology/hero/Value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/Value> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sirius/ontology/hero/Criterion> .
+<http://purl.org/sirius/ontology/hero/Value> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality that represents the perceived significance or importance assigned to an asset."@en .
+<http://purl.org/sirius/ontology/hero/Value> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/Value> <http://www.w3.org/2000/01/rdf-schema#label> "Value"@en .
+# 
+# http://purl.org/sirius/ontology/hero/ValueDescription
+<http://purl.org/sirius/ontology/hero/ValueDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/sirius/ontology/hero/ValueDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/sirius/ontology/hero/AssessmentActivity> .
+<http://purl.org/sirius/ontology/hero/ValueDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity that involves the identification of values that contribute to the perceived importance of an asset."@en .
+<http://purl.org/sirius/ontology/hero/ValueDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/ValueDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Value description"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept is a Social Object. \nThe classifies relation relates concepts to entities at some time, but time can only be expressed in the alternative pattern: timeindexedclassification." .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/classification.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
+<http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concetto"@it .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific situation where some thing is observed with respect ot a set of parameters." .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "The parameters of an observation describe the context and content of the observation. For example in a medical context an observation of a patient may contain a set of symptoms, that are the parameters of that observation." .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/observation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Any physical, social, or mental process, event, or state." .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> <http://www.w3.org/2000/01/rdf-schema#comment> "Any physical, social, or mental object, or substance" .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/participation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object> <http://www.w3.org/2000/01/rdf-schema#label> "Object"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "Any region in a dimensional space (a dimensional space is a maximal Region), which can be used as a value for a quality of an Entity . For example, TimeInterval, SpaceRegion, PhysicalAttribute, Amount, SocialAttribute are all subclasses of Region. \nRegions are not data values in the ordinary knowledge representation sense; in order to get patterns for modelling data, see the properties: representsDataValue and hasDataValue" .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/region.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
+<http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Regione"@it .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "A Situation that is explicitly indexed at some time for at least one entity." .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Time indexed situation"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "Any Region in a dimensional space that aims at representing time.\nIt should be used when you want to talk about time as an object having some characteristics." .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Intervallo di tempo"@it .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Time interval"@en .
+# 
+# http://www.w3.org/2002/07/owl#Thing
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent (eg. person, group, software or physical artifact)."@en .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
+# 
+# http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#comment> "A document."@en .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/sirius/ontology/hero/administrative
+<http://purl.org/sirius/ontology/hero/administrative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/administrative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Parameter> .
+<http://purl.org/sirius/ontology/hero/administrative> <http://www.w3.org/2000/01/rdf-schema#comment> "A contextual parameter representing the administrative environment of the heritage asset."@en .
+<http://purl.org/sirius/ontology/hero/administrative> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/administrative> <http://www.w3.org/2000/01/rdf-schema#label> "Administrative"@en .
+# 
+# http://purl.org/sirius/ontology/hero/artistic
+<http://purl.org/sirius/ontology/hero/artistic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/artistic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Dimension> .
+<http://purl.org/sirius/ontology/hero/artistic> <http://www.w3.org/2000/01/rdf-schema#comment> "The dimension referring to the aesthetic qualities associated with an asset."@en .
+<http://purl.org/sirius/ontology/hero/artistic> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/artistic> <http://www.w3.org/2000/01/rdf-schema#label> "Artistic"@en .
+# 
+# http://purl.org/sirius/ontology/hero/building
+<http://purl.org/sirius/ontology/hero/building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Layer> .
+<http://purl.org/sirius/ontology/hero/building> <http://www.w3.org/2000/01/rdf-schema#comment> "A layer that encapsulates the entire building that houses the heritage asset."@en .
+<http://purl.org/sirius/ontology/hero/building> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/building> <http://www.w3.org/2000/01/rdf-schema#label> "Building"@en .
+# 
+# http://purl.org/sirius/ontology/hero/common
+<http://purl.org/sirius/ontology/hero/common> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/common> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/RiskType> .
+<http://purl.org/sirius/ontology/hero/common> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of risk that occurs many times per century."@en .
+<http://purl.org/sirius/ontology/hero/common> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/common> <http://www.w3.org/2000/01/rdf-schema#label> "Common"@en .
+# 
+# http://purl.org/sirius/ontology/hero/cumulative
+<http://purl.org/sirius/ontology/hero/cumulative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/cumulative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/RiskType> .
+<http://purl.org/sirius/ontology/hero/cumulative> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of risk that can occur continuously or intermittently."@en .
+<http://purl.org/sirius/ontology/hero/cumulative> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/cumulative> <http://www.w3.org/2000/01/rdf-schema#label> "Cumulative"@en .
+# 
+# http://purl.org/sirius/ontology/hero/dissociation
+<http://purl.org/sirius/ontology/hero/dissociation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/dissociation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/AgentOfDeterioration> .
+<http://purl.org/sirius/ontology/hero/dissociation> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent of deterioration that includes the natural tendency for ordered systems to fall apart over time."@en .
+<http://purl.org/sirius/ontology/hero/dissociation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/dissociation> <http://www.w3.org/2000/01/rdf-schema#label> "Dissociation"@en .
+# 
+# http://purl.org/sirius/ontology/hero/economic
+<http://purl.org/sirius/ontology/hero/economic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/economic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Parameter> .
+<http://purl.org/sirius/ontology/hero/economic> <http://www.w3.org/2000/01/rdf-schema#comment> "A contextual parameter representing the economic environment of the heritage asset."@en .
+<http://purl.org/sirius/ontology/hero/economic> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/economic> <http://www.w3.org/2000/01/rdf-schema#label> "Economic"@en .
+# 
+# http://purl.org/sirius/ontology/hero/feeling
+<http://purl.org/sirius/ontology/hero/feeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/feeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Aspect> .
+<http://purl.org/sirius/ontology/hero/feeling> <http://www.w3.org/2000/01/rdf-schema#comment> "An aspect that encompasses the intangible and emotional aspects associated with an asset."@en .
+<http://purl.org/sirius/ontology/hero/feeling> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/feeling> <http://www.w3.org/2000/01/rdf-schema#label> "Feeling"@en .
+# 
+# http://purl.org/sirius/ontology/hero/fire
+<http://purl.org/sirius/ontology/hero/fire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/fire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/AgentOfDeterioration> .
+<http://purl.org/sirius/ontology/hero/fire> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent of deterioration representing the destruction of an asset due to properties of fire, such as heat, flames, or smoke."@en .
+<http://purl.org/sirius/ontology/hero/fire> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/fire> <http://www.w3.org/2000/01/rdf-schema#label> "Fire"@en .
+# 
+# http://purl.org/sirius/ontology/hero/fitting
+<http://purl.org/sirius/ontology/hero/fitting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/fitting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Layer> .
+<http://purl.org/sirius/ontology/hero/fitting> <http://www.w3.org/2000/01/rdf-schema#comment> "A layer that encapsulate the first, closest movable space to the asset."@en .
+<http://purl.org/sirius/ontology/hero/fitting> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/fitting> <http://www.w3.org/2000/01/rdf-schema#label> "Fitting"@en .
+# 
+# http://purl.org/sirius/ontology/hero/form
+<http://purl.org/sirius/ontology/hero/form> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/form> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Aspect> .
+<http://purl.org/sirius/ontology/hero/form> <http://www.w3.org/2000/01/rdf-schema#comment> "An aspect that refers to the physical characteristics and appearance of an asset."@en .
+<http://purl.org/sirius/ontology/hero/form> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/form> <http://www.w3.org/2000/01/rdf-schema#label> "Form"@en .
+# 
+# http://purl.org/sirius/ontology/hero/function
+<http://purl.org/sirius/ontology/hero/function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Aspect> .
+<http://purl.org/sirius/ontology/hero/function> <http://www.w3.org/2000/01/rdf-schema#comment> "An aspect that pertains to the purpose and use of an asset."@en .
+<http://purl.org/sirius/ontology/hero/function> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/function> <http://www.w3.org/2000/01/rdf-schema#label> "Function"@en .
+# 
+# http://purl.org/sirius/ontology/hero/historic
+<http://purl.org/sirius/ontology/hero/historic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/historic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Dimension> .
+<http://purl.org/sirius/ontology/hero/historic> <http://www.w3.org/2000/01/rdf-schema#comment> "A dimension that refers to the historical context, significance, and evolution of an asset"@en .
+<http://purl.org/sirius/ontology/hero/historic> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/historic> <http://www.w3.org/2000/01/rdf-schema#label> "Historic"@en .
+# 
+# http://purl.org/sirius/ontology/hero/incorrect-relative-humidity
+<http://purl.org/sirius/ontology/hero/incorrect-relative-humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/incorrect-relative-humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/AgentOfDeterioration> .
+<http://purl.org/sirius/ontology/hero/incorrect-relative-humidity> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent of deterioration representing the situation in which the level of humidity in the environment deviates from the optimal or specified range."@en .
+<http://purl.org/sirius/ontology/hero/incorrect-relative-humidity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/incorrect-relative-humidity> <http://www.w3.org/2000/01/rdf-schema#label> "Incorrect relative humidity"@en .
+# 
+# http://purl.org/sirius/ontology/hero/incorrect-temperature
+<http://purl.org/sirius/ontology/hero/incorrect-temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/incorrect-temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/AgentOfDeterioration> .
+<http://purl.org/sirius/ontology/hero/incorrect-temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent of deterioration representing a situation in which the ambient temperature deviates from the optimal or specified range."@en .
+<http://purl.org/sirius/ontology/hero/incorrect-temperature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/incorrect-temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Incorrect temperature"@en .
+# 
+# http://purl.org/sirius/ontology/hero/legal
+<http://purl.org/sirius/ontology/hero/legal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/legal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Parameter> .
+<http://purl.org/sirius/ontology/hero/legal> <http://www.w3.org/2000/01/rdf-schema#comment> "A contextual parameter representing the legal environment of the heritage asset."@en .
+<http://purl.org/sirius/ontology/hero/legal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/legal> <http://www.w3.org/2000/01/rdf-schema#label> "Legal"@en .
+# 
+# http://purl.org/sirius/ontology/hero/light-ultraviolet-infrared
+<http://purl.org/sirius/ontology/hero/light-ultraviolet-infrared> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/light-ultraviolet-infrared> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/AgentOfDeterioration> .
+<http://purl.org/sirius/ontology/hero/light-ultraviolet-infrared> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent of deterioration representing different forms of electromagnetic radiation."@en .
+<http://purl.org/sirius/ontology/hero/light-ultraviolet-infrared> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/light-ultraviolet-infrared> <http://www.w3.org/2000/01/rdf-schema#label> "Light, ultraviolet and infrared"@en .
+# 
+# http://purl.org/sirius/ontology/hero/pests
+<http://purl.org/sirius/ontology/hero/pests> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/pests> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/AgentOfDeterioration> .
+<http://purl.org/sirius/ontology/hero/pests> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent of deterioration representing the presence of biological agents, such as insects, rodents, and microorganisms."@en .
+<http://purl.org/sirius/ontology/hero/pests> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/pests> <http://www.w3.org/2000/01/rdf-schema#label> "Pests"@en .
+# 
+# http://purl.org/sirius/ontology/hero/physical
+<http://purl.org/sirius/ontology/hero/physical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/physical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Parameter> .
+<http://purl.org/sirius/ontology/hero/physical> <http://www.w3.org/2000/01/rdf-schema#comment> "A contextual parameter representing the physical environment of the heritage asset."@en .
+<http://purl.org/sirius/ontology/hero/physical> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/physical> <http://www.w3.org/2000/01/rdf-schema#label> "Physical"@en .
+# 
+# http://purl.org/sirius/ontology/hero/physical-forces
+<http://purl.org/sirius/ontology/hero/physical-forces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/physical-forces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/AgentOfDeterioration> .
+<http://purl.org/sirius/ontology/hero/physical-forces> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent of deterioration representing mechanical damage resulting from handling, transport, and vibration."@en .
+<http://purl.org/sirius/ontology/hero/physical-forces> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/physical-forces> <http://www.w3.org/2000/01/rdf-schema#label> "Physical forces"@en .
+# 
+# http://purl.org/sirius/ontology/hero/political
+<http://purl.org/sirius/ontology/hero/political> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/political> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Parameter> .
+<http://purl.org/sirius/ontology/hero/political> <http://www.w3.org/2000/01/rdf-schema#comment> "A contextual parameter representing the political environment of the heritage asset."@en .
+<http://purl.org/sirius/ontology/hero/political> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/political> <http://www.w3.org/2000/01/rdf-schema#label> "Political"@en .
+# 
+# http://purl.org/sirius/ontology/hero/pollutants
+<http://purl.org/sirius/ontology/hero/pollutants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/pollutants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/AgentOfDeterioration> .
+<http://purl.org/sirius/ontology/hero/pollutants> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent of deterioration representing the presence of substances or contaminants introduced into the environment."@en .
+<http://purl.org/sirius/ontology/hero/pollutants> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/pollutants> <http://www.w3.org/2000/01/rdf-schema#label> "Pollutants"@en .
+# 
+# http://purl.org/sirius/ontology/hero/rare
+<http://purl.org/sirius/ontology/hero/rare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/rare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/RiskType> .
+<http://purl.org/sirius/ontology/hero/rare> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of risk that occurs less often than approximately once every 100 years."@en .
+<http://purl.org/sirius/ontology/hero/rare> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/rare> <http://www.w3.org/2000/01/rdf-schema#label> "Rare"@en .
+# 
+# http://purl.org/sirius/ontology/hero/region
+<http://purl.org/sirius/ontology/hero/region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Layer> .
+<http://purl.org/sirius/ontology/hero/region> <http://www.w3.org/2000/01/rdf-schema#comment> "A layer that encapsulates the broadest space in which the heritage asset is considered."@en .
+<http://purl.org/sirius/ontology/hero/region> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
+# 
+# http://purl.org/sirius/ontology/hero/room
+<http://purl.org/sirius/ontology/hero/room> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/room> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Layer> .
+<http://purl.org/sirius/ontology/hero/room> <http://www.w3.org/2000/01/rdf-schema#comment> "A layer that encapsulates the interior space where the heritage asset is located."@en .
+<http://purl.org/sirius/ontology/hero/room> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/room> <http://www.w3.org/2000/01/rdf-schema#label> "Room"@en .
+# 
+# http://purl.org/sirius/ontology/hero/scientific
+<http://purl.org/sirius/ontology/hero/scientific> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/scientific> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Dimension> .
+<http://purl.org/sirius/ontology/hero/scientific> <http://www.w3.org/2000/01/rdf-schema#comment> "A dimension that involves the application of research, documentation, and analysis techniques to understand, preserve, and interpret an asset."@en .
+<http://purl.org/sirius/ontology/hero/scientific> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/scientific> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific"@en .
+# 
+# http://purl.org/sirius/ontology/hero/setting
+<http://purl.org/sirius/ontology/hero/setting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/setting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Aspect> .
+<http://purl.org/sirius/ontology/hero/setting> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/setting> <http://www.w3.org/2000/01/rdf-schema#label> "Setting"@en .
+<http://purl.org/sirius/ontology/hero/setting> <http://www.w3.org/2000/01/rdf-schema#label> "The surroundings and environment in which an asset is located."@en .
+# 
+# http://purl.org/sirius/ontology/hero/site
+<http://purl.org/sirius/ontology/hero/site> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/site> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Layer> .
+<http://purl.org/sirius/ontology/hero/site> <http://www.w3.org/2000/01/rdf-schema#comment> "A layer that encapsulates the broader area or property on which the heritage asset is situated."@en .
+<http://purl.org/sirius/ontology/hero/site> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/site> <http://www.w3.org/2000/01/rdf-schema#label> "Site"@en .
+# 
+# http://purl.org/sirius/ontology/hero/social
+<http://purl.org/sirius/ontology/hero/social> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/social> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Dimension> .
+<http://purl.org/sirius/ontology/hero/social> <http://www.w3.org/2000/01/rdf-schema#comment> "A dimension that considers the cultural and social context of an asset, including its role in shaping identity, community values, and social practices."@en .
+<http://purl.org/sirius/ontology/hero/social> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/social> <http://www.w3.org/2000/01/rdf-schema#label> "Social"@en .
+# 
+# http://purl.org/sirius/ontology/hero/socio-cultural
+<http://purl.org/sirius/ontology/hero/socio-cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/socio-cultural> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Parameter> .
+<http://purl.org/sirius/ontology/hero/socio-cultural> <http://www.w3.org/2000/01/rdf-schema#comment> "A contextual parameter representing the socio-cultural environment of the heritage asset."@en .
+<http://purl.org/sirius/ontology/hero/socio-cultural> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/socio-cultural> <http://www.w3.org/2000/01/rdf-schema#label> "Socio-cultural"@en .
+# 
+# http://purl.org/sirius/ontology/hero/substance
+<http://purl.org/sirius/ontology/hero/substance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/substance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Aspect> .
+<http://purl.org/sirius/ontology/hero/substance> <http://www.w3.org/2000/01/rdf-schema#comment> "An aspect that involves the material composition and integrity of an asset."@en .
+<http://purl.org/sirius/ontology/hero/substance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/substance> <http://www.w3.org/2000/01/rdf-schema#label> "Substance"@en .
+# 
+# http://purl.org/sirius/ontology/hero/support
+<http://purl.org/sirius/ontology/hero/support> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/support> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Layer> .
+<http://purl.org/sirius/ontology/hero/support> <http://www.w3.org/2000/01/rdf-schema#comment> "The immediate surroundings or foundation upon which an asset relies."@en .
+<http://purl.org/sirius/ontology/hero/support> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/support> <http://www.w3.org/2000/01/rdf-schema#label> "Support"@en .
+# 
+# http://purl.org/sirius/ontology/hero/theft-vandalism
+<http://purl.org/sirius/ontology/hero/theft-vandalism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/theft-vandalism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/AgentOfDeterioration> .
+<http://purl.org/sirius/ontology/hero/theft-vandalism> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent of deterioration representing deliberate acts of theft, vandalism, or destruction done by humans."@en .
+<http://purl.org/sirius/ontology/hero/theft-vandalism> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/theft-vandalism> <http://www.w3.org/2000/01/rdf-schema#label> "Theft and vandalism"@en .
+# 
+# http://purl.org/sirius/ontology/hero/tradition
+<http://purl.org/sirius/ontology/hero/tradition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/tradition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/Aspect> .
+<http://purl.org/sirius/ontology/hero/tradition> <http://www.w3.org/2000/01/rdf-schema#comment> "An aspect that involves the surroundings and environment in which an asset is located."@en .
+<http://purl.org/sirius/ontology/hero/tradition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/tradition> <http://www.w3.org/2000/01/rdf-schema#label> "Tradition"@en .
+# 
+# http://purl.org/sirius/ontology/hero/water
+<http://purl.org/sirius/ontology/hero/water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/sirius/ontology/hero/water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/sirius/ontology/hero/AgentOfDeterioration> .
+<http://purl.org/sirius/ontology/hero/water> <http://www.w3.org/2000/01/rdf-schema#comment> "An agent of deterioration representing the damage that can occur through leaks, flooding, or high humidity levels."@en .
+<http://purl.org/sirius/ontology/hero/water> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/sirius/ontology/hero> .
+<http://purl.org/sirius/ontology/hero/water> <http://www.w3.org/2000/01/rdf-schema#label> "Water"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://xmlns.com/wordnet/1.6/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

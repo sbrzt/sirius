@@ -45,3 +45,33 @@ WHERE {
                   tbox:hasHighEstimate ?high_estimate .
 }
 ```
+***
+
+## CQ_3.3
+Return the low, probable, and high estimates of the A-score, B-score, C-score, and magnitude of risk for each risk affecting each heritage asset, as well as their documentation.
+
+```SPARQL
+PREFIX tbox: <http://purl.org/sirius/ontology/development/03/schema/>
+PREFIX abox: <http://purl.org/sirius/ontology/development/03/data/>
+
+SELECT ?risk ?component_class ?low_estimate ?probable_estimate ?high_estimate ?knowledge_source ?note
+WHERE {
+  ?risk_assessment tbox:describes ?heritage_asset ;
+                    tbox:analyses ?risk ;
+                    tbox:quantifies ?risk_component .
+  ?risk_component a ?component_class ;
+                  tbox:hasLowEstimate ?low_estimate ;
+                  tbox:hasHighEstimate ?high_estimate ;
+                  tbox:hasProbableEstimate ?probable_estimate .
+  OPTIONAL {
+    ?risk_component tbox:isDocumentedBy ?knowledge_source ;
+                  tbox:hasNote ?note .
+  }
+  FILTER (
+    ?component_class = tbox:Frequency ||
+    ?component_class = tbox:FractionalValueLoss ||
+    ?component_class = tbox:Exposure ||
+    ?component_class = tbox:Magnitude
+  )
+}
+```

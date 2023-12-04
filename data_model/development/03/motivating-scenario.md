@@ -15,7 +15,7 @@ After scoring the three components of each risk using the ABC scales, the magnit
 When analyzing risks, the aim is to predict the loss of value to the heritage asset in the future, acknowledging the inherent uncertainty. To express this uncertainty, the ABC scales provide scores for the most likely, 'worst case,' and 'best case' scenarios for each risk component. This results in three scores for each component, reflecting the low, most likely, and high estimates, thereby presenting the magnitude of risk with three MR values (low, most likely, high) to indicate the level of uncertainty.
 
 ## Example 01
-A large fire is a 'rare event' risk for a museum. National statistics from different countries show that the average time between large fire events for museums with basic fire control measures is about 300 years. The A-score in this case would be A=2 (low estimate), A=2.5 (probable estimate), A=3 (high estimate), indicating an expectation of a large fire once every 300 years.
+A large fire is a rare, but very relevant risk for a museum. National statistics from different countries show that the average time between large fire events for museums with basic fire control measures is about 300 years. The A-score in this case would be A=2 (low estimate), A=2.5 (probable estimate), A=3 (high estimate), indicating an expectation of a large fire once every 300 years.
 
 Considering the combustible nature of the museum building and its contents, a total or almost total loss of value is expected in each item affected by the fire. The B-score is B=4.5 (low estimate), B=5 (probable estimate), B=5 (high estimate).
 
@@ -26,7 +26,7 @@ The magnitude of risk is MR=12 (low estimate), MR=12.5 (probable estimate), MR=1
 To summarize: a large fire event is expected in the museum approximately once every 300 years, with the fire affecting all or most of the heritage asset value, causing total or almost total loss of value in each affected item.
 
 ## Example 02
-Theft is also an 'event' risk but is more frequent than large fires. In this example, staff memory indicates that the collection has suffered 3 theft events affecting objects on display in the past 75 years, estimating an average time of 25 years between theft events. The A-score in this case would be A=3 (low estimate), A=3.5 (probable estimate), A=4 (high estimate).
+Theft is also a risk but is more frequent than large fires. In this example, staff memory indicates that the collection has suffered 3 theft events affecting objects on display in the past 75 years, estimating an average time of 25 years between theft events. The A-score in this case would be A=3 (low estimate), A=3.5 (probable estimate), A=4 (high estimate).
 
 A stolen item results in a complete loss of value for the museum and its public. The B-score is B=4.5 (low estimate), B=5 (probable estimate), B=5 (high estimate).
 
@@ -37,9 +37,9 @@ The magnitude of risk is MR=10 (probable estimate), MR=10.5 (probable estimate),
 To summarize: an opportunistic theft event is expected in the museum approximately once every 25 years, most likely affecting 1 original object of the collection on display or a tiny fraction of the heritage asset value per event, resulting in a total loss of the stolen item.
 
 ## Example 03
-Deterioration by exposure to volatile substances released by cardboard boxes is a 'cumulative process' risk. For a period of 30 years, the A-score is A=3 (low estimate), A=3.5 (probable estimate), A=4 (high estimate).
+Deterioration by exposure to volatile substances released by cardboard boxes is another risk, this time for an archive and its collections. For a period of 30 years, the A-score is A=3 (low estimate), A=3.5 (probable estimate), A=4 (high estimate).
 
-Observations on similar archival collections in the same kind of boxes show a tiny loss of value in each item affected over 30 years. The B-score is B=1.5 (low estimate), B=2 (probable estimate), B=2.5 (high estimate).
+Observations on similar archival collections show a tiny loss of value in each item affected over 30 years. The B-score is B=1.5 (low estimate), B=2 (probable estimate), B=2.5 (high estimate).
 
 Only a tiny fraction of the heritage asset value is expected to be affected per event. The C-score is C=1.5 (low estimate), C=2 (probable estimate), C=2.5 (high estimate).
 

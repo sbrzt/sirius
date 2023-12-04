@@ -20,3 +20,21 @@ This repository contains the full documentation produced during the development 
 * the `diagrams` directory contains the full set of Graffoo diagrams representing the refactored model of each iteration;
 * the `docs` directory contains the full set of files related to the final model and its versions in time;
 * the `sparql` directory contains the full set of refactored Formal Competency Questions.
+
+## Creator
+Barzaghi, Sebastian ([0000-0002-0799-1527](https://orcid.org/0000-0002-0799-1527))
+
+## Date
+2023-11-30
+
+## Language
+en
+
+## License
+CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+## Version
+1.0.0
+
+## Cite as
+Barzaghi, S. (2023). ATLAS Data Model (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.10225594

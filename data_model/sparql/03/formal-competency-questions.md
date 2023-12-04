@@ -47,3 +47,30 @@ WHERE {
                   hero:hasHighEstimate ?high_estimate .
 }
 ```
+***
+
+## CQ_3.3
+Return the low, probable, and high estimates of the A-score, B-score, C-score, and magnitude of risk for each risk affecting each heritage asset, as well as their documentation.
+
+```SPARQL
+PREFIX hero: <http://purl.org/sirius/ontology/hero/>
+
+SELECT ?risk ?component_class ?low_estimate ?probable_estimate ?high_estimate ?knowledge_source ?note
+WHERE {
+  ?risk_assessment hero:describes ?heritage_asset ;
+                    hero:analyses ?risk ;
+                    hero:quantifies ?risk_component .
+  ?risk_component a ?component_class ;
+                  hero:hasLowEstimate ?low_estimate ;
+                  hero:hasHighEstimate ?high_estimate ;
+                  hero:hasProbableEstimate ?probable_estimate .
+  OPTIONAL {?risk_component hero:isDocumentedBy ?knowledge_source .}
+  OPTIONAL {?risk_component hero:hasNote ?note .}
+  FILTER (
+    ?component_class = hero:Frequency ||
+    ?component_class = hero:FractionalValueLoss ||
+    ?component_class = hero:Exposure ||
+    ?component_class = hero:Magnitude
+  )
+}
+```
