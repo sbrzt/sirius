@@ -50,7 +50,7 @@
     <node id="n3">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="44.0" width="180.96822102864604" x="606.9473906031267" y="617.7855125988143"/>
+          <y:Geometry height="44.0" width="180.96822102864604" x="619.4642885632818" y="617.7855125988143"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.0625" x="32.45286051432299" xml:space="preserve" y="10.19921875">hero:Frequency</y:NodeLabel>
@@ -72,7 +72,7 @@
     <node id="n5">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="44.0" width="180.96822102864604" x="1419.4855717908533" y="617.7855125988143"/>
+          <y:Geometry height="44.0" width="180.96822102864604" x="1364.3669347002638" y="617.7855125988143"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="108.0625" x="36.45286051432299" xml:space="preserve" y="10.19921875">hero:Exposure</y:NodeLabel>
@@ -97,7 +97,7 @@
           <y:Geometry height="43.0" width="180.96822102864598" x="991.9156116317727" y="-20.144174901185636"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="88.4765625" x="46.24582926432322" xml:space="preserve" y="9.69921875">xsd:decimal</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="88.4765625" x="46.24582926432299" xml:space="preserve" y="9.69921875">xsd:decimal</y:NodeLabel>
           <y:Shape type="parallelogram"/>
         </y:ShapeNode>
       </data>
@@ -134,6 +134,55 @@
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
+    </node>
+    <node id="n11" yfiles.foldertype="group">
+      <data key="d4" xml:space="preserve"/>
+      <data key="d6">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Geometry height="173.98583984375" width="565.6836811195345" x="619.4642885632817" y="728.0050704776821"/>
+              <y:Fill color="#FFFFFF" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#B7B69E" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="bold" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="565.6836811195345" x="0.0" xml:space="preserve" y="0.0">Prefixes   </y:NodeLabel>
+              <y:Shape type="rectangle"/>
+              <y:DropShadow color="#D2D2D2" offsetX="4" offsetY="4"/>
+              <y:State closed="false" closedHeight="74.509765625" closedWidth="387.8295898437501" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="18" rightF="17.59774361953464" top="0" topF="0.0"/>
+            </y:GroupNode>
+            <y:GroupNode>
+              <y:Geometry height="50.0" width="50.0" x="860.7307196017912" y="232.7487322002438"/>
+              <y:Fill color="#F2F0D8" transparent="false"/>
+              <y:BorderStyle color="#000000" type="line" width="1.0"/>
+              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#B7B69E" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="59.02685546875" x="-4.513427734375" xml:space="preserve" y="0.0">Folder 2</y:NodeLabel>
+              <y:Shape type="rectangle"/>
+              <y:DropShadow color="#D2D2D2" offsetX="4" offsetY="4"/>
+              <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
+              <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
+              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph edgedefault="directed" id="n11:">
+        <node id="n11::n0">
+          <data key="d6">
+            <y:ShapeNode>
+              <y:Geometry height="22.2421875" width="207.83128065395096" x="789.5916169863062" y="815.0651290714321"/>
+              <y:Fill hasColor="false" transparent="false"/>
+              <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="121.609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="518.0859375" x="-155.12732842302455" xml:space="preserve" y="-49.68359375">hero: &lt;http://purl.org/sirius/ontology/hero/&gt;
+owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+ti: &lt;http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#&gt;
+tis: &lt;http://ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#&gt;
+xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;</y:NodeLabel>
+              <y:Shape type="rectangle"/>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
     </node>
     <edge id="e0" source="n1" target="n0">
       <data key="d10">
@@ -210,7 +259,7 @@ hero:hasHighEstimate<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRig
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-50.54280515004825" ty="236.3904726613967">
-            <y:Point x="697.4315011174497" y="511.53473134881426"/>
+            <y:Point x="709.9483990776048" y="511.53473134881426"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
@@ -222,7 +271,7 @@ hero:hasHighEstimate<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRig
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="57.89798536378589" ty="235.09951086956534">
-            <y:Point x="1509.9696823051765" y="511.53473134881426"/>
+            <y:Point x="1454.851045214587" y="511.53473134881426"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="none"/>
