@@ -1,42 +1,42 @@
-@prefix : <http://purl.org/sirius/ontology/development/04/schema/> .
+@prefix : <https://w3id.org/sirius/ontology/development/04/schema/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://purl.org/sirius/ontology/development/04/schema/> .
+@base <https://w3id.org/sirius/ontology/development/04/schema/> .
 
-<http://purl.org/sirius/ontology/development/04/schema/> rdf:type owl:Ontology .
+<https://w3id.org/sirius/ontology/development/04/schema/> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/04/schema/assigns
+###  https://w3id.org/sirius/ontology/development/04/schema/assigns
 :assigns rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/describes
+###  https://w3id.org/sirius/ontology/development/04/schema/describes
 :describes rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/atTime
+###  https://w3id.org/sirius/ontology/development/04/schema/atTime
 :atTime rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/hasPart
+###  https://w3id.org/sirius/ontology/development/04/schema/hasPart
 :hasPart rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/isDocumentedBy
+###  https://w3id.org/sirius/ontology/development/04/schema/isDocumentedBy
 :isDocumentedBy rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/withinDimension
+###  https://w3id.org/sirius/ontology/development/04/schema/withinDimension
 :withinDimension rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/withinAspect
+###  https://w3id.org/sirius/ontology/development/04/schema/withinAspect
 :withinAspect rdf:type owl:ObjectProperty .
 
 
@@ -44,23 +44,23 @@
 #    Data properties
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/04/schema/hasEndDate
+###  https://w3id.org/sirius/ontology/development/04/schema/hasEndDate
 :hasEndDate rdf:type owl:DatatypeProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/hasNote
+###  https://w3id.org/sirius/ontology/development/04/schema/hasNote
 :hasNote rdf:type owl:DatatypeProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/hasScore
+###  https://w3id.org/sirius/ontology/development/04/schema/hasScore
 :hasScore rdf:type owl:DatatypeProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/hasStartDate
+###  https://w3id.org/sirius/ontology/development/04/schema/hasStartDate
 :hasStartDate rdf:type owl:DatatypeProperty .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/assessesPercentage
+###  https://w3id.org/sirius/ontology/development/04/schema/assessesPercentage
 :assessesPercentage rdf:type owl:DatatypeProperty .
 
 
@@ -68,31 +68,31 @@
 #    Classes
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/04/schema/Aspect
+###  https://w3id.org/sirius/ontology/development/04/schema/Aspect
 :Aspect rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/Value
+###  https://w3id.org/sirius/ontology/development/04/schema/Value
 :Value rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/Dimension
+###  https://w3id.org/sirius/ontology/development/04/schema/Dimension
 :Dimension rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/Document
+###  https://w3id.org/sirius/ontology/development/04/schema/Document
 :Document rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/HeritageAsset
+###  https://w3id.org/sirius/ontology/development/04/schema/HeritageAsset
 :HeritageAsset rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/TimeInterval
+###  https://w3id.org/sirius/ontology/development/04/schema/TimeInterval
 :TimeInterval rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/ValueDescription
+###  https://w3id.org/sirius/ontology/development/04/schema/ValueDescription
 :ValueDescription rdf:type owl:Class .
 
 
@@ -100,52 +100,52 @@
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/04/schema/artistic
+###  https://w3id.org/sirius/ontology/development/04/schema/artistic
 :artistic rdf:type owl:NamedIndividual ,
                    :Dimension .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/feeling
+###  https://w3id.org/sirius/ontology/development/04/schema/feeling
 :feeling rdf:type owl:NamedIndividual ,
                   :Aspect .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/form
+###  https://w3id.org/sirius/ontology/development/04/schema/form
 :form rdf:type owl:NamedIndividual ,
                :Aspect .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/function
+###  https://w3id.org/sirius/ontology/development/04/schema/function
 :function rdf:type owl:NamedIndividual ,
                    :Aspect .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/historic
+###  https://w3id.org/sirius/ontology/development/04/schema/historic
 :historic rdf:type owl:NamedIndividual ,
                    :Dimension .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/scientific
+###  https://w3id.org/sirius/ontology/development/04/schema/scientific
 :scientific rdf:type owl:NamedIndividual ,
                      :Dimension .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/setting
+###  https://w3id.org/sirius/ontology/development/04/schema/setting
 :setting rdf:type owl:NamedIndividual ,
                   :Aspect .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/social
+###  https://w3id.org/sirius/ontology/development/04/schema/social
 :social rdf:type owl:NamedIndividual ,
                  :Dimension .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/substance
+###  https://w3id.org/sirius/ontology/development/04/schema/substance
 :substance rdf:type owl:NamedIndividual ,
                     :Aspect .
 
 
-###  http://purl.org/sirius/ontology/development/04/schema/tradition
+###  https://w3id.org/sirius/ontology/development/04/schema/tradition
 :tradition rdf:type owl:NamedIndividual ,
                     :Aspect .
 

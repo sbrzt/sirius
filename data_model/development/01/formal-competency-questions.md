@@ -3,8 +3,8 @@
 Return the information about the heritage asset, including its name, alternative name, its description, the place it is located in (as well as its coordinates), and the time-span temporal horizon that identifies the creation event it has been dated to.
 
 ```SPARQL
-PREFIX tbox: <http://purl.org/sirius/ontology/development/01/schema/>
-PREFIX abox: <http://purl.org/sirius/ontology/development/01/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/01/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/01/data/>
 
 SELECT ?asset_name ?alt_name ?description ?place_name ?coordinates ?date
 WHERE {
@@ -30,8 +30,8 @@ WHERE {
 Return the contextual information of the heritage asset in terms of its type and description.
 
 ```SPARQL
-PREFIX tbox: <http://purl.org/sirius/ontology/development/01/schema/>
-PREFIX abox: <http://purl.org/sirius/ontology/development/01/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/01/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/01/data/>
 
 SELECT ?heritage_asset ?context_type ?context_description
 WHERE {
@@ -51,8 +51,8 @@ WHERE {
 Return the documents that document the contextual information of the heritage asset.
 
 ```SPARQL
-PREFIX tbox: <http://purl.org/sirius/ontology/development/01/schema/>
-PREFIX abox: <http://purl.org/sirius/ontology/development/01/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/01/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/01/data/>
 
 SELECT ?heritage_asset ?context_type ?document ?document_link
 WHERE {
@@ -74,8 +74,8 @@ WHERE {
 Return the names of the stakeholders involved in the risk assessment activity regarding the heritage asset.
 
 ```SPARQL
-PREFIX tbox: <http://purl.org/sirius/ontology/development/01/schema/>
-PREFIX abox: <http://purl.org/sirius/ontology/development/01/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/01/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/01/data/>
 
 SELECT ?heritage_asset ?stakeholder_name
 WHERE {

@@ -13,7 +13,7 @@
   <key attr.name="description" attr.type="string" for="edge" id="d9"/>
   <key for="edge" id="d10" yfiles.type="edgegraphics"/>
   <graph edgedefault="directed" id="G">
-    <data key="d0"/>
+    <data key="d0" xml:space="preserve"/>
     <node id="n0">
       <data key="d6">
         <y:ShapeNode>
@@ -64,7 +64,7 @@
           <y:Geometry height="44.0" width="220.96822102864604" x="877.8728841145839" y="419.0"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="100.9296875" x="60.01926676432299" xml:space="preserve" y="10.19921875">hero:Criterion</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="99.1640625" x="60.90207926432299" xml:space="preserve" y="10.19921875">hero:Element</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -97,6 +97,7 @@
           <y:Geometry height="22.2421875" width="207.83128065395096" x="510.1685662852525" y="674.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="101.91564032697545" y="9.12109375"/>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -139,7 +140,7 @@
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="121.609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="518.0859375" x="-155.12732842302455" xml:space="preserve" y="-49.68359375">foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
-hero: &lt;http://purl.org/sirius/ontology/hero/&gt;
+hero: &lt;https://w3id.org/sirius/ontology/hero/&gt;
 owl: &lt;http://www.w3.org/2002/07/owl#&gt;
 rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 ti: &lt;http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#&gt;

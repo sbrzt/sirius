@@ -3,7 +3,7 @@
 Return the textual descriptions assigned to the risks, the agents of deterioration that classify them, and their types.
 
 ```SPARQL
-PREFIX hero: <http://purl.org/sirius/ontology/hero/>
+PREFIX hero: <https://w3id.org/sirius/ontology/hero/>
 
 SELECT ?risk ?agent_of_deterioration ?risk_type ?risk_summary
 WHERE {
@@ -24,7 +24,7 @@ WHERE {
 Return the risks identified within the layers `site` or `region`, their types, the documents documenting them, and the start and end dates of the time intervals they have been identified in.
 
 ```SPARQL
-PREFIX hero: <http://purl.org/sirius/ontology/hero/>
+PREFIX hero: <https://w3id.org/sirius/ontology/hero/>
 PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
 PREFIX tis: <http://ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#>
 

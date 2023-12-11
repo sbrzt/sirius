@@ -1,7 +1,7 @@
-@prefix : <http://purl.org/sirius/ontology/data/03/> .
+@prefix : <https://w3id.org/sirius/ontology/data/03/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix hero: <http://purl.org/sirius/ontology/hero/> .
+@prefix hero: <https://w3id.org/sirius/ontology/hero/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -9,26 +9,26 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
 @prefix tis: <http://ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#> .
-@base <http://purl.org/sirius/ontology/data/03/> .
+@base <https://w3id.org/sirius/ontology/data/03/> .
 
-<http://purl.org/sirius/ontology/data/03/> rdf:type owl:Ontology ;
-                                                        owl:imports <http://purl.org/sirius/ontology/model> .
+<https://w3id.org/sirius/ontology/data/03/> rdf:type owl:Ontology ;
+                                                        owl:imports <https://w3id.org/sirius/ontology/model> .
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/data/03/archive
+###  https://w3id.org/sirius/ontology/data/03/archive
 :archive rdf:type owl:NamedIndividual ,
                   crm:E24_Physical_Human-Made_Thing .
 
 
-###  http://purl.org/sirius/ontology/data/03/archive-deterioration
+###  https://w3id.org/sirius/ontology/data/03/archive-deterioration
 :archive-deterioration rdf:type owl:NamedIndividual ,
                                 hero:Risk .
 
 
-###  http://purl.org/sirius/ontology/data/03/archive-deterioration-a
+###  https://w3id.org/sirius/ontology/data/03/archive-deterioration-a
 :archive-deterioration-a rdf:type owl:NamedIndividual ,
                                   hero:Frequency ;
                          hero:hasHighEstimate 4 ;
@@ -37,7 +37,7 @@
                          hero:hasProbableEstimate 3.5 .
 
 
-###  http://purl.org/sirius/ontology/data/03/archive-deterioration-b
+###  https://w3id.org/sirius/ontology/data/03/archive-deterioration-b
 :archive-deterioration-b rdf:type owl:NamedIndividual ,
                                   hero:FractionalValueLoss ;
                          hero:hasHighEstimate 2.5 ;
@@ -46,7 +46,7 @@
                          hero:hasProbableEstimate 2 .
 
 
-###  http://purl.org/sirius/ontology/data/03/archive-deterioration-c
+###  https://w3id.org/sirius/ontology/data/03/archive-deterioration-c
 :archive-deterioration-c rdf:type owl:NamedIndividual ,
                                   hero:Exposure ;
                          hero:hasHighEstimate 2.5 ;
@@ -55,7 +55,7 @@
                          hero:hasProbableEstimate 2 .
 
 
-###  http://purl.org/sirius/ontology/data/03/archive-deterioration-mr
+###  https://w3id.org/sirius/ontology/data/03/archive-deterioration-mr
 :archive-deterioration-mr rdf:type owl:NamedIndividual ,
                                    hero:Magnitude ;
                           hero:hasHighEstimate 8 ;
@@ -63,17 +63,17 @@
                           hero:hasProbableEstimate 7.5 .
 
 
-###  http://purl.org/sirius/ontology/data/03/museum
+###  https://w3id.org/sirius/ontology/data/03/museum
 :museum rdf:type owl:NamedIndividual ,
                  crm:E24_Physical_Human-Made_Thing .
 
 
-###  http://purl.org/sirius/ontology/data/03/museum-fire
+###  https://w3id.org/sirius/ontology/data/03/museum-fire
 :museum-fire rdf:type owl:NamedIndividual ,
                       hero:Risk .
 
 
-###  http://purl.org/sirius/ontology/data/03/museum-fire-a
+###  https://w3id.org/sirius/ontology/data/03/museum-fire-a
 :museum-fire-a rdf:type owl:NamedIndividual ,
                         hero:Frequency ;
                hero:isDocumentedBy :national-statistics ;
@@ -83,7 +83,7 @@
                hero:hasProbableEstimate 2.5 .
 
 
-###  http://purl.org/sirius/ontology/data/03/museum-fire-b
+###  https://w3id.org/sirius/ontology/data/03/museum-fire-b
 :museum-fire-b rdf:type owl:NamedIndividual ,
                         hero:FractionalValueLoss ;
                hero:hasHighEstimate 5 ;
@@ -92,7 +92,7 @@
                hero:hasProbableEstimate 5 .
 
 
-###  http://purl.org/sirius/ontology/data/03/museum-fire-c
+###  https://w3id.org/sirius/ontology/data/03/museum-fire-c
 :museum-fire-c rdf:type owl:NamedIndividual ,
                         hero:Exposure ;
                hero:hasHighEstimate 5 ;
@@ -101,7 +101,7 @@
                hero:hasProbableEstimate 5 .
 
 
-###  http://purl.org/sirius/ontology/data/03/museum-fire-mr
+###  https://w3id.org/sirius/ontology/data/03/museum-fire-mr
 :museum-fire-mr rdf:type owl:NamedIndividual ,
                          hero:Magnitude ;
                 hero:hasHighEstimate 13 ;
@@ -109,12 +109,12 @@
                 hero:hasProbableEstimate 12.5 .
 
 
-###  http://purl.org/sirius/ontology/data/03/museum-theft
+###  https://w3id.org/sirius/ontology/data/03/museum-theft
 :museum-theft rdf:type owl:NamedIndividual ,
                        hero:Risk .
 
 
-###  http://purl.org/sirius/ontology/data/03/museum-theft-a
+###  https://w3id.org/sirius/ontology/data/03/museum-theft-a
 :museum-theft-a rdf:type owl:NamedIndividual ,
                          hero:Frequency ;
                 hero:isDocumentedBy :staff-notes ;
@@ -124,7 +124,7 @@
                 hero:hasProbableEstimate 3.5 .
 
 
-###  http://purl.org/sirius/ontology/data/03/museum-theft-b
+###  https://w3id.org/sirius/ontology/data/03/museum-theft-b
 :museum-theft-b rdf:type owl:NamedIndividual ,
                          hero:FractionalValueLoss ;
                 hero:hasHighEstimate 5 ;
@@ -133,7 +133,7 @@
                 hero:hasProbableEstimate 5 .
 
 
-###  http://purl.org/sirius/ontology/data/03/museum-theft-c
+###  https://w3id.org/sirius/ontology/data/03/museum-theft-c
 :museum-theft-c rdf:type owl:NamedIndividual ,
                          hero:Exposure ;
                 hero:hasHighEstimate 2.5 ;
@@ -142,7 +142,7 @@
                 hero:hasProbableEstimate 2 .
 
 
-###  http://purl.org/sirius/ontology/data/03/museum-theft-mr
+###  https://w3id.org/sirius/ontology/data/03/museum-theft-mr
 :museum-theft-mr rdf:type owl:NamedIndividual ,
                           hero:Magnitude ;
                  hero:hasHighEstimate 11 ;
@@ -150,12 +150,12 @@
                  hero:hasProbableEstimate 10.5 .
 
 
-###  http://purl.org/sirius/ontology/data/03/national-statistics
+###  https://w3id.org/sirius/ontology/data/03/national-statistics
 :national-statistics rdf:type owl:NamedIndividual ,
                               foaf:Document .
 
 
-###  http://purl.org/sirius/ontology/data/03/analysis-deterioration
+###  https://w3id.org/sirius/ontology/data/03/analysis-deterioration
 :analysis-deterioration rdf:type owl:NamedIndividual ,
                                         hero:AnalysisDescription ;
                                hero:analyses :archive-deterioration ;
@@ -167,7 +167,7 @@
                                          :archive-deterioration-mr .
 
 
-###  http://purl.org/sirius/ontology/data/03/analysis-fire
+###  https://w3id.org/sirius/ontology/data/03/analysis-fire
 :analysis-fire rdf:type owl:NamedIndividual ,
                                hero:AnalysisDescription ;
                       hero:analyses :museum-fire ;
@@ -179,7 +179,7 @@
                                :museum-fire-mr .
 
 
-###  http://purl.org/sirius/ontology/data/03/analysis-theft
+###  https://w3id.org/sirius/ontology/data/03/analysis-theft
 :analysis-theft rdf:type owl:NamedIndividual ,
                                 hero:AnalysisDescription ;
                        hero:analyses :museum-theft ;
@@ -191,12 +191,12 @@
                                 :museum-theft-mr .
 
 
-###  http://purl.org/sirius/ontology/data/03/staff-notes
+###  https://w3id.org/sirius/ontology/data/03/staff-notes
 :staff-notes rdf:type owl:NamedIndividual ,
                       foaf:Document .
 
 
-###  http://purl.org/sirius/ontology/data/03/2020-10-10
+###  https://w3id.org/sirius/ontology/data/03/2020-10-10
 :2020-10-10 rdf:type owl:NamedIndividual ,
                       ti:TimeInterval ;
             ti:hasIntervalEndDate "2020-10-10T23:59:59Z"^^xsd:dateTime ;

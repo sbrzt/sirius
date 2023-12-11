@@ -1,25 +1,25 @@
-@prefix : <http://purl.org/sirius/ontology/data/01/> .
+@prefix : <https://w3id.org/sirius/ontology/data/01/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix hero: <http://purl.org/sirius/ontology/hero/> .
+@prefix hero: <https://w3id.org/sirius/ontology/hero/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
 @prefix tis: <http://ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#> .
-@base <http://purl.org/sirius/ontology/data/01/> .
+@base <https://w3id.org/sirius/ontology/data/01/> .
 
-<http://purl.org/sirius/ontology/data/01/> rdf:type owl:Ontology ;
-                                                        owl:imports <http://purl.org/sirius/ontology/model> .
+<https://w3id.org/sirius/ontology/data/01/> rdf:type owl:Ontology ;
+                                                        owl:imports <https://w3id.org/sirius/ontology/model> .
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/data/01/administrative-context-baptistery
+###  https://w3id.org/sirius/ontology/data/01/administrative-context-baptistery
 :administrative-context-baptistery rdf:type owl:NamedIndividual ,
                                                          hero:Observation ;
                                                 hero:inDate "2020-10-11T00:00:00Z"^^xsd:dateTime ;
@@ -27,7 +27,7 @@
                                                 hero:hasNote "Dal dicembre 2019 è gestito da Direzione regionale Musei dell’Emilia Romagna, sede di Ravenna."@it .
 
 
-###  http://purl.org/sirius/ontology/data/01/contextualization-baptistery
+###  https://w3id.org/sirius/ontology/data/01/contextualization-baptistery
 :contextualization-baptistery rdf:type owl:NamedIndividual ,
                                              hero:ContextDescription ;
                                     hero:describes :baptistery ;
@@ -46,14 +46,14 @@
                                                    :università-di-bologna .
 
 
-###  http://purl.org/sirius/ontology/data/01/2020-10-10
+###  https://w3id.org/sirius/ontology/data/01/2020-10-10
 :2020-10-10 rdf:type owl:NamedIndividual ,
                                                                           ti:TimeInterval ;
                                                                  ti:hasIntervalEndDate "2020-10-10T23:59:59Z"^^xsd:dateTime ;
                                                                  ti:hasIntervalStartDate "2020-10-10T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/data/01/baptistery
+###  https://w3id.org/sirius/ontology/data/01/baptistery
 :baptistery rdf:type owl:NamedIndividual ,
                                   crm:E24_Physical_Human-Made_Thing ;
                          crm:P55_has_current_location :piazzetta-degli-ariani ;
@@ -62,26 +62,26 @@
                          dcterms:title "Battistero degli Ariani"@it .
 
 
-###  http://purl.org/sirius/ontology/data/01/cittadinanza
+###  https://w3id.org/sirius/ontology/data/01/cittadinanza
 :cittadinanza rdf:type owl:NamedIndividual ,
                        foaf:Agent ;
               foaf:name "Cittadinanza"@it .
 
 
-###  http://purl.org/sirius/ontology/data/01/comune-di-ravenna
+###  https://w3id.org/sirius/ontology/data/01/comune-di-ravenna
 :comune-di-ravenna rdf:type owl:NamedIndividual ,
                             foaf:Agent ;
                    foaf:name "Comune di Ravenna"@it .
 
 
-###  http://purl.org/sirius/ontology/data/01/creation-baptistery
+###  https://w3id.org/sirius/ontology/data/01/creation-baptistery
 :creation-baptistery rdf:type owl:NamedIndividual ,
                                            crm:E12_Production ;
                                   crm:P108_has_produced :baptistery ;
                                   crm:P4_has_time-span :timespan-baptistery .
 
 
-###  http://purl.org/sirius/ontology/data/01/document-1-baptistery
+###  https://w3id.org/sirius/ontology/data/01/document-1-baptistery
 :document-1-baptistery rdf:type owl:NamedIndividual ,
                                              foaf:Document ;
                                     hero:documents :political-context-baptistery ;
@@ -90,7 +90,7 @@
                                     rdfs:seeAlso "http://www.ravennaincomune.it/wp/index.php/2020/05/23/telecamere-di-sorveglianza-allassalto-del-battistero-degli-ariani" .
 
 
-###  http://purl.org/sirius/ontology/data/01/document-2-baptistery
+###  https://w3id.org/sirius/ontology/data/01/document-2-baptistery
 :document-2-baptistery rdf:type owl:NamedIndividual ,
                                              foaf:Document ;
                                     hero:documents :political-context-baptistery ;
@@ -99,7 +99,7 @@
                                     rdfs:seeAlso "https://www.ravennatoday.it/cronaca/telecamere-nelle-millenarie-mura-del-battistero-degli-ariani-protesta-italia-nostra.html" .
 
 
-###  http://purl.org/sirius/ontology/data/01/document-3-baptistery
+###  https://w3id.org/sirius/ontology/data/01/document-3-baptistery
 :document-3-baptistery rdf:type owl:NamedIndividual ,
                                              foaf:Document ;
                                     hero:documents :political-context-baptistery ;
@@ -108,7 +108,7 @@
                                     rdfs:seeAlso "https://www.ravennaedintorni.it/societa/2020/05/30/telecamere-battistero-ariani/" .
 
 
-###  http://purl.org/sirius/ontology/data/01/document-4-baptistery
+###  https://w3id.org/sirius/ontology/data/01/document-4-baptistery
 :document-4-baptistery rdf:type owl:NamedIndividual ,
                                              foaf:Document ;
                                     hero:documents :political-context-baptistery ;
@@ -117,7 +117,7 @@
                                     rdfs:seeAlso "https://www.ravennanotizie.it/cultura-spettacolo/2020/05/30/" .
 
 
-###  http://purl.org/sirius/ontology/data/01/document-5-baptistery
+###  https://w3id.org/sirius/ontology/data/01/document-5-baptistery
 :document-5-baptistery rdf:type owl:NamedIndividual ,
                                              foaf:Document ;
                                     hero:documents :political-context-baptistery ;
@@ -126,7 +126,7 @@
                                     rdfs:seeAlso "https://www.corriereromagna.it/ravenna-telecamere-installate-nelle-millenarie-mura-del-battistero/" .
 
 
-###  http://purl.org/sirius/ontology/data/01/economic-context-baptistery
+###  https://w3id.org/sirius/ontology/data/01/economic-context-baptistery
 :economic-context-baptistery rdf:type owl:NamedIndividual ,
                                                    hero:Observation ;
                                           hero:hasParameter hero:economic ;
@@ -134,13 +134,13 @@
                                           hero:hasNote "La Legge n. 77 del 20 febbraio 2006, stabilisce che i siti UNESCO sono eccellenze del Patrimonio culturale, paesaggistico e naturale italiano, elementi fondanti della rappresentazione del nostro Paese a livello internazionale e afferma che gli interventi su di essi hanno la priorità anche in ordine all'assegnazione delle risorse finanziarie" .
 
 
-###  http://purl.org/sirius/ontology/data/01/fondazioni-locali
+###  https://w3id.org/sirius/ontology/data/01/fondazioni-locali
 :fondazioni-locali rdf:type owl:NamedIndividual ,
                             foaf:Agent ;
                    foaf:name "Fondazioni locali" .
 
 
-###  http://purl.org/sirius/ontology/data/01/legal-context-baptistery
+###  https://w3id.org/sirius/ontology/data/01/legal-context-baptistery
 :legal-context-baptistery rdf:type owl:NamedIndividual ,
                                                 hero:Observation ;
                                        hero:hasParameter hero:legal ;
@@ -148,7 +148,7 @@
                                        hero:hasNote "Di proprietà del Demanio di Stato / MiC. Dal 1996 fa parte della lista dei siti italiani patrimonio dell'umanità UNESCO («Monumenti paleocristiani di Ravenna»)." .
 
 
-###  http://purl.org/sirius/ontology/data/01/physical-context-baptistery
+###  https://w3id.org/sirius/ontology/data/01/physical-context-baptistery
 :physical-context-baptistery rdf:type owl:NamedIndividual ,
                                                    hero:Observation ;
                                           hero:hasParameter hero:physical ;
@@ -156,21 +156,21 @@
                                           hero:hasNote "Il Battistero è visibile esternamente sui lati N, NO, NE. Il lato O affaccia sui giardini di un’abitazione privata, mentre i lati S, SO, SE, affacciano sul giardino del Dipartimento di Beni Culturali (Università di Bologna)." .
 
 
-###  http://purl.org/sirius/ontology/data/01/piazzetta-degli-ariani
+###  https://w3id.org/sirius/ontology/data/01/piazzetta-degli-ariani
 :piazzetta-degli-ariani rdf:type owl:NamedIndividual ,
                                  crm:E53_Place ;
                         crm:P168_place_is_defined_by "44.41871491574331, 12.20247187841604" ;
                         rdfs:label "Piazzetta degli Ariani, 48121 Ravenna" .
 
 
-###  http://purl.org/sirius/ontology/data/01/political-context-baptistery
+###  https://w3id.org/sirius/ontology/data/01/political-context-baptistery
 :political-context-baptistery rdf:type owl:NamedIndividual ,
                                                     hero:Observation ;
                                            hero:hasParameter hero:political ;
                                            hero:hasNote "Il monumento è spesso motivo di dibattito tra i vari partiti ed il Comune di Ravenna" .
 
 
-###  http://purl.org/sirius/ontology/data/01/socio-cultural-context-baptistery
+###  https://w3id.org/sirius/ontology/data/01/socio-cultural-context-baptistery
 :socio-cultural-context-baptistery rdf:type owl:NamedIndividual ,
                                                          hero:Observation ;
                                                 hero:hasParameter hero:socio-cultural ;
@@ -178,25 +178,25 @@
                                                 hero:hasNote "Sito monumentale di area urbana, visitabile dai turisti (previo biglietto d’ingresso). La Piazzetta in cui è collocato l’edificio risente di una cattiva fama, in quanto “zona a rischio sociale e luogo dimesso” (si riporta il caso di una rete da letto abbandonata di notte nella trincea del Battistero, 11.07.2006, Fonte: Zaccarini, 2015). Nonostante l’istituzione nel 2012 di una regolamentazione all’accesso dei veicoli alla Piazzetta, resta consentito il transito e la sosta per carico/scarico merci." .
 
 
-###  http://purl.org/sirius/ontology/data/01/soprintendenza-di-ravenna
+###  https://w3id.org/sirius/ontology/data/01/soprintendenza-di-ravenna
 :soprintendenza-di-ravenna rdf:type owl:NamedIndividual ,
                                     foaf:Agent ;
                            foaf:name "Soprintendenza" .
 
 
-###  http://purl.org/sirius/ontology/data/01/timespan-baptistery
+###  https://w3id.org/sirius/ontology/data/01/timespan-baptistery
 :timespan-baptistery rdf:type owl:NamedIndividual ,
                                            crm:E52_Time-Span ;
                                   crm:P82_at_some_time_within "Late fifth century A.D." .
 
 
-###  http://purl.org/sirius/ontology/data/01/turisti
+###  https://w3id.org/sirius/ontology/data/01/turisti
 :turisti rdf:type owl:NamedIndividual ,
                   foaf:Agent ;
          foaf:name "Turisti" .
 
 
-###  http://purl.org/sirius/ontology/data/01/università-di-bologna
+###  https://w3id.org/sirius/ontology/data/01/università-di-bologna
 :università-di-bologna rdf:type owl:NamedIndividual ,
                                 foaf:Agent ;
                        foaf:name "Università di Bologna" .

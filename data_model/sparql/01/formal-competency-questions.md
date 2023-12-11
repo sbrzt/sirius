@@ -4,7 +4,7 @@ Return the information about the heritage asset, including its name, alternative
 
 ```SPARQL
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX hero: <http://purl.org/sirius/ontology/hero/>
+PREFIX hero: <https://w3id.org/sirius/ontology/hero/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -33,7 +33,7 @@ Return the contextual information of the heritage asset in terms of its type and
 
 ```SPARQL
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX hero: <http://purl.org/sirius/ontology/hero/>
+PREFIX hero: <https://w3id.org/sirius/ontology/hero/>
 
 SELECT ?heritage_asset ?context_type ?context_description
 WHERE {
@@ -55,7 +55,7 @@ Return the documents that document the contextual information of the heritage as
 ```SPARQL
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX hero: <http://purl.org/sirius/ontology/hero/>
+PREFIX hero: <https://w3id.org/sirius/ontology/hero/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?heritage_asset ?context_type ?document ?document_link
@@ -79,7 +79,7 @@ Return the names of the stakeholders involved in the risk assessment activity re
 
 ```SPARQL
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX hero: <http://purl.org/sirius/ontology/hero/>
+PREFIX hero: <https://w3id.org/sirius/ontology/hero/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
 SELECT ?heritage_asset ?stakeholder_name

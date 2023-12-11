@@ -1,12 +1,12 @@
-@prefix : <http://purl.org/sirius/ontology/development/01/schema/> .
+@prefix : <https://w3id.org/sirius/ontology/development/01/schema/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://purl.org/sirius/ontology/development/01/schema/> .
+@base <https://w3id.org/sirius/ontology/development/01/schema/> .
 
-<http://purl.org/sirius/ontology/development/01/schema> rdf:type owl:Ontology .
+<https://w3id.org/sirius/ontology/development/01/schema> rdf:type owl:Ontology .
 # 
 # 
 # #################################################################
@@ -16,28 +16,28 @@
 # #################################################################
 # 
 # 
-### http://purl.org/sirius/ontology/development/01/schema/describes 
+### https://w3id.org/sirius/ontology/development/01/schema/describes 
 :describes a owl:ObjectProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/creates
+### https://w3id.org/sirius/ontology/development/01/schema/creates
 :creates a owl:ObjectProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/hasObservation
+### https://w3id.org/sirius/ontology/development/01/schema/hasObservation
 :hasObservation a owl:ObjectProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/hasTimeSpan
+### https://w3id.org/sirius/ontology/development/01/schema/hasTimeSpan
 :hasTimeSpan a owl:ObjectProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/hasParameter
+### https://w3id.org/sirius/ontology/development/01/schema/hasParameter
 :hasParameter a owl:ObjectProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/hasParticipant
+### https://w3id.org/sirius/ontology/development/01/schema/hasParticipant
 :hasParticipant a owl:ObjectProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/isLocatedIn
+### https://w3id.org/sirius/ontology/development/01/schema/isLocatedIn
 :isLocatedIn a owl:ObjectProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/atTime
+### https://w3id.org/sirius/ontology/development/01/schema/atTime
 :atTime a owl:ObjectProperty .
 
 # 
@@ -49,34 +49,34 @@
 # #################################################################
 # 
 # 
-### http://purl.org/sirius/ontology/development/01/schema/fallsWithin
+### https://w3id.org/sirius/ontology/development/01/schema/fallsWithin
 :fallsWithin a owl:DatatypeProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/hasAlternativeName
+### https://w3id.org/sirius/ontology/development/01/schema/hasAlternativeName
 :hasAlternativeName a owl:DatatypeProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/hasDescription
+### https://w3id.org/sirius/ontology/development/01/schema/hasDescription
 :hasDescription a owl:DatatypeProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/hasName
+### https://w3id.org/sirius/ontology/development/01/schema/hasName
 :hasName a owl:DatatypeProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/hasCoordinates
+### https://w3id.org/sirius/ontology/development/01/schema/hasCoordinates
 :hasCoordinates a owl:DatatypeProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/hasTitle
+### https://w3id.org/sirius/ontology/development/01/schema/hasTitle
 :hasTitle a owl:DatatypeProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/hasLink
+### https://w3id.org/sirius/ontology/development/01/schema/hasLink
 :hasLink a owl:DatatypeProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/inDate
+### https://w3id.org/sirius/ontology/development/01/schema/inDate
 :inDate a owl:DatatypeProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/hasStartDate
+### https://w3id.org/sirius/ontology/development/01/schema/hasStartDate
 :hasStartDate a owl:DatatypeProperty .
 
-### http://purl.org/sirius/ontology/development/01/schema/hasEndDate
+### https://w3id.org/sirius/ontology/development/01/schema/hasEndDate
 :hasEndDate a owl:DatatypeProperty .
 
 # 
@@ -88,34 +88,34 @@
 # #################################################################
 # 
 # 
-### http://purl.org/sirius/ontology/development/01/schema/Context
+### https://w3id.org/sirius/ontology/development/01/schema/Context
 :Context a owl:Class .
 
-### http://purl.org/sirius/ontology/development/01/schema/Parameter
+### https://w3id.org/sirius/ontology/development/01/schema/Parameter
 :Parameter a owl:Class .
 
-### http://purl.org/sirius/ontology/development/01/schema/CreationEvent
+### https://w3id.org/sirius/ontology/development/01/schema/CreationEvent
 :CreationEvent a owl:Class .
 
-### http://purl.org/sirius/ontology/development/01/schema/Document
+### https://w3id.org/sirius/ontology/development/01/schema/Document
 :Document a owl:Class .
 
-### http://purl.org/sirius/ontology/development/01/schema/HeritageAsset
+### https://w3id.org/sirius/ontology/development/01/schema/HeritageAsset
 :HeritageAsset a owl:Class .
 
-### http://purl.org/sirius/ontology/development/01/schema/Place
+### https://w3id.org/sirius/ontology/development/01/schema/Place
 :Place a owl:Class .
 
-### http://purl.org/sirius/ontology/development/01/schema/ContextDescription
+### https://w3id.org/sirius/ontology/development/01/schema/ContextDescription
 :ContextDescription a owl:Class .
 
-### http://purl.org/sirius/ontology/development/01/schema/Stakeholder
+### https://w3id.org/sirius/ontology/development/01/schema/Stakeholder
 :Stakeholder a owl:Class .
 
-### http://purl.org/sirius/ontology/development/01/schema/TimeSpan
+### https://w3id.org/sirius/ontology/development/01/schema/TimeSpan
 :TimeSpan a owl:Class .
 
-### http://purl.org/sirius/ontology/development/01/schema/TimeInterval
+### https://w3id.org/sirius/ontology/development/01/schema/TimeInterval
 :TimeInterval a owl:Class .
 
 # 
@@ -127,16 +127,16 @@
 # #################################################################
 # 
 # 
-### http://purl.org/sirius/ontology/development/01/schema/legal
+### https://w3id.org/sirius/ontology/development/01/schema/legal
 :legal a owl:NamedIndividual, :Parameter .
 
-### http://purl.org/sirius/ontology/development/01/schema/physical
+### https://w3id.org/sirius/ontology/development/01/schema/physical
 :physical a owl:NamedIndividual, :Parameter .
 
-### http://purl.org/sirius/ontology/development/01/schema/political
+### https://w3id.org/sirius/ontology/development/01/schema/political
 :political a owl:NamedIndividual, :Parameter .
 
-### http://purl.org/sirius/ontology/development/01/schema/socio-cultural
+### https://w3id.org/sirius/ontology/development/01/schema/socio-cultural
 :socio-cultural a owl:NamedIndividual, :Parameter .
 
 # Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

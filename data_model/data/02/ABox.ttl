@@ -1,30 +1,30 @@
-@prefix : <http://purl.org/sirius/ontology/data/02/> .
+@prefix : <https://w3id.org/sirius/ontology/data/02/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix hero: <http://purl.org/sirius/ontology/hero/> .
+@prefix hero: <https://w3id.org/sirius/ontology/hero/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
 @prefix tis: <http://ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#> .
-@base <http://purl.org/sirius/ontology/data/02/> .
+@base <https://w3id.org/sirius/ontology/data/02/> .
 
-<http://purl.org/sirius/ontology/data/02/> rdf:type owl:Ontology ;
-                                                        owl:imports <http://purl.org/sirius/ontology/model> .
+<https://w3id.org/sirius/ontology/data/02/> rdf:type owl:Ontology ;
+                                                        owl:imports <https://w3id.org/sirius/ontology/model> .
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/02/data/baptistery
+###  https://w3id.org/sirius/ontology/development/02/data/baptistery
 :baptistery rdf:type owl:NamedIndividual ,
                                   crm:E24_Physical_Human-Made_Thing .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-01
+###  https://w3id.org/sirius/ontology/development/02/data/baptistery-risk-01
 :baptistery-risk-01 rdf:type owl:NamedIndividual ,
                                           hero:Risk ;
                                           hero:isClassifiedByType hero:cumulative ;
@@ -32,7 +32,7 @@
                                  hero:isClassifiedByAgent hero:physical-forces .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-02
+###  https://w3id.org/sirius/ontology/development/02/data/baptistery-risk-02
 :baptistery-risk-02 rdf:type owl:NamedIndividual ,
                     hero:Risk ;
                     hero:isClassifiedByType hero:rare ;
@@ -40,7 +40,7 @@
                     hero:isClassifiedByAgent hero:dissociation .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-03
+###  https://w3id.org/sirius/ontology/development/02/data/baptistery-risk-03
 :baptistery-risk-03 rdf:type owl:NamedIndividual ,
                                           hero:Risk ;
                                           hero:isClassifiedByType hero:common ;
@@ -48,7 +48,7 @@
                                  hero:isClassifiedByAgent hero:pests .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-04
+###  https://w3id.org/sirius/ontology/development/02/data/baptistery-risk-04
 :baptistery-risk-04 rdf:type owl:NamedIndividual ,
                                           hero:Risk ;
                                           hero:isClassifiedByType hero:rare ;
@@ -56,7 +56,7 @@
                                  hero:isClassifiedByAgent hero:water .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment-01
+###  https://w3id.org/sirius/ontology/development/02/data/baptistery-risk-assessment-01
 :baptistery-risk-assessment-01 rdf:type owl:NamedIndividual ,
                                                   hero:IdentificationDescription ;
                                         tis:atTime :2020-10-10 ;
@@ -65,7 +65,7 @@
                                          hero:describes :baptistery .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment-02
+###  https://w3id.org/sirius/ontology/development/02/data/baptistery-risk-assessment-02
 :baptistery-risk-assessment-02 rdf:type owl:NamedIndividual ,
                                                   hero:IdentificationDescription ;
                                         tis:atTime :2020-10-10 ;
@@ -75,7 +75,7 @@
                                  hero:hasNote "Fragmentation of data related to previous incorrect monitoring and maintenance interventions provokes loss of important information related to the baptistery" .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment-03
+###  https://w3id.org/sirius/ontology/development/02/data/baptistery-risk-assessment-03
 :baptistery-risk-assessment-03 rdf:type owl:NamedIndividual ,
                                                   hero:IdentificationDescription ;
                                         tis:atTime :2020-10-11 ;
@@ -84,7 +84,7 @@
                                          hero:describes :baptistery .
 
                                 
-###  http://purl.org/sirius/ontology/development/02/data/baptistery-risk-assessment-04
+###  https://w3id.org/sirius/ontology/development/02/data/baptistery-risk-assessment-04
 :baptistery-risk-assessment-04 rdf:type owl:NamedIndividual ,
                                                   hero:IdentificationDescription ;
                                         tis:atTime :2020-10-10 ;
@@ -94,24 +94,24 @@
                                  hero:hasNote "Floods and heavy rains induce erosion of the baptistery walls" .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/document-a
+###  https://w3id.org/sirius/ontology/development/02/data/document-a
 :document-a rdf:type owl:NamedIndividual ,
                      foaf:Document .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/document-b
+###  https://w3id.org/sirius/ontology/development/02/data/document-b
 :document-b rdf:type owl:NamedIndividual ,
                      foaf:Document .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/2020-10-10
+###  https://w3id.org/sirius/ontology/development/02/data/2020-10-10
 :2020-10-10 rdf:type owl:NamedIndividual ,
                                                                           ti:TimeInterval ;
                                                                  ti:hasIntervalEndDate "2020-10-10T23:59:59Z"^^xsd:dateTime ;
                                                                  ti:hasIntervalStartDate "2020-10-10T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/development/02/data/2020-10-11
+###  https://w3id.org/sirius/ontology/development/02/data/2020-10-11
 :2020-10-11 rdf:type owl:NamedIndividual ,
                                                                           ti:TimeInterval ;
                                                                  ti:hasIntervalEndDate "2020-10-11T23:59:59Z"^^xsd:dateTime ;

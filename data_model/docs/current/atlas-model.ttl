@@ -1,4 +1,4 @@
-@prefix : <http://purl.org/sirius/ontology/model/> .
+@prefix : <https://w3id.org/sirius/ontology/model/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,16 +8,16 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcam: <http://purl.org/dc/dcam/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix hero: <http://purl.org/sirius/ontology/hero/> .
+@prefix hero: <https://w3id.org/sirius/ontology/hero/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix data-view: <http://www.w3.org/2003/g/data-view#> .
 @prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
-@base <http://purl.org/sirius/ontology/model/> .
+@base <https://w3id.org/sirius/ontology/model/> .
 
-<http://purl.org/sirius/ontology/model> rdf:type owl:Ontology ;
-                                         owl:imports <http://purl.org/sirius/ontology/hero> ,
+<https://w3id.org/sirius/ontology/model> rdf:type owl:Ontology ;
+                                         owl:imports <https://w3id.org/sirius/ontology/hero> ,
                                                      <http://www.cidoc-crm.org/cidoc-crm/> ;
                                          dc:creator "Barzaghi, Sebastian [0000-0002-0799-1527]" ;
                                          dc:date "2023-11-30"^^xsd:date ;

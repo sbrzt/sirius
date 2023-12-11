@@ -3,8 +3,8 @@
 Return the assets that are part of the `house` asset and the asset percentage they represent, in descending order.
 
 ```SPARQL
-PREFIX tbox: <http://purl.org/sirius/ontology/development/04/schema/>
-PREFIX abox: <http://purl.org/sirius/ontology/development/04/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/04/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/04/data/>
 
 SELECT DISTINCT ?asset ?asset_part ?percentage
 WHERE {
@@ -21,8 +21,8 @@ WHERE {
 Return the assets that are part of the `house` asset and the contributing values assigned to them, along with their score, dimension, aspect, note, documentation, and time interval.
 
 ```SPARQL
-PREFIX tbox: <http://purl.org/sirius/ontology/development/04/schema/>
-PREFIX abox: <http://purl.org/sirius/ontology/development/04/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/04/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/04/data/>
 
 SELECT DISTINCT ?asset_part ?value ?score ?dimension ?aspect ?note ?document ?time_interval_start ?time_interval_end
 WHERE {

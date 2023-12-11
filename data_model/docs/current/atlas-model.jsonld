@@ -500,7 +500,7 @@
     "@id" : "http://purl.org/dc/terms/date"
   } ]
 }, {
-  "@id" : "http://purl.org/sirius/ontology/model",
+  "@id" : "https://w3id.org/sirius/ontology/model",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Barzaghi, Sebastian [0000-0002-0799-1527]"
@@ -524,7 +524,7 @@
     "@value" : "ATLAS Data Model"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://purl.org/sirius/ontology/hero"
+    "@id" : "https://w3id.org/sirius/ontology/hero"
   }, {
     "@id" : "http://www.cidoc-crm.org/cidoc-crm/"
   } ],

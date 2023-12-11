@@ -172,7 +172,7 @@
               <y:Geometry height="22.2421875" width="207.83128065395096" x="789.5916169863062" y="815.0651290714321"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="121.609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="518.0859375" x="-155.12732842302455" xml:space="preserve" y="-49.68359375">hero: &lt;http://purl.org/sirius/ontology/hero/&gt;
+              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="121.609375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="518.0859375" x="-155.12732842302455" xml:space="preserve" y="-49.68359375">hero: &lt;https://w3id.org/sirius/ontology/hero/&gt;
 owl: &lt;http://www.w3.org/2002/07/owl#&gt;
 rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
 ti: &lt;http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#&gt;

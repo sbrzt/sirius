@@ -3,8 +3,8 @@
 Return the probable estimate of the A-score, B-score, C-score for each risk affecting each heritage asset, as well as the sources of knowledge that witness them.
 
 ```SPARQL
-PREFIX tbox: <http://purl.org/sirius/ontology/development/03/schema/>
-PREFIX abox: <http://purl.org/sirius/ontology/development/03/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/03/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/03/data/>
 
 SELECT ?risk ?heritage_asset ?risk_component ?probable_estimate ?note ?knowledge_source
 WHERE {
@@ -31,8 +31,8 @@ WHERE {
 Return the low, probable, and high estimates of the magnitudes of risk for each risk of each heritage asset.
 
 ```SPARQL
-PREFIX tbox: <http://purl.org/sirius/ontology/development/03/schema/>
-PREFIX abox: <http://purl.org/sirius/ontology/development/03/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/03/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/03/data/>
 
 SELECT ?risk ?heritage_asset ?low_estimate ?probable_estimate ?high_estimate
 WHERE {
@@ -51,8 +51,8 @@ WHERE {
 Return the low, probable, and high estimates of the A-score, B-score, C-score, and magnitude of risk for each risk affecting each heritage asset, as well as their documentation.
 
 ```SPARQL
-PREFIX tbox: <http://purl.org/sirius/ontology/development/03/schema/>
-PREFIX abox: <http://purl.org/sirius/ontology/development/03/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/03/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/03/data/>
 
 SELECT ?risk ?component_class ?low_estimate ?probable_estimate ?high_estimate ?knowledge_source ?note
 WHERE {

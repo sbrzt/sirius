@@ -1,45 +1,45 @@
-@prefix : <http://purl.org/sirius/ontology/development/04/data/> .
+@prefix : <https://w3id.org/sirius/ontology/development/04/data/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix tbox: <http://purl.org/sirius/ontology/development/04/schema/> .
-@base <http://purl.org/sirius/ontology/development/04/data/> .
+@prefix tbox: <https://w3id.org/sirius/ontology/development/04/schema/> .
+@base <https://w3id.org/sirius/ontology/development/04/data/> .
 
-<http://purl.org/sirius/ontology/development/04/data/> rdf:type owl:Ontology ;
-                                                        owl:imports <http://purl.org/sirius/ontology/development/04/schema/> .
+<https://w3id.org/sirius/ontology/development/04/data/> rdf:type owl:Ontology ;
+                                                        owl:imports <https://w3id.org/sirius/ontology/development/04/schema/> .
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/04/data/building
+###  https://w3id.org/sirius/ontology/development/04/data/building
 :building rdf:type owl:NamedIndividual ,
                    tbox:HeritageAsset .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/document-a
+###  https://w3id.org/sirius/ontology/development/04/data/document-a
 :document-a rdf:type owl:NamedIndividual ,
                      tbox:Document .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/document-b
+###  https://w3id.org/sirius/ontology/development/04/data/document-b
 :document-b rdf:type owl:NamedIndividual ,
                      tbox:Document .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/document-c
+###  https://w3id.org/sirius/ontology/development/04/data/document-c
 :document-c rdf:type owl:NamedIndividual ,
                      tbox:Document .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/furniture
+###  https://w3id.org/sirius/ontology/development/04/data/furniture
 :furniture rdf:type owl:NamedIndividual ,
                     tbox:HeritageAsset .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/house
+###  https://w3id.org/sirius/ontology/development/04/data/house
 :house rdf:type owl:NamedIndividual ,
                 tbox:HeritageAsset ;
        tbox:hasPart :building ,
@@ -48,77 +48,77 @@
                     :paintings .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/mosaics
+###  https://w3id.org/sirius/ontology/development/04/data/mosaics
 :mosaics rdf:type owl:NamedIndividual ,
                   tbox:HeritageAsset .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/paintings
+###  https://w3id.org/sirius/ontology/development/04/data/paintings
 :paintings rdf:type owl:NamedIndividual ,
                     tbox:HeritageAsset .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-1
+###  https://w3id.org/sirius/ontology/development/04/data/value-1
 :value-01 rdf:type owl:NamedIndividual ,
                   tbox:Value ;
          tbox:hasScore 3.74 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-10
+###  https://w3id.org/sirius/ontology/development/04/data/value-10
 :value-10 rdf:type owl:NamedIndividual ,
                    tbox:Value ;
           tbox:hasScore 3.98 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-2
+###  https://w3id.org/sirius/ontology/development/04/data/value-2
 :value-02 rdf:type owl:NamedIndividual ,
                   tbox:Value ;
          tbox:hasScore 3.33 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-3
+###  https://w3id.org/sirius/ontology/development/04/data/value-3
 :value-03 rdf:type owl:NamedIndividual ,
                   tbox:Value ;
          tbox:hasScore 3.26 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-4
+###  https://w3id.org/sirius/ontology/development/04/data/value-4
 :value-04 rdf:type owl:NamedIndividual ,
                   tbox:Value ;
          tbox:hasScore 3.38 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-5
+###  https://w3id.org/sirius/ontology/development/04/data/value-5
 :value-05 rdf:type owl:NamedIndividual ,
                   tbox:Value ;
          tbox:hasScore 3.65 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-6
+###  https://w3id.org/sirius/ontology/development/04/data/value-6
 :value-06 rdf:type owl:NamedIndividual ,
                   tbox:Value ;
          tbox:hasScore 3.75 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-7
+###  https://w3id.org/sirius/ontology/development/04/data/value-7
 :value-07 rdf:type owl:NamedIndividual ,
                   tbox:Value ;
          tbox:hasScore 4 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-8
+###  https://w3id.org/sirius/ontology/development/04/data/value-8
 :value-08 rdf:type owl:NamedIndividual ,
                   tbox:Value ;
          tbox:hasScore 3.57 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-9
+###  https://w3id.org/sirius/ontology/development/04/data/value-9
 :value-09 rdf:type owl:NamedIndividual ,
                   tbox:Value ;
          tbox:hasScore 4.45 .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-assessment-1
+###  https://w3id.org/sirius/ontology/development/04/data/value-assessment-1
 :value-assessment-01 rdf:type owl:NamedIndividual ,
                              tbox:ValueDescription ;
                     tbox:assigns :value-01 ;
@@ -131,7 +131,7 @@
                     tbox:describes :building .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-assessment-10
+###  https://w3id.org/sirius/ontology/development/04/data/value-assessment-10
 :value-assessment-10 rdf:type owl:NamedIndividual ,
                               tbox:ValueDescription ;
                      tbox:assigns :value-10 ;
@@ -144,7 +144,7 @@
                      tbox:describes :paintings .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-assessment-2
+###  https://w3id.org/sirius/ontology/development/04/data/value-assessment-2
 :value-assessment-02 rdf:type owl:NamedIndividual ,
                              tbox:ValueDescription ;
                     tbox:assigns :value-02 ;
@@ -157,7 +157,7 @@
                     tbox:describes :building .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-assessment-3
+###  https://w3id.org/sirius/ontology/development/04/data/value-assessment-3
 :value-assessment-03 rdf:type owl:NamedIndividual ,
                              tbox:ValueDescription ;
                     tbox:assigns :value-03 ;
@@ -170,7 +170,7 @@
                     tbox:describes :building .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-assessment-4
+###  https://w3id.org/sirius/ontology/development/04/data/value-assessment-4
 :value-assessment-04 rdf:type owl:NamedIndividual ,
                              tbox:ValueDescription ;
                     tbox:assigns :value-04 ;
@@ -183,7 +183,7 @@
                     tbox:describes :furniture .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-assessment-5
+###  https://w3id.org/sirius/ontology/development/04/data/value-assessment-5
 :value-assessment-05 rdf:type owl:NamedIndividual ,
                              tbox:ValueDescription ;
                     tbox:assigns :value-05 ;
@@ -196,7 +196,7 @@
                     tbox:describes :furniture .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-assessment-6
+###  https://w3id.org/sirius/ontology/development/04/data/value-assessment-6
 :value-assessment-06 rdf:type owl:NamedIndividual ,
                              tbox:ValueDescription ;
                     tbox:assigns :value-06 ;
@@ -209,7 +209,7 @@
                     tbox:describes :mosaics .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-assessment-7
+###  https://w3id.org/sirius/ontology/development/04/data/value-assessment-7
 :value-assessment-07 rdf:type owl:NamedIndividual ,
                              tbox:ValueDescription ;
                     tbox:assigns :value-07 ;
@@ -222,7 +222,7 @@
                     tbox:describes :mosaics .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-assessment-8
+###  https://w3id.org/sirius/ontology/development/04/data/value-assessment-8
 :value-assessment-08 rdf:type owl:NamedIndividual ,
                              tbox:ValueDescription ;
                     tbox:assigns :value-08 ;
@@ -235,7 +235,7 @@
                     tbox:describes :mosaics .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/value-assessment-9
+###  https://w3id.org/sirius/ontology/development/04/data/value-assessment-9
 :value-assessment-09 rdf:type owl:NamedIndividual ,
                              tbox:ValueDescription ;
                     tbox:assigns :value-09 ;
@@ -248,56 +248,56 @@
                     tbox:describes :paintings .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/2020-10-18
+###  https://w3id.org/sirius/ontology/development/04/data/2020-10-18
 :2020-10-18 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2020-10-18T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2020-10-18T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/2020-10-19
+###  https://w3id.org/sirius/ontology/development/04/data/2020-10-19
 :2020-10-19 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2020-10-19T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2020-10-19T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/2020-11-11
+###  https://w3id.org/sirius/ontology/development/04/data/2020-11-11
 :2020-11-11 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2020-11-21T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2020-11-21T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/2020-11-12
+###  https://w3id.org/sirius/ontology/development/04/data/2020-11-12
 :2020-11-12 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2020-11-12T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2020-11-12T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/2020-11-21
+###  https://w3id.org/sirius/ontology/development/04/data/2020-11-21
 :2020-11-21 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2020-11-21T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2020-11-21T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/2020-12-06
+###  https://w3id.org/sirius/ontology/development/04/data/2020-12-06
 :2020-12-06 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2020-12-06T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2020-12-06T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/2021-01-03
+###  https://w3id.org/sirius/ontology/development/04/data/2021-01-03
 :2021-01-03 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2021-01-03T23:59:59Z"^^xsd:dateTime ;
                                                                  tbox:hasStartDate "2021-01-03T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/development/04/data/2021-01-05
+###  https://w3id.org/sirius/ontology/development/04/data/2021-01-05
 :2021-01-05 rdf:type owl:NamedIndividual ,
                                                                           tbox:TimeInterval ;
                                                                  tbox:hasEndDate "2021-01-05T23:59:59Z"^^xsd:dateTime ;

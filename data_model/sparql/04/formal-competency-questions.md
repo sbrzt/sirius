@@ -3,9 +3,9 @@
 Return the assets that are part of the `house` asset and the asset percentage they represent, in descending order.
 
 ```SPARQL
-PREFIX : <http://purl.org/sirius/ontology/data/04/>
+PREFIX : <https://w3id.org/sirius/ontology/data/04/>
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX hero: <http://purl.org/sirius/ontology/hero/>
+PREFIX hero: <https://w3id.org/sirius/ontology/hero/>
 
 SELECT DISTINCT ?asset ?asset_part ?percentage
 WHERE {
@@ -22,9 +22,9 @@ WHERE {
 Return the assets that are part of the `house` asset and the contributing values assigned to them, along with their score, dimension, aspect, note, documentation, and time interval.
 
 ```SPARQL
-PREFIX : <http://purl.org/sirius/ontology/data/04/>
+PREFIX : <https://w3id.org/sirius/ontology/data/04/>
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
-PREFIX hero: <http://purl.org/sirius/ontology/hero/>
+PREFIX hero: <https://w3id.org/sirius/ontology/hero/>
 PREFIX ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#>
 PREFIX tis: <http://ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#>
 

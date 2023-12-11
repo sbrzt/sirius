@@ -1,20 +1,20 @@
-@prefix : <http://purl.org/sirius/ontology/development/01/data/> .
+@prefix : <https://w3id.org/sirius/ontology/development/01/data/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix tbox: <http://purl.org/sirius/ontology/development/01/schema/> .
-@base <http://purl.org/sirius/ontology/development/01/data/> .
+@prefix tbox: <https://w3id.org/sirius/ontology/development/01/schema/> .
+@base <https://w3id.org/sirius/ontology/development/01/data/> .
 
-<http://purl.org/sirius/ontology/development/01/data/> rdf:type owl:Ontology ;
-                                                        owl:imports <http://purl.org/sirius/ontology/development/01/schema> .
+<https://w3id.org/sirius/ontology/development/01/data/> rdf:type owl:Ontology ;
+                                                        owl:imports <https://w3id.org/sirius/ontology/development/01/schema> .
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/01/data/administrative-context-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/administrative-context-baptistery
 :administrative-context-baptistery rdf:type owl:NamedIndividual ,
                                                          tbox:Observation ;
                                                 tbox:hasParameter tbox:administrative ;
@@ -22,7 +22,7 @@
                                                 tbox:hasDescription "Dal dicembre 2019 è gestito da Direzione regionale Musei dell’Emilia Romagna, sede di Ravenna."@it .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/risk-assessment-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/risk-assessment-baptistery
 :risk-assessment-baptistery rdf:type owl:NamedIndividual ,
                                              tbox:ContextDescription ;
                                     tbox:hasObservation :administrative-context-baptistery ,
@@ -41,14 +41,14 @@
                                                   :università-di-bologna .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/2020-10-10
+###  https://w3id.org/sirius/ontology/development/01/data/2020-10-10
 :2020-10-10 rdf:type owl:NamedIndividual ,
                                   tbox:TimeInterval ;
                          tbox:hasEndDate "2020-10-10T23:59:59Z"^^xsd:dateTime ;
                          tbox:hasStartDate "2020-10-10T00:00:00Z"^^xsd:dateTime .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/baptistery
 :baptistery rdf:type owl:NamedIndividual ,
                                   tbox:HeritageAsset ;
                          tbox:isLocatedIn :piazzetta-degli-ariani ;
@@ -57,26 +57,26 @@
                          tbox:hasName "Battistero degli Ariani"@it .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/cittadinanza
+###  https://w3id.org/sirius/ontology/development/01/data/cittadinanza
 :cittadinanza rdf:type owl:NamedIndividual ,
                        tbox:Stakeholder ;
               tbox:hasName "cittadinanza"@it .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/comune-di-ravenna
+###  https://w3id.org/sirius/ontology/development/01/data/comune-di-ravenna
 :comune-di-ravenna rdf:type owl:NamedIndividual ,
                             tbox:Stakeholder ;
                    tbox:hasName "Comune di Ravenna"@it .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/creation-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/creation-baptistery
 :creation-baptistery rdf:type owl:NamedIndividual ,
                                            tbox:CreationEvent ;
                                   tbox:creates :baptistery ;
                                   tbox:hasTimeSpan :timespan-baptistery .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/document-1-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/document-1-baptistery
 :document-1-baptistery rdf:type owl:NamedIndividual ,
                                              tbox:Document ;
                                     tbox:documents :political-context-baptistery ;
@@ -85,7 +85,7 @@
                                     tbox:hasLink "http://www.ravennaincomune.it/wp/index.php/2020/05/23/telecamere-di-sorveglianza-allassalto-del-battistero-degli-ariani" .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/document-2-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/document-2-baptistery
 :document-2-baptistery rdf:type owl:NamedIndividual ,
                                              tbox:Document ;
                                     tbox:documents :political-context-baptistery ;
@@ -94,7 +94,7 @@
                                     tbox:hasLink "https://www.ravennatoday.it/cronaca/telecamere-nelle-millenarie-mura-del-battistero-degli-ariani-protesta-italia-nostra.html" .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/document-3-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/document-3-baptistery
 :document-3-baptistery rdf:type owl:NamedIndividual ,
                                              tbox:Document ;
                                     tbox:documents :political-context-baptistery ;
@@ -103,7 +103,7 @@
                                     tbox:hasLink "https://www.ravennaedintorni.it/societa/2020/05/30/telecamere-battistero-ariani/" .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/document-4-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/document-4-baptistery
 :document-4-baptistery rdf:type owl:NamedIndividual ,
                                              tbox:Document ;
                                     tbox:documents :political-context-baptistery ;
@@ -112,7 +112,7 @@
                                     tbox:hasLink "https://www.ravennanotizie.it/cultura-spettacolo/2020/05/30/italia-nostra-ravenna-protesta-per-le-telecamere-al-battistero-degli-ariani-uno-sfregio-ai-monumenti/" .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/document-5-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/document-5-baptistery
 :document-5-baptistery rdf:type owl:NamedIndividual ,
                                              tbox:Document ;
                                     tbox:documents :political-context-baptistery ;
@@ -121,7 +121,7 @@
                                     tbox:hasLink "https://www.corriereromagna.it/ravenna-telecamere-installate-nelle-millenarie-mura-del-battistero/" .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/economic-context-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/economic-context-baptistery
 :economic-context-baptistery rdf:type owl:NamedIndividual ,
                                                    tbox:Observation ;
                                           tbox:hasParameter tbox:economic ;
@@ -129,13 +129,13 @@
                                           tbox:hasDescription "La Legge n. 77 del 20 febbraio 2006, stabilisce che i siti UNESCO sono eccellenze del Patrimonio culturale, paesaggistico e naturale italiano, elementi fondanti della rappresentazione del nostro Paese a livello internazionale e afferma che gli interventi su di essi hanno la priorità anche in ordine all'assegnazione delle risorse finanziarie"@it .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/fondazioni-locali
+###  https://w3id.org/sirius/ontology/development/01/data/fondazioni-locali
 :fondazioni-locali rdf:type owl:NamedIndividual ,
                             tbox:Stakeholder ;
                    tbox:hasName "Fondazioni locali"@it .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/legal-context-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/legal-context-baptistery
 :legal-context-baptistery rdf:type owl:NamedIndividual ,
                                                 tbox:Observation ;
                                        tbox:hasParameter tbox:legal ;
@@ -143,7 +143,7 @@
                                        tbox:hasDescription "Di proprietà del Demanio di Stato / MiC. Dal 1996 fa parte della lista dei siti italiani patrimonio dell'umanità UNESCO («Monumenti paleocristiani di Ravenna»)."@it .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/physical-context-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/physical-context-baptistery
 :physical-context-baptistery rdf:type owl:NamedIndividual ,
                                                    tbox:Observation ;
                                           tbox:hasParameter tbox:physical ;
@@ -151,14 +151,14 @@
                                           tbox:hasDescription "Il Battistero è visibile esternamente sui lati N, NO, NE. Il lato O affaccia sui giardini di un’abitazione privata, mentre i lati S, SO, SE, affacciano sul giardino del Dipartimento di Beni Culturali (Università di Bologna)."@it .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/piazzetta-degli-ariani
+###  https://w3id.org/sirius/ontology/development/01/data/piazzetta-degli-ariani
 :piazzetta-degli-ariani rdf:type owl:NamedIndividual ,
                                  tbox:Place ;
                         tbox:hasCoordinates "44.41871491574331, 12.20247187841604" ;
                         tbox:hasName "Piazzetta degli Ariani, 48121 Ravenna" .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/political-context-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/political-context-baptistery
 :political-context-baptistery rdf:type owl:NamedIndividual ,
                                                     tbox:Observation ;
                                            tbox:hasParameter tbox:political ;
@@ -166,7 +166,7 @@
                                            tbox:hasDescription "Il monumento è spesso motivo di dibattito tra i vari partiti ed il Comune di Ravenna"@it .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/socio-cultural-context-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/socio-cultural-context-baptistery
 :socio-cultural-context-baptistery rdf:type owl:NamedIndividual ,
                                                          tbox:Observation ;
                                                 tbox:hasParameter tbox:socio-cultural ;
@@ -174,25 +174,25 @@
                                                 tbox:hasDescription "Sito monumentale di area urbana, visitabile dai turisti (previo biglietto d’ingresso). La Piazzetta in cui è collocato l’edificio risente di una cattiva fama, in quanto “zona a rischio sociale e luogo dimesso” (si riporta il caso di una rete da letto abbandonata di notte nella trincea del Battistero, 11.07.2006, Fonte: Zaccarini, 2015). Nonostante l’istituzione nel 2012 di una regolamentazione all’accesso dei veicoli alla Piazzetta, resta consentito il transito e la sosta per carico/scarico merci."@it .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/soprintendenza-di-ravenna
+###  https://w3id.org/sirius/ontology/development/01/data/soprintendenza-di-ravenna
 :soprintendenza-di-ravenna rdf:type owl:NamedIndividual ,
                                     tbox:Stakeholder ;
                            tbox:hasName "Soprintendenza di Ravenna"@it .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/timespan-baptistery
+###  https://w3id.org/sirius/ontology/development/01/data/timespan-baptistery
 :timespan-baptistery rdf:type owl:NamedIndividual ,
                                            tbox:TimeSpan ;
                                   tbox:fallsWithin "Late fifth century A.D."@en .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/turisti
+###  https://w3id.org/sirius/ontology/development/01/data/turisti
 :turisti rdf:type owl:NamedIndividual ,
                   tbox:Stakeholder ;
          tbox:hasName "Turisti"@it .
 
 
-###  http://purl.org/sirius/ontology/development/01/data/università-di-bologna
+###  https://w3id.org/sirius/ontology/development/01/data/università-di-bologna
 :università-di-bologna rdf:type owl:NamedIndividual ,
                                 tbox:Stakeholder ;
                        tbox:hasName "Università di Bologna"@it .

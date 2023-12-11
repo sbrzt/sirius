@@ -1,46 +1,46 @@
-@prefix : <http://purl.org/sirius/ontology/development/02/schema/> .
+@prefix : <https://w3id.org/sirius/ontology/development/02/schema/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://purl.org/sirius/ontology/development/02/schema/> .
+@base <https://w3id.org/sirius/ontology/development/02/schema/> .
 
-<http://purl.org/sirius/ontology/development/02/schema> rdf:type owl:Ontology .
+<https://w3id.org/sirius/ontology/development/02/schema> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/02/schema/identifies
+###  https://w3id.org/sirius/ontology/development/02/schema/identifies
 :identifies rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/describes
+###  https://w3id.org/sirius/ontology/development/02/schema/describes
 :describes rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/isClassifiedBy
+###  https://w3id.org/sirius/ontology/development/02/schema/isClassifiedBy
 :isClassifiedBy rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/isClassifiedByAgent
+###  https://w3id.org/sirius/ontology/development/02/schema/isClassifiedByAgent
 :isClassifiedByAgent rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/isClassifiedByType
+###  https://w3id.org/sirius/ontology/development/02/schema/isClassifiedByType
 :isClassifiedByType rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/isClassifiedByLayer
+###  https://w3id.org/sirius/ontology/development/02/schema/isClassifiedByLayer
 :isClassifiedByLayer rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/atTime
+###  https://w3id.org/sirius/ontology/development/02/schema/atTime
 :atTime rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/isDocumentedBy
+###  https://w3id.org/sirius/ontology/development/02/schema/isDocumentedBy
 :isDocumentedBy rdf:type owl:ObjectProperty .
 
 
@@ -48,15 +48,15 @@
 #    Data properties
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/02/schema/hasNote
+###  https://w3id.org/sirius/ontology/development/02/schema/hasNote
 :hasNote rdf:type owl:DatatypeProperty .
 
 
-### http://purl.org/sirius/ontology/development/02/schema/hasStartDate
+### https://w3id.org/sirius/ontology/development/02/schema/hasStartDate
 :hasStartDate a owl:DatatypeProperty .
 
 
-### http://purl.org/sirius/ontology/development/02/schema/hasEndDate
+### https://w3id.org/sirius/ontology/development/02/schema/hasEndDate
 :hasEndDate a owl:DatatypeProperty .
 
 
@@ -64,35 +64,35 @@
 #    Classes
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/02/schema/AgentOfDeterioration
+###  https://w3id.org/sirius/ontology/development/02/schema/AgentOfDeterioration
 :AgentOfDeterioration rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/HeritageAsset
+###  https://w3id.org/sirius/ontology/development/02/schema/HeritageAsset
 :HeritageAsset rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/Risk
+###  https://w3id.org/sirius/ontology/development/02/schema/Risk
 :Risk rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/IdentificationDescription
+###  https://w3id.org/sirius/ontology/development/02/schema/IdentificationDescription
 :IdentificationDescription rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/Document
+###  https://w3id.org/sirius/ontology/development/02/schema/Document
 :Document rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/Layer
+###  https://w3id.org/sirius/ontology/development/02/schema/Layer
 :Layer rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/TimeInterval
+###  https://w3id.org/sirius/ontology/development/02/schema/TimeInterval
 :TimeInterval rdf:type owl:Class .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/RiskType
+###  https://w3id.org/sirius/ontology/development/02/schema/RiskType
 :RiskType rdf:type owl:Class .
 
 
@@ -100,67 +100,67 @@
 #    Individuals
 #################################################################
 
-###  http://purl.org/sirius/ontology/development/02/schema/dissociation
+###  https://w3id.org/sirius/ontology/development/02/schema/dissociation
 :dissociation rdf:type owl:NamedIndividual ,
                        :AgentOfDeterioration .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/pests
+###  https://w3id.org/sirius/ontology/development/02/schema/pests
 :pests rdf:type owl:NamedIndividual ,
                 :AgentOfDeterioration .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/physical-forces
+###  https://w3id.org/sirius/ontology/development/02/schema/physical-forces
 :physical-forces rdf:type owl:NamedIndividual ,
                           :AgentOfDeterioration .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/water
+###  https://w3id.org/sirius/ontology/development/02/schema/water
 :water rdf:type owl:NamedIndividual ,
                 :AgentOfDeterioration .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/building
+###  https://w3id.org/sirius/ontology/development/02/schema/building
 :building rdf:type owl:NamedIndividual ,
                    :Layer .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/common
+###  https://w3id.org/sirius/ontology/development/02/schema/common
 :common rdf:type owl:NamedIndividual ,
                  :RiskType .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/cumulative
+###  https://w3id.org/sirius/ontology/development/02/schema/cumulative
 :cumulative rdf:type owl:NamedIndividual ,
                      :RiskType .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/fitting
+###  https://w3id.org/sirius/ontology/development/02/schema/fitting
 :fitting rdf:type owl:NamedIndividual ,
                   :Layer .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/rare
+###  https://w3id.org/sirius/ontology/development/02/schema/rare
 :rare rdf:type owl:NamedIndividual ,
                :RiskType .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/region
+###  https://w3id.org/sirius/ontology/development/02/schema/region
 :region rdf:type owl:NamedIndividual ,
                  :Layer .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/room
+###  https://w3id.org/sirius/ontology/development/02/schema/room
 :room rdf:type owl:NamedIndividual ,
                :Layer .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/site
+###  https://w3id.org/sirius/ontology/development/02/schema/site
 :site rdf:type owl:NamedIndividual ,
                :Layer .
 
 
-###  http://purl.org/sirius/ontology/development/02/schema/support
+###  https://w3id.org/sirius/ontology/development/02/schema/support
 :support rdf:type owl:NamedIndividual ,
                   :Layer .
 

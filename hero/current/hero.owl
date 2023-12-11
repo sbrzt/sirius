@@ -1,0 +1,1943 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/sirius/ontology/hero/"
+     xml:base="https://w3id.org/sirius/ontology/hero/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="https://w3id.org/sirius/ontology/hero/">
+        <owl:versionIRI rdf:resource="https://w3id.org/sirius/ontology/hero/1.0.0/"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl"/>
+        <dc:creator>Barzaghi, Sebastian</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-11-30</dc:date>
+        <terms:abstract xml:lang="en">The Heritage Risk Assessment Ontology (HeRO, https://w3id.org/sirius/ontology/hero) is an OWL 2 DL ontology that aims to provide a framework for the formal description of risk assessment activities related to heritage.</terms:abstract>
+        <terms:bibliographicCitation xml:lang="en">Barzaghi, S. (2023). Heritage Risk Assessment Ontology. https://w3id.org/sirius/ontology/hero.</terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-11-30</terms:created>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-11-30</terms:issued>
+        <terms:license xml:lang="en">http://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:publisher xml:lang="en">Barzaghi, Sebastian</terms:publisher>
+        <terms:source xml:lang="en">
+        https://doi.org/10.6084/M9.FIGSHARE.3189769.V2
+        </terms:source>
+        <terms:source xml:lang="en">
+        https://www.canada.ca/en/conservation-institute/services/risk-management-heritage-collections/abc-method-risk-management-approach.html
+        </terms:source>
+        <terms:source xml:lang="en">
+        https://www.iccrom.org/sites/default/files/2017-12/risk_manual_2016-eng.pdf
+        </terms:source>
+        <terms:title xml:lang="en">Heritage Risk Assessment Ontology (HeRO)</terms:title>
+        <vann:preferredNamespacePrefix xml:lang="en">hero</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri xml:lang="en">https://w3id.org/sirius/ontology/hero/</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">The Heritage Risk Assessment Ontology (HeRO, https://w3id.org/sirius/ontology/hero) is an OWL 2 DL ontology that aims to provide a framework for the formal description of risk assessment activities related to heritage.</rdfs:comment>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <ns:status xml:lang="en">work in progress</ns:status>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasAuthor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasAuthor"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasComponent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasUnitTest -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasUnitTest"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#isSpecializationOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#citation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2001/XMLSchema#citation"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies">
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>A relation between a Concept and an Entity, e.g. the Role &apos;student&apos; classifies a Person &apos;John&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl"/>
+        <rdfs:label xml:lang="it">classifica</rdfs:label>
+        <rdfs:label xml:lang="en">classifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"/>
+        <rdfs:comment>A relation between a Concept and an Entity, e.g. &apos;John is considered a typical rude man&apos;; your last concert constitutes the achievement of a lifetime; &apos;20-year-old means she&apos;s mature enough&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl"/>
+        <rdfs:label xml:lang="en">is classified by</rdfs:label>
+        <rdfs:label xml:lang="it">è classificato da</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation"/>
+        <rdfs:comment xml:lang="en">The relationship between an entity and an Observation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <rdfs:label xml:lang="en">has observation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter"/>
+        <rdfs:comment xml:lang="en">The relationship between an Observation and a Parameter.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <rdfs:label xml:lang="en">has parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">The relationship between an Observation and an entity it observes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <rdfs:label xml:lang="en">is observation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation"/>
+        <rdfs:comment xml:lang="en">The relationship between a Parameter and an Observation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <rdfs:label xml:lang="en">is parameter of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant">
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"/>
+        <rdfs:comment xml:lang="en">The relationship between a Event and a Object participating in it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl"/>
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <rdfs:comment xml:lang="en">The relationship between an Object and an Event it participates in.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl"/>
+        <rdfs:label xml:lang="en">is participant in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion">
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"/>
+        <rdfs:comment>A relation between entities and regions, e.g. &apos;the number of wheels of that truck is 12&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl"/>
+        <rdfs:label xml:lang="it">ha regione</rdfs:label>
+        <rdfs:label xml:lang="en">has region</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>A relation between entities and regions, e.g. &apos;the color of my car is red&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl"/>
+        <rdfs:label xml:lang="en">is region for</rdfs:label>
+        <rdfs:label xml:lang="it">è un ragione di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor">
+        <rdfs:comment xml:lang="en">The relationship between a Situation and something it is the setting for.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+        <rdfs:comment xml:lang="en">The relationship between a Time indexed situation and a Time interval.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl"/>
+        <rdfs:label xml:lang="en">at time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">The relationship between a Time indexed situation and something contextualised in it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl"/>
+        <rdfs:label xml:lang="en">for entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"/>
+        <rdfs:comment xml:lang="en">The relationship between an entity and a Time indexed situation contextualising it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl"/>
+        <rdfs:label xml:lang="en">has time indexed setting</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"/>
+        <rdfs:comment xml:lang="en">The relationship between a Time interval and a Time indexed situation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl"/>
+        <rdfs:label xml:lang="en">is time index for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/analyses -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/analyses">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/sirius/ontology/hero/assesses"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/sirius/ontology/hero/isAnalysedIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/AnalysisDescription"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/Risk"/>
+        <rdfs:comment xml:lang="en">The relationship between an analysis and a risk that is being analysed.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">analyses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/assesses -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/assesses">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/sirius/ontology/hero/isAssessedIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/AssessmentActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/Element"/>
+        <rdfs:comment xml:lang="en">A relationship between an assessment activity and an entity assessed by it, such as a criterion.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">assesses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/assigns -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/assigns">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/sirius/ontology/hero/assesses"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/sirius/ontology/hero/isAssignedIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/ValueDescription"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/Value"/>
+        <rdfs:comment xml:lang="en">The relationship between a value assessment and an asset value that is being assessed.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">assigns</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/describes -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/describes">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/sirius/ontology/hero/isDescribedIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/AssessmentActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">The relationship between an assessment activity and the entity described in that assessment, such as an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">describes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/documents -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/documents">
+        <owl:inverseOf rdf:resource="https://w3id.org/sirius/ontology/hero/isDocumentedBy"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">The relationship between a document and an entity documented by it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">documents</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/hasObservation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/hasObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/sirius/ontology/hero/isObservationOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/AssessmentActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/Observation"/>
+        <rdfs:comment xml:lang="en">The relationship between an assessment activity and an observation occurring during said activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">has observation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/hasParameter -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/hasParameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Observation"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/Parameter"/>
+        <rdfs:comment xml:lang="en">A relationship between an observation happening during a contextualisation activity and a contextual parameter that is being observed as part of the context.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">has parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/hasParticipant -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/hasParticipant">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/sirius/ontology/hero/isParticipantIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/AssessmentActivity"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="en">The relationship between an assessment activity and a participant that takes part in it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/identifies -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/identifies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/sirius/ontology/hero/assesses"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/sirius/ontology/hero/isIdentifiedIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/IdentificationDescription"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/Risk"/>
+        <rdfs:comment xml:lang="en">The relationship between a identification activity and a risk that is being identified.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">identifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isAnalysedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isAnalysedIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/sirius/ontology/hero/isAssessedIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Risk"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/AnalysisDescription"/>
+        <rdfs:comment xml:lang="en">The relationship between a risk that is being analysed and an analysis activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">is analysed in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isAssessedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isAssessedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Element"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/AssessmentActivity"/>
+        <rdfs:comment xml:lang="en">The relationship between an entity, such as a criterion, and a assessment activity assessing it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">is assessed in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isAssignedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isAssignedIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/sirius/ontology/hero/isAssessedIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Value"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/ValueDescription"/>
+        <rdfs:comment xml:lang="en">The relationship between an asset value that is being assessed and a value assessment.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">is assigned in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isClassifiedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isClassifiedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"/>
+        <rdfs:comment xml:lang="en">A relationship between a risk and another concept that may classify it, such as an agent of deterioration, a layer, or a type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">is classified by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isClassifiedByAgent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isClassifiedByAgent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/sirius/ontology/hero/isClassifiedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Risk"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:comment xml:lang="en">A relationship between a risk and an agent of deterioration.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">is classified by agent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isClassifiedByLayer -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isClassifiedByLayer">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/sirius/ontology/hero/isClassifiedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Risk"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/Layer"/>
+        <rdfs:comment xml:lang="en">A relationship between a risk and a layer.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">is classified by layer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isClassifiedByType -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isClassifiedByType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/sirius/ontology/hero/isClassifiedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Risk"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/RiskType"/>
+        <rdfs:comment xml:lang="en">A relationship between a risk and a type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">is classified by type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isDescribedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isDescribedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/AssessmentActivity"/>
+        <rdfs:comment xml:lang="en">The relationship between the entity, such as an asset, and an assessment activity assessing it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">is described in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isDocumentedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isDocumentedBy">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:comment xml:lang="en">The relationship between something and a Document that documents it.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label>is documented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isIdentifiedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isIdentifiedIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/sirius/ontology/hero/isAssessedIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Risk"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/IdentificationDescription"/>
+        <rdfs:comment xml:lang="en">The relationship between a risk that is being identified and a identification activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">is identified in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isObservationOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isObservationOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Observation"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/AssessmentActivity"/>
+        <rdfs:comment xml:lang="en">The relationship between an observation and an assessment activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">is observation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isParticipantIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isParticipantIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/AssessmentActivity"/>
+        <rdfs:comment xml:lang="en">The relationship between an agent and an assessment activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">is participant in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/isQuantifiedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/isQuantifiedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/sirius/ontology/hero/quantifies"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Measure"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/AnalysisDescription"/>
+        <rdfs:comment xml:lang="en">The relationship between a measure and an analysis activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">is quantified by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/quantifies -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sirius/ontology/hero/quantifies">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/AnalysisDescription"/>
+        <rdfs:range rdf:resource="https://w3id.org/sirius/ontology/hero/Measure"/>
+        <rdfs:comment xml:lang="en">The relationship between an analysis activity and a measure considered during the analysis.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">quantifies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation"/>
+        <rdfs:comment xml:lang="en">A property that assigns a datetime to a Observation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <rdfs:label xml:lang="en">in date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"/>
+        <rdfs:comment>A datatype property that encodes values for a Region, e.g. a float for the Region Height.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl"/>
+        <rdfs:label xml:lang="en">has region data value</rdfs:label>
+        <rdfs:label>regione ha valore {it}</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate">
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+        <rdfs:comment>A datatype property that encodes values from xsd:date (or any other date-related xsd datatype) for a TimeInterval; a same TimeInterval can have more than one date value: begin date, end date, date at which the interval holds, as well as dates expressed in different formats: xsd:gYear, xsd:dateTime, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl"/>
+        <rdfs:label xml:lang="en">has interval date</rdfs:label>
+        <rdfs:label xml:lang="it">intervallo ha data</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+        <rdfs:comment>The end date of a time interval.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl"/>
+        <rdfs:label xml:lang="en">interval has end date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval"/>
+        <rdfs:comment>The start date of a time interval.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl"/>
+        <rdfs:label xml:lang="en">interval has start date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/assessesPercentage -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sirius/ontology/hero/assessesPercentage">
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/ValueDescription"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">A property that assigns a value percentage to an asset which has been assigned a value in a value description.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">assessesPercentage</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/hasEstimate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sirius/ontology/hero/hasEstimate">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Measure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">A property that assigns a estimate value to a measure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">has estimate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/hasHighEstimate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sirius/ontology/hero/hasHighEstimate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/sirius/ontology/hero/hasEstimate"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Measure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">A property that assigns a estimate value for the worst case scenario to a measure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label>has high estimate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/hasLowEstimate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sirius/ontology/hero/hasLowEstimate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/sirius/ontology/hero/hasEstimate"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Measure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">A property that assigns a estimate value for the best case scenario to a measure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label>has low estimate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/hasNote -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sirius/ontology/hero/hasNote">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">A property that assigns a textual description to something.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">has note</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/hasProbableEstimate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sirius/ontology/hero/hasProbableEstimate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/sirius/ontology/hero/hasEstimate"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Measure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">A property that assigns a estimate value for the most likely case scenario to a measure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label>has probable estimate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/hasScore -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sirius/ontology/hero/hasScore">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Value"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">A property that assigns a numerical estimate to quantify an asset value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">has score</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/inDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sirius/ontology/hero/inDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sirius/ontology/hero/Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">A property that assigns a datetime value to an observation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">in date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept">
+        <rdfs:comment>A concept is a Social Object. 
+The classifies relation relates concepts to entities at some time, but time can only be expressed in the alternative pattern: timeindexedclassification.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl"/>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:label xml:lang="it">Concetto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A specific situation where some thing is observed with respect ot a set of parameters.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <rdfs:label xml:lang="en">Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"/>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <rdfs:comment>The parameters of an observation describe the context and content of the observation. For example in a medical context an observation of a patient may contain a set of symptoms, that are the parameters of that observation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl"/>
+        <rdfs:label xml:lang="en">Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object"/>
+        <rdfs:comment>Any physical, social, or mental process, event, or state.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl"/>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Any physical, social, or mental object, or substance</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl"/>
+        <rdfs:label xml:lang="en">Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Any region in a dimensional space (a dimensional space is a maximal Region), which can be used as a value for a quality of an Entity . For example, TimeInterval, SpaceRegion, PhysicalAttribute, Amount, SocialAttribute are all subclasses of Region. 
+Regions are not data values in the ordinary knowledge representation sense; in order to get patterns for modelling data, see the properties: representsDataValue and hasDataValue</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl"/>
+        <rdfs:label xml:lang="en">Region</rdfs:label>
+        <rdfs:label xml:lang="it">Regione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A Situation that is explicitly indexed at some time for at least one entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl"/>
+        <rdfs:label xml:lang="en">Time indexed situation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Any Region in a dimensional space that aims at representing time.
+It should be used when you want to talk about time as an object having some characteristics.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl"/>
+        <rdfs:label xml:lang="it">Intervallo di tempo</rdfs:label>
+        <rdfs:label xml:lang="en">Time interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:comment xml:lang="en">An agent (eg. person, group, software or physical artifact).</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document">
+        <rdfs:comment xml:lang="en">A document.</rdfs:comment>
+        <rdfs:label xml:lang="en">Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/AgentOfDeterioration -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/AgentOfDeterioration">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"/>
+        <rdfs:comment xml:lang="en">A conceptualization used to classify a risk threatening an asset, made from the perspective of the asset itself.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Agent of deterioration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/AnalysisDescription -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/AnalysisDescription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sirius/ontology/hero/AssessmentActivity"/>
+        <rdfs:comment xml:lang="en">An activity that involves the quantification of risks to understand their magnitude and potential impact with respect to an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Analysis description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/Aspect -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/Aspect">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"/>
+        <rdfs:comment xml:lang="en">A facet of the context that contributes to the overall understanding and assessment of the asset value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Aspect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/AssessmentActivity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/AssessmentActivity">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation"/>
+        <rdfs:comment xml:lang="en">A situation consisting in the assessment of the risks related to an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Assessment activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/ContextDescription -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/ContextDescription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sirius/ontology/hero/AssessmentActivity"/>
+        <rdfs:comment xml:lang="en">An activity that involves the examination of the contextual information of an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Context description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/Dimension -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/Dimension">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"/>
+        <rdfs:comment xml:lang="en">A facet of an asset that contributes to the overall understanding and assessment of its value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Dimension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/Element -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/Element">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"/>
+        <rdfs:comment xml:lang="en">A conceptual category used as a basis for evaluating an asset during a risk assessment activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/Exposure -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/Exposure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sirius/ontology/hero/Measure"/>
+        <rdfs:comment xml:lang="en">The size of the expected loss of value in the whole asset affected by the risk.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/FractionalValueLoss -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/FractionalValueLoss">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sirius/ontology/hero/Measure"/>
+        <rdfs:comment xml:lang="en">The size of the expected loss of value in each part of the asset affected by the risk.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label>Fractional value loss</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/Frequency -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/Frequency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sirius/ontology/hero/Measure"/>
+        <rdfs:comment xml:lang="en">The likelihood or probability of a specific risk event occurring within a given period. It quantifies how often a particular risk is expected to materialize and helps assess the regularity or recurrence of the risk.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label>Frequency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/IdentificationDescription -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/IdentificationDescription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sirius/ontology/hero/AssessmentActivity"/>
+        <rdfs:comment xml:lang="en">An activity that involves the identification of risks to understand their nature, causes, and consequences with respect to an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Identification description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/Layer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/Layer">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"/>
+        <rdfs:comment xml:lang="en">A conceptualization used to classify a risk threatening an asset on the basis of the spatial context in which the asset exists.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Layer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/Magnitude -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/Magnitude">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sirius/ontology/hero/Measure"/>
+        <rdfs:comment xml:lang="en">The quantified extension of a risk, encompassing the overall impact and severity associated with it if it were to occur.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Magnitude</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/Measure -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/Measure">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/sirius/ontology/hero/hasEstimate"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region"/>
+        <rdfs:comment xml:lang="en">A quantifiable aspect of some entity, that expresses a more precise and standardised evaluation of it, based on assigning numerical values or metrics to some specific attributes.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/Observation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/Observation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation"/>
+        <rdfs:comment xml:lang="en">An observation about an asset during an assessment activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/Parameter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/Parameter">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter"/>
+        <rdfs:comment xml:lang="en">A contextual parameter used in an observation about an asset during an assessment activity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/Risk -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/Risk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sirius/ontology/hero/Element"/>
+        <rdfs:comment xml:lang="en">The possibility of a loss of value to an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Risk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/RiskType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/RiskType">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept"/>
+        <rdfs:comment xml:lang="en">A conceptualization used to classify a risk according to its type of occurrence.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Risk type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/Value -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/Value">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sirius/ontology/hero/Element"/>
+        <rdfs:comment xml:lang="en">A quality that represents the perceived significance or importance assigned to an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/ValueDescription -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sirius/ontology/hero/ValueDescription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sirius/ontology/hero/AssessmentActivity"/>
+        <rdfs:comment xml:lang="en">An activity that involves the identification of values that contribute to the perceived importance of an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Value description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/administrative -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/administrative">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Parameter"/>
+        <rdfs:comment xml:lang="en">A contextual parameter representing the administrative environment of the heritage asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Administrative</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/artistic -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/artistic">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Dimension"/>
+        <rdfs:comment xml:lang="en">The dimension referring to the aesthetic qualities associated with an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Artistic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/building -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/building">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Layer"/>
+        <rdfs:comment xml:lang="en">A layer that encapsulates the entire building that houses the heritage asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Building</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/common -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/common">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/RiskType"/>
+        <rdfs:comment xml:lang="en">A type of risk that occurs many times per century.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Common</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/cumulative -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/cumulative">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/RiskType"/>
+        <rdfs:comment xml:lang="en">A type of risk that can occur continuously or intermittently.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Cumulative</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/dissociation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/dissociation">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:comment xml:lang="en">An agent of deterioration that includes the natural tendency for ordered systems to fall apart over time.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Dissociation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/economic -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/economic">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Parameter"/>
+        <rdfs:comment xml:lang="en">A contextual parameter representing the economic environment of the heritage asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Economic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/feeling -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/feeling">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Aspect"/>
+        <rdfs:comment xml:lang="en">An aspect that encompasses the intangible and emotional aspects associated with an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Feeling</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/fire -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/fire">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:comment xml:lang="en">An agent of deterioration representing the destruction of an asset due to properties of fire, such as heat, flames, or smoke.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Fire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/fitting -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/fitting">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Layer"/>
+        <rdfs:comment xml:lang="en">A layer that encapsulate the first, closest movable space to the asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Fitting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/form -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/form">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Aspect"/>
+        <rdfs:comment xml:lang="en">An aspect that refers to the physical characteristics and appearance of an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Form</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/function -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/function">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Aspect"/>
+        <rdfs:comment xml:lang="en">An aspect that pertains to the purpose and use of an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Function</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/historic -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/historic">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Dimension"/>
+        <rdfs:comment xml:lang="en">A dimension that refers to the historical context, significance, and evolution of an asset</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Historic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/incorrect-relative-humidity -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/incorrect-relative-humidity">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:comment xml:lang="en">An agent of deterioration representing the situation in which the level of humidity in the environment deviates from the optimal or specified range.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Incorrect relative humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/incorrect-temperature -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/incorrect-temperature">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:comment xml:lang="en">An agent of deterioration representing a situation in which the ambient temperature deviates from the optimal or specified range.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Incorrect temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/legal -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/legal">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Parameter"/>
+        <rdfs:comment xml:lang="en">A contextual parameter representing the legal environment of the heritage asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Legal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/light-ultraviolet-infrared -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/light-ultraviolet-infrared">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:comment xml:lang="en">An agent of deterioration representing different forms of electromagnetic radiation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Light, ultraviolet and infrared</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/pests -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/pests">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:comment xml:lang="en">An agent of deterioration representing the presence of biological agents, such as insects, rodents, and microorganisms.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Pests</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/physical -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/physical">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Parameter"/>
+        <rdfs:comment xml:lang="en">A contextual parameter representing the physical environment of the heritage asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Physical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/physical-forces -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/physical-forces">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:comment xml:lang="en">An agent of deterioration representing mechanical damage resulting from handling, transport, and vibration.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Physical forces</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/political -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/political">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Parameter"/>
+        <rdfs:comment xml:lang="en">A contextual parameter representing the political environment of the heritage asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Political</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/pollutants -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/pollutants">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:comment xml:lang="en">An agent of deterioration representing the presence of substances or contaminants introduced into the environment.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Pollutants</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/rare -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/rare">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/RiskType"/>
+        <rdfs:comment xml:lang="en">A type of risk that occurs less often than approximately once every 100 years.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Rare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/region -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/region">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Layer"/>
+        <rdfs:comment xml:lang="en">A layer that encapsulates the broadest space in which the heritage asset is considered.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Region</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/room -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/room">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Layer"/>
+        <rdfs:comment xml:lang="en">A layer that encapsulates the interior space where the heritage asset is located.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Room</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/scientific -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/scientific">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Dimension"/>
+        <rdfs:comment xml:lang="en">A dimension that involves the application of research, documentation, and analysis techniques to understand, preserve, and interpret an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Scientific</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/setting -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/setting">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Aspect"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Setting</rdfs:label>
+        <rdfs:label xml:lang="en">The surroundings and environment in which an asset is located.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/site -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/site">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Layer"/>
+        <rdfs:comment xml:lang="en">A layer that encapsulates the broader area or property on which the heritage asset is situated.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Site</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/social -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/social">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Dimension"/>
+        <rdfs:comment xml:lang="en">A dimension that considers the cultural and social context of an asset, including its role in shaping identity, community values, and social practices.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Social</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/socio-cultural -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/socio-cultural">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Parameter"/>
+        <rdfs:comment xml:lang="en">A contextual parameter representing the socio-cultural environment of the heritage asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Socio-cultural</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/substance -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/substance">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Aspect"/>
+        <rdfs:comment xml:lang="en">An aspect that involves the material composition and integrity of an asset.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Substance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/support -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/support">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Layer"/>
+        <rdfs:comment xml:lang="en">The immediate surroundings or foundation upon which an asset relies.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Support</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/theft-vandalism -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/theft-vandalism">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:comment xml:lang="en">An agent of deterioration representing deliberate acts of theft, vandalism, or destruction done by humans.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Theft and vandalism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/tradition -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/tradition">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/Aspect"/>
+        <rdfs:comment xml:lang="en">An aspect that involves the surroundings and environment in which an asset is located.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Tradition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sirius/ontology/hero/water -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sirius/ontology/hero/water">
+        <rdf:type rdf:resource="https://w3id.org/sirius/ontology/hero/AgentOfDeterioration"/>
+        <rdfs:comment xml:lang="en">An agent of deterioration representing the damage that can occur through leaks, flooding, or high humidity levels.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/sirius/ontology/hero"/>
+        <rdfs:label xml:lang="en">Water</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://xmlns.com/wordnet/1.6/Document">
+        <rdfs:label xml:lang="en">Document</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

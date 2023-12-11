@@ -3,8 +3,8 @@
 Return the textual descriptions assigned to the risks, the agents of deterioration that classify them, and their types.
 
 ```SPARQL
-PREFIX tbox: <http://purl.org/sirius/ontology/development/02/schema/>
-PREFIX abox: <http://purl.org/sirius/ontology/development/02/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/02/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/02/data/>
 
 SELECT ?risk ?agent_of_deterioration ?risk_type ?risk_summary
 WHERE {
@@ -25,8 +25,8 @@ WHERE {
 Return the risks identified within the layers `site` or `region`, their types, the documents documenting them, and the start and end dates of the time intervals they have been identified in.
 
 ```SPARQL
-PREFIX tbox: <http://purl.org/sirius/ontology/development/02/schema/>
-PREFIX abox: <http://purl.org/sirius/ontology/development/02/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/02/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/02/data/>
 
 SELECT ?risk ?risk_type ?document ?start_date ?end_date
 WHERE {
