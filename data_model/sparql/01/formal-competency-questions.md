@@ -1,6 +1,6 @@
 # Formal Competency Questions
 ## CQ_1.1
-Return the information about the heritage asset, including its name, alternative name, its description, the place it is located in (as well as its coordinates), and the time-span temporal horizon that identifies the creation event it has been dated to.
+What information should be returned about the heritage asset, including its name, alternative name, description, location (along with coordinates), and the temporal horizon specifying the creation event date?
 
 ```SPARQL
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
@@ -29,7 +29,7 @@ WHERE {
 ***
 
 ## CQ_1.2
-Return the contextual information of the heritage asset in terms of its type and description.
+What is the contextual information of the heritage asset in terms of its type and description?
 
 ```SPARQL
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
@@ -50,7 +50,7 @@ WHERE {
 ***
 
 ## CQ_1.3
-Return the documents that document the contextual information of the heritage asset.
+Which documents provide information about the contextual details of the heritage asset?
 
 ```SPARQL
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
@@ -75,7 +75,7 @@ WHERE {
 ***
 
 ## CQ_1.4
-Return the names of the stakeholders involved in the risk assessment activity regarding the heritage asset.
+Who are the stakeholders involved in the risk assessment activity related to the heritage asset, and what are their names?
 
 ```SPARQL
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>

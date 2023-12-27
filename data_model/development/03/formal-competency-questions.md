@@ -1,6 +1,6 @@
 # Formal Competency Questions
 ## CQ_3.1
-Return the probable estimate of the A-score, B-score, C-score for each risk affecting each heritage asset, as well as the sources of knowledge that witness them.
+What are the probable estimates of the A-score, B-score, and C-score for each risk affecting each heritage asset, along with the documentation and textual content that record them?
 
 ```SPARQL
 PREFIX tbox: <https://w3id.org/sirius/ontology/development/03/schema/>
@@ -28,7 +28,7 @@ WHERE {
 ***
 
 ## CQ_3.2
-Return the low, probable, and high estimates of the magnitudes of risk for each risk of each heritage asset.
+What are the low, probable, and high estimates of the magnitudes of risk for each risk associated with each heritage asset?
 
 ```SPARQL
 PREFIX tbox: <https://w3id.org/sirius/ontology/development/03/schema/>
@@ -48,7 +48,7 @@ WHERE {
 ***
 
 ## CQ_3.3
-Return the low, probable, and high estimates of the A-score, B-score, C-score, and magnitude of risk for each risk affecting each heritage asset, as well as their documentation.
+What are the low, probable, and high estimates of the A-score, B-score, C-score, and magnitude of risk for each risk affecting each heritage asset?
 
 ```SPARQL
 PREFIX tbox: <https://w3id.org/sirius/ontology/development/03/schema/>
@@ -63,10 +63,6 @@ WHERE {
                   tbox:hasLowEstimate ?low_estimate ;
                   tbox:hasHighEstimate ?high_estimate ;
                   tbox:hasProbableEstimate ?probable_estimate .
-  OPTIONAL {
-    ?risk_component tbox:isDocumentedBy ?knowledge_source ;
-                  tbox:hasNote ?note .
-  }
   FILTER (
     ?component_class = tbox:Frequency ||
     ?component_class = tbox:FractionalValueLoss ||

@@ -61,8 +61,8 @@
 ###  https://w3id.org/sirius/ontology/development/03/data/archive-deterioration-mr
 :archive-deterioration-mr rdf:type owl:NamedIndividual ,
                                    tbox:Magnitude ;
-                          tbox:hasHighEstimate 8 ;
-                          tbox:hasLowEstimate 7 ;
+                          tbox:hasHighEstimate 9 ;
+                          tbox:hasLowEstimate 6 ;
                           tbox:hasProbableEstimate 7.5 .
 
 
@@ -108,7 +108,7 @@
 :museum-fire-mr rdf:type owl:NamedIndividual ,
                          tbox:Magnitude ;
                 tbox:hasHighEstimate 13 ;
-                tbox:hasLowEstimate 12 ;
+                tbox:hasLowEstimate 11 ;
                 tbox:hasProbableEstimate 12.5 .
 
 
@@ -149,7 +149,7 @@
 :museum-theft-mr rdf:type owl:NamedIndividual ,
                           tbox:Magnitude ;
                  tbox:hasHighEstimate 11 ;
-                 tbox:hasLowEstimate 10 ;
+                 tbox:hasLowEstimate 9 ;
                  tbox:hasProbableEstimate 10.5 .
 
 

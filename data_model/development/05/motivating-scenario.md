@@ -1,0 +1,25 @@
+# Iteration 05
+
+## Name
+Evaluate step
+
+## Description
+This step consists in an evaluation of each specific risk relative to other risks or to some criteria. It involves comparing the risks with each other, evaluating their level of priority, and deciding within the institution which risks are acceptable and which ones are not and therefore must be ‘treated’.
+
+The main criteria used to compare and evaluate risks is their magnitude (MR). On the next page is a scale of MR values classified according to their level of priority: 
+* catastrophic: all or most of the heritage asset value is likely to be lost in a few years; 
+* extreme: significant damage to all the heritage asset, or total loss of a significant fraction of the heritage asset, is possible in approximately one decade; 
+* high: significant loss of value to a small fraction of the heritage asset, or a small loss of value in most or a significant fraction of the heritage asset is likely in one century; 
+* medium: small damage or loss of value to the heritage asset over many centuries; 
+* low: minimal or insignificant damage or loss of value to the heritage asset over many millennia.
+
+By considering these numbers, stakeholders can discuss within the institution and decide which level of risk is acceptable, and which ones are not.
+
+It is very useful for an organization to decide that reducing risks below a certain magnitude (e.g. MR > 10) is simply not worth any effort, i.e. that such risks are acceptable.
+
+## Example 01
+The risk of a large fire affecting a museum and its contents (MR=12½) has an extreme priority. A risk of this magnitude is equivalent to losing about 3% of the heritage asset value every 10 years (or 30% per century, or 100% in about 300 years). The museum direction considers this level of risk as ‘not acceptable’. 
+
+The risk of opportunistic theft of objects on display (MR=10½) has a high priority. It is 100 times smaller than the fire risk. A risk of this magnitude is equivalent to losing about 0.3% of the heritage asset value every 100 years (or 3% per millennium). The museum direction considers this level of risk as ‘just beyond acceptable’.
+
+The risk of deterioration of archival documents caused by low quality storage boxes (MR=7½) has a medium (almost low) priority. It is 1 000 times smaller than the theft risk, and 100 000 times smaller than the fire risk. A risk of this magnitude is equivalent to losing about 0.003% of the heritage asset value per millennium. The museum direction considers this level of risk as ‘acceptable’.

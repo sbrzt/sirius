@@ -1,6 +1,6 @@
 # Formal Competency Questions
 ## CQ_2.1
-Return the textual descriptions assigned to the risks, the agents of deterioration that classify them, and their types.
+What are the textual descriptions assigned to the risks, the agents of deterioration classifying them, and their types?
 
 ```SPARQL
 PREFIX hero: <https://w3id.org/sirius/ontology/hero/>
@@ -21,7 +21,7 @@ WHERE {
 ***
 
 ## CQ_2.2
-Return the risks identified within the layers `site` or `region`, their types, the documents documenting them, and the start and end dates of the time intervals they have been identified in.
+Which risks are identified within the layers of the site or region, along with their types, the documents documenting them, and the start and end dates of the time intervals in which they have been identified?
 
 ```SPARQL
 PREFIX hero: <https://w3id.org/sirius/ontology/hero/>

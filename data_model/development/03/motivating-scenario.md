@@ -1,4 +1,4 @@
-# Iteration 04
+# Iteration 03
 
 ## Name
 Analyse step
@@ -21,7 +21,7 @@ Considering the combustible nature of the museum building and its contents, a to
 
 Given the characteristics of the building and its contents, it is expected that all or most of the heritage asset and its value would be affected in the event of a large fire. The C-score is C=4.5 (low estimate), C=5 (probable estimate), C=5 (high estimate).
 
-The magnitude of risk is MR=12 (low estimate), MR=12.5 (probable estimate), MR=13 (high estimate).
+The magnitude of risk is MR=11 (low estimate), MR=12.5 (probable estimate), MR=13 (high estimate).
 
 To summarize: a large fire event is expected in the museum approximately once every 300 years, with the fire affecting all or most of the heritage asset value, causing total or almost total loss of value in each affected item.
 
@@ -32,17 +32,17 @@ A stolen item results in a complete loss of value for the museum and its public.
 
 The most probable scenario is the opportunistic theft of a small, original object of the collection displayed without protection. The C-score is C=1.5 (low estimate), C=2 (probable estimate), C=2.5 (high estimate), indicating a tiny fraction of the heritage asset value affected per event.
 
-The magnitude of risk is MR=10 (probable estimate), MR=10.5 (probable estimate), MR=11 (high estimate).
+The magnitude of risk is MR=9 (probable estimate), MR=10.5 (probable estimate), MR=11 (high estimate).
 
 To summarize: an opportunistic theft event is expected in the museum approximately once every 25 years, most likely affecting 1 original object of the collection on display or a tiny fraction of the heritage asset value per event, resulting in a total loss of the stolen item.
 
 ## Example 03
-Deterioration by exposure to volatile substances released by cardboard boxes is another risk, this time for an archive and its collections. For a period of 30 years, the A-score is A=3 (low estimate), A=3.5 (probable estimate), A=4 (high estimate).
+An archive is at risk of deterioration by exposure to volatile substances released by cardboard boxes. For a period of 30 years, the A-score is A=3 (low estimate), A=3.5 (probable estimate), A=4 (high estimate).
 
-Observations on similar archival collections show a tiny loss of value in each item affected over 30 years. The B-score is B=1.5 (low estimate), B=2 (probable estimate), B=2.5 (high estimate).
+Observations on similar collections show a tiny loss of value in each item affected over 30 years. The B-score is B=1.5 (low estimate), B=2 (probable estimate), B=2.5 (high estimate).
 
 Only a tiny fraction of the heritage asset value is expected to be affected per event. The C-score is C=1.5 (low estimate), C=2 (probable estimate), C=2.5 (high estimate).
 
-The magnitude of risk is MR=7 (low estimate), MR=7.5 (probable estimate), MR=8 (high estimate).
+The magnitude of risk is MR=6 (low estimate), MR=7.5 (probable estimate), MR=9 (high estimate).
 
 To summarize: over a period of 30 years, a tiny loss of value is expected to accumulate in about 1% of the archival items due to their storage inside 'low-quality' cardboard boxes.

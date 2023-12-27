@@ -1,6 +1,6 @@
 # Formal Competency Questions
 ## CQ_4.1
-Which assets are part of the house asset, and what is the percentage each asset represents, ordered in descending order?
+Return the assets that are part of the `house` asset and the asset percentage they represent, in descending order.
 
 ```SPARQL
 PREFIX tbox: <https://w3id.org/sirius/ontology/development/04/schema/>
@@ -18,7 +18,7 @@ WHERE {
 ***
 
 ## CQ_4.2
-What are the contributing values assigned to an asset, and what is their associated score, dimension, aspect, note, documentation, and time interval?
+Return the assets that are part of the `house` asset and the contributing values assigned to them, along with their score, dimension, aspect, note, documentation, and time interval.
 
 ```SPARQL
 PREFIX tbox: <https://w3id.org/sirius/ontology/development/04/schema/>
