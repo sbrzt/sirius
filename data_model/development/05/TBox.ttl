@@ -1,10 +1,10 @@
-@prefix : <https://w3id.org/sirius/ontology/development/04/schema/> .
+@prefix : <https://w3id.org/sirius/ontology/development/05/schema/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/sirius/ontology/development/04/schema/> .
+@base <https://w3id.org/sirius/ontology/development/05/schema/> .
 
 <https://w3id.org/sirius/ontology/development/05/schema/> rdf:type owl:Ontology .
 
@@ -24,8 +24,16 @@
 :hasAcceptanceLevel rdf:type owl:ObjectProperty .
 
 
+###  https://w3id.org/sirius/ontology/development/05/schema/hasCriterion
+:hasCriterion rdf:type owl:ObjectProperty .
+
+
 ###  https://w3id.org/sirius/ontology/development/05/schema/hasPriorityLevel
 :hasPriorityLevel rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/onAttribute
+:onAttribute rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/sirius/ontology/development/05/schema/setsCriterion
@@ -48,16 +56,20 @@
 :hasProbableEstimate rdf:type owl:DatatypeProperty .
 
 
+###  https://w3id.org/sirius/ontology/development/05/schema/hasQuantitativeConditionValue
+:hasQuantitativeConditionValue rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/withOperator
+:withOperator rdf:type owl:DatatypeProperty .
+
+
 #################################################################
 #    Classes
 #################################################################
 
 ###  https://w3id.org/sirius/ontology/development/05/schema/AcceptanceLevel
 :AcceptanceLevel rdf:type owl:Class .
-
-
-###  https://w3id.org/sirius/ontology/development/05/schema/Condition
-:Condition rdf:type owl:Class .
 
 
 ###  https://w3id.org/sirius/ontology/development/05/schema/CriterionSetter
@@ -79,6 +91,10 @@
 
 ###  https://w3id.org/sirius/ontology/development/05/schema/PriorityLevel
 :PriorityLevel rdf:type owl:Class .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/QuantitativeCondition
+:QuantitativeCondition rdf:type owl:Class .
 
 
 ###  https://w3id.org/sirius/ontology/development/05/schema/QuantitativeMeasure
