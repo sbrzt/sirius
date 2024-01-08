@@ -14,120 +14,146 @@
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/condition-magnitude
+###  https://w3id.org/sirius/ontology/development/05/data/condition-magnitude
 :condition-magnitude rdf:type owl:NamedIndividual ,
-                              tbox:Condition ;
+                              tbox:QuantitativeCondition ;
                      tbox:onAttribute tbox:hasProbableEstimate ;
-                     tbox:withOperator ">"^^rdfs:Literal ;
                      tbox:hasQuantitativeConditionValue 10.0 .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/criterion-magnitude
-:criterion-magnitude rdf:type owl:NamedIndividual ,
+###  https://w3id.org/sirius/ontology/development/05/data/condition-uncertainty
+:condition-uncertainty rdf:type owl:NamedIndividual ,
+                              tbox:QuantitativeCondition ;
+                     tbox:onAttribute tbox:hasDegreeOfConfidence ;
+                     tbox:hasQuantitativeConditionValue 2.0 .
+
+
+###  https://w3id.org/sirius/ontology/development/05/data/criterion-magnitude-fire
+:criterion-magnitude-fire rdf:type owl:NamedIndividual ,
                               tbox:CriterionSetter ;
                      tbox:setsCriterion :museum-fire-mr ;
                      tbox:withCondition :condition-magnitude .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/condition-uncertainty
-:condition-uncertainty rdf:type owl:NamedIndividual ,
-                              tbox:Condition ;
-                     tbox:onAttribute tbox:hasDegreeOfConfidence ;
-                     tbox:withOperator "<"^^rdfs:Literal ;
-                     tbox:hasQuantitativeConditionValue 2.0 .
+###  https://w3id.org/sirius/ontology/development/05/data/criterion-magnitude-theft
+:criterion-magnitude-theft rdf:type owl:NamedIndividual ,
+                              tbox:CriterionSetter ;
+                     tbox:setsCriterion :museum-theft-mr ;
+                     tbox:withCondition :condition-magnitude .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/criterion-uncertainty
-:criterion-uncertainty rdf:type owl:NamedIndividual ,
+###  https://w3id.org/sirius/ontology/development/05/data/criterion-magnitude-deterioration
+:criterion-magnitude-deterioration rdf:type owl:NamedIndividual ,
+                              tbox:CriterionSetter ;
+                     tbox:setsCriterion :museum-deterioration-mr ;
+                     tbox:withCondition :condition-magnitude .
+
+
+###  https://w3id.org/sirius/ontology/development/05/data/criterion-uncertainty-fire
+:criterion-uncertainty-fire rdf:type owl:NamedIndividual ,
                               tbox:CriterionSetter ;
                      tbox:setsCriterion :museum-fire-uncertainty ;
                      tbox:withCondition :condition-uncertainty .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum
+###  https://w3id.org/sirius/ontology/development/05/data/criterion-uncertainty-theft
+:criterion-uncertainty-theft rdf:type owl:NamedIndividual ,
+                              tbox:CriterionSetter ;
+                     tbox:setsCriterion :museum-theft-uncertainty ;
+                     tbox:withCondition :condition-uncertainty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/data/criterion-uncertainty-deterioration
+:criterion-uncertainty-deterioration rdf:type owl:NamedIndividual ,
+                              tbox:CriterionSetter ;
+                     tbox:setsCriterion :museum-deterioration-uncertainty ;
+                     tbox:withCondition :condition-uncertainty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/data/museum
 :museum rdf:type owl:NamedIndividual ,
                  tbox:HeritageAsset .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-fire
+###  https://w3id.org/sirius/ontology/development/05/data/museum-fire
 :museum-fire rdf:type owl:NamedIndividual ,
                       tbox:Risk .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-theft
+###  https://w3id.org/sirius/ontology/development/05/data/museum-theft
 :museum-theft rdf:type owl:NamedIndividual ,
                       tbox:Risk .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-deterioration
+###  https://w3id.org/sirius/ontology/development/05/data/museum-deterioration
 :museum-deterioration rdf:type owl:NamedIndividual ,
                       tbox:Risk .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-fire-evaluation
+###  https://w3id.org/sirius/ontology/development/05/data/museum-fire-evaluation
 :museum-fire-evaluation rdf:type owl:NamedIndividual ,
                                  tbox:EvaluationDescription ;
                         tbox:describes :museum ;
                         tbox:evaluates :museum-fire ;
                         tbox:hasAcceptanceLevel tbox:treat-asap ;
-                        tbox:hasCriterion :criterion-magnitude ,
-                                          :criterion-uncertainty ;
+                        tbox:hasCriterion :criterion-magnitude-fire ,
+                                          :criterion-uncertainty-fire ;
                         tbox:hasPriorityLevel tbox:extreme .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-theft-evaluation
+###  https://w3id.org/sirius/ontology/development/05/data/museum-theft-evaluation
 :museum-theft-evaluation rdf:type owl:NamedIndividual ,
                                  tbox:EvaluationDescription ;
                         tbox:describes :museum ;
                         tbox:evaluates :museum-theft ;
                         tbox:hasAcceptanceLevel tbox:review-asap ;
-                        tbox:hasCriterion :criterion-magnitude ,
-                                          :criterion-uncertainty ;
+                        tbox:hasCriterion :criterion-magnitude-theft ,
+                                          :criterion-uncertainty-theft ;
                         tbox:hasPriorityLevel tbox:high .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-deterioration-evaluation
+###  https://w3id.org/sirius/ontology/development/05/data/museum-deterioration-evaluation
 :museum-deterioration-evaluation rdf:type owl:NamedIndividual ,
                                  tbox:EvaluationDescription ;
                         tbox:describes :museum ;
                         tbox:evaluates :museum-deterioration ;
                         tbox:hasAcceptanceLevel tbox:no-action ;
-                        tbox:hasCriterion :criterion-magnitude ,
-                                          :criterion-uncertainty ;
-                        tbox:hasPriorityLevel tbox:medium .
+                        tbox:hasCriterion :criterion-magnitude-deterioration ,
+                                          :criterion-uncertainty-deterioration ;
+                        tbox:hasPriorityLevel tbox:low .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-fire-mr
+###  https://w3id.org/sirius/ontology/development/05/data/museum-fire-mr
 :museum-fire-mr rdf:type owl:NamedIndividual ,
                          tbox:Magnitude ;
                 tbox:hasProbableEstimate 12.5 .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-fire-mr
+###  https://w3id.org/sirius/ontology/development/05/data/museum-theft-mr
 :museum-theft-mr rdf:type owl:NamedIndividual ,
                          tbox:Magnitude ;
                 tbox:hasProbableEstimate 10.5 .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-fire-mr
+###  https://w3id.org/sirius/ontology/development/05/data/museum-deterioration-mr
 :museum-deterioration-mr rdf:type owl:NamedIndividual ,
                          tbox:Magnitude ;
                 tbox:hasProbableEstimate 7.5 .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-fire-uncertainty
+###  https://w3id.org/sirius/ontology/development/05/data/museum-fire-uncertainty
 :museum-fire-uncertainty rdf:type owl:NamedIndividual ,
                                   tbox:Uncertainty ;
                          tbox:hasDegreeOfConfidence 1.0 .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-theft-uncertainty
+###  https://w3id.org/sirius/ontology/development/05/data/museum-theft-uncertainty
 :museum-theft-uncertainty rdf:type owl:NamedIndividual ,
                                   tbox:Uncertainty ;
                          tbox:hasDegreeOfConfidence 2.5 .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-deterioration-uncertainty
+###  https://w3id.org/sirius/ontology/development/05/data/museum-deterioration-uncertainty
 :museum-deterioration-uncertainty rdf:type owl:NamedIndividual ,
                                   tbox:Uncertainty ;
                          tbox:hasDegreeOfConfidence 1.0 .
