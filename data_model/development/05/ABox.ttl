@@ -1,72 +1,14 @@
-@prefix : <http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/> .
+@prefix : <https://w3id.org/sirius/ontology/development/05/data/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/> .
+@prefix tbox: <https://w3id.org/sirius/ontology/development/05/schema/> .
+@base <https://w3id.org/sirius/ontology/development/05/data/> .
 
-<https://w3id.org/sirius/ontology/development/05/data/> rdf:type owl:Ontology .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  https://w3id.org/sirius/ontology/development/05/schema/describes
-<https://w3id.org/sirius/ontology/development/05/schema/describes> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/sirius/ontology/development/05/schema/evaluates
-<https://w3id.org/sirius/ontology/development/05/schema/evaluates> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/sirius/ontology/development/05/schema/hasAcceptanceLevel
-<https://w3id.org/sirius/ontology/development/05/schema/hasAcceptanceLevel> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/sirius/ontology/development/05/schema/hasCriterion
-<https://w3id.org/sirius/ontology/development/05/schema/hasCriterion> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/sirius/ontology/development/05/schema/hasPriorityLevel
-<https://w3id.org/sirius/ontology/development/05/schema/hasPriorityLevel> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/sirius/ontology/development/05/schema/hasProbableEstimate
-<https://w3id.org/sirius/ontology/development/05/schema/hasProbableEstimate> rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  https://w3id.org/sirius/ontology/development/05/schema/Condition
-<https://w3id.org/sirius/ontology/development/05/schema/Condition> rdf:type owl:Class .
-
-
-###  https://w3id.org/sirius/ontology/development/05/schema/CriterionSetter
-<https://w3id.org/sirius/ontology/development/05/schema/CriterionSetter> rdf:type owl:Class .
-
-
-###  https://w3id.org/sirius/ontology/development/05/schema/EvaluationDescription
-<https://w3id.org/sirius/ontology/development/05/schema/EvaluationDescription> rdf:type owl:Class .
-
-
-###  https://w3id.org/sirius/ontology/development/05/schema/HeritageAsset
-<https://w3id.org/sirius/ontology/development/05/schema/HeritageAsset> rdf:type owl:Class .
-
-
-###  https://w3id.org/sirius/ontology/development/05/schema/Magnitude
-<https://w3id.org/sirius/ontology/development/05/schema/Magnitude> rdf:type owl:Class .
-
-
-###  https://w3id.org/sirius/ontology/development/05/schema/Risk
-<https://w3id.org/sirius/ontology/development/05/schema/Risk> rdf:type owl:Class .
-
-
-###  https://w3id.org/sirius/ontology/development/05/schema/Uncertainty
-<https://w3id.org/sirius/ontology/development/05/schema/Uncertainty> rdf:type owl:Class .
-
+<https://w3id.org/sirius/ontology/development/05/data/> rdf:type owl:Ontology ;
+                                                        owl:imports <https://w3id.org/sirius/ontology/development/05/schema/> .
 
 #################################################################
 #    Individuals
@@ -74,43 +16,121 @@
 
 ###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/condition-magnitude
 :condition-magnitude rdf:type owl:NamedIndividual ,
-                              <https://w3id.org/sirius/ontology/development/05/schema/Condition> .
+                              tbox:Condition ;
+                     tbox:onAttribute tbox:hasProbableEstimate ;
+                     tbox:withOperator ">"^^rdfs:Literal ;
+                     tbox:hasQuantitativeConditionValue 10.0 .
 
 
 ###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/criterion-magnitude
 :criterion-magnitude rdf:type owl:NamedIndividual ,
-                              <https://w3id.org/sirius/ontology/development/05/schema/CriterionSetter> .
+                              tbox:CriterionSetter ;
+                     tbox:setsCriterion :museum-fire-mr ;
+                     tbox:withCondition :condition-magnitude .
+
+
+###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/condition-uncertainty
+:condition-uncertainty rdf:type owl:NamedIndividual ,
+                              tbox:Condition ;
+                     tbox:onAttribute tbox:hasDegreeOfConfidence ;
+                     tbox:withOperator "<"^^rdfs:Literal ;
+                     tbox:hasQuantitativeConditionValue 2.0 .
+
+
+###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/criterion-uncertainty
+:criterion-uncertainty rdf:type owl:NamedIndividual ,
+                              tbox:CriterionSetter ;
+                     tbox:setsCriterion :museum-fire-uncertainty ;
+                     tbox:withCondition :condition-uncertainty .
 
 
 ###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum
 :museum rdf:type owl:NamedIndividual ,
-                 <https://w3id.org/sirius/ontology/development/05/schema/HeritageAsset> .
+                 tbox:HeritageAsset .
 
 
 ###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-fire
 :museum-fire rdf:type owl:NamedIndividual ,
-                      <https://w3id.org/sirius/ontology/development/05/schema/Risk> .
+                      tbox:Risk .
+
+
+###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-theft
+:museum-theft rdf:type owl:NamedIndividual ,
+                      tbox:Risk .
+
+
+###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-deterioration
+:museum-deterioration rdf:type owl:NamedIndividual ,
+                      tbox:Risk .
 
 
 ###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-fire-evaluation
 :museum-fire-evaluation rdf:type owl:NamedIndividual ,
-                                 <https://w3id.org/sirius/ontology/development/05/schema/EvaluationDescription> ;
-                        <https://w3id.org/sirius/ontology/development/05/schema/describes> :museum ;
-                        <https://w3id.org/sirius/ontology/development/05/schema/evaluates> :museum-fire ;
-                        <https://w3id.org/sirius/ontology/development/05/schema/hasAcceptanceLevel> <https://w3id.org/sirius/ontology/development/05/schema/treat-asap> ;
-                        <https://w3id.org/sirius/ontology/development/05/schema/hasCriterion> :criterion-magnitude ;
-                        <https://w3id.org/sirius/ontology/development/05/schema/hasPriorityLevel> <https://w3id.org/sirius/ontology/development/05/schema/extreme> .
+                                 tbox:EvaluationDescription ;
+                        tbox:describes :museum ;
+                        tbox:evaluates :museum-fire ;
+                        tbox:hasAcceptanceLevel tbox:treat-asap ;
+                        tbox:hasCriterion :criterion-magnitude ,
+                                          :criterion-uncertainty ;
+                        tbox:hasPriorityLevel tbox:extreme .
+
+
+###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-theft-evaluation
+:museum-theft-evaluation rdf:type owl:NamedIndividual ,
+                                 tbox:EvaluationDescription ;
+                        tbox:describes :museum ;
+                        tbox:evaluates :museum-theft ;
+                        tbox:hasAcceptanceLevel tbox:review-asap ;
+                        tbox:hasCriterion :criterion-magnitude ,
+                                          :criterion-uncertainty ;
+                        tbox:hasPriorityLevel tbox:high .
+
+
+###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-deterioration-evaluation
+:museum-deterioration-evaluation rdf:type owl:NamedIndividual ,
+                                 tbox:EvaluationDescription ;
+                        tbox:describes :museum ;
+                        tbox:evaluates :museum-deterioration ;
+                        tbox:hasAcceptanceLevel tbox:no-action ;
+                        tbox:hasCriterion :criterion-magnitude ,
+                                          :criterion-uncertainty ;
+                        tbox:hasPriorityLevel tbox:medium .
 
 
 ###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-fire-mr
 :museum-fire-mr rdf:type owl:NamedIndividual ,
-                         <https://w3id.org/sirius/ontology/development/05/schema/Magnitude> ;
-                <https://w3id.org/sirius/ontology/development/05/schema/hasProbableEstimate> 12.5 .
+                         tbox:Magnitude ;
+                tbox:hasProbableEstimate 12.5 .
+
+
+###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-fire-mr
+:museum-theft-mr rdf:type owl:NamedIndividual ,
+                         tbox:Magnitude ;
+                tbox:hasProbableEstimate 10.5 .
+
+
+###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-fire-mr
+:museum-deterioration-mr rdf:type owl:NamedIndividual ,
+                         tbox:Magnitude ;
+                tbox:hasProbableEstimate 7.5 .
 
 
 ###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-fire-uncertainty
 :museum-fire-uncertainty rdf:type owl:NamedIndividual ,
-                                  <https://w3id.org/sirius/ontology/development/05/schema/Uncertainty> .
+                                  tbox:Uncertainty ;
+                         tbox:hasDegreeOfConfidence 1.0 .
+
+
+###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-theft-uncertainty
+:museum-theft-uncertainty rdf:type owl:NamedIndividual ,
+                                  tbox:Uncertainty ;
+                         tbox:hasDegreeOfConfidence 2.5 .
+
+
+###  http://www.semanticweb.org/utente/ontologies/2023/11/untitled-ontology-105/museum-deterioration-uncertainty
+:museum-deterioration-uncertainty rdf:type owl:NamedIndividual ,
+                                  tbox:Uncertainty ;
+                         tbox:hasDegreeOfConfidence 1.0 .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
