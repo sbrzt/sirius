@@ -11,7 +11,7 @@ WHERE {
   ?evaluation tbox:evaluates ?risk ;
               tbox:hasPriorityLevel ?priority .
   FILTER ( 
-      ?priority = tbox:catastriphic || 
+      ?priority = tbox:catastrophic || 
       ?priority = tbox:extreme ||
       ?priority = tbox:high
   )
