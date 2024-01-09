@@ -99,7 +99,7 @@
                         hero:describes :museum ;
                         hero:evaluates :museum-fire ;
                         hero:hasAcceptanceLevel hero:treat-asap ;
-                        hero:hasCriterion :criterion-magnitude-fire ,
+                        ccs:isDeterminedBy :criterion-magnitude-fire ,
                                           :criterion-uncertainty-fire ;
                         hero:hasPriorityLevel hero:extreme .
 
@@ -110,7 +110,7 @@
                         hero:describes :museum ;
                         hero:evaluates :museum-theft ;
                         hero:hasAcceptanceLevel hero:review-asap ;
-                        hero:hasCriterion :criterion-magnitude-theft ,
+                        ccs:isDeterminedBy :criterion-magnitude-theft ,
                                           :criterion-uncertainty-theft ;
                         hero:hasPriorityLevel hero:high .
 
@@ -121,7 +121,7 @@
                         hero:describes :museum ;
                         hero:evaluates :museum-deterioration ;
                         hero:hasAcceptanceLevel hero:no-action ;
-                        hero:hasCriterion :criterion-magnitude-deterioration ,
+                        ccs:isDeterminedBy :criterion-magnitude-deterioration ,
                                           :criterion-uncertainty-deterioration ;
                         hero:hasPriorityLevel hero:low .
 
