@@ -38,8 +38,8 @@ WHERE {
     ?criterion ?value_property ?criterion_value .
     ?condition ccs:hasQuantitativeConditionValue ?condition_value .
     FILTER (
-      ?value_property = tm:hasProbableEstimate ||
-      ?value_property = tm:hasDegreeOfConfidence
+      ?value_property = hero:hasProbableEstimate ||
+      ?value_property = hero:hasDegreeOfConfidence
     )
 }
 ```
@@ -62,13 +62,13 @@ WHERE {
               ccs:isDeterminedBy ?magnitude_setter , ?uncertainty_setter .
     ?magnitude_setter ccs:setsCriterion ?magnitude ;
                       ccs:withCondition ?magnitude_condition .
-    ?magnitude a tm:Magnitude ;
-               tm:hasProbableEstimate ?magnitude_value .
+    ?magnitude a hero:Magnitude ;
+               hero:hasProbableEstimate ?magnitude_value .
     ?magnitude_condition ccs:hasQuantitativeConditionValue ?magnitude_condition_value .
     ?uncertainty_setter ccs:setsCriterion ?uncertainty ;
                       ccs:withCondition ?uncertainty_condition .
-    ?uncertainty a tm:QuantitativeUncertainty ;
-                 tm:hasDegreeOfConfidence ?uncertainty_value .
+    ?uncertainty a hero:Uncertainty ;
+                 hero:hasDegreeOfConfidence ?uncertainty_value .
     ?uncertainty_condition ccs:hasQuantitativeConditionValue ?uncertainty_condition_value .
 }
 ```

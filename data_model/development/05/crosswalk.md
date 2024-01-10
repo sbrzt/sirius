@@ -9,8 +9,8 @@
 |                       | `CriterionSetter`               | Conditional Criterion Setter pattern | `QuantitativeCriterionSetter`   | https://w3id.org/sirius/ontology/ccs/QuantitativeCriterionSetter   |          |
 |                       | `QuantitativeCondition`         | Conditional Criterion Setter pattern | `QuantitativeCondition`         | https://w3id.org/sirius/ontology/ccs/QuantitativeCondition         |          |
 |                       | `QuantitativeMeasure`           | Typed Measure pattern                | `QuantitativeMeasure`           | https://w3id.org/sirius/ontology/tm/QuantitativeMeasure            |          |
-|                       | `Uncertainty`                   | Typed Measure pattern                | `QuantitativeUncertainty`       | https://w3id.org/sirius/ontology/tm/QuantitativeUncertainty        |          |
-|                       | `Magnitude`                     | Typed Measure pattern                | `Magnitude`                     | https://w3id.org/sirius/ontology/tm/Magnitude                      |          |
+|                       | `Uncertainty`                   | HeRO                | `Uncertainty`       | https://w3id.org/sirius/ontology/hero/Uncertainty        |          |
+|                       | `Magnitude`                     | HeRO                | `Magnitude`                     | https://w3id.org/sirius/ontology/hero/Magnitude                      |          |
 | **Object properties** |                                 |                                      |                                 |                                                                    |          |
 |                       | `hasPriorityLevel`              | HeRO                                 | `hasPriorityLevel`              | https://w3id.org/sirius/ontology/hero/hasPriorityLevel             |          |
 |                       | `hasAcceptanceLevel`            | HeRO                                 | `hasAcceptanceLevel`            | https://w3id.org/sirius/ontology/hero/hasAcceptanceLevel           |          |
@@ -22,8 +22,8 @@
 |                       | `onAttribute`                   | Conditional Criterion Setter pattern | `onAttribute`                   | https://w3id.org/sirius/ontology/ccs/onAttribute                   |          |
 | **Data properties**   |                                 |                                      |                                 |                                                                    |          |
 |                       | `hasQuantitativeConditionValue` | Conditional Criterion Setter pattern | `hasQuantitativeConditionValue` | https://w3id.org/sirius/ontology/ccs/hasQuantitativeConditionValue |          |
-|                       | `hasProbableEstimate`           | Typed Measure pattern                | `hasProbableEstimate`           | https://w3id.org/sirius/ontology/tm/hasProbableEstimate            |          |
-|                       | `hasDegreeOfConfidence`         | Typed Measure pattern                | `hasDegreeOfConfidence`         | https://w3id.org/sirius/ontology/tm/hasDegreeOfConfidence          |          |
+|                       | `hasProbableEstimate`           | HeRO                | `hasProbableEstimate`           | https://w3id.org/sirius/ontology/hero/hasProbableEstimate            |          |
+|                       | `hasDegreeOfConfidence`         | HeRO                | `hasDegreeOfConfidence`         | https://w3id.org/sirius/ontology/hero/hasDegreeOfConfidence          |          |
 | **Individuals**       |                                 |                                      |                                 |                                                                    |          |
 |                       | `treat-asap`                    | HeRO                                 | `treat-asap`                    | https://w3id.org/sirius/ontology/hero/treat-asap                   |          |
 |                       | `review-asap`                   | HeRO                                 | `review-asap`                   | https://w3id.org/sirius/ontology/hero/review-asap                  |          |
