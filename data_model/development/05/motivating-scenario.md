@@ -1,7 +1,7 @@
 # Iteration 05
 
 ## Name
-Evaluate step
+Evaluate step activity
 
 ## Description
 This step consists in an evaluation of each specific risk relative to other risks or to some criteria. It involves comparing the risks with each other, evaluating their level of priority, and deciding within the institution which risks are acceptable and which ones are not and therefore must be ‘treated’.

@@ -1,0 +1,158 @@
+@prefix : <https://w3id.org/sirius/ontology/development/05/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/sirius/ontology/development/05/schema/> .
+
+<https://w3id.org/sirius/ontology/development/05/schema/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/sirius/ontology/development/05/schema/describes
+:describes rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/evaluates
+:evaluates rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/hasAcceptanceLevel
+:hasAcceptanceLevel rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/hasCriterion
+:hasCriterion rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/hasPriorityLevel
+:hasPriorityLevel rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/onAttribute
+:onAttribute rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/setsCriterion
+:setsCriterion rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/withCondition
+:withCondition rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/sirius/ontology/development/05/schema/hasDegreeOfConfidence
+:hasDegreeOfConfidence rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/hasProbableEstimate
+:hasProbableEstimate rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/hasQuantitativeConditionValue
+:hasQuantitativeConditionValue rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/sirius/ontology/development/05/schema/AcceptanceLevel
+:AcceptanceLevel rdf:type owl:Class .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/CriterionSetter
+:CriterionSetter rdf:type owl:Class .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/EvaluationDescription
+:EvaluationDescription rdf:type owl:Class .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/HeritageAsset
+:HeritageAsset rdf:type owl:Class .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/Magnitude
+:Magnitude rdf:type owl:Class ;
+           rdfs:subClassOf :QuantitativeMeasure .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/PriorityLevel
+:PriorityLevel rdf:type owl:Class .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/QuantitativeCondition
+:QuantitativeCondition rdf:type owl:Class .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/QuantitativeMeasure
+:QuantitativeMeasure rdf:type owl:Class .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/Risk
+:Risk rdf:type owl:Class .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/Uncertainty
+:Uncertainty rdf:type owl:Class ;
+             rdfs:subClassOf :QuantitativeMeasure .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/sirius/ontology/development/05/schema/catastrophic
+:catastrophic rdf:type owl:NamedIndividual ,
+                       :PriorityLevel .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/extreme
+:extreme rdf:type owl:NamedIndividual ,
+                  :PriorityLevel .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/high
+:high rdf:type owl:NamedIndividual ,
+               :PriorityLevel .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/low
+:low rdf:type owl:NamedIndividual ,
+              :PriorityLevel .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/medium
+:medium rdf:type owl:NamedIndividual ,
+                 :PriorityLevel .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/no-action
+:no-action rdf:type owl:NamedIndividual ,
+                    :AcceptanceLevel .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/review-asap
+:review-asap rdf:type owl:NamedIndividual ,
+                      :AcceptanceLevel .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/review-later
+:review-later rdf:type owl:NamedIndividual ,
+                       :AcceptanceLevel .
+
+
+###  https://w3id.org/sirius/ontology/development/05/schema/treat-asap
+:treat-asap rdf:type owl:NamedIndividual ,
+                     :AcceptanceLevel .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
