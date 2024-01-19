@@ -4,7 +4,7 @@
 Treat step activity (1)
 
 ## Description
-his is the last step of each risk management cycle. Now that we know the risks and their magnitude, and have determined which ones are the priority risks to our heritage asset, we can start thinking about effective measures to eliminate or reduce those risks.
+This is the last step of each risk management cycle. Now that we know the risks and their magnitude, and have determined which ones are the priority risks to our heritage asset, we can start thinking about effective measures to eliminate or reduce those risks.
 
 When developing options to reduce risks it is useful to think about what can be done in each layer of enclosure to reduce the occurrence or the impact of each risk.
 
@@ -15,16 +15,11 @@ Another tool to develop risk treatment options is to think about 5 different ‘
 - RESPOND to the presence and damaging action of the agents of deterioration on the heritage asset. This stage includes all planning and preparations to enable a quick and effective response. DETECT and RESPOND should always be considered together when we are developing options to reduce risks. 
 - RECOVER from the damage and losses caused to the heritage asset. If everything else fails, the only option is to try to recover the items or parts of the heritage asset affected by the agents of deterioration. Various actions can be taken to ensure successful recovery (complete and updated documentation of heritage items, budget allocated for emergency, insurance, expertise identified and contacted in advance of any event, etc.)
 
-For each risk to be treated we can use a table like the one below to help us think about all the possible options in a systematic way.
+For each option, its capital (total) cost, its maintenance (annual) cost, and eventual notes are recorded as well.
 
 ## Example 01
-In the example of a risk of opportunistic theft of objects on display in the historic house museum, we could think of measures at each layer of enclosure such as the following:
-- attach the objects to their base (support)
-- display the objects inside showcases (fittings)
-- install security cameras in the display rooms (room)
-- forbid the entrance of visitors carrying bags, backpacks, suitcases inside the museum (building)
-
-The measures to reduce risk assigned to a particular ‘layer’ can also be assigned to a particular ‘stage of control’:
-- forbid the entrance of visitors carrying bags, backpacks, suitcases inside the museum (AVOID);
-- attach the objects to their base OR display the objects inside showcases (BLOCK); 
-- install security cameras in the display rooms (DETECT)
+In the example of a risk of opportunistic theft of objects on display in the historic house museum, we could think of measures at each layer of enclosure and at a particular ‘stage of control’ such as the following:
+- attach the objects to their base (support, BLOCK), with a capital cost of 3000 and an annual cost of 0;
+- display the objects inside showcases (fittings, BLOCK), with a capital cost of 2000 and an annual cost of 100;
+- install security cameras in the display rooms (room, DETECT), with a capital cost of 2500 and an annual cost of 50;
+- forbid the entrance of visitors carrying bags, backpacks, suitcases inside the museum (building, AVOID), with a capital cost of 100 and an annual cost of 10.
