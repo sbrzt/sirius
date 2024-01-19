@@ -2,17 +2,19 @@
 ## Question 1
 
 ### Identifier
-CQ_5.1
+CQ_6.1
 
 ### Question
-Return the risks with catastrophic (15-13.5), extreme (13-11.5) or high (11-9.5) priority.
+What are the treatment options developed for each risk? For each option, what are its layer of enclosure, stage of control, capital cost, annual cost, and  notes?
 
 ### Expected outcome
-List of: `risk`, `priority`
+List of: `option`, `note`, `layer`, `stage`, `capital_cost`, `annual_cost`
 
 ### Results
-* `museum-fire`, `extreme`
-* `museum-theft`, `high`
+* `option-01`, "Attach the objects to their base (support, BLOCK), with a capital cost of 3000 and an annual cost of 0", `support`, `block`, 3000, 0
+* `option-02`, "Display the objects inside showcases (fittings, BLOCK), with a capital cost of 2000 and an annual cost of 100", `fitting`, `block`, 2000, 100
+* `option-03`, "Install security cameras in the display rooms (room, DETECT), with a capital cost of 6500 and an annual cost of 50", `room`, `detect`, 6500, 50
+* `option-04`, "Forbid the entrance of visitors carrying bags, backpacks, suitcases inside the museum (building, AVOID), with a capital cost of 100 and an annual cost of 10", `building`, `avoid`, 100, 10
 
 ### Based on
 Example 1
@@ -22,21 +24,16 @@ Example 1
 ## Question 2
 
 ### Identifier
-CQ_5.2
+CQ_6.2
 
 ### Question
-Return the risks, their priorities, the criterions (and their values) used to set the priorities, the conditions values on which the criterions have been set, and their acceptance levels.
+Which are the treatment options existing in the "fitting" layer and at the BLOCK stage of control?
 
 ### Expected outcome
-List of: `risk`, `priority`, `criterion`, `criterion_value`, `condition_value`, `acceptance_level`
+List of: `option`, `note`
 
 ### Results
-- `museum-fire`, `extreme`, `museum-fire-mr`, 12.5, 10.0, `treat-asap`
-- `museum-fire`, `extreme`, `museum-fire-uncertainty`, 1.4, 2.0, `treat-asap`
-- `museum-theft`, `high`, `museum-theft-mr`, 10.5, 10.0, `review-asap`
-- `museum-theft`, `high`, `museum-theft-uncertainty`, 2.0, 2.0, `review-asap`
-- `museum-deterioration`, `low`, `museum-deterioration-mr`, 7.5, 10.0, `no-action`
-- `museum-deterioration`, `low`, `museum-deterioration-uncertainty`, 0.7, 2.0, `no-action`
+- `option-02`, "Display the objects inside showcases (fittings, BLOCK), with a capital cost of 2000 and an annual cost of 100"
 
 ### Based on
 Example 1
@@ -46,18 +43,36 @@ Example 1
 ## Question 3
 
 ### Identifier
-CQ_5.3
+CQ_6.3
 
 ### Question
-Return the values of the magnitudes and the uncertainties used as criterions, the values of their conditions, the priorities assigned to their respective risks, and their acceptance levels.
+Which are the treatment options with a capital cost higher than 1000 and an annual cost lower than 100?
 
 ### Expected outcome
-List of: `risk`, `magnitude_value`, `magnitude_condition_value`, `uncertainty_value`, `uncertainty_condition_value`, `priority`, `acceptance_level`
+List of: `option`, `note`, `capital_cost`, `annual_cost`
 
 ### Results
-- `museum-fire`, 12.5, 10.0, 1.4, 2.0, `extreme`, `treat-asap`
-- `museum-theft`, 10.5, 10.0, 2.0, 2.0, `high`, `review-asap`
-- `museum-deterioration`, 7.5, 10.0, 0.7, 2.0, `low`, `no-action`
+- `option-01`, "Attach the objects to their base (support, BLOCK), with a capital cost of 3000 and an annual cost of 0", 3000, 0
+- `option-03`, "install security cameras in the display rooms (room, DETECT), with a capital cost of 6500 and an annual cost of 50", 6500, 50
+
+### Based on
+Example 1
+
+***
+
+## Question 4
+
+### Identifier
+CQ_6.4
+
+### Question
+Which are the treatment options existing in the "building" or "room" layer and at the AVOID or DETECT stage of control, with a capital cost higher than 50 and an annual cost lower than 50?
+
+### Expected outcome
+List of: `option`, `note`, `layer`, `stage`, `capital_cost`, `annual_cost`
+
+### Results
+- `option-04`, "Forbid the entrance of visitors carrying bags, backpacks, suitcases inside the museum (building, AVOID), with a capital cost of 100 and an annual cost of 10", `building`, `avoid`, 100, 10
 
 ### Based on
 Example 1
