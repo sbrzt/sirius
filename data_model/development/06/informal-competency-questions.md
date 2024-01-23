@@ -5,7 +5,7 @@
 CQ_6.1
 
 ### Question
-What are the treatment options developed for each risk? For each option, what are its layer of enclosure, stage of control, capital cost, annual cost, and  notes?
+What are the treatment options developed for each risk? For each option, what are its layer of enclosure, stage of control, capital cost, annual cost, and notes?
 
 ### Expected outcome
 List of: `option`, `note`, `layer`, `stage`, `capital_cost`, `annual_cost`

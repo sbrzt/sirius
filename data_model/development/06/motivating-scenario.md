@@ -20,6 +20,6 @@ For each option, its capital (total) cost, its maintenance (annual) cost, and ev
 ## Example 01
 In the example of a risk of opportunistic theft of objects on display in the historic house museum, we could think of measures at each layer of enclosure and at a particular ‘stage of control’ such as the following:
 - attach the objects to their base (support, BLOCK), with a capital cost of 3000 and an annual cost of 0;
-- display the objects inside showcases (fittings, BLOCK), with a capital cost of 2000 and an annual cost of 100;
+- display the objects inside showcases (fitting, BLOCK), with a capital cost of 2000 and an annual cost of 100;
 - install security cameras in the display rooms (room, DETECT), with a capital cost of 6500 and an annual cost of 50;
 - forbid the entrance of visitors carrying bags, backpacks, suitcases inside the museum (building, AVOID), with a capital cost of 100 and an annual cost of 10.

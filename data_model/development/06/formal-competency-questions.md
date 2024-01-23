@@ -1,6 +1,6 @@
 # Formal Competency Questions
 ## CQ_5.1
-Return the risks with catastrophic (15-13.5), extreme (13-11.5) or high (11-9.5) priority.
+What are the treatment options developed for each risk? For each option, what are its layer of enclosure, stage of control, capital cost, annual cost, and notes?
 
 ```SPARQL
 PREFIX tbox: <https://w3id.org/sirius/ontology/development/05/schema/>
@@ -10,7 +10,7 @@ SELECT DISTINCT ?risk ?priority
 WHERE {
   ?evaluation tbox:evaluates ?risk ;
               tbox:hasPriorityLevel ?priority .
-  FILTER ( 
+  FILTER (
       ?priority = tbox:catastrophic || 
       ?priority = tbox:extreme ||
       ?priority = tbox:high
