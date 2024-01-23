@@ -43,7 +43,7 @@ Which are the treatment options with a capital cost higher than 1000 and an annu
 PREFIX tbox: <https://w3id.org/sirius/ontology/development/06/schema/>
 PREFIX abox: <https://w3id.org/sirius/ontology/development/06/data/>
 
-SELECT ?option ?note ?capital_cost ?annual_cost
+SELECT ?option ?capital_cost ?annual_cost
 WHERE {
     ?treatment tbox:develops ?option .
     ?option tbox:hasCapitalCost ?capital_cost ;
