@@ -30,10 +30,10 @@ CQ_6.2
 Which are the treatment options existing in the "fitting" layer and at the BLOCK stage of control?
 
 ### Expected outcome
-List of: `option`, `note`
+List of: `option`
 
 ### Results
-- `option-02`, "Display the objects inside showcases (fittings, BLOCK), with a capital cost of 2000 and an annual cost of 100"
+- `option-02`
 
 ### Based on
 Example 1
