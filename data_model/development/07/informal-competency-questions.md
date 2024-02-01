@@ -2,19 +2,20 @@
 ## Question 1
 
 ### Identifier
-CQ_6.1
+CQ_7.1
 
 ### Question
-What are the treatment options developed for each risk? For each option, what are its layer of enclosure, stage of control, capital cost, annual cost, and notes?
+What are the steps that are part of the workflow for the risk assessment of the museum? What is their duration? What are the activities they were executed in?
 
 ### Expected outcome
-List of: `option`, `note`, `layer`, `stage`, `capital_cost`, `annual_cost`
+List of: `step`, `duration`, `activity`
 
 ### Results
-* `option-01`, "Attach the objects to their base (support, BLOCK), with a capital cost of 3000 and an annual cost of 0", `support`, `block`, 3000, 0
-* `option-02`, "Display the objects inside showcases (fittings, BLOCK), with a capital cost of 2000 and an annual cost of 100", `fitting`, `block`, 2000, 100
-* `option-03`, "Install security cameras in the display rooms (room, DETECT), with a capital cost of 6500 and an annual cost of 50", `room`, `detect`, 6500, 50
-* `option-04`, "Forbid the entrance of visitors carrying bags, backpacks, suitcases inside the museum (building, AVOID), with a capital cost of 100 and an annual cost of 10", `building`, `avoid`, 100, 10
+* `context-step`, 10, `context-description-activity`
+* `identify-step`, 30, `identification-activity`
+* `analyze-step`, 5, `analysis-activity`
+* `evaluate-step`, 30, `evaluation-activity`
+* `treat-step`, 20, `treatment-activity`
 
 ### Based on
 Example 1
@@ -24,16 +25,20 @@ Example 1
 ## Question 2
 
 ### Identifier
-CQ_6.2
+CQ_7.2
 
 ### Question
-Which are the treatment options existing in the "fitting" layer and at the BLOCK stage of control?
+What are the activities involved in the event executing the workflow? What are the time interval in which they respectively are executed?
 
 ### Expected outcome
-List of: `option`
+List of: `activity`, `start_date`, `end_date`
 
 ### Results
-- `option-02`
+* `context-description-activity`, "2023-01-10", "2023-01-20"
+* `identification-activity`, "2023-01-20", "2023-02-20"
+* `analysis-activity`, "2023-02-20", "2023-02-25"
+* `evaluation-activity`, "2023-02-25", "2023-03-25"
+* `treatment-activity`, "2023-03-25", "2023-04-15"
 
 ### Based on
 Example 1
@@ -43,17 +48,20 @@ Example 1
 ## Question 3
 
 ### Identifier
-CQ_6.3
+CQ_7.3
 
 ### Question
-Which are the treatment options with a capital cost higher than 1000 and an annual cost lower than 100?
+What does each assessment activity target? What does it assess?
 
 ### Expected outcome
-List of: `option`, `note`, `capital_cost`, `annual_cost`
+List of: `activity`, `heritage_asset`, `element`
 
 ### Results
-- `option-01`, "Attach the objects to their base (support, BLOCK), with a capital cost of 3000 and an annual cost of 0", 3000, 0
-- `option-03`, "install security cameras in the display rooms (room, DETECT), with a capital cost of 6500 and an annual cost of 50", 6500, 50
+* `context-description-activity`, `museum`, `value-01`
+* `identification-activity`, `museum`, `risk-01`
+* `analysis-activity`, `museum`, `risk-01`
+* `evaluation-activity`, `museum`, `risk-01`
+* `treatment-activity`, `museum`, `risk-01`
 
 ### Based on
 Example 1
@@ -63,16 +71,20 @@ Example 1
 ## Question 4
 
 ### Identifier
-CQ_6.4
+CQ_7.4
 
 ### Question
-Which are the treatment options existing in the "building" or "room" layer and at the AVOID or DETECT stage of control, with a capital cost higher than 50 and an annual cost lower than 50?
+Who participated in each assessment activity? When? What did it target? What did it assess? What is it documented by?
 
 ### Expected outcome
-List of: `option`, `note`, `layer`, `stage`, `capital_cost`, `annual_cost`
+List of: `activity`, `agent`, `start_date`, `end_date`, `heritage_asset`, `element`, `source`
 
 ### Results
-- `option-04`, "Forbid the entrance of visitors carrying bags, backpacks, suitcases inside the museum (building, AVOID), with a capital cost of 100 and an annual cost of 10", `building`, `avoid`, 100, 10
+* `context-description-activity`, `marta-cosentini`, "2023-01-10", "2023-01-20", `museum`, `value-01`, `museum-catalogue-record`
+* `identification-activity`, `marta-cosentini`, "2023-01-20", "2023-02-20", `museum`, `risk-01`, `museum-historic-record`
+* `analysis-activity`, `marta-cosentini`, "2023-02-20", "2023-02-25", `museum`, `risk-01`
+* `evaluation-activity`, `marta-cosentini`, "2023-02-25", "2023-03-25", `museum`, `risk-01`
+* `treatment-activity`, `marta-cosentini`, "2023-03-25", "2023-04-15", `museum`, `risk-01`
 
 ### Based on
 Example 1
