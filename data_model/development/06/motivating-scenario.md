@@ -1,7 +1,7 @@
 # Iteration 06
 
 ## Name
-Treat step activity (1)
+Treat step activity
 
 ## Description
 This is the last step of each risk management cycle. Now that we know the risks and their magnitude, and have determined which ones are the priority risks to our heritage asset, we can start thinking about effective measures to eliminate or reduce those risks.

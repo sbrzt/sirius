@@ -3,7 +3,7 @@
 ## Description
 The ATLAS data model is used to structure the knowledge graph storing the data used in the ATLAS web platform within the SIRIUS project. It has been developed by using a slightly modified version of the **Simplified Agile Methodology for Ontology Development (SAMOD)**: 
 
-    Peroni, S. (2016). SAMOD: an agile methodology for the development of ontologies. figshare. http://dx.doi.org/10.6084/m9.figshare.3189769
+> Peroni, S. (2016). SAMOD: an agile methodology for the development of ontologies. figshare. http://dx.doi.org/10.6084/m9.figshare.3189769
 
 This repository contains the full documentation produced during the development of the data model. In particular:
 * the `data` directory contains the full set of refactored *ABoxes*, one for each iteration, written in the Turtle RDF serialization;

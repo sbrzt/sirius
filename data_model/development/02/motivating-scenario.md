@@ -1,7 +1,7 @@
 # Iteration 02
 
 ## Name
-Analysis - Agents of deterioration
+Identify step activity
 
 ## Description
 This step consists in identifying the risks that threaten the heritage asset. This is done by examining elements such as the agents of deterioration that embody the possible risks, the type of these risks, and the layers in which they exist. 

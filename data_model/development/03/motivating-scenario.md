@@ -1,7 +1,7 @@
 # Iteration 03
 
 ## Name
-Analyse step
+Analyse step activity
 
 ## Description
 This step involves the measurement of each specific risk identified to understand it in detail, estimating its chance of occurrence and expected impact. To do so, numeric scales (referred to as the ABC scales) are used to quantify the frequency or rate of occurrence and the expected loss of value for different risks. The ABC scales consist of three components, where Component 'A' quantifies the frequency of risk, and Components 'B' and 'C' together quantify the expected loss of value to the heritage asset implied by such risk. The combination of A, B, and C defines the magnitude of risk. In detail:

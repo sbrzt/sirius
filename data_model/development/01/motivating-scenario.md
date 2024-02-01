@@ -1,7 +1,7 @@
 # Iteration 01
 
 ## Name
-Context step
+Context step activity
 
 ## Description
 This step involves the understanding of all relevant aspects of the context in which the heritage asset is being observed and assessed for risks. In particular, a contextualisation activity is a situation for an asset in which this asset is being observed within a certain period of time and the presence of some stakeholder that participates in such situation through some kind of observation on the basis of some contextual parameters, such as the physical environment, the sociocultural context, and so on. 
