@@ -82,9 +82,9 @@ List of: `activity`, `agent`, `start_date`, `end_date`, `heritage_asset`, `eleme
 ### Results
 * `context-description-activity`, `marta-cosentini`, "2023-01-10", "2023-01-20", `museum`, `value-01`, `museum-catalogue-record`
 * `identification-activity`, `marta-cosentini`, "2023-01-20", "2023-02-20", `museum`, `risk-01`, `museum-historic-record`
-* `analysis-activity`, `marta-cosentini`, "2023-02-20", "2023-02-25", `museum`, `risk-01`
-* `evaluation-activity`, `marta-cosentini`, "2023-02-25", "2023-03-25", `museum`, `risk-01`
-* `treatment-activity`, `marta-cosentini`, "2023-03-25", "2023-04-15", `museum`, `risk-01`
+* `analysis-activity`, `marta-cosentini`, "2023-02-20", "2023-02-25", `museum`, `risk-01`, None 
+* `evaluation-activity`, `marta-cosentini`, "2023-02-25", "2023-03-25", `museum`, `risk-01`, None
+* `treatment-activity`, `marta-cosentini`, "2023-03-25", "2023-04-15", `museum`, `risk-01`, None
 
 ### Based on
 Example 1
