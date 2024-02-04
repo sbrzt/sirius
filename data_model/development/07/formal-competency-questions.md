@@ -1,87 +1,73 @@
 # Formal Competency Questions
-## CQ_6.1
-What are the treatment options developed for each risk? For each option, what are its layer of enclosure, stage of control, capital cost, annual cost, and notes?
+## CQ_7.1
+What are the steps that are part of the workflow for the risk assessment of the museum? What is their duration? What are the activities they were executed in?
 
 ```SPARQL
-PREFIX tbox: <https://w3id.org/sirius/ontology/development/06/schema/>
-PREFIX abox: <https://w3id.org/sirius/ontology/development/06/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/07/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/07/data/>
 
-SELECT DISTINCT ?option ?note ?layer ?stage ?capital_cost ?annual_cost
+SELECT DISTINCT ?step ?duration_value ?activity
 WHERE {
-  ?treatment tbox:develops ?option .
-  ?option tbox:hasNote ?note ;
-          tbox:isClassifiedByLayer ?layer ;
-          tbox:isClassifiedByControlStage ?stage ;
-          tbox:hasCapitalCost ?capital_cost ;
-          tbox:hasAnnualCost ?annual_cost .
+  ?workflow tbox:hasStep ?step .
+  ?step tbox:hasDuration ?duration ;
+    tbox:isExecutedIn ?activity .
+  ?duration tbox:hasDays ?duration_value .
 }
 ```
 
 ***
 
-## CQ_6.2
-Which are the treatment options existing in the "fitting" layer and at the BLOCK stage of control?
+## CQ_7.2
+What are the activities involved in the event executing the workflow? What are the time interval in which they respectively are executed?
 
 ```SPARQL
-PREFIX tbox: <https://w3id.org/sirius/ontology/development/06/schema/>
-PREFIX abox: <https://w3id.org/sirius/ontology/development/06/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/07/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/07/data/>
 
-SELECT DISTINCT ?option
+SELECT DISTINCT ?activity ?start_date ?end_date
 WHERE {
-    ?treatment tbox:develops ?option .
-    ?option tbox:isClassifiedByLayer tbox:fitting ;
-            tbox:isClassifiedByControlStage tbox:block .
+    ?workflow_execution tbox:involvesActivity ?activity .
+    ?activity tbox:atTime ?time_interval .
+    ?time_interval tbox:hasStartDate ?start_date ;
+      tbox:hasEndDate ?end_date .
 }
 ```
 
 ***
 
-## CQ_6.3
-Which are the treatment options with a capital cost higher than 1000 and an annual cost lower than 100?
+## CQ_7.3
+What does each assessment activity target? What does it assess?
 
 ```SPARQL
-PREFIX tbox: <https://w3id.org/sirius/ontology/development/06/schema/>
-PREFIX abox: <https://w3id.org/sirius/ontology/development/06/data/>
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/07/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/07/data/>
 
-SELECT ?option ?capital_cost ?annual_cost
+SELECT ?activity ?heritage_asset ?element
 WHERE {
-    ?treatment tbox:develops ?option .
-    ?option tbox:hasCapitalCost ?capital_cost ;
-            tbox:hasAnnualCost ?annual_cost .
-    FILTER(
-      ?capital_cost > 1000 &&
-      ?annual_cost < 100
-    )
+    ?activity tbox:targets ?heritage_asset ;
+      tbox:assesses ?element .
 }
 ```
 
 ***
 
-## CQ_6.4
-Which are the treatment options existing in the "building" or "room" layer and at the AVOID or DETECT stage of control, with a capital cost higher than 50 and an annual cost lower than 50?
+## CQ_7.4
+Who participated in each assessment activity? When? What did it target? What did it assess? What is it documented by?
 
 ```SPARQL
-SELECT ?option ?note ?layer ?stage ?capital_cost ?annual_cost
+PREFIX tbox: <https://w3id.org/sirius/ontology/development/07/schema/>
+PREFIX abox: <https://w3id.org/sirius/ontology/development/07/data/>
+
+SELECT ?activity ?agent ?start_date ?end_date ?heritage_asset ?element ?source
 WHERE {
-    ?treatment tbox:develops ?option .
-    ?option tbox:hasNote ?note ;
-            tbox:isClassifiedByLayer ?layer ;
-            tbox:isClassifiedByControlStage ?stage ;
-            tbox:hasCapitalCost ?capital_cost ;
-            tbox:hasAnnualCost ?annual_cost .
-    FILTER(
-      (
-        ?layer = tbox:building ||
-        ?layer = tbox:room
-      ) &&
-      (
-        ?stage = tbox:avoid ||
-        ?stage = tbox:detect
-      ) &&
-      (
-        ?capital_cost > 50 &&
-        ?annual_cost < 50
-      )
-    )
+    ?activity tbox:hasParticipant ?agent ;
+      tbox:atTime ?time_interval ;
+      tbox:targets ?heritage_asset ;
+      tbox:assesses ?element .
+    ?time_interval tbox:hasStartDate ?start_date ;
+      tbox:hasEndDate ?end_date .
+    OPTIONAL {
+      ?activity tbox:isDocumentedBy ?source .
+    }
 }
 ```
