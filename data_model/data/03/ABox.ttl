@@ -18,50 +18,6 @@
 #    Individuals
 #################################################################
 
-###  https://w3id.org/sirius/ontology/data/03/archive
-:archive rdf:type owl:NamedIndividual ,
-                  crm:E24_Physical_Human-Made_Thing .
-
-
-###  https://w3id.org/sirius/ontology/data/03/archive-deterioration
-:archive-deterioration rdf:type owl:NamedIndividual ,
-                                hero:Risk .
-
-
-###  https://w3id.org/sirius/ontology/data/03/archive-deterioration-a
-:archive-deterioration-a rdf:type owl:NamedIndividual ,
-                                  hero:Frequency ;
-                         hero:hasHighEstimate 4 ;
-                         hero:hasLowEstimate 3 ;
-                         hero:hasNote "Deterioration by exposure to volatile substances released by cardboard boxes is a 'cumulative process' risk. For a period of 30 years, the A-score is A=3½."^^rdfs:Literal ;
-                         hero:hasProbableEstimate 3.5 .
-
-
-###  https://w3id.org/sirius/ontology/data/03/archive-deterioration-b
-:archive-deterioration-b rdf:type owl:NamedIndividual ,
-                                  hero:FractionalValueLoss ;
-                         hero:hasHighEstimate 2.5 ;
-                         hero:hasLowEstimate 1.5 ;
-                         hero:hasNote "Observations on similar archival collections in the same kind of boxes show a tiny loss of value in each item affected over 30 years."^^rdfs:Literal ;
-                         hero:hasProbableEstimate 2 .
-
-
-###  https://w3id.org/sirius/ontology/data/03/archive-deterioration-c
-:archive-deterioration-c rdf:type owl:NamedIndividual ,
-                                  hero:Exposure ;
-                         hero:hasHighEstimate 2.5 ;
-                         hero:hasLowEstimate 1.5 ;
-                         hero:hasNote "Only a tiny fraction of the heritage asset value is expected to be affected per event."^^rdfs:Literal ;
-                         hero:hasProbableEstimate 2 .
-
-
-###  https://w3id.org/sirius/ontology/data/03/archive-deterioration-mr
-:archive-deterioration-mr rdf:type owl:NamedIndividual ,
-                                   hero:Magnitude ;
-                          hero:hasHighEstimate 8 ;
-                          hero:hasLowEstimate 7 ;
-                          hero:hasProbableEstimate 7.5 .
-
 
 ###  https://w3id.org/sirius/ontology/data/03/museum
 :museum rdf:type owl:NamedIndividual ,
@@ -153,18 +109,6 @@
 ###  https://w3id.org/sirius/ontology/data/03/national-statistics
 :national-statistics rdf:type owl:NamedIndividual ,
                               foaf:Document .
-
-
-###  https://w3id.org/sirius/ontology/data/03/analysis-deterioration
-:analysis-deterioration rdf:type owl:NamedIndividual ,
-                                        hero:AnalysisDescription ;
-                               hero:analyses :archive-deterioration ;
-                               hero:describes :archive ;
-                               tis:atTime :2020-10-10 ;
-                       hero:quantifies :archive-deterioration-a ,
-                                         :archive-deterioration-b ,
-                                         :archive-deterioration-c ,
-                                         :archive-deterioration-mr .
 
 
 ###  https://w3id.org/sirius/ontology/data/03/analysis-fire
