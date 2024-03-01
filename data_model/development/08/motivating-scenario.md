@@ -76,3 +76,14 @@ An assessment activity consisting in the evaluation of risks related to a herita
     - `:dimension-23`, with type `extreme-priority-level`;
     - `:dimension-24`, with type `treat-asap-level`.
 
+## Example 05
+An assessment activity consisting in the evaluation of risks related to a heritage asset `:baptistery`, is taking place in Ravenna and is being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-06-01 to 2024-07-01. It produces two observations, each observing the asset in question:
+1. `:observation-16`, which was carried out by Sara Fiorentino in date 2024-05-03, is a evaluation observation informed by `:observation-14` and annotated with the following text: "Attach the objects to their base, with a capital cost of 3000 euros". It observes three dimensions:
+    - `:dimension-25`, with type `support-layer`;
+    - `:dimension-26`, with type `block-stage`;
+    - `:dimension-27`, with type `capital-cost`, has a value of "3000" and uses `euro` as a unit.
+2. `:observation-17`, which was carried out by Sara Fiorentino in date 2024-05-03, is a evaluation observation informed by `:observation-15` and annotated with the following text: "Display the objects inside showcases (fitting, BLOCK), with a capital cost of 2000 and an annual cost of 100". It observes four dimensions:
+    - `:dimension-28`, with type `fitting-layer`;
+    - `:dimension-29`, with type `block-stage`;
+    - `:dimension-30`, with type `capital-cost`, has a value of "2000" and uses `euro` as a unit;
+    - `:dimension-31`, with type `maintenance-cost`, has a value of "100" and uses `euro` as a unit.
