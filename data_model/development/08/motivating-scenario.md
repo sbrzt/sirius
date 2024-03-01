@@ -56,13 +56,23 @@ An assessment activity consisting in the identification of risks related to a he
 
 ## Example 03
 An assessment activity consisting in the analysis of risks related to a heritage asset `:baptistery`, is taking place in Ravenna and is being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-04-01 to 2024-05-01. It produces two observations, each observing the asset in question:
-1. `:observation-12`, which was carried out by Sara Fiorentino in date 2024-04-02, is a measurement observation annotated with the following text: "A flood event is expected in the baptistery approximately once every 25 years, most likely affecting the whole heritage asset value per event, resulting in a partial loss.". It observes four dimensions:
+1. `:observation-12`, which was carried out by Sara Fiorentino in date 2024-04-02, is a measurement observation informed by `:observation-10` and annotated with the following text: "A flood event is expected in the baptistery approximately once every 25 years, most likely affecting the whole heritage asset value per event, resulting in a partial loss.". It observes four dimensions:
     - `:dimension-13`, with type `frequency-measure`, has three values: 3 (low estimate), 3.5 (probable estimate), 4 (high estimate);
     - `:dimension-14`, with type `fractional-value-loss-measure`, has three values: 4.5 (low estimate), 5 (probable estimate), 5 (high estimate);
     - `:dimension-15`, with type `exposure-measure`, has three values: 1.5 (low estimate), 2 (probable estimate), 2.5 (high estimate);
     - `:dimension-16`, with type `risk-magnitude-measure`, has three values: 9 (low estimate), 10.5 (probable estimate), 11.5 (high estimate).
-2. `:observation-13`, which was carried out by Sara Fiorentino in date 2024-04-17, is a measurement observation annotated with the following text: "A large fire event is expected in the museum approximately once every 300 years, with the fire affecting all or most of the heritage asset value, causing total or almost total loss of value in each affected item.". It observes four dimensions:
+2. `:observation-13`, which was carried out by Sara Fiorentino in date 2024-04-17, is a measurement observation informed by `:observation-11` and annotated with the following text: "A large fire event is expected in the museum approximately once every 300 years, with the fire affecting all or most of the heritage asset value, causing total or almost total loss of value in each affected item.". It observes four dimensions:
     - `:dimension-17`, with type `frequency-measure`, has three values: 2 (low estimate), 2.5 (probable estimate), 3 (high estimate);
     - `:dimension-18`, with type `fractional-value-loss-measure`, has three values: 4.5 (low estimate), 5 (probable estimate), 5 (high estimate);
     - `:dimension-19`, with type `exposure-measure`, has three values: 4.5 (low estimate), 5 (probable estimate), 5 (high estimate);
     - `:dimension-20`, with type `risk-magnitude-measure`, has three values: 11 (low estimate), 12.5 (probable estimate), 13 (high estimate).
+
+# Example 04
+An assessment activity consisting in the evaluation of risks related to a heritage asset `:baptistery`, is taking place in Ravenna and is being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-05-01 to 2024-06-01. It produces two observations, each observing the asset in question:
+1. `:observation-14`, which was carried out by Sara Fiorentino in date 2024-05-03, is a evaluation observation informed by `:observation-12`, motivated by `:dimension-16` and annotated with the following text: "The risk of flood (MR = 10.5) has a high priority. It is 100 times smaller than the fire risk. The uncertainty that has been measured amounts to a value equal to 2.5. A risk of this magnitude is equivalent to losing about 0.3% of the heritage asset value every 100 years (or 3% per millennium). The museum direction considers this level of risk as just beyond acceptable, since as a condition the value of MR is slightly higher than 10 and the value of uncertainty is higher than 2.". It observes two dimensions:
+    - `:dimension-21`, with type `high-priority-level`;
+    - `:dimension-22`, with type `review-asap-level`.
+2. `:observation-15`, which was carried out by Sara Fiorentino in date 2024-05-15, is a evaluation observation informed by `:observation-13`, motivated by `:dimension-20` and annotated with the following text: "The risk of a large fire affecting the baptistery and its contents (MR = 12.5) has an extreme priority. The uncertainty that has been measured amounts to a value equal to 1.0. A risk of this magnitude is equivalent to losing about 3% of the heritage asset value every 10 years (or 30% per century, or 100% in about 300 years). The museum direction considers this level of risk as ‘not acceptable’, since as a condition the value of MR is higher than 10 and the value of uncertainty is lower than 2.". It observes two dimensions:
+    - `:dimension-23`, with type `extreme-priority-level`;
+    - `:dimension-24`, with type `treat-asap-level`.
+
