@@ -53,13 +53,20 @@ Example 2
 CQ_8.3
 
 ### Question
-
+What are the low, probable and high estimates of the dimensions observed in the measurement observations observing the heritage asset `:baptistery` during the analysis activity?
 
 ### Expected outcome
-List of: 
+List of: `observation`, `dimension`, `type`, `low_estimate`, `prob_estimate`, `high_estimate`
 
 ### Results
-* 
+* `observation-12`, `:dimension-13`, `frequency-measure`, 3.0, 3.5, 4.0;
+* `observation-12`, `:dimension-14`, `fractional-value-loss-measure`, 4.5, 5.0, 5.0;
+* `observation-12`, `:dimension-15`, `exposure-measure`, 1.5, 2.0, 2.5;
+* `observation-12`, `:dimension-16`, `risk-magnitude-measure`, 9.0, 10.5, 11.5;
+* `observation-13`, `:dimension-17`, `frequency-measure`, 2.0, 2.5, 3.0;
+* `observation-13`, `:dimension-18`, `fractional-value-loss-measure`, 4.5, 5.0, 5.0;
+* `observation-13`, `:dimension-19`, `exposure-measure`, 4.5, 5.0, 5.0;
+* `observation-13`, `:dimension-20`, `risk-magnitude-measure`, 11.0, 12.5, 13;
 
 ### Based on
 Example 3
@@ -72,6 +79,7 @@ Example 3
 CQ_8.4
 
 ### Question
+
 
 ### Expected outcome
 List of: 
