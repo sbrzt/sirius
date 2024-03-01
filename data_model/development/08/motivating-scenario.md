@@ -73,7 +73,7 @@ An assessment activity consisting in the analysis of risks related to a heritage
     - `:dimension-19`, with type `exposure-measure`, has three values: 4.5 (low estimate), 5 (probable estimate), 5 (high estimate);
     - `:dimension-20`, with type `risk-magnitude-measure`, has three values: 11 (low estimate), 12.5 (probable estimate), 13 (high estimate).
 
-# Example 04
+## Example 04
 An assessment activity consisting in the evaluation of risks related to a heritage asset `:baptistery`, is taking place in Ravenna and is being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-05-01 to 2024-06-01. It produces two observations, each observing the asset in question:
 1. `:observation-14`, which was carried out by Sara Fiorentino in date 2024-05-03, is a evaluation observation informed by `:observation-12`, motivated by `:dimension-16` and annotated with the following text: "The risk of flood (MR = 10.5) has a high priority. It is 100 times smaller than the fire risk. The uncertainty that has been measured amounts to a value equal to 2.5. A risk of this magnitude is equivalent to losing about 0.3% of the heritage asset value every 100 years (or 3% per millennium). The museum direction considers this level of risk as just beyond acceptable, since as a condition the value of MR is slightly higher than 10 and the value of uncertainty is higher than 2.". It observes two dimensions:
     - `:dimension-21`, with type `high-priority-level`;
@@ -88,7 +88,7 @@ An assessment activity consisting in the treatment of risks related to a heritag
     - `:dimension-25`, with type `support-layer`;
     - `:dimension-26`, with type `block-stage`;
     - `:dimension-27`, with type `capital-cost`, has a value of "3000" and uses `euro` as a unit.
-2. `:observation-17`, which was carried out by Sara Fiorentino in date 2024-05-03, is a treatment observation informed by `:observation-15` and annotated with the following text: "Display the objects inside showcases (fitting, BLOCK), with a capital cost of 2000 and an annual cost of 100". It observes four dimensions:
+2. `:observation-17`, which was carried out by Sara Fiorentino in date 2024-05-03, is a treatment observation informed by `:observation-15` and annotated with the following text: "Display the objects inside showcases, with a capital cost of 2000 and an annual cost of 100". It observes four dimensions:
     - `:dimension-28`, with type `fitting-layer`;
     - `:dimension-29`, with type `block-stage`;
     - `:dimension-30`, with type `capital-cost`, has a value of "2000" and uses `euro` as a unit;

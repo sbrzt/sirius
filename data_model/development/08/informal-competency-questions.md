@@ -75,7 +75,7 @@ Example 3
 CQ_8.4
 
 ### Question
-What are the values of the dimensions observed by the evaluation observations observing the heritage asset `:baptistery` during the evaluation activity?
+What are the priority levels and acceptance levels observed by the evaluation observations observing the heritage asset `:baptistery` during the evaluation activity?
 
 ### Expected outcome
 List of: `observation`, `priority_level`, `acceptance_level`
@@ -95,13 +95,14 @@ Example 4
 CQ_8.5
 
 ### Question
-
+What are the control stages, layers and costs observed by the treatment observations observing the heritage asset `:baptistery` during the treatment activity?
 
 ### Expected outcome
-List of: 
+List of: `observation`, `control stage`, `layer`, `capital cost`, `maintenance cost`
 
 ### Results
-* 
+* `:observation-16`, `block-stage`, `support-layer`, 3000, None
+* `:observation-17`, `block-stage`, `fitting-layer`, 2000, 100
 
 ### Based on
 Example 5
