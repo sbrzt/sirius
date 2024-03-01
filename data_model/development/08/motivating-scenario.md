@@ -47,9 +47,22 @@ It produces six observations, each observing the asset in question:
 An assessment activity consisting in the identification of risks related to a heritage asset `:baptistery`, is taking place in Ravenna and is being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-03-01 to 2024-04-01. It produces two observations, each observing the asset in question:
 1. `:observation-10`, which was carried out by Sara Fiorentino in date 2024-03-01, is a risk observation documented by `:document-06` and annotated with the following text: "Floods and heavy rains induce erosion of the baptistery walls". It observes three dimensions:
     - `:dimension-07`, with type `water-deteriorating-agent`;
-    - `:dimension-08`, with type `rare-risk-type`;
+    - `:dimension-08`, with type `common-risk-type`;
     - `:dimension-09`, with type `region-layer`.
-2. `:observation-11`, which was carried out by Sara Fiorentino in date 2024-03-02, is a risk observation documented by `:document-06` and annotated with the following text: "Fragmentation of data related to previous incorrect monitoring and maintenance interventions provokes loss of important information related to the baptistery". It observes three dimensions:
-    - `:dimension-10`, with type `dissociation-deteriorating-agent`;
+2. `:observation-11`, which was carried out by Sara Fiorentino in date 2024-03-02, is a risk observation documented by `:document-06`. It observes three dimensions:
+    - `:dimension-10`, with type `fire-deteriorating-agent`;
     - `:dimension-11`, with type `rare-risk-type`;
-    - `:dimension-12`, with type `site-layer`.
+    - `:dimension-12`, with type `building-layer`.
+
+## Example 03
+An assessment activity consisting in the analysis of risks related to a heritage asset `:baptistery`, is taking place in Ravenna and is being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-04-01 to 2024-05-01. It produces two observations, each observing the asset in question:
+1. `:observation-12`, which was carried out by Sara Fiorentino in date 2024-04-02, is a measurement observation annotated with the following text: "A flood event is expected in the baptistery approximately once every 25 years, most likely affecting the whole heritage asset value per event, resulting in a partial loss.". It observes four dimensions:
+    - `:dimension-13`, with type `frequency-measure`, has three values: 3 (low estimate), 3.5 (probable estimate), 4 (high estimate);
+    - `:dimension-14`, with type `fractional-value-loss-measure`, has three values: 4.5 (low estimate), 5 (probable estimate), 5 (high estimate);
+    - `:dimension-15`, with type `exposure-measure`, has three values: 1.5 (low estimate), 2 (probable estimate), 2.5 (high estimate);
+    - `:dimension-16`, with type `risk-magnitude-measure`, has three values: 9 (low estimate), 10.5 (probable estimate), 11.5 (high estimate).
+2. `:observation-13`, which was carried out by Sara Fiorentino in date 2024-04-17, is a measurement observation annotated with the following text: "A large fire event is expected in the museum approximately once every 300 years, with the fire affecting all or most of the heritage asset value, causing total or almost total loss of value in each affected item.". It observes four dimensions:
+    - `:dimension-17`, with type `frequency-measure`, has three values: 2 (low estimate), 2.5 (probable estimate), 3 (high estimate);
+    - `:dimension-18`, with type `fractional-value-loss-measure`, has three values: 4.5 (low estimate), 5 (probable estimate), 5 (high estimate);
+    - `:dimension-19`, with type `exposure-measure`, has three values: 4.5 (low estimate), 5 (probable estimate), 5 (high estimate);
+    - `:dimension-20`, with type `risk-magnitude-measure`, has three values: 11 (low estimate), 12.5 (probable estimate), 13 (high estimate).
