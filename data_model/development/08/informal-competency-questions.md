@@ -29,12 +29,18 @@ Example 1
 CQ_8.2
 
 ### Question
+What are the identification observations observing the heritage asset `:baptistery` and produced by the relative identification activity? Which dimensions are they observing?
 
 ### Expected outcome
-List of: 
+List of: `observation`, `type`, `note`, `agent`, `date`, `document`, `dimension`, `dimension_value`, `assessment_activity`
 
 ### Results
-* 
+* `:observation-10`, `identification-observation`, "Floods and heavy rains induce erosion of the baptistery walls", "Sara Fiorentino", "2024-03-01", `:document-06`, `:dimension-07`, `water-deteriorating-agent`, `:activity-02`
+* `:observation-10`, `identification-observation`, "Floods and heavy rains induce erosion of the baptistery walls", "Sara Fiorentino", "2024-03-01", `:document-06`, `:dimension-08`, `common-risk-type`, `:activity-02`
+* `:observation-10`, `identification-observation`, "Floods and heavy rains induce erosion of the baptistery walls", "Sara Fiorentino", "2024-03-01", `:document-06`, `:dimension-09`, `region-layer`, `:activity-02`
+* `:observation-11`, `identification-observation`, None, "Sara Fiorentino", "2024-03-02", `:document-06`, `:dimension-10`, `fire-deteriorating-agent`, `:activity-02`
+* `:observation-11`, `identification-observation`, None, "Sara Fiorentino", "2024-03-02", `:document-06`, `:dimension-11`, `rare-risk-type`, `:activity-02`
+* `:observation-11`, `identification-observation`, None, "Sara Fiorentino", "2024-03-01", `:document-06`, `:dimension-12`, `building-layer`, `:activity-02`
 
 ### Based on
 Example 2
@@ -47,6 +53,7 @@ Example 2
 CQ_8.3
 
 ### Question
+
 
 ### Expected outcome
 List of: 
