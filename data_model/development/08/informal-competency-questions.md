@@ -29,18 +29,14 @@ Example 1
 CQ_8.2
 
 ### Question
-What are the identification observations observing the heritage asset `:baptistery` and produced by the relative identification activity? Which dimensions are they observing?
+What are the identification observations observing the heritage asset `:baptistery` and produced by the relative identification activity? Which are the hazards, types of risk and layers being observed?
 
 ### Expected outcome
-List of: `observation`, `type`, `note`, `agent`, `date`, `document`, `dimension`, `dimension_value`, `assessment_activity`
+List of: `observation`, `note`, `agent`, `date`, `document`, `deteriorating agent type`, `risk type`, `layer type`
 
 ### Results
-* `:observation-10`, `identification-observation`, "Floods and heavy rains induce erosion of the baptistery walls", "Sara Fiorentino", "2024-03-01", `:document-06`, `:dimension-07`, `water-deteriorating-agent`, `:activity-02`
-* `:observation-10`, `identification-observation`, "Floods and heavy rains induce erosion of the baptistery walls", "Sara Fiorentino", "2024-03-01", `:document-06`, `:dimension-08`, `common-risk-type`, `:activity-02`
-* `:observation-10`, `identification-observation`, "Floods and heavy rains induce erosion of the baptistery walls", "Sara Fiorentino", "2024-03-01", `:document-06`, `:dimension-09`, `region-layer`, `:activity-02`
-* `:observation-11`, `identification-observation`, None, "Sara Fiorentino", "2024-03-02", `:document-06`, `:dimension-10`, `fire-deteriorating-agent`, `:activity-02`
-* `:observation-11`, `identification-observation`, None, "Sara Fiorentino", "2024-03-02", `:document-06`, `:dimension-11`, `rare-risk-type`, `:activity-02`
-* `:observation-11`, `identification-observation`, None, "Sara Fiorentino", "2024-03-01", `:document-06`, `:dimension-12`, `building-layer`, `:activity-02`
+* `:observation-10`, "Floods and heavy rains induce erosion of the baptistery walls", "Sara Fiorentino", "2024-03-01", `:document-06`, `water-deteriorating-agent`, `common-risk-type`, `region-layer`
+* `:observation-11`, None, "Sara Fiorentino", "2024-03-02", `:document-06`, `fire-deteriorating-agent`, `rare-risk-type`, `building-layer`
 
 ### Based on
 Example 2
@@ -79,13 +75,14 @@ Example 3
 CQ_8.4
 
 ### Question
-
+What are the values of the dimensions observed by the evaluation observations observing the heritage asset `:baptistery` during the evaluation activity?
 
 ### Expected outcome
-List of: 
+List of: `observation`, `priority_level`, `acceptance_level`
 
 ### Results
-* 
+* `:observation-14`, `:high-priority-level`, `review-asap-level`
+* `:observation-15`, `:extreme-priority-level`, `treat-asap-level`
 
 ### Based on
 Example 4
@@ -98,6 +95,7 @@ Example 4
 CQ_8.5
 
 ### Question
+
 
 ### Expected outcome
 List of: 
