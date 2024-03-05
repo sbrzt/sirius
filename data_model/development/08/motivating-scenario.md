@@ -22,7 +22,7 @@ An <mark>observation</mark> is a situation during which some entity (e.g. a bapt
 * it <u>observes</u> an <mark>entity</mark>;
 * it <u>uses some <mark>parameter</mark></u>.
 
-A <mark>parameter</mark> is some qualitative or quantitative property of the reality surrounding the observed entity, such as: the economic context in which the entity exists, the type of risk the entity is subjected to, the type of deteriorating agent threatening the entity's integrity, the magnitude of risk, the level of priority assigned to the risk, the type of treatment option selected to deal with the risk, and so on. A parameter is characterized as follows:
+A <mark>parameter</mark> is some qualitative or quantitative concept that is part of the reality surrounding the observed entity, such as: the economic context in which the entity exists, the type of risk the entity is subjected to, the type of deteriorating agent threatening the entity's integrity, the magnitude of risk, the level of priority assigned to the risk, the type of treatment option selected to deal with the risk, and so on. A parameter is characterized as follows:
 * it <u>has a value</u>: e.g. an integer, a string of text, a percentage, etc.;
 * it <u>has a <mark>type</mark></u>: e.g. risk type (common risk, rare risk, cumulative risk), context type (physical context, political context, legal context, administrative context, economic context, socio-cultural context), measure type (frequency, fractional value loss, exposure, magnitude of risk), etc.
 
@@ -85,4 +85,4 @@ An assessment activity `:assessment-activity-09` consisting in the treatment of 
 1. `:observation-31`, which was carried out by Sara Fiorentino in date 2024-05-03, is a treatment observation. It uses a parameter `:parameter-28`, with type `fitting-layer`;
 2. `:observation-32`, which was carried out by Sara Fiorentino in date 2024-05-03, is a treatment observation. It uses a parameter `:parameter-29`, with type `block-stage`;
 3. `:observation-33`, which was carried out by Sara Fiorentino in date 2024-05-03, is a treatment observation. It uses a parameter `:parameter-30`, with type `capital-cost` and a value of "2000";
-4. `:observation-34`, which was carried out by Sara Fiorentino in date 2024-05-03, is a treatment observation. It uses a parameter`:parameter-31`, with type `maintenance-cost`, and a value of "100".
+4. `:observation-34`, which was carried out by Sara Fiorentino in date 2024-05-03, is a treatment observation. It uses a parameter `:parameter-31`, with type `maintenance-cost`, and a value of "100".
