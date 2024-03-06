@@ -1,0 +1,553 @@
+@prefix : <https://w3id.org/sirius/ontology/development/08/data/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tbox: <https://w3id.org/sirius/ontology/development/08/schema/> .
+@base <https://w3id.org/sirius/ontology/development/08/data/> .
+
+<https://w3id.org/sirius/ontology/development/08/data/> rdf:type owl:Ontology ;
+                                                        owl:imports <https://w3id.org/sirius/ontology/development/08/schema/> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+:baptistery a tbox:Thing .
+
+:ravenna a tbox:Place .
+
+:sara-fiorentino a tbox:Agent .
+
+:comune-di-ravenna a tbox:Agent .
+
+:univerista-di-bologna a tbox:Agent .
+
+:soprintendenza-di-ravenna a tbox:Agent .
+
+:document-01 a tbox:InformationObject .
+
+:document-02 a tbox:InformationObject .
+
+:document-03 a tbox:InformationObject .
+
+:time-interval-01 a tbox:TimeInterval ;
+    tbox:hasStartTime "2024-02-01" ;
+    tbox:hasEndTime "2024-03-01" .
+
+:time-interval-02 a tbox:TimeInterval ;
+    tbox:hasStartTime "2024-03-01" ;
+    tbox:hasEndTime "2024-04-01" .
+
+:time-interval-03 a tbox:TimeInterval ;
+    tbox:hasStartTime "2024-04-01" ;
+    tbox:hasEndTime "2024-05-01" .
+
+:time-interval-04 a tbox:TimeInterval ;
+    tbox:hasStartTime "2024-05-01" ;
+    tbox:hasEndTime "2024-06-01" .
+
+:time-interval-05 a tbox:TimeInterval ;
+    tbox:hasStartTime "2024-06-01" ;
+    tbox:hasEndTime "2024-07-01" .
+
+:observation-01 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:context-observation ;
+    tbox:atDate "2024-02-01" ;
+    tbox:hasNote "The Baptistery is externally visible on the N, NW, and NE sides. The west side overlooks the gardens of a private residence, while the south, SW, and SE sides overlook the garden of the Department of Cultural Heritage (University of Bologna)."@en ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-01 .
+
+:observation-02 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:context-observation ;
+    tbox:atDate "2024-02-02" ;
+    tbox:hasNote "Monumental site in an urban area, open to tourists (with prior admission ticket). The small square where the building is located suffers from a bad reputation, being labeled as a 'socially risky area and a neglected place' (reported incident of an abandoned bed frame found at night in the Baptistery's trench, 11.07.2006, Source: Zaccarini, 2015). Despite the establishment of regulations in 2012 restricting vehicle access to the square, transit and parking for loading/unloading goods are still permitted."@en ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-02 .
+
+:observation-03 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:context-observation ;
+    tbox:atDate "2024-02-03" ;
+    tbox:hasNote "The monument is often a subject of debate among various political parties and the Municipality of Ravenna."@en ;
+    tbox:observes :baptistery ;
+    tbox:isDocumentedBy :document-01 ;
+    tbox:usesParameter :parameter-03 .
+
+:observation-04 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:context-observation ;
+    tbox:atDate "2024-02-04" ;
+    tbox:hasNote "Owned by the State Property / Ministry of Culture. Since 1996, it has been part of the UNESCO World Heritage Sites list in Italy ('Early Christian Monuments of Ravenna')."@en ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-04 .
+
+:observation-05 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:context-observation ;
+    tbox:atDate "2024-02-05" ;
+    tbox:hasNote "Since December 2019, it has been managed by the Regional Directorate of Museums of Emilia Romagna, located in Ravenna."@en ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-05 .
+
+:observation-06 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:context-observation ;
+    tbox:atDate "2024-02-06" ;
+    tbox:hasNote "The Law No. 77 of February 20, 2006, establishes that UNESCO sites are excellences of the Italian cultural, landscape, and natural heritage, fundamental elements of our country's representation at the international level, and states that interventions on them have priority even in terms of the allocation of financial resources."@en ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-06 .
+
+:observation-07 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:value-observation ;
+    tbox:atDate "2024-02-06" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-32 .
+
+:observation-08 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:value-observation ;
+    tbox:atDate "2024-02-06" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-33 .
+
+:observation-09 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:value-observation ;
+    tbox:atDate "2024-02-06" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-34 .
+
+:observation-10 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:hazard-observation ;
+    tbox:atDate "2024-03-01" ;
+    tbox:observes :baptistery ;
+    tbox:isDocumentedBy :document-02 ;
+    tbox:usesParameter :parameter-07 .
+
+:observation-11 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:risk-observation ;
+    tbox:atDate "2024-03-01" ;
+    tbox:observes :baptistery ;
+    tbox:isDocumentedBy :document-02 ;
+    tbox:usesParameter :parameter-08 .
+
+:observation-12 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:layer-observation ;
+    tbox:atDate "2024-03-01" ;
+    tbox:observes :baptistery ;
+    tbox:isDocumentedBy :document-02 ;
+    tbox:usesParameter :parameter-09 .
+
+:observation-13 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:hazard-observation ;
+    tbox:atDate "2024-03-02" ;
+    tbox:observes :baptistery ;
+    tbox:isDocumentedBy :document-02 ;
+    tbox:usesParameter :parameter-10 .
+
+:observation-14 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:risk-observation ;
+    tbox:atDate "2024-03-02" ;
+    tbox:observes :baptistery ;
+    tbox:isDocumentedBy :document-02 ;
+    tbox:usesParameter :parameter-11 .
+
+:observation-15 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:layer-observation ;
+    tbox:atDate "2024-03-02" ;
+    tbox:observes :baptistery ;
+    tbox:isDocumentedBy :document-02 ;
+    tbox:usesParameter :parameter-12 .
+
+:observation-16 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:measurement-observation ;
+    tbox:atDate "2024-04-02" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-13 .
+
+:observation-17 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:measurement-observation ;
+    tbox:atDate "2024-04-02" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-14 .
+
+:observation-18 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:measurement-observation ;
+    tbox:atDate "2024-04-02" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-15 .
+
+:observation-19 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:measurement-observation ;
+    tbox:atDate "2024-04-02" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-16 .
+
+:observation-20 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:measurement-observation ;
+    tbox:atDate "2024-04-17" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-17 .
+
+:observation-21 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:measurement-observation ;
+    tbox:atDate "2024-04-17" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-18 .
+
+:observation-22 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:measurement-observation ;
+    tbox:atDate "2024-04-17" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-19 .
+
+:observation-23 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:measurement-observation ;
+    tbox:atDate "2024-04-17" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-20 .
+
+:observation-24 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:priority-observation ;
+    tbox:atDate "2024-05-03" ;
+    tbox:observes :baptistery ;
+    tbox:isMotivatedBy :parameter-16 ;
+    tbox:usesParameter :parameter-21 .
+
+:observation-25 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:acceptance-observation ;
+    tbox:atDate "2024-05-03" ;
+    tbox:observes :baptistery ;
+    tbox:isMotivatedBy :parameter-16 ;
+    tbox:usesParameter :parameter-22 .
+
+:observation-26 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:priority-observation ;
+    tbox:atDate "2024-05-15" ;
+    tbox:observes :baptistery ;
+    tbox:isMotivatedBy :parameter-20 ;
+    tbox:usesParameter :parameter-23 .
+
+:observation-27 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:acceptance-observation ;
+    tbox:atDate "2024-05-15" ;
+    tbox:observes :baptistery ;
+    tbox:isMotivatedBy :parameter-20 ;
+    tbox:usesParameter :parameter-24 .
+
+:observation-28 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:layer-observation ;
+    tbox:atDate "2024-06-03" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-25 .
+
+:observation-29 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:control-observation ;
+    tbox:atDate "2024-06-03" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-26 .
+
+:observation-30 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:cost-observation ;
+    tbox:atDate "2024-06-03" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-27 .
+
+:observation-31 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:LAYER-observation ;
+    tbox:atDate "2024-06-15" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-28 .
+
+:observation-32 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:CONTROL-observation ;
+    tbox:atDate "2024-06-15" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-29 .
+
+:observation-33 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:cost-observation ;
+    tbox:atDate "2024-06-15" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-30 .
+
+:observation-34 a tbox:Observation ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasType tbox:cost-observation ;
+    tbox:atDate "2024-06-15" ;
+    tbox:observes :baptistery ;
+    tbox:usesParameter :parameter-31 .
+
+:parameter-01 a tbox:Parameter ;
+    tbox:hasType tbox:physical-context .
+
+:parameter-02 a tbox:Parameter ;
+    tbox:hasType tbox:socio-cultural-context .
+
+:parameter-03 a tbox:Parameter ;
+    tbox:hasType tbox:political-context .
+
+:parameter-04 a tbox:Parameter ;
+    tbox:hasType tbox:legal-context .
+
+:parameter-05 a tbox:Parameter ;
+    tbox:hasType tbox:administrative-context .
+
+:parameter-06 a tbox:Parameter ;
+    tbox:hasType tbox:economic-context .
+
+:parameter-32 a tbox:Parameter ;
+    tbox:hasType tbox:artistic-function .
+
+:parameter-33 a tbox:Parameter ;
+    tbox:hasType tbox:substance-aspect .
+
+:parameter-34 a tbox:Parameter ;
+    tbox:hasType tbox:value-score ;
+    tbox:hasValue 3.65 .
+
+:parameter-07 a tbox:Parameter ;
+    tbox:hasType tbox:water-hazard .
+
+:parameter-08 a tbox:Parameter ;
+    tbox:hasType tbox:common-risk .
+
+:parameter-09 a tbox:Parameter ;
+    tbox:hasType tbox:region-layer .
+
+:parameter-10 a tbox:Parameter ;
+    tbox:hasType tbox:fire-hazard .
+
+:parameter-11 a tbox:Parameter ;
+    tbox:hasType tbox:rare-risk .
+
+:parameter-12 a tbox:Parameter ;
+    tbox:hasType tbox:building-layer .
+
+:parameter-13 a tbox:Parameter ;
+    tbox:hasType tbox:frequency-measure ;
+    tbox:hasLowEstimate 3.0 ;
+    tbox:hasProbableEstimate 3.5 ;
+    tbox:hasHighEstimate 4.0 .
+
+:parameter-14 a tbox:Parameter ;
+    tbox:hasType tbox:fractional-value-loss-measure ;
+    tbox:hasLowEstimate 4.5 ;
+    tbox:hasProbableEstimate 5.0 ;
+    tbox:hasHighEstimate 5.0 .
+
+:parameter-15 a tbox:Parameter ;
+    tbox:hasType tbox:exposure-measure ;
+    tbox:hasLowEstimate 1.5 ;
+    tbox:hasProbableEstimate 2.0 ;
+    tbox:hasHighEstimate 2.5 .
+
+:parameter-16 a tbox:Parameter ;
+    tbox:hasType tbox:risk-magnitude-measure ;
+    tbox:hasLowEstimate 9.0 ;
+    tbox:hasProbableEstimate 10.5 ;
+    tbox:hasHighEstimate 11.5 .
+
+:parameter-17 a tbox:Parameter ;
+    tbox:hasType tbox:frequency-measure ;
+    tbox:hasLowEstimate 2.0 ;
+    tbox:hasProbableEstimate 2.5 ;
+    tbox:hasHighEstimate 3.0 .
+
+:parameter-18 a tbox:Parameter ;
+    tbox:hasType tbox:fractional-value-loss-measure ;
+    tbox:hasLowEstimate 4.5 ;
+    tbox:hasProbableEstimate 5.0 ;
+    tbox:hasHighEstimate 5.0 .
+
+:parameter-19 a tbox:Parameter ;
+    tbox:hasType tbox:exposure-measure ;
+    tbox:hasLowEstimate 4.5 ;
+    tbox:hasProbableEstimate 5.0 ;
+    tbox:hasHighEstimate 5.0 .
+
+:parameter-20 a tbox:Parameter ;
+    tbox:hasType tbox:risk-magnitude-measure ;
+    tbox:hasLowEstimate 11.0 ;
+    tbox:hasProbableEstimate 12.5 ;
+    tbox:hasHighEstimate 13.0 .
+
+:parameter-21 a tbox:Parameter ;
+    tbox:hasType tbox:high-priority .
+
+:parameter-22 a tbox:Parameter ;
+    tbox:hasType tbox:review-asap .
+
+:parameter-23 a tbox:Parameter ;
+    tbox:hasType tbox:extreme-priority .
+
+:parameter-24 a tbox:Parameter ;
+    tbox:hasType tbox:treat-asap .
+
+:parameter-25 a tbox:Parameter ;
+    tbox:hasType tbox:support-layer .
+
+:parameter-26 a tbox:Parameter ;
+    tbox:hasType tbox:block-stage .
+
+:parameter-27 a tbox:Parameter ;
+    tbox:hasType tbox:capital-cost ;
+    tbox:hasValue 3000 .
+
+:parameter-28 a tbox:Parameter ;
+    tbox:hasType tbox:support-layer .
+
+:parameter-29 a tbox:Parameter ;
+    tbox:hasType tbox:block-stage .
+
+:parameter-30 a tbox:Parameter ;
+    tbox:hasType tbox:capital-cost ;
+    tbox:hasValue 2000 .
+
+:parameter-31 a tbox:Parameter ;
+    tbox:hasType tbox:maintenance-cost ;
+    tbox:hasValue 100 .
+
+:assessment-activity-01 a tbox:AssessmentActivity ;
+    tbox:hasType tbox:context-description ;
+    tbox:takesPlaceIn :ravenna ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:hasParticipant :sara-fiorentino ,
+        :comune-di-ravenna ,
+        :soprintendenza-di-ravenna ,
+        :universita-di-bologna ;
+    tbox:atTime :time-interval-01 ;
+    tbox:hasNote "Octagonal building with sloping roof, featuring four apsidioles corresponding to the cardinal points (partially buried). The mosaic decoration is preserved only on the dome, creating a striking contrast with the rough surface of exposed bricks in the lower part. The mosaic depicts in the center the baptism of Christ in the River Jordan, surrounded by a band with the twelve apostles parading in two rows, meeting at the throne of the etimasia, symbol of the invisible presence of Christ."@en ;
+    tbox:hasPart :observation-01 ,
+        :observation-02 ,
+        :observation-03 ,
+        :observation-04 ,
+        :observation-05 ,
+        :observation-06 .
+
+:assessment-activity-02 a tbox:AssessmentActivity ;
+    tbox:hasType tbox:value-estimation ;
+    tbox:takesPlaceIn :ravenna ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:atTime :time-interval-01 ;
+    tbox:hasNote "Used original materials generally had a good condition and new materials used in a simple but innovative way in respect to historical values."@en ;
+    tbox:hasPart :observation-07 ,
+        :observation-08 ,
+        :observation-09 .
+
+:assessment-activity-03 a tbox:AssessmentActivity ;
+    tbox:hasType tbox:risk-identification ;
+    tbox:takesPlaceIn :ravenna ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:atTime :time-interval-02 ;
+    tbox:hasNote "Floods and heavy rains induce erosion of the baptistery walls."@en ;
+    tbox:hasPart :observation-10 ,
+        :observation-11 ,
+        :observation-12 .
+
+:assessment-activity-04 a tbox:AssessmentActivity ;
+    tbox:hasType tbox:risk-identification ;
+    tbox:takesPlaceIn :ravenna ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:atTime :time-interval-02 ;
+    tbox:hasPart :observation-13 ,
+        :observation-14 ,
+        :observation-15 .
+
+:assessment-activity-05 a tbox:AssessmentActivity ;
+    tbox:hasType tbox:risk-analysis ;
+    tbox:takesPlaceIn :ravenna ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:isDocumentedBy :document-03 ;
+    tbox:atTime :time-interval-03 ;
+    tbox:hasNote "A flood event is expected in the baptistery approximately once every 25 years, most likely affecting the whole heritage asset value per event, resulting in a partial loss."@en ;
+    tbox:continues :assessment-activity-03 ;
+    tbox:hasPart :observation-16 ,
+        :observation-17 ,
+        :observation-18 ,
+        :observation-19 .
+
+:assessment-activity-06 a tbox:AssessmentActivity ;
+    tbox:hasType tbox:risk-analysis ;
+    tbox:takesPlaceIn :ravenna ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:isDocumentedBy :document-03 ;
+    tbox:atTime :time-interval-03 ;
+    tbox:hasNote "A large fire event is expected in the museum approximately once every 300 years, with the fire affecting all or most of the heritage asset value, causing total or almost total loss of value in each affected item."@en ;
+    tbox:continues :assessment-activity-04 ;
+    tbox:hasPart :observation-20 ,
+        :observation-21 ,
+        :observation-22 ,
+        :observation-23 .
+
+:assessment-activity-07 a tbox:AssessmentActivity ;
+    tbox:hasType tbox:risk-evaluation ;
+    tbox:takesPlaceIn :ravenna ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:atTime :time-interval-04 ;
+    tbox:hasNote "The risk of flood (MR = 10.5) has a high priority. It is 100 times smaller than the fire risk. The uncertainty that has been measured amounts to a value equal to 2.5. A risk of this magnitude is equivalent to losing about 0.3% of the heritage asset value every 100 years (or 3% per millennium). The museum direction considers this level of risk as just beyond acceptable, since as a condition the value of MR is slightly higher than 10 and the value of uncertainty is higher than 2."@en ;
+    tbox:continues :assessment-activity-05 ;
+    tbox:hasPart :observation-24 ,
+        :observation-25 .
+
+:assessment-activity-08 a tbox:AssessmentActivity ;
+    tbox:hasType tbox:risk-evaluation ;
+    tbox:takesPlaceIn :ravenna ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:atTime :time-interval-04 ;
+    tbox:hasNote "The risk of a large fire affecting the baptistery and its contents (MR = 12.5) has an extreme priority. The uncertainty that has been measured amounts to a value equal to 1.0. A risk of this magnitude is equivalent to losing about 3% of the heritage asset value every 10 years (or 30% per century, or 100% in about 300 years). The museum direction considers this level of risk as ‘not acceptable’, since as a condition the value of MR is higher than 10 and the value of uncertainty is lower than 2."@en ;
+    tbox:continues :assessment-activity-06 ;
+    tbox:hasPart :observation-26 ,
+        :observation-27 .
+
+:assessment-activity-09 a tbox:AssessmentActivity ;
+    tbox:hasType tbox:risk-treatment ;
+    tbox:takesPlaceIn :ravenna ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:atTime :time-interval-05 ;
+    tbox:hasNote "Attach the objects to their base, with a capital cost of 3000 euros."@en ;
+    tbox:continues :assessment-activity-07 ;
+    tbox:hasPart :observation-28 ,
+        :observation-29 ,
+        :observation-30 .
+
+:assessment-activity-10 a tbox:AssessmentActivity ;
+    tbox:hasType tbox:risk-treatment ;
+    tbox:takesPlaceIn :ravenna ;
+    tbox:isCarriedOutBy :sara-fiorentino ;
+    tbox:atTime :time-interval-05 ;
+    tbox:hasNote "Display the objects inside showcases, with a capital cost of 2000 and an annual cost of 100."@en ;
+    tbox:continues :assessment-activity-08 ;
+    tbox:hasPart :observation-31 ,
+        :observation-32 ,
+        :observation-33 ,
+        :observation-34 .
