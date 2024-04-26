@@ -206,7 +206,7 @@
     tbox:refersTo :concept-14 .
 
 :concept-14 a tbox:InformationObject ;
-    tbox:hasType tbox:other .
+    tbox:hasType tbox:centennial .
 
 :observation-15 a tbox:Statement ;
     tbox:hasType tbox:location-description ;
@@ -503,7 +503,7 @@
         :observation-34 .
 
 :observation-32 a tbox:Statement ;
-    tbox:hasType tbox:action ;
+    tbox:hasType tbox:plan ;
     tbox:refersTo :concept-32 .
 
 :concept-32 a tbox:InformationObject ;
