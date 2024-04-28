@@ -9,14 +9,14 @@ An assessment activity is a situated action that involves gaining and producing 
 * it takes place somewhere;
 * it is carried out and participated by some agent (e.g. a person, an organization, a software);
 * it occurs within a certain time interval;
-* it can be documented by some information object (e.g. a document);
+* it can be documented by some document;
 * it can be described with natural language (e.g. through notes);
 * it consists of some statements(s).
 
 A statement is an assertion about the CHO that refers to some concept related to it (e.g. a characteristic of the CHO itself, but also external factors that somehow can influence the CHO in some way). A statement is characterized by:
 - having some textual content;
 - having a type;
-- being documented by some information object (e.g. a document);
+- being documented by some document;
 - referring to some concept that is internal in the domain of discourse expressed through the statement.
 
 A concept is an information object that describes some qualitative or quantitative parameter that is part of the reality surrounding the observed CHO. Examples include: the economic context in which the CHO exists; the type of occurrence of the risk the CHO is subjected to; the type of deteriorating agent threatening the CHO's integrity; the magnitude of risk; the level of priority assigned to the risk; the type of treatment option selected to deal with the risk. A concept is characterized by:

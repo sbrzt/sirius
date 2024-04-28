@@ -26,11 +26,11 @@
 
 :soprintendenza-di-ravenna a tbox:Agent .
 
-:document-01 a tbox:InformationObject .
+:document-01 a tbox:Document .
 
-:document-02 a tbox:InformationObject .
+:document-02 a tbox:Document .
 
-:document-03 a tbox:InformationObject .
+:document-03 a tbox:Document .
 
 :time-interval-01 a tbox:TimeInterval ;
     tbox:hasStartTime "2024-02-01T00:00:00Z" ;

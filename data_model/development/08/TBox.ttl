@@ -32,16 +32,16 @@
 :continues rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/observes
-:observes rdf:type owl:ObjectProperty .
+###  https://w3id.org/sirius/ontology/development/08/schema/assigns
+:assigns rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/usesParameter
-:usesParameter rdf:type owl:ObjectProperty .
+###  https://w3id.org/sirius/ontology/development/08/schema/assignsTo
+:assignsTo rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/isInformationObjectedBy
-:isInformationObjectedBy rdf:type owl:ObjectProperty .
+###  https://w3id.org/sirius/ontology/development/08/schema/isDocumentedBy
+:isDocumentedBy rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/sirius/ontology/development/08/schema/atTime
@@ -50,6 +50,10 @@
 
 ###  https://w3id.org/sirius/ontology/development/08/schema/isMotivatedBy
 :isMotivatedBy rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/sirius/ontology/development/08/schema/isComposedOf
+:isComposedOf rdf:type owl:ObjectProperty .
 
 
 #################################################################
@@ -68,24 +72,12 @@
 :hasNote rdf:type owl:DatatypeProperty .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/atDate
-:atDate rdf:type owl:DatatypeProperty .
-
-
 ###  https://w3id.org/sirius/ontology/development/08/schema/hasValue
 :hasValue rdf:type owl:DatatypeProperty .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/hasLowEstimate
-:hasLowEstimate rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/sirius/ontology/development/08/schema/hasProbableEstimate
-:hasProbableEstimate rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/sirius/ontology/development/08/schema/hasHighEstimate
-:hasHighEstimate rdf:type owl:DatatypeProperty .
+###  https://w3id.org/sirius/ontology/development/08/schema/hasContent
+:hasContent rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -96,12 +88,12 @@
 :Thing rdf:type owl:Class .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/Observation
-:Observation rdf:type owl:Class .
+###  https://w3id.org/sirius/ontology/development/08/schema/Statement
+:Statement rdf:type owl:Class .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/Parameter
-:Parameter rdf:type owl:Class .
+###  https://w3id.org/sirius/ontology/development/08/schema/InformationObject
+:InformationObject rdf:type owl:Class .
 
 
 ###  https://w3id.org/sirius/ontology/development/08/schema/Type
@@ -120,8 +112,8 @@
 :TimeInterval rdf:type owl:Class .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/InformationObject
-:InformationObject rdf:type owl:Class .
+###  https://w3id.org/sirius/ontology/development/08/schema/Document
+:Document rdf:type owl:Class .
 
 
 ###  https://w3id.org/sirius/ontology/development/08/schema/Place
@@ -156,144 +148,140 @@
 :risk-treatment rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/aspect-observation
-:aspect-observation rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/description
+:description rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/value-observation
-:value-observation rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/value
+:value rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/HAZARD-observation
-:HAZARD-observation rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/physical-properties
+:physical-properties rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/RISK-observation
-:RISK-observation rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/society
+:society rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/LAYER-observation
-:LAYER-observation rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/politics
+:politics rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/measure-observation
-:measure-observation rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/legal-status
+:legal-status rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/PRIORITY-observation
-:PRIORITY-observation rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/administration
+:administration rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/ACCEPTANCE-observation
-:ACCEPTANCE-observation rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/economics
+:economics rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/CONTROL-observation
-:CONTROL-observation rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/valutation-note
+:valutation-note rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/cost-observation
-:cost-observation rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/aesthetics
+:aesthetics rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/physical-context
-:physical-context rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/function
+:function rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/socio-cultural-context
-:socio-cultural-context rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/condition-description
+:condition-description rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/political-context
-:political-context rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/water-damage
+:water-damage rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/legal-context
-:legal-context rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/dimensions-description
+:dimensions-description rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/administrative-context
-:administrative-context rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/annual
+:annual rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/economic-context
-:economic-context rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/location-description
+:location-description rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/artistic-function
-:artistic-function rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/region
+:region rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/substance-aspect
-:substance-aspect rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/fire-damage
+:fire-damage rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/value-score
-:value-score rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/centennal
+:centennal rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/water-HAZARD
-:water-HAZARD rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/building
+:building rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/common-risk
-:common-risk rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/frequency
+:frequency rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/region-LAYER
-:region-LAYER rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/low-estimate
+:low-estimate rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/fire-HAZARD
-:fire-HAZARD rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/probable-estimate
+:probable-estimate rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/rare-risk
-:rare-risk rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/high-estimate
+:high-estimate rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/building-LAYER
-:building-LAYER rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/fractional-value-loss
+:fractional-value-loss rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/frequency-measure
-:frequency-measure rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/exposure
+:exposure rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/fractional-value-loss-measure
-:fractional-value-loss-measure rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/risk-magnitude
+:risk-magnitude rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/exposure-measure
-:exposure-measure rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/diagnosis
+:diagnosis rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/risk-magnitude-measure
-:risk-magnitude-measure rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/high-priority-level
+:high-priority-level rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/high-priority
-:high-priority rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/extreme-priority-level
+:extreme-priority-level rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/review-asap
-:review-asap rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/plan
+:plan rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/extreme-priority
-:extreme-priority rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/block
+:block rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/support-LAYER
-:support-LAYER rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/budget
+:budget rdf:type :Type .
 
 
-###  https://w3id.org/sirius/ontology/development/08/schema/block-STAGE
-:block-STAGE rdf:type :Type .
-
-
-###  https://w3id.org/sirius/ontology/development/08/schema/fitting-LAYER
-:fitting-LAYER rdf:type :Type .
+###  https://w3id.org/sirius/ontology/development/08/schema/capital-cost
+:capital-cost rdf:type :Type .
 
 
 ###  https://w3id.org/sirius/ontology/development/08/schema/maintenance-cost
