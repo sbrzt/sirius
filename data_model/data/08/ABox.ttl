@@ -1,505 +1,498 @@
 @prefix aat: <http://vocab.getty.edu/page/aat/> .
-@prefix comp: <http://www.ontologydesignpatterns.org/cp/owl/componency.owl#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix freq: <http://publications.europa.eu/resource/authority/frequency/> .
 @prefix hero: <https://w3id.org/sirius/ontology/hero/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix part: <http://www.ontologydesignpatterns.org/cp/owl/participation.owl#> .
 @prefix place: <http://www.ontologydesignpatterns.org/cp/owl/place.owl#> .
-@prefix planex: <http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#> .
-@prefix provo: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix seq: <http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#> .
 @prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-@prefix tisit: <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/sirius/ontology/data/08/> a owl:Ontology ;
     owl:imports hero: .
 
 <https://w3id.org/sirius/ontology/data/08/assessment-activity-01> a hero:Activity ;
-    dcterms:description "Octagonal building with sloping roof, featuring four apsidioles corresponding to the cardinal points (partially buried). The mosaic decoration is preserved only on the dome, creating a striking contrast with the rough surface of exposed bricks in the lower part. The mosaic depicts in the center the baptism of Christ in the River Jordan, surrounded by a band with the twelve apostles parading in two rows, meeting at the throne of the etimasia, symbol of the invisible presence of Christ."@en ;
-    dcterms:type wd:Q1137655 ;
-    planex:includesObject <https://w3id.org/sirius/ontology/data/08/baptistery> ;
-    part:hasParticipant <https://w3id.org/sirius/ontology/data/08/comune-di-ravenna>,
-        <https://w3id.org/sirius/ontology/data/08/sara-fiorentino>,
-        <https://w3id.org/sirius/ontology/data/08/soprintendenza-di-ravenna>,
-        <https://w3id.org/sirius/ontology/data/08/universita-di-bologna> ;
-    place:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
-    tisit:atTime <https://w3id.org/sirius/ontology/data/08/time-interval-01> ;
-    tisit:forEntity <https://w3id.org/sirius/ontology/data/08/observation-01>,
+    hero:assigns <https://w3id.org/sirius/ontology/data/08/observation-01>,
         <https://w3id.org/sirius/ontology/data/08/observation-02>,
         <https://w3id.org/sirius/ontology/data/08/observation-03>,
         <https://w3id.org/sirius/ontology/data/08/observation-04>,
         <https://w3id.org/sirius/ontology/data/08/observation-05>,
-        <https://w3id.org/sirius/ontology/data/08/observation-06> .
+        <https://w3id.org/sirius/ontology/data/08/observation-06> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/data/08/baptistery> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
+    hero:hasNote "Octagonal building with sloping roof, featuring four apsidioles corresponding to the cardinal points (partially buried). The mosaic decoration is preserved only on the dome, creating a striking contrast with the rough surface of exposed bricks in the lower part. The mosaic depicts in the center the baptism of Christ in the River Jordan, surrounded by a band with the twelve apostles parading in two rows, meeting at the throne of the etimasia, symbol of the invisible presence of Christ."@en ;
+    hero:hasParticipant <https://w3id.org/sirius/ontology/data/08/comune-di-ravenna>,
+        <https://w3id.org/sirius/ontology/data/08/sara-fiorentino>,
+        <https://w3id.org/sirius/ontology/data/08/soprintendenza-di-ravenna>,
+        <https://w3id.org/sirius/ontology/data/08/universita-di-bologna> ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/data/08/time-interval-01> ;
+    hero:hasType wd:Q1137655 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> .
 
 <https://w3id.org/sirius/ontology/data/08/assessment-activity-02> a hero:Activity ;
-    dcterms:description "Used original materials generally had a good condition and new materials used in a simple but innovative way in respect to historical values."@en ;
-    dcterms:type wd:Q4008379 ;
-    planex:includesObject <https://w3id.org/sirius/ontology/data/08/baptistery> ;
-    part:hasParticipant <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
-    place:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
-    tisit:atTime <https://w3id.org/sirius/ontology/data/08/time-interval-01> ;
-    tisit:forEntity <https://w3id.org/sirius/ontology/data/08/observation-07>,
+    hero:assigns <https://w3id.org/sirius/ontology/data/08/observation-07>,
         <https://w3id.org/sirius/ontology/data/08/observation-08>,
-        <https://w3id.org/sirius/ontology/data/08/observation-09> .
+        <https://w3id.org/sirius/ontology/data/08/observation-09> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/data/08/baptistery> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
+    hero:hasNote "Used original materials generally had a good condition and new materials used in a simple but innovative way in respect to historical values."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/data/08/time-interval-01> ;
+    hero:hasType wd:Q4008379 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> .
 
 <https://w3id.org/sirius/ontology/data/08/assessment-activity-09> a hero:Activity ;
-    dcterms:description "One possible action to protect a baptistery from water damage could be to install a waterproof membrane or coating on the exterior surfaces. This would help prevent water infiltration and damage to the structure. Additionally, regular maintenance such as inspecting for cracks or leaks and repairing them promptly can help mitigate water damage over time."@en ;
-    dcterms:type wd:Q2251595 ;
-    planex:includesObject <https://w3id.org/sirius/ontology/data/08/baptistery> ;
-    part:hasParticipant <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
-    place:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
-    seq:precedes <https://w3id.org/sirius/ontology/data/08/assessment-activity-07> ;
-    tisit:atTime <https://w3id.org/sirius/ontology/data/08/time-interval-05> ;
-    tisit:forEntity <https://w3id.org/sirius/ontology/data/08/observation-29>,
+    hero:assigns <https://w3id.org/sirius/ontology/data/08/observation-29>,
         <https://w3id.org/sirius/ontology/data/08/observation-30>,
-        <https://w3id.org/sirius/ontology/data/08/observation-31> .
+        <https://w3id.org/sirius/ontology/data/08/observation-31> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/data/08/baptistery> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
+    hero:hasNote "One possible action to protect a baptistery from water damage could be to install a waterproof membrane or coating on the exterior surfaces. This would help prevent water infiltration and damage to the structure. Additionally, regular maintenance such as inspecting for cracks or leaks and repairing them promptly can help mitigate water damage over time."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/data/08/time-interval-05> ;
+    hero:hasType wd:Q2251595 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
+    hero:precedes <https://w3id.org/sirius/ontology/data/08/assessment-activity-07> .
 
 <https://w3id.org/sirius/ontology/data/08/assessment-activity-10> a hero:Activity ;
-    dcterms:description "Use fire-resistant materials: Consider using fire-resistant coatings, fire-rated doors, and fireproof insulation to minimize fire damage."@en ;
-    dcterms:type wd:Q2251595 ;
-    planex:includesObject <https://w3id.org/sirius/ontology/data/08/baptistery> ;
-    part:hasParticipant <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
-    place:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
-    seq:precedes <https://w3id.org/sirius/ontology/data/08/assessment-activity-08> ;
-    tisit:atTime <https://w3id.org/sirius/ontology/data/08/time-interval-05> ;
-    tisit:forEntity <https://w3id.org/sirius/ontology/data/08/observation-32>,
+    hero:assigns <https://w3id.org/sirius/ontology/data/08/observation-32>,
         <https://w3id.org/sirius/ontology/data/08/observation-33>,
-        <https://w3id.org/sirius/ontology/data/08/observation-34> .
+        <https://w3id.org/sirius/ontology/data/08/observation-34> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/data/08/baptistery> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
+    hero:hasNote "Use fire-resistant materials: Consider using fire-resistant coatings, fire-rated doors, and fireproof insulation to minimize fire damage."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/data/08/time-interval-05> ;
+    hero:hasType wd:Q2251595 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
+    hero:precedes <https://w3id.org/sirius/ontology/data/08/assessment-activity-08> .
 
 <https://w3id.org/sirius/ontology/data/08/document-02> a foaf:Document .
 
 <https://w3id.org/sirius/ontology/data/08/assessment-activity-03> a hero:Activity ;
-    dcterms:description "Floods and heavy rains induce erosion of the baptistery walls."@en ;
-    dcterms:type wd:Q5687675 ;
-    planex:includesObject <https://w3id.org/sirius/ontology/data/08/baptistery> ;
-    part:hasParticipant <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
-    place:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
-    tisit:atTime <https://w3id.org/sirius/ontology/data/08/time-interval-02> ;
-    tisit:forEntity <https://w3id.org/sirius/ontology/data/08/observation-10>,
+    hero:assigns <https://w3id.org/sirius/ontology/data/08/observation-10>,
         <https://w3id.org/sirius/ontology/data/08/observation-11>,
-        <https://w3id.org/sirius/ontology/data/08/observation-12> .
+        <https://w3id.org/sirius/ontology/data/08/observation-12> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/data/08/baptistery> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
+    hero:hasNote "Floods and heavy rains induce erosion of the baptistery walls."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/data/08/time-interval-02> ;
+    hero:hasType wd:Q5687675 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> .
 
 <https://w3id.org/sirius/ontology/data/08/assessment-activity-04> a hero:Activity ;
-    dcterms:type wd:Q5687675 ;
-    planex:includesObject <https://w3id.org/sirius/ontology/data/08/baptistery> ;
-    part:hasParticipant <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
-    place:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
-    tisit:atTime <https://w3id.org/sirius/ontology/data/08/time-interval-02> ;
-    tisit:forEntity <https://w3id.org/sirius/ontology/data/08/observation-13>,
+    hero:assigns <https://w3id.org/sirius/ontology/data/08/observation-13>,
         <https://w3id.org/sirius/ontology/data/08/observation-14>,
-        <https://w3id.org/sirius/ontology/data/08/observation-15> .
+        <https://w3id.org/sirius/ontology/data/08/observation-15> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/data/08/baptistery> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/data/08/time-interval-02> ;
+    hero:hasType wd:Q5687675 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> .
 
 <https://w3id.org/sirius/ontology/data/08/assessment-activity-05> a hero:Activity ;
-    dcterms:description "A flood event is expected in the baptistery approximately once every 25 years, most likely affecting the whole heritage asset value per event, resulting in a partial loss."@en ;
-    dcterms:type wd:Q217602 ;
-    planex:includesObject <https://w3id.org/sirius/ontology/data/08/baptistery> ;
-    part:hasParticipant <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
-    place:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
-    seq:precedes <https://w3id.org/sirius/ontology/data/08/assessment-activity-03> ;
-    tisit:atTime <https://w3id.org/sirius/ontology/data/08/time-interval-03> ;
-    tisit:forEntity <https://w3id.org/sirius/ontology/data/08/observation-16>,
+    hero:assigns <https://w3id.org/sirius/ontology/data/08/observation-16>,
         <https://w3id.org/sirius/ontology/data/08/observation-17>,
         <https://w3id.org/sirius/ontology/data/08/observation-18>,
         <https://w3id.org/sirius/ontology/data/08/observation-19> ;
-    provo:wasInfluencedBy <https://w3id.org/sirius/ontology/data/08/document-03> .
+    hero:assignsTo <https://w3id.org/sirius/ontology/data/08/baptistery> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
+    hero:hasNote "A flood event is expected in the baptistery approximately once every 25 years, most likely affecting the whole heritage asset value per event, resulting in a partial loss."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/data/08/time-interval-03> ;
+    hero:hasType wd:Q217602 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
+    hero:isDocumentedBy <https://w3id.org/sirius/ontology/data/08/document-03> ;
+    hero:precedes <https://w3id.org/sirius/ontology/data/08/assessment-activity-03> .
 
 <https://w3id.org/sirius/ontology/data/08/assessment-activity-06> a hero:Activity ;
-    dcterms:description "A large fire event is expected in the museum approximately once every 300 years, with the fire affecting all or most of the heritage asset value, causing total or almost total loss of value in each affected item."@en ;
-    dcterms:type wd:Q217602 ;
-    planex:includesObject <https://w3id.org/sirius/ontology/data/08/baptistery> ;
-    part:hasParticipant <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
-    place:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
-    seq:precedes <https://w3id.org/sirius/ontology/data/08/assessment-activity-04> ;
-    tisit:atTime <https://w3id.org/sirius/ontology/data/08/time-interval-03> ;
-    tisit:forEntity <https://w3id.org/sirius/ontology/data/08/observation-20>,
+    hero:assigns <https://w3id.org/sirius/ontology/data/08/observation-20>,
         <https://w3id.org/sirius/ontology/data/08/observation-21>,
         <https://w3id.org/sirius/ontology/data/08/observation-22>,
         <https://w3id.org/sirius/ontology/data/08/observation-23> ;
-    provo:wasInfluencedBy <https://w3id.org/sirius/ontology/data/08/document-03> .
+    hero:assignsTo <https://w3id.org/sirius/ontology/data/08/baptistery> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
+    hero:hasNote "A large fire event is expected in the museum approximately once every 300 years, with the fire affecting all or most of the heritage asset value, causing total or almost total loss of value in each affected item."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/data/08/time-interval-03> ;
+    hero:hasType wd:Q217602 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
+    hero:isDocumentedBy <https://w3id.org/sirius/ontology/data/08/document-03> ;
+    hero:precedes <https://w3id.org/sirius/ontology/data/08/assessment-activity-04> .
 
 <https://w3id.org/sirius/ontology/data/08/assessment-activity-07> a hero:Activity ;
-    dcterms:description "The risk of flood (MR = 10.5) has a high priority. It is 100 times smaller than the fire risk. The uncertainty that has been measured amounts to a value equal to 2.5. A risk of this magnitude is equivalent to losing about 0.3% of the heritage asset value every 100 years (or 3% per millennium). The museum direction considers this level of risk as just beyond acceptable, since as a condition the value of MR is slightly higher than 10 and the value of uncertainty is higher than 2."@en ;
-    dcterms:type wd:Q1379672 ;
-    planex:includesObject <https://w3id.org/sirius/ontology/data/08/baptistery> ;
-    part:hasParticipant <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
-    place:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
-    seq:precedes <https://w3id.org/sirius/ontology/data/08/assessment-activity-05> ;
-    tisit:atTime <https://w3id.org/sirius/ontology/data/08/time-interval-04> ;
-    tisit:forEntity <https://w3id.org/sirius/ontology/data/08/observation-24> .
+    hero:assigns <https://w3id.org/sirius/ontology/data/08/observation-24> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/data/08/baptistery> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
+    hero:hasNote "The risk of flood (MR = 10.5) has a high priority. It is 100 times smaller than the fire risk. The uncertainty that has been measured amounts to a value equal to 2.5. A risk of this magnitude is equivalent to losing about 0.3% of the heritage asset value every 100 years (or 3% per millennium). The museum direction considers this level of risk as just beyond acceptable, since as a condition the value of MR is slightly higher than 10 and the value of uncertainty is higher than 2."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/data/08/time-interval-04> ;
+    hero:hasType wd:Q1379672 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
+    hero:precedes <https://w3id.org/sirius/ontology/data/08/assessment-activity-05> .
 
 <https://w3id.org/sirius/ontology/data/08/assessment-activity-08> a hero:Activity ;
-    dcterms:description "The risk of a large fire affecting the baptistery and its contents (MR = 12.5) has an extreme priority. The uncertainty that has been measured amounts to a value equal to 1.0. A risk of this magnitude is equivalent to losing about 3% of the heritage asset value every 10 years (or 30% per century, or 100% in about 300 years). The museum direction considers this level of risk as ‘not acceptable’, since as a condition the value of MR is higher than 10 and the value of uncertainty is lower than 2."@en ;
-    dcterms:type wd:Q1379672 ;
-    planex:includesObject <https://w3id.org/sirius/ontology/data/08/baptistery> ;
-    part:hasParticipant <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
-    place:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
-    seq:precedes <https://w3id.org/sirius/ontology/data/08/assessment-activity-06> ;
-    tisit:atTime <https://w3id.org/sirius/ontology/data/08/time-interval-04> ;
-    tisit:forEntity <https://w3id.org/sirius/ontology/data/08/observation-26> .
+    hero:assigns <https://w3id.org/sirius/ontology/data/08/observation-26> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/data/08/baptistery> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/data/08/ravenna> ;
+    hero:hasNote "The risk of a large fire affecting the baptistery and its contents (MR = 12.5) has an extreme priority. The uncertainty that has been measured amounts to a value equal to 1.0. A risk of this magnitude is equivalent to losing about 3% of the heritage asset value every 10 years (or 30% per century, or 100% in about 300 years). The museum direction considers this level of risk as ‘not acceptable’, since as a condition the value of MR is higher than 10 and the value of uncertainty is lower than 2."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/data/08/time-interval-04> ;
+    hero:hasType wd:Q1379672 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/data/08/sara-fiorentino> ;
+    hero:precedes <https://w3id.org/sirius/ontology/data/08/assessment-activity-06> .
 
 <https://w3id.org/sirius/ontology/data/08/comune-di-ravenna> a foaf:Agent .
 
-<https://w3id.org/sirius/ontology/data/08/concept-01> a dul:Concept ;
-    dcterms:type wd:Q4373292 .
+<https://w3id.org/sirius/ontology/data/08/concept-01> a hero:InformationObject ;
+    hero:hasType wd:Q4373292 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-02> a dul:Concept ;
-    dcterms:type wd:Q8425 .
+<https://w3id.org/sirius/ontology/data/08/concept-02> a hero:InformationObject ;
+    hero:hasType wd:Q8425 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-03> a dul:Concept ;
-    dcterms:type wd:Q7163 .
+<https://w3id.org/sirius/ontology/data/08/concept-03> a hero:InformationObject ;
+    hero:hasType wd:Q7163 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-04> a dul:Concept ;
-    dcterms:type wd:Q2628882 .
+<https://w3id.org/sirius/ontology/data/08/concept-04> a hero:InformationObject ;
+    hero:hasType wd:Q2628882 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-05> a dul:Concept ;
-    dcterms:type wd:Q5283295 .
+<https://w3id.org/sirius/ontology/data/08/concept-05> a hero:InformationObject ;
+    hero:hasType wd:Q5283295 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-06> a dul:Concept ;
-    dcterms:type wd:Q8134 .
+<https://w3id.org/sirius/ontology/data/08/concept-06> a hero:InformationObject ;
+    hero:hasType wd:Q8134 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-07> a dul:Concept ;
-    dcterms:type wd:Q35986 .
+<https://w3id.org/sirius/ontology/data/08/concept-07> a hero:InformationObject ;
+    hero:hasType wd:Q35986 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-08> a dul:Concept ;
-    dcterms:type wd:Q11348 .
+<https://w3id.org/sirius/ontology/data/08/concept-08> a hero:InformationObject ;
+    hero:hasType wd:Q11348 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-09> a dul:Concept ;
-    dcterms:type wd:Q194112 ;
-    provo:value "3.65"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-09> a hero:InformationObject ;
+    hero:hasContent "3.65"^^rdfs:Literal ;
+    hero:hasType wd:Q194112 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-10> a dul:Concept ;
-    dcterms:type wd:Q19289049 .
+<https://w3id.org/sirius/ontology/data/08/concept-10> a hero:InformationObject ;
+    hero:hasType wd:Q19289049 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-11> a dul:Concept ;
-    dcterms:type freq:ANNUAL .
+<https://w3id.org/sirius/ontology/data/08/concept-11> a hero:InformationObject ;
+    hero:hasType freq:ANNUAL .
 
-<https://w3id.org/sirius/ontology/data/08/concept-12> a dul:Concept ;
-    dcterms:type wd:Q82794 .
+<https://w3id.org/sirius/ontology/data/08/concept-12> a hero:InformationObject ;
+    hero:hasType wd:Q82794 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-13> a dul:Concept ;
-    dcterms:type wd:Q56497979 .
+<https://w3id.org/sirius/ontology/data/08/concept-13> a hero:InformationObject ;
+    hero:hasType wd:Q56497979 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-14> a dul:Concept ;
-    dcterms:type freq:OTHER .
+<https://w3id.org/sirius/ontology/data/08/concept-14> a hero:InformationObject ;
+    hero:hasType freq:OTHER .
 
-<https://w3id.org/sirius/ontology/data/08/concept-15> a dul:Concept ;
-    dcterms:type wd:Q41176 .
+<https://w3id.org/sirius/ontology/data/08/concept-15> a hero:InformationObject ;
+    hero:hasType wd:Q41176 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-16> a dul:Concept ;
-    dcterms:type wd:Q11652 ;
-    comp:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-16a>,
+<https://w3id.org/sirius/ontology/data/08/concept-16> a hero:InformationObject ;
+    hero:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-16a>,
         <https://w3id.org/sirius/ontology/data/08/concept-16b>,
-        <https://w3id.org/sirius/ontology/data/08/concept-16c> .
+        <https://w3id.org/sirius/ontology/data/08/concept-16c> ;
+    hero:hasType wd:Q11652 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-16a> a dul:Concept ;
-    dcterms:type wd:Q10585806 ;
-    provo:value "3.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-16a> a hero:InformationObject ;
+    hero:hasContent "3.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10585806 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-16b> a dul:Concept ;
-    dcterms:type wd:Q226995 ;
-    provo:value "3.5"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-16b> a hero:InformationObject ;
+    hero:hasContent "3.5"^^rdfs:Literal ;
+    hero:hasType wd:Q226995 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-16c> a dul:Concept ;
-    dcterms:type wd:Q10578722 ;
-    provo:value "4.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-16c> a hero:InformationObject ;
+    hero:hasContent "4.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10578722 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-17> a dul:Concept ;
-    dcterms:type wd:Q7523953 ;
-    comp:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-17a>,
+<https://w3id.org/sirius/ontology/data/08/concept-17> a hero:InformationObject ;
+    hero:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-17a>,
         <https://w3id.org/sirius/ontology/data/08/concept-17b>,
-        <https://w3id.org/sirius/ontology/data/08/concept-17c> .
+        <https://w3id.org/sirius/ontology/data/08/concept-17c> ;
+    hero:hasType wd:Q7523953 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-17a> a dul:Concept ;
-    dcterms:type wd:Q10585806 ;
-    provo:value "4.5"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-17a> a hero:InformationObject ;
+    hero:hasContent "4.5"^^rdfs:Literal ;
+    hero:hasType wd:Q10585806 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-17b> a dul:Concept ;
-    dcterms:type wd:Q226995 ;
-    provo:value "5.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-17b> a hero:InformationObject ;
+    hero:hasContent "5.0"^^rdfs:Literal ;
+    hero:hasType wd:Q226995 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-17c> a dul:Concept ;
-    dcterms:type wd:Q10578722 ;
-    provo:value "5.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-17c> a hero:InformationObject ;
+    hero:hasContent "5.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10578722 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-18> a dul:Concept ;
-    dcterms:type wd:Q107642367 ;
-    comp:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-18a>,
+<https://w3id.org/sirius/ontology/data/08/concept-18> a hero:InformationObject ;
+    hero:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-18a>,
         <https://w3id.org/sirius/ontology/data/08/concept-18b>,
-        <https://w3id.org/sirius/ontology/data/08/concept-18c> .
+        <https://w3id.org/sirius/ontology/data/08/concept-18c> ;
+    hero:hasType wd:Q107642367 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-18a> a dul:Concept ;
-    dcterms:type wd:Q10585806 ;
-    provo:value "1.5"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-18a> a hero:InformationObject ;
+    hero:hasContent "1.5"^^rdfs:Literal ;
+    hero:hasType wd:Q10585806 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-18b> a dul:Concept ;
-    dcterms:type wd:Q226995 ;
-    provo:value "2.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-18b> a hero:InformationObject ;
+    hero:hasContent "2.0"^^rdfs:Literal ;
+    hero:hasType wd:Q226995 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-18c> a dul:Concept ;
-    dcterms:type wd:Q10578722 ;
-    provo:value "2.5"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-18c> a hero:InformationObject ;
+    hero:hasContent "2.5"^^rdfs:Literal ;
+    hero:hasType wd:Q10578722 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-19a> a dul:Concept ;
-    dcterms:type wd:Q10585806 ;
-    provo:value "9.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-19a> a hero:InformationObject ;
+    hero:hasContent "9.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10585806 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-19b> a dul:Concept ;
-    dcterms:type wd:Q226995 ;
-    provo:value "10.5"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-19b> a hero:InformationObject ;
+    hero:hasContent "10.5"^^rdfs:Literal ;
+    hero:hasType wd:Q226995 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-19c> a dul:Concept ;
-    dcterms:type wd:Q10578722 ;
-    provo:value "11.5"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-19c> a hero:InformationObject ;
+    hero:hasContent "11.5"^^rdfs:Literal ;
+    hero:hasType wd:Q10578722 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-20> a dul:Concept ;
-    dcterms:type wd:Q11652 ;
-    comp:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-20a>,
+<https://w3id.org/sirius/ontology/data/08/concept-20> a hero:InformationObject ;
+    hero:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-20a>,
         <https://w3id.org/sirius/ontology/data/08/concept-20b>,
-        <https://w3id.org/sirius/ontology/data/08/concept-20c> .
+        <https://w3id.org/sirius/ontology/data/08/concept-20c> ;
+    hero:hasType wd:Q11652 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-20a> a dul:Concept ;
-    dcterms:type wd:Q10585806 ;
-    provo:value "2.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-20a> a hero:InformationObject ;
+    hero:hasContent "2.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10585806 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-20b> a dul:Concept ;
-    dcterms:type wd:Q226995 ;
-    provo:value "2.5"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-20b> a hero:InformationObject ;
+    hero:hasContent "2.5"^^rdfs:Literal ;
+    hero:hasType wd:Q226995 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-20c> a dul:Concept ;
-    dcterms:type wd:Q10578722 ;
-    provo:value "3.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-20c> a hero:InformationObject ;
+    hero:hasContent "3.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10578722 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-21> a dul:Concept ;
-    dcterms:type wd:Q7523953 ;
-    comp:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-21a>,
+<https://w3id.org/sirius/ontology/data/08/concept-21> a hero:InformationObject ;
+    hero:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-21a>,
         <https://w3id.org/sirius/ontology/data/08/concept-21b>,
-        <https://w3id.org/sirius/ontology/data/08/concept-21c> .
+        <https://w3id.org/sirius/ontology/data/08/concept-21c> ;
+    hero:hasType wd:Q7523953 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-21a> a dul:Concept ;
-    dcterms:type wd:Q10585806 ;
-    provo:value "4.5"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-21a> a hero:InformationObject ;
+    hero:hasContent "4.5"^^rdfs:Literal ;
+    hero:hasType wd:Q10585806 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-21b> a dul:Concept ;
-    dcterms:type wd:Q226995 ;
-    provo:value "5.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-21b> a hero:InformationObject ;
+    hero:hasContent "5.0"^^rdfs:Literal ;
+    hero:hasType wd:Q226995 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-21c> a dul:Concept ;
-    dcterms:type wd:Q10578722 ;
-    provo:value "5.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-21c> a hero:InformationObject ;
+    hero:hasContent "5.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10578722 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-22> a dul:Concept ;
-    dcterms:type wd:Q107642367 ;
-    comp:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-22a>,
+<https://w3id.org/sirius/ontology/data/08/concept-22> a hero:InformationObject ;
+    hero:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-22a>,
         <https://w3id.org/sirius/ontology/data/08/concept-22b>,
-        <https://w3id.org/sirius/ontology/data/08/concept-22c> .
+        <https://w3id.org/sirius/ontology/data/08/concept-22c> ;
+    hero:hasType wd:Q107642367 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-22a> a dul:Concept ;
-    dcterms:type wd:Q10585806 ;
-    provo:value "4.5"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-22a> a hero:InformationObject ;
+    hero:hasContent "4.5"^^rdfs:Literal ;
+    hero:hasType wd:Q10585806 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-22b> a dul:Concept ;
-    dcterms:type wd:Q226995 ;
-    provo:value "5.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-22b> a hero:InformationObject ;
+    hero:hasContent "5.0"^^rdfs:Literal ;
+    hero:hasType wd:Q226995 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-22c> a dul:Concept ;
-    dcterms:type wd:Q10578722 ;
-    provo:value "5.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-22c> a hero:InformationObject ;
+    hero:hasContent "5.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10578722 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-23a> a dul:Concept ;
-    dcterms:type wd:Q10585806 ;
-    provo:value "11.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-23a> a hero:InformationObject ;
+    hero:hasContent "11.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10585806 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-23b> a dul:Concept ;
-    dcterms:type wd:Q226995 ;
-    provo:value "12.5"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-23b> a hero:InformationObject ;
+    hero:hasContent "12.5"^^rdfs:Literal ;
+    hero:hasType wd:Q226995 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-23c> a dul:Concept ;
-    dcterms:type wd:Q10578722 ;
-    provo:value "13.0"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-23c> a hero:InformationObject ;
+    hero:hasContent "13.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10578722 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-24> a dul:Concept ;
-    dcterms:type wd:Q125584111 .
+<https://w3id.org/sirius/ontology/data/08/concept-24> a hero:InformationObject ;
+    hero:hasType wd:Q125584111 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-26> a dul:Concept ;
-    dcterms:type wd:Q2154759 .
+<https://w3id.org/sirius/ontology/data/08/concept-26> a hero:InformationObject ;
+    hero:hasType wd:Q2154759 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-29> a dul:Concept ;
-    dcterms:type wd:Q2956685 .
+<https://w3id.org/sirius/ontology/data/08/concept-29> a hero:InformationObject ;
+    hero:hasType wd:Q2956685 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-30> a dul:Concept ;
-    dcterms:type wd:Q302208 ;
-    provo:value "3200"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-30> a hero:InformationObject ;
+    hero:hasContent "3200"^^rdfs:Literal ;
+    hero:hasType wd:Q302208 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-31> a dul:Concept ;
-    dcterms:type wd:Q831940 ;
-    provo:value "120"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-31> a hero:InformationObject ;
+    hero:hasContent "120"^^rdfs:Literal ;
+    hero:hasType wd:Q831940 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-32> a dul:Concept ;
-    dcterms:type wd:Q2956685 .
+<https://w3id.org/sirius/ontology/data/08/concept-32> a hero:InformationObject ;
+    hero:hasType wd:Q2956685 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-33> a dul:Concept ;
-    dcterms:type wd:Q302208 ;
-    provo:value "5000"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-33> a hero:InformationObject ;
+    hero:hasContent "5000"^^rdfs:Literal ;
+    hero:hasType wd:Q302208 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-34> a dul:Concept ;
-    dcterms:type wd:Q831940 ;
-    provo:value "375"^^rdfs:Literal .
+<https://w3id.org/sirius/ontology/data/08/concept-34> a hero:InformationObject ;
+    hero:hasContent "375"^^rdfs:Literal ;
+    hero:hasType wd:Q831940 .
 
 <https://w3id.org/sirius/ontology/data/08/document-01> a foaf:Document .
 
-<https://w3id.org/sirius/ontology/data/08/observation-01> a dul:InformationObject ;
-    dcterms:type aat:300435416 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-01> ;
-    provo:value "The Baptistery is externally visible on the N, NW, and NE sides. The west side overlooks the gardens of a private residence, while the south, SW, and SE sides overlook the garden of the Department of Cultural Heritage (University of Bologna)."@en .
+<https://w3id.org/sirius/ontology/data/08/observation-01> a hero:LinguisticObject ;
+    hero:hasContent "The Baptistery is externally visible on the N, NW, and NE sides. The west side overlooks the gardens of a private residence, while the south, SW, and SE sides overlook the garden of the Department of Cultural Heritage (University of Bologna)."@en ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-01> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-02> a dul:InformationObject ;
-    dcterms:type aat:300435416 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-02> ;
-    provo:value "Monumental site in an urban area, open to tourists (with prior admission ticket). The small square where the building is located suffers from a bad reputation, being labeled as a 'socially risky area and a neglected place' (reported incident of an abandoned bed frame found at night in the Baptistery's trench, 11.07.2006, Source: Zaccarini, 2015). Despite the establishment of regulations in 2012 restricting vehicle access to the square, transit and parking for loading/unloading goods are still permitted."@en .
+<https://w3id.org/sirius/ontology/data/08/observation-02> a hero:LinguisticObject ;
+    hero:hasContent "Monumental site in an urban area, open to tourists (with prior admission ticket). The small square where the building is located suffers from a bad reputation, being labeled as a 'socially risky area and a neglected place' (reported incident of an abandoned bed frame found at night in the Baptistery's trench, 11.07.2006, Source: Zaccarini, 2015). Despite the establishment of regulations in 2012 restricting vehicle access to the square, transit and parking for loading/unloading goods are still permitted."@en ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-02> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-03> a dul:InformationObject ;
-    dcterms:type aat:300435416 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-03> ;
-    provo:value "The monument is often a subject of debate among various political parties and the Municipality of Ravenna."@en ;
-    provo:wasInfluencedBy <https://w3id.org/sirius/ontology/data/08/document-01> .
+<https://w3id.org/sirius/ontology/data/08/observation-03> a hero:LinguisticObject ;
+    hero:hasContent "The monument is often a subject of debate among various political parties and the Municipality of Ravenna."@en ;
+    hero:hasType aat:300435416 ;
+    hero:isDocumentedBy <https://w3id.org/sirius/ontology/data/08/document-01> ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-03> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-04> a dul:InformationObject ;
-    dcterms:type aat:300435416 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-04> ;
-    provo:value "Owned by the State Property / Ministry of Culture. Since 1996, it has been part of the UNESCO World Heritage Sites list in Italy ('Early Christian Monuments of Ravenna')."@en .
+<https://w3id.org/sirius/ontology/data/08/observation-04> a hero:LinguisticObject ;
+    hero:hasContent "Owned by the State Property / Ministry of Culture. Since 1996, it has been part of the UNESCO World Heritage Sites list in Italy ('Early Christian Monuments of Ravenna')."@en ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-04> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-05> a dul:InformationObject ;
-    dcterms:type aat:300435416 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-05> ;
-    provo:value "Since December 2019, it has been managed by the Regional Directorate of Museums of Emilia Romagna, located in Ravenna."@en .
+<https://w3id.org/sirius/ontology/data/08/observation-05> a hero:LinguisticObject ;
+    hero:hasContent "Since December 2019, it has been managed by the Regional Directorate of Museums of Emilia Romagna, located in Ravenna."@en ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-05> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-06> a dul:InformationObject ;
-    dcterms:type aat:300435416 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-06> ;
-    provo:value "The Law No. 77 of February 20, 2006, establishes that UNESCO sites are excellences of the Italian cultural, landscape, and natural heritage, fundamental elements of our country's representation at the international level, and states that interventions on them have priority even in terms of the allocation of financial resources."@en .
+<https://w3id.org/sirius/ontology/data/08/observation-06> a hero:LinguisticObject ;
+    hero:hasContent "The Law No. 77 of February 20, 2006, establishes that UNESCO sites are excellences of the Italian cultural, landscape, and natural heritage, fundamental elements of our country's representation at the international level, and states that interventions on them have priority even in terms of the allocation of financial resources."@en ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-06> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-07> a dul:InformationObject ;
-    dcterms:type aat:300435416 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-07> .
+<https://w3id.org/sirius/ontology/data/08/observation-07> a hero:LinguisticObject ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-07> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-08> a dul:InformationObject ;
-    dcterms:type aat:300435416 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-08> .
+<https://w3id.org/sirius/ontology/data/08/observation-08> a hero:LinguisticObject ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-08> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-09> a dul:InformationObject ;
-    dcterms:type aat:300435416 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-09> .
+<https://w3id.org/sirius/ontology/data/08/observation-09> a hero:LinguisticObject ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-09> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-10> a dul:InformationObject ;
-    dcterms:type aat:300435425 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-10> .
+<https://w3id.org/sirius/ontology/data/08/observation-10> a hero:LinguisticObject ;
+    hero:hasType aat:300435425 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-10> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-11> a dul:InformationObject ;
-    dcterms:type aat:300435430 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-11> .
+<https://w3id.org/sirius/ontology/data/08/observation-11> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-11> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-12> a dul:InformationObject ;
-    dcterms:type aat:300435449 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-12> .
+<https://w3id.org/sirius/ontology/data/08/observation-12> a hero:LinguisticObject ;
+    hero:hasType aat:300435449 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-12> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-13> a dul:InformationObject ;
-    dcterms:type aat:300435425 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-13> .
+<https://w3id.org/sirius/ontology/data/08/observation-13> a hero:LinguisticObject ;
+    hero:hasType aat:300435425 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-13> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-14> a dul:InformationObject ;
-    dcterms:type aat:300435430 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-14> .
+<https://w3id.org/sirius/ontology/data/08/observation-14> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-14> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-15> a dul:InformationObject ;
-    dcterms:type aat:300435449 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-15> .
+<https://w3id.org/sirius/ontology/data/08/observation-15> a hero:LinguisticObject ;
+    hero:hasType aat:300435449 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-15> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-16> a dul:InformationObject ;
-    dcterms:type aat:300435430 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-16> .
+<https://w3id.org/sirius/ontology/data/08/observation-16> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-16> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-17> a dul:InformationObject ;
-    dcterms:type aat:300435430 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-17> .
+<https://w3id.org/sirius/ontology/data/08/observation-17> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-17> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-18> a dul:InformationObject ;
-    dcterms:type aat:300435430 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-18> .
+<https://w3id.org/sirius/ontology/data/08/observation-18> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-18> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-19> a dul:InformationObject ;
-    dcterms:type aat:300435430 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-19> .
+<https://w3id.org/sirius/ontology/data/08/observation-19> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-19> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-20> a dul:InformationObject ;
-    dcterms:type aat:300435430 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-20> .
+<https://w3id.org/sirius/ontology/data/08/observation-20> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-20> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-21> a dul:InformationObject ;
-    dcterms:type aat:300435430 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-21> .
+<https://w3id.org/sirius/ontology/data/08/observation-21> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-21> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-22> a dul:InformationObject ;
-    dcterms:type aat:300435430 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-22> .
+<https://w3id.org/sirius/ontology/data/08/observation-22> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-22> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-23> a dul:InformationObject ;
-    dcterms:type aat:300435430 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-23> .
+<https://w3id.org/sirius/ontology/data/08/observation-23> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-23> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-24> a dul:InformationObject ;
-    dcterms:type aat:300438433 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-24> ;
-    provo:wasDerivedFrom <https://w3id.org/sirius/ontology/data/08/concept-19> .
+<https://w3id.org/sirius/ontology/data/08/observation-24> a hero:LinguisticObject ;
+    hero:hasType aat:300438433 ;
+    hero:isMotivatedBy <https://w3id.org/sirius/ontology/data/08/concept-19> ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-24> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-26> a dul:InformationObject ;
-    dcterms:type aat:300438433 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-26> ;
-    provo:wasDerivedFrom <https://w3id.org/sirius/ontology/data/08/concept-23> .
+<https://w3id.org/sirius/ontology/data/08/observation-26> a hero:LinguisticObject ;
+    hero:hasType aat:300438433 ;
+    hero:isMotivatedBy <https://w3id.org/sirius/ontology/data/08/concept-23> ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-26> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-29> a dul:InformationObject ;
-    dcterms:type <https://www.wikidata.org/wiki/Q1371819> ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-29> .
+<https://w3id.org/sirius/ontology/data/08/observation-29> a hero:LinguisticObject ;
+    hero:hasType wd:Q1371819 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-29> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-30> a dul:InformationObject ;
-    dcterms:type aat:300027514 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-30> .
+<https://w3id.org/sirius/ontology/data/08/observation-30> a hero:LinguisticObject ;
+    hero:hasType aat:300027514 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-30> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-31> a dul:InformationObject ;
-    dcterms:type aat:300027514 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-31> .
+<https://w3id.org/sirius/ontology/data/08/observation-31> a hero:LinguisticObject ;
+    hero:hasType aat:300027514 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-31> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-32> a dul:InformationObject ;
-    dcterms:type <https://www.wikidata.org/wiki/Q1371819> ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-32> .
+<https://w3id.org/sirius/ontology/data/08/observation-32> a hero:LinguisticObject ;
+    hero:hasType wd:Q1371819 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-32> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-33> a dul:InformationObject ;
-    dcterms:type aat:300027514 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-33> .
+<https://w3id.org/sirius/ontology/data/08/observation-33> a hero:LinguisticObject ;
+    hero:hasType aat:300027514 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-33> .
 
-<https://w3id.org/sirius/ontology/data/08/observation-34> a dul:InformationObject ;
-    dcterms:type aat:300027514 ;
-    dul:expresses <https://w3id.org/sirius/ontology/data/08/concept-34> .
+<https://w3id.org/sirius/ontology/data/08/observation-34> a hero:LinguisticObject ;
+    hero:hasType aat:300027514 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/data/08/concept-34> .
 
 <https://w3id.org/sirius/ontology/data/08/soprintendenza-di-ravenna> a foaf:Agent .
 
 <https://w3id.org/sirius/ontology/data/08/universita-di-bologna> a foaf:Agent .
 
-<https://w3id.org/sirius/ontology/data/08/concept-19> a dul:Concept ;
-    dcterms:type wd:Q2154759 ;
-    comp:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-19a>,
+<https://w3id.org/sirius/ontology/data/08/concept-19> a hero:InformationObject ;
+    hero:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-19a>,
         <https://w3id.org/sirius/ontology/data/08/concept-19b>,
-        <https://w3id.org/sirius/ontology/data/08/concept-19c> .
+        <https://w3id.org/sirius/ontology/data/08/concept-19c> ;
+    hero:hasType wd:Q2154759 .
 
-<https://w3id.org/sirius/ontology/data/08/concept-23> a dul:Concept ;
-    dcterms:type wd:Q2154759 ;
-    comp:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-23a>,
+<https://w3id.org/sirius/ontology/data/08/concept-23> a hero:InformationObject ;
+    hero:hasComponent <https://w3id.org/sirius/ontology/data/08/concept-23a>,
         <https://w3id.org/sirius/ontology/data/08/concept-23b>,
-        <https://w3id.org/sirius/ontology/data/08/concept-23c> .
+        <https://w3id.org/sirius/ontology/data/08/concept-23c> ;
+    hero:hasType wd:Q2154759 .
 
 <https://w3id.org/sirius/ontology/data/08/document-03> a foaf:Document .
 

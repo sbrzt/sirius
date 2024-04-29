@@ -1,0 +1,3528 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.ontologydesignpatterns.org/cp/owl/observation.owl", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.ontologydesignpatterns.org/cp/owl/participation.owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl", "http://www.ontologydesignpatterns.org/cp/owl/classification.owl", "http://www.ontologydesignpatterns.org/cp/owl/region.owl", "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "http://www.ontologydesignpatterns.org/cp/owl/situation.owl", "https://w3id.org/sirius/ontology/hero" ],
+    "title" : {
+      "en" : "Heritage Risk Assessment Ontology (HeRO)"
+    },
+    "iri" : "https://w3id.org/sirius/ontology/hero/",
+    "version" : "1.0.0",
+    "author" : [ "Barzaghi, Sebastian" ],
+    "comments" : {
+      "en" : "The Heritage Risk Assessment Ontology (HeRO, https://w3id.org/sirius/ontology/hero) is an OWL 2 DL ontology that aims to provide a framework for the formal description of risk assessment activities related to heritage."
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2023-11-30",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Barzaghi, Sebastian",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2023-11-30",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "\n        https://doi.org/10.6084/M9.FIGSHARE.3189769.V2\n        ",
+        "type" : "label"
+      }, {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "\n        https://www.iccrom.org/sites/default/files/2017-12/risk_manual_2016-eng.pdf\n        ",
+        "type" : "label"
+      }, {
+        "identifier" : "source",
+        "language" : "en",
+        "value" : "\n        https://www.canada.ca/en/conservation-institute/services/risk-management-heritage-collections/abc-method-risk-management-approach.html\n        ",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "The Heritage Risk Assessment Ontology (HeRO, https://w3id.org/sirius/ontology/hero) is an OWL 2 DL ontology that aims to provide a framework for the formal description of risk assessment activities related to heritage.",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Heritage Risk Assessment Ontology (HeRO)",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "en",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "en",
+        "value" : "hero",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "Barzaghi, Sebastian",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "Barzaghi, S. (2023). Heritage Risk Assessment Ontology. https://w3id.org/sirius/ontology/hero.",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "en",
+        "value" : "https://w3id.org/sirius/ontology/hero/",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2023-11-30",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "en",
+        "value" : "work in progress",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "50",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "52",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "57",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "58",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "54",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "en" : "Agent"
+    },
+    "comment" : {
+      "en" : "An agent (eg. person, group, software or physical artifact)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/Measure",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Measure",
+      "en" : "Measure"
+    },
+    "subClasses" : [ "27", "28", "13", "29" ],
+    "intersection" : [ "2" ],
+    "comment" : {
+      "en" : "A quantifiable aspect of some entity, that expresses a more precise and standardised evaluation of it, based on assigning numerical values or metrics to some specific attributes."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "14",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Concept",
+      "en" : "Concept",
+      "it" : "Concetto"
+    },
+    "subClasses" : [ "31", "32", "33", "34", "35" ],
+    "comment" : {
+      "undefined" : "A concept is a Social Object. \nThe classifies relation relates concepts to entities at some time, but time can only be expressed in the alternative pattern: timeindexedclassification."
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event"
+    },
+    "subClasses" : [ "37" ],
+    "comment" : {
+      "undefined" : "Any physical, social, or mental process, event, or state."
+    },
+    "attributes" : [ "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/Exposure",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Exposure",
+      "en" : "Exposure"
+    },
+    "comment" : {
+      "en" : "The size of the expected loss of value in the whole asset affected by the risk."
+    },
+    "id" : "28",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/Dimension",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Dimension",
+      "en" : "Dimension"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sirius/ontology/hero/historic",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A dimension that refers to the historical context, significance, and evolution of an asset"
+      },
+      "labels" : {
+        "IRI-based" : "historic",
+        "en" : "Historic"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/artistic",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "The dimension referring to the aesthetic qualities associated with an asset."
+      },
+      "labels" : {
+        "IRI-based" : "artistic",
+        "en" : "Artistic"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/scientific",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A dimension that involves the application of research, documentation, and analysis techniques to understand, preserve, and interpret an asset."
+      },
+      "labels" : {
+        "IRI-based" : "scientific",
+        "en" : "Scientific"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/social",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A dimension that considers the cultural and social context of an asset, including its role in shaping identity, community values, and social practices."
+      },
+      "labels" : {
+        "IRI-based" : "social",
+        "en" : "Social"
+      }
+    } ],
+    "comment" : {
+      "en" : "A facet of an asset that contributes to the overall understanding and assessment of its value."
+    },
+    "id" : "35",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "44",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "50",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "52",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "57",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "58",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/Frequency",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Frequency",
+      "undefined" : "Frequency"
+    },
+    "comment" : {
+      "en" : "The likelihood or probability of a specific risk event occurring within a given period. It quantifies how often a particular risk is expected to materialize and helps assess the regularity or recurrence of the risk."
+    },
+    "id" : "29",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/RiskType",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RiskType",
+      "en" : "Risk type"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sirius/ontology/hero/rare",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A type of risk that occurs less often than approximately once every 100 years."
+      },
+      "labels" : {
+        "IRI-based" : "rare",
+        "en" : "Rare"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/common",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A type of risk that occurs many times per century."
+      },
+      "labels" : {
+        "IRI-based" : "common",
+        "en" : "Common"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/cumulative",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A type of risk that can occur continuously or intermittently."
+      },
+      "labels" : {
+        "IRI-based" : "cumulative",
+        "en" : "Cumulative"
+      }
+    } ],
+    "comment" : {
+      "en" : "A conceptualization used to classify a risk according to its type of occurrence."
+    },
+    "id" : "31",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Situation",
+      "en" : "Situation"
+    },
+    "subClasses" : [ "60", "61" ],
+    "comment" : {
+      "undefined" : "A view on a set of entities. It can be seen as a 'relational context', reifying a relation.\nFor example, a PlanExecution is a context including some actions executed by agents according to certain parameters and expected tasks to be achieved from a Plan; a DiagnosedSituation is a context of observed entities that is interpreted on the basis of a Diagnosis, etc.\nSituation is also able to represent reified n-ary relations, where isSettingFor is the top-level relation for all binary projections of the n-ary relation. If used in a transformation pattern for n-ary relations, the designer should take care of:\n- creating only one situation for each instance of an n-ary relation, otherwise the 'identification constraint' (Calvanese et al., IJCAI 2001) could be violated\n- adding an 'exact cardinality' restriction corresponding to the arity of the n-ary relation, otherwise the designer would actually represent a polymorphic relation."
+    },
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "18",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "54",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/Value",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Value",
+      "en" : "Value"
+    },
+    "comment" : {
+      "en" : "A quality that represents the perceived significance or importance assigned to an asset."
+    },
+    "id" : "81",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/ValueDescription",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ValueDescription",
+      "en" : "Value description"
+    },
+    "comment" : {
+      "en" : "An activity that involves the identification of values that contribute to the perceived importance of an asset."
+    },
+    "id" : "84",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/IdentificationDescription",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IdentificationDescription",
+      "en" : "Identification description"
+    },
+    "comment" : {
+      "en" : "An activity that involves the identification of risks to understand their nature, causes, and consequences with respect to an asset."
+    },
+    "id" : "8",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl#Region",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Region",
+      "en" : "Region",
+      "it" : "Regione"
+    },
+    "subClasses" : [ "82", "5", "14", "62" ],
+    "comment" : {
+      "undefined" : "Any region in a dimensional space (a dimensional space is a maximal Region), which can be used as a value for a quality of an Entity . For example, TimeInterval, SpaceRegion, PhysicalAttribute, Amount, SocialAttribute are all subclasses of Region. \nRegions are not data values in the ordinary knowledge representation sense; in order to get patterns for modelling data, see the properties: representsDataValue and hasDataValue"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/Magnitude",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Magnitude",
+      "en" : "Magnitude"
+    },
+    "comment" : {
+      "en" : "The quantified extension of a risk, encompassing the overall impact and severity associated with it if it were to occur."
+    },
+    "id" : "27",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TimeInterval",
+      "en" : "Time interval",
+      "it" : "Intervallo di tempo"
+    },
+    "comment" : {
+      "undefined" : "Any Region in a dimensional space that aims at representing time.\nIt should be used when you want to talk about time as an object having some characteristics."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/Parameter",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Parameter",
+      "en" : "Parameter"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sirius/ontology/hero/socio-cultural",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A contextual parameter representing the socio-cultural environment of the heritage asset."
+      },
+      "labels" : {
+        "IRI-based" : "socio-cultural",
+        "en" : "Socio-cultural"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/legal",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A contextual parameter representing the legal environment of the heritage asset."
+      },
+      "labels" : {
+        "IRI-based" : "legal",
+        "en" : "Legal"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/economic",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A contextual parameter representing the economic environment of the heritage asset."
+      },
+      "labels" : {
+        "IRI-based" : "economic",
+        "en" : "Economic"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/administrative",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A contextual parameter representing the administrative environment of the heritage asset."
+      },
+      "labels" : {
+        "IRI-based" : "administrative",
+        "en" : "Administrative"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/physical",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A contextual parameter representing the physical environment of the heritage asset."
+      },
+      "labels" : {
+        "IRI-based" : "physical",
+        "en" : "Physical"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/political",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A contextual parameter representing the political environment of the heritage asset."
+      },
+      "labels" : {
+        "IRI-based" : "political",
+        "en" : "Political"
+      }
+    } ],
+    "comment" : {
+      "en" : "A contextual parameter used in an observation about an asset during an assessment activity."
+    },
+    "id" : "91",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Object",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Object",
+      "en" : "Object"
+    },
+    "comment" : {
+      "undefined" : "Any physical, social, or mental object, or substance"
+    },
+    "attributes" : [ "external" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/FractionalValueLoss",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FractionalValueLoss",
+      "undefined" : "Fractional value loss"
+    },
+    "comment" : {
+      "en" : "The size of the expected loss of value in each part of the asset affected by the risk."
+    },
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/Element",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Element",
+      "en" : "Element"
+    },
+    "subClasses" : [ "81", "9" ],
+    "comment" : {
+      "en" : "A conceptual category used as a basis for evaluating an asset during a risk assessment activity."
+    },
+    "id" : "82",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Parameter",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Parameter",
+      "en" : "Parameter"
+    },
+    "subClasses" : [ "91" ],
+    "comment" : {
+      "undefined" : "The parameters of an observation describe the context and content of the observation. For example in a medical context an observation of a patient may contain a set of symptoms, that are the parameters of that observation."
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/Layer",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Layer",
+      "en" : "Layer"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sirius/ontology/hero/site",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A layer that encapsulates the broader area or property on which the heritage asset is situated."
+      },
+      "labels" : {
+        "IRI-based" : "site",
+        "en" : "Site"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/region",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A layer that encapsulates the broadest space in which the heritage asset is considered."
+      },
+      "labels" : {
+        "IRI-based" : "region",
+        "en" : "Region"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/building",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A layer that encapsulates the entire building that houses the heritage asset."
+      },
+      "labels" : {
+        "IRI-based" : "building",
+        "en" : "Building"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/support",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "The immediate surroundings or foundation upon which an asset relies."
+      },
+      "labels" : {
+        "IRI-based" : "support",
+        "en" : "Support"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/room",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A layer that encapsulates the interior space where the heritage asset is located."
+      },
+      "labels" : {
+        "IRI-based" : "room",
+        "en" : "Room"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/fitting",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "A layer that encapsulate the first, closest movable space to the asset."
+      },
+      "labels" : {
+        "IRI-based" : "fitting",
+        "en" : "Fitting"
+      }
+    } ],
+    "comment" : {
+      "en" : "A conceptualization used to classify a risk threatening an asset on the basis of the spatial context in which the asset exists."
+    },
+    "id" : "33",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/Risk",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Risk",
+      "en" : "Risk"
+    },
+    "comment" : {
+      "en" : "The possibility of a loss of value to an asset."
+    },
+    "id" : "9",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/AssessmentActivity",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AssessmentActivity",
+      "en" : "Assessment activity"
+    },
+    "subClasses" : [ "84", "94", "8", "42" ],
+    "comment" : {
+      "en" : "A situation consisting in the assessment of the risks related to an asset."
+    },
+    "id" : "37",
+    "superClasses" : [ "61", "36" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#TimeIndexedSituation",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TimeIndexedSituation",
+      "en" : "Time indexed situation"
+    },
+    "subClasses" : [ "37" ],
+    "comment" : {
+      "undefined" : "A Situation that is explicitly indexed at some time for at least one entity."
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/Observation",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Observation",
+      "en" : "Observation"
+    },
+    "comment" : {
+      "en" : "An observation about an asset during an assessment activity."
+    },
+    "id" : "75",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "128",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/ContextDescription",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ContextDescription",
+      "en" : "Context description"
+    },
+    "comment" : {
+      "en" : "An activity that involves the examination of the contextual information of an asset."
+    },
+    "id" : "94",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl#Observation",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Observation",
+      "en" : "Observation"
+    },
+    "subClasses" : [ "75" ],
+    "comment" : {
+      "undefined" : "A specific situation where some thing is observed with respect ot a set of parameters."
+    },
+    "attributes" : [ "external" ],
+    "id" : "60",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/Aspect",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Aspect",
+      "en" : "Aspect"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sirius/ontology/hero/setting",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "setting",
+        "en" : "The surroundings and environment in which an asset is located."
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/function",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An aspect that pertains to the purpose and use of an asset."
+      },
+      "labels" : {
+        "IRI-based" : "function",
+        "en" : "Function"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/substance",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An aspect that involves the material composition and integrity of an asset."
+      },
+      "labels" : {
+        "IRI-based" : "substance",
+        "en" : "Substance"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/tradition",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An aspect that involves the surroundings and environment in which an asset is located."
+      },
+      "labels" : {
+        "IRI-based" : "tradition",
+        "en" : "Tradition"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/feeling",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An aspect that encompasses the intangible and emotional aspects associated with an asset."
+      },
+      "labels" : {
+        "IRI-based" : "feeling",
+        "en" : "Feeling"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/form",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An aspect that refers to the physical characteristics and appearance of an asset."
+      },
+      "labels" : {
+        "IRI-based" : "form",
+        "en" : "Form"
+      }
+    } ],
+    "comment" : {
+      "en" : "A facet of the context that contributes to the overall understanding and assessment of the asset value."
+    },
+    "id" : "34",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/AnalysisDescription",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AnalysisDescription",
+      "en" : "Analysis description"
+    },
+    "comment" : {
+      "en" : "An activity that involves the quantification of risks to understand their magnitude and potential impact with respect to an asset."
+    },
+    "id" : "42",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Document",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document",
+      "en" : "Document"
+    },
+    "comment" : {
+      "en" : "A document."
+    },
+    "attributes" : [ "external" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/AgentOfDeterioration",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AgentOfDeterioration",
+      "en" : "Agent of deterioration"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/sirius/ontology/hero/physical-forces",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An agent of deterioration representing mechanical damage resulting from handling, transport, and vibration."
+      },
+      "labels" : {
+        "IRI-based" : "physical-forces",
+        "en" : "Physical forces"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/dissociation",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An agent of deterioration that includes the natural tendency for ordered systems to fall apart over time."
+      },
+      "labels" : {
+        "IRI-based" : "dissociation",
+        "en" : "Dissociation"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/pests",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An agent of deterioration representing the presence of biological agents, such as insects, rodents, and microorganisms."
+      },
+      "labels" : {
+        "IRI-based" : "pests",
+        "en" : "Pests"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/light-ultraviolet-infrared",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An agent of deterioration representing different forms of electromagnetic radiation."
+      },
+      "labels" : {
+        "IRI-based" : "light-ultraviolet-infrared",
+        "en" : "Light, ultraviolet and infrared"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/theft-vandalism",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An agent of deterioration representing deliberate acts of theft, vandalism, or destruction done by humans."
+      },
+      "labels" : {
+        "IRI-based" : "theft-vandalism",
+        "en" : "Theft and vandalism"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/incorrect-temperature",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An agent of deterioration representing a situation in which the ambient temperature deviates from the optimal or specified range."
+      },
+      "labels" : {
+        "IRI-based" : "incorrect-temperature",
+        "en" : "Incorrect temperature"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/fire",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An agent of deterioration representing the destruction of an asset due to properties of fire, such as heat, flames, or smoke."
+      },
+      "labels" : {
+        "IRI-based" : "fire",
+        "en" : "Fire"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/pollutants",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An agent of deterioration representing the presence of substances or contaminants introduced into the environment."
+      },
+      "labels" : {
+        "IRI-based" : "pollutants",
+        "en" : "Pollutants"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/incorrect-relative-humidity",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An agent of deterioration representing the situation in which the level of humidity in the environment deviates from the optimal or specified range."
+      },
+      "labels" : {
+        "IRI-based" : "incorrect-relative-humidity",
+        "en" : "Incorrect relative humidity"
+      }
+    }, {
+      "iri" : "https://w3id.org/sirius/ontology/hero/water",
+      "baseIri" : "https://w3id.org/sirius/ontology/hero",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://w3id.org/sirius/ontology/hero",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An agent of deterioration representing the damage that can occur through leaks, flooding, or high humidity levels."
+      },
+      "labels" : {
+        "IRI-based" : "water",
+        "en" : "Water"
+      }
+    } ],
+    "comment" : {
+      "en" : "A conceptualization used to classify a risk threatening an asset, made from the perspective of the asset itself."
+    },
+    "id" : "32",
+    "superClasses" : [ "30" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegion",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRegion",
+      "en" : "has region",
+      "it" : "ha regione"
+    },
+    "domain" : "1",
+    "subproperty" : [ "3" ],
+    "comment" : {
+      "undefined" : "A relation between entities and regions, e.g. 'the number of wheels of that truck is 12'."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIntervalStartDate",
+      "en" : "interval has start date"
+    },
+    "maxCardinality" : "1",
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "The start date of a time interval."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/identifies",
+    "inverse" : "10",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "identifies",
+      "en" : "identifies"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "The relationship between a identification activity and a risk that is being identified."
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+    "range" : "16",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIntervalEndDate",
+      "en" : "interval has end date"
+    },
+    "maxCardinality" : "1",
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "The end date of a time interval."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting",
+    "inverse" : "20",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSetting",
+      "en" : "has setting"
+    },
+    "domain" : "18",
+    "subproperty" : [ "21", "22", "23", "24", "25" ],
+    "comment" : {
+      "undefined" : "A relation between entities and situations, e.g. 'this morning I've prepared my coffee with a new fantastic Arabica' (i.e.: (an amount of) a new fantastic Arabica hasSetting the preparation of my coffee this morning)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "14",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "14",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isAnalysedIn",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAnalysedIn",
+      "en" : "is analysed in"
+    },
+    "superproperty" : [ "43" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "The relationship between a risk that is being analysed and an analysis activity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#isSettingFor",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isSettingFor",
+      "en" : "is setting for"
+    },
+    "minCardinality" : "1",
+    "domain" : "19",
+    "subproperty" : [ "45", "46", "47", "48", "49" ],
+    "comment" : {
+      "en" : "The relationship between a Situation and something it is the setting for."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/hasNote",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "55",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNote",
+      "en" : "has note"
+    },
+    "domain" : "54",
+    "comment" : {
+      "en" : "A property that assigns a textual description to something."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl#inDate",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inDate",
+      "en" : "in date"
+    },
+    "cardinality" : "1",
+    "domain" : "60",
+    "comment" : {
+      "en" : "A property that assigns a datetime to a Observation."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+    "range" : "58",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "forEntity",
+      "en" : "for entity"
+    },
+    "superproperty" : [ "20" ],
+    "minCardinality" : "1",
+    "domain" : "61",
+    "subproperty" : [ "11" ],
+    "comment" : {
+      "en" : "The relationship between a Time indexed situation and something contextualised in it."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter",
+    "inverse" : "23",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+    "range" : "62",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "has parameter"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "60",
+    "subproperty" : [ "63" ],
+    "comment" : {
+      "en" : "The relationship between an Observation and a Parameter."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isParameterOf",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+    "range" : "60",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isParameterOf",
+      "en" : "is parameter of"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "62",
+    "comment" : {
+      "en" : "The relationship between a Parameter and an Observation."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isClassifiedBy",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "30",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isClassifiedBy",
+      "en" : "is classified by"
+    },
+    "superproperty" : [ "67" ],
+    "domain" : "52",
+    "subproperty" : [ "68", "69", "70" ],
+    "comment" : {
+      "en" : "A relationship between a risk and another concept that may classify it, such as an agent of deterioration, a layer, or a type."
+    },
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/quantifies",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "14",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "quantifies",
+      "en" : "quantifies"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "42",
+    "comment" : {
+      "en" : "The relationship between an analysis activity and a measure considered during the analysis."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "range" : "37",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "60",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/hasProbableEstimate",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "72",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasProbableEstimate",
+      "undefined" : "has probable estimate"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "A property that assigns a estimate value for the most likely case scenario to a measure."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isObservationOf",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isObservationOf",
+      "en" : "is observation of"
+    },
+    "superproperty" : [ "47" ],
+    "domain" : "75",
+    "comment" : {
+      "en" : "The relationship between an observation and an assessment activity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "range" : "61",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/hasEstimate",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "80",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEstimate",
+      "en" : "has estimate"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "A property that assigns a estimate value to a measure."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/assigns",
+    "inverse" : "85",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "81",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "assigns",
+      "en" : "assigns"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "84",
+    "comment" : {
+      "en" : "The relationship between a value assessment and an asset value that is being assessed."
+    },
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/hasObservation",
+    "inverse" : "77",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "75",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasObservation",
+      "en" : "has observation"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "37",
+    "comment" : {
+      "en" : "The relationship between an assessment activity and an observation occurring during said activity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/assessesPercentage",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "88",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "assessesPercentage",
+      "en" : "assessesPercentage"
+    },
+    "domain" : "84",
+    "comment" : {
+      "en" : "A property that assigns a value percentage to an asset which has been assigned a value in a value description."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "87"
+  }, {
+    "range" : "37",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "62",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "37",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl#isObservationOf",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+    "range" : "44",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isObservationOf",
+      "en" : "is observation of"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "60",
+    "subproperty" : [ "77" ],
+    "comment" : {
+      "en" : "The relationship between an Observation and an entity it observes."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "37",
+    "domain" : "94",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "range" : "2",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "2",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "82",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "82",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+    "range" : "40",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIntervalDate",
+      "en" : "has interval date",
+      "it" : "intervallo ha data"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "A datatype property that encodes values from xsd:date (or any other date-related xsd datatype) for a TimeInterval; a same TimeInterval can have more than one date value: begin date, end date, date at which the interval holds, as well as dates expressed in different formats: xsd:gYear, xsd:dateTime, etc."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isClassifiedByType",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "31",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isClassifiedByType",
+      "en" : "is classified by type"
+    },
+    "superproperty" : [ "66" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "A relationship between a risk and a type."
+    },
+    "attributes" : [ "object" ],
+    "id" : "68"
+  }, {
+    "range" : "2",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "2",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl#hasRegionDataValue",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+    "range" : "51",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRegionDataValue",
+      "en" : "has region data value",
+      "undefined" : "regione ha valore {it}"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "A datatype property that encodes values for a Region, e.g. a float for the Region Height."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/analyses",
+    "inverse" : "41",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "analyses",
+      "en" : "analyses"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "42",
+    "comment" : {
+      "en" : "The relationship between an analysis and a risk that is being analysed."
+    },
+    "attributes" : [ "object" ],
+    "id" : "103"
+  }, {
+    "range" : "19",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "30",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "30",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "19",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "36",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "30",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "14",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "30",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "30",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isQuantifiedBy",
+    "inverse" : "3",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isQuantifiedBy",
+      "en" : "is quantified by"
+    },
+    "superproperty" : [ "114" ],
+    "domain" : "14",
+    "comment" : {
+      "en" : "The relationship between a measure and an analysis activity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/describes",
+    "inverse" : "25",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "50",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "describes",
+      "en" : "describes"
+    },
+    "superproperty" : [ "115", "20" ],
+    "domain" : "37",
+    "comment" : {
+      "en" : "The relationship between an assessment activity and the entity described in that assessment, such as an asset."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isClassifiedByAgent",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isClassifiedByAgent",
+      "en" : "is classified by agent"
+    },
+    "superproperty" : [ "66" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "A relationship between a risk and an agent of deterioration."
+    },
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl#isRegionFor",
+    "inverse" : "0",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/region.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isRegionFor",
+      "en" : "is region for",
+      "it" : "è un ragione di"
+    },
+    "domain" : "2",
+    "subproperty" : [ "113" ],
+    "comment" : {
+      "undefined" : "A relation between entities and regions, e.g. 'the color of my car is red'."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting",
+    "inverse" : "49",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+    "range" : "61",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTimeIndexedSetting",
+      "en" : "has time indexed setting"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "58",
+    "subproperty" : [ "43" ],
+    "comment" : {
+      "en" : "The relationship between an entity and a Time indexed situation contextualising it."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isIdentifiedIn",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isIdentifiedIn",
+      "en" : "is identified in"
+    },
+    "superproperty" : [ "43" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "The relationship between a risk that is being identified and a identification activity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+    "range" : "30",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isClassifiedBy",
+      "en" : "is classified by",
+      "it" : "è classificato da"
+    },
+    "domain" : "52",
+    "subproperty" : [ "66" ],
+    "comment" : {
+      "undefined" : "A relation between a Concept and an Entity, e.g. 'John is considered a typical rude man'; your last concert constitutes the achievement of a lifetime; '20-year-old means she's mature enough'."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isAssessedIn",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAssessedIn",
+      "en" : "is assessed in"
+    },
+    "superproperty" : [ "21" ],
+    "domain" : "82",
+    "subproperty" : [ "10", "41", "85" ],
+    "comment" : {
+      "en" : "The relationship between an entity, such as a criterion, and a assessment activity assessing it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isDocumentedBy",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "118",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isDocumentedBy",
+      "undefined" : "is documented by"
+    },
+    "domain" : "57",
+    "comment" : {
+      "en" : "The relationship between something and a Document that documents it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/hasScore",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "65",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasScore",
+      "en" : "has score"
+    },
+    "domain" : "81",
+    "comment" : {
+      "en" : "A property that assigns a numerical estimate to quantify an asset value."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasObservation",
+    "inverse" : "47",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+    "range" : "60",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasObservation",
+      "en" : "has observation"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "44",
+    "subproperty" : [ "86" ],
+    "comment" : {
+      "en" : "The relationship between an entity and an Observation."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "19",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant",
+    "inverse" : "122",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+    "range" : "116",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParticipant",
+      "en" : "has participant"
+    },
+    "domain" : "36",
+    "subproperty" : [ "45", "123" ],
+    "comment" : {
+      "en" : "The relationship between a Event and a Object participating in it."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "121"
+  }, {
+    "range" : "116",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isParticipantIn",
+      "en" : "is participant in"
+    },
+    "domain" : "116",
+    "subproperty" : [ "126" ],
+    "comment" : {
+      "en" : "The relationship between an Object and an Event it participates in."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isParticipantIn",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isParticipantIn",
+      "en" : "is participant in"
+    },
+    "superproperty" : [ "122" ],
+    "domain" : "26",
+    "comment" : {
+      "en" : "The relationship between an agent and an assessment activity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "126"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isClassifiedByLayer",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "33",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isClassifiedByLayer",
+      "en" : "is classified by layer"
+    },
+    "superproperty" : [ "66" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "A relationship between a risk and a layer."
+    },
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl#hasParameter",
+    "inverse" : "23",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+    "range" : "62",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/observation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "has parameter"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "60",
+    "subproperty" : [ "63" ],
+    "comment" : {
+      "en" : "The relationship between an Observation and a Parameter."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#isTimeIndexFor",
+    "inverse" : "48",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+    "range" : "61",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isTimeIndexFor",
+      "en" : "is time index for"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "5",
+    "comment" : {
+      "en" : "The relationship between a Time interval and a Time indexed situation."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isAssignedIn",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "84",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAssignedIn",
+      "en" : "is assigned in"
+    },
+    "superproperty" : [ "43" ],
+    "domain" : "81",
+    "comment" : {
+      "en" : "The relationship between an asset value that is being assessed and a value assessment."
+    },
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/documents",
+    "inverse" : "117",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "57",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "documents",
+      "en" : "documents"
+    },
+    "domain" : "118",
+    "comment" : {
+      "en" : "The relationship between a document and an entity documented by it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/hasParameter",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "91",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParameter",
+      "en" : "has parameter"
+    },
+    "superproperty" : [ "46" ],
+    "domain" : "75",
+    "comment" : {
+      "en" : "A relationship between an observation happening during a contextualisation activity and a contextual parameter that is being observed as part of the context."
+    },
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant",
+    "inverse" : "122",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+    "range" : "116",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParticipant",
+      "en" : "has participant"
+    },
+    "domain" : "36",
+    "subproperty" : [ "45", "123" ],
+    "comment" : {
+      "en" : "The relationship between a Event and a Object participating in it."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/hasLowEstimate",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "71",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLowEstimate",
+      "undefined" : "has low estimate"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "A property that assigns a estimate value for the best case scenario to a measure."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/hasParticipant",
+    "inverse" : "126",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "26",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParticipant",
+      "en" : "has participant"
+    },
+    "superproperty" : [ "115" ],
+    "domain" : "37",
+    "comment" : {
+      "en" : "The relationship between an assessment activity and a participant that takes part in it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/assesses",
+    "inverse" : "43",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "82",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "assesses",
+      "en" : "assesses"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "37",
+    "subproperty" : [ "7", "103", "83" ],
+    "comment" : {
+      "en" : "A relationship between an assessment activity and an entity assessed by it, such as a criterion."
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies",
+    "inverse" : "67",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+    "range" : "52",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "classifies",
+      "en" : "classifies",
+      "it" : "classifica"
+    },
+    "domain" : "30",
+    "comment" : {
+      "undefined" : "A relation between a Concept and an Entity, e.g. the Role 'student' classifies a Person 'John'."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "atTime",
+      "en" : "at time"
+    },
+    "superproperty" : [ "20" ],
+    "minCardinality" : "1",
+    "domain" : "61",
+    "comment" : {
+      "en" : "The relationship between a Time indexed situation and a Time interval."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/inDate",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "64",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inDate",
+      "en" : "in date"
+    },
+    "domain" : "75",
+    "comment" : {
+      "en" : "A property that assigns a datetime value to an observation."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#isParticipantIn",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/participation.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isParticipantIn",
+      "en" : "is participant in"
+    },
+    "domain" : "116",
+    "subproperty" : [ "126" ],
+    "comment" : {
+      "en" : "The relationship between an Object and an Event it participates in."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/hasHighEstimate",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "128",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasHighEstimate",
+      "undefined" : "has high estimate"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "A property that assigns a estimate value for the worst case scenario to a measure."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "135"
+  }, {
+    "iri" : "https://w3id.org/sirius/ontology/hero/isDescribedIn",
+    "baseIri" : "https://w3id.org/sirius/ontology/hero",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/sirius/ontology/hero",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isDescribedIn",
+      "en" : "is described in"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "50",
+    "comment" : {
+      "en" : "The relationship between the entity, such as an asset, and an assessment activity assessing it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  } ]
+}

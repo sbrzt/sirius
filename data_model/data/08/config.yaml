@@ -37,24 +37,24 @@ mapping_rules:
   "https://w3id.org/sirius/ontology/development/08/schema/hasStartTime": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate"
   "https://w3id.org/sirius/ontology/development/08/schema/hasEndTime": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate"
   # AssessmentActivity, Statement, InformationObject
-  "https://w3id.org/sirius/ontology/development/08/schema/AssessmentActivity": "https://w3id.org/sirius/ontology/hero/Activity" 
-  "https://w3id.org/sirius/ontology/development/08/schema/hasType": "http://purl.org/dc/terms/type"
-  "https://w3id.org/sirius/ontology/development/08/schema/assigns": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity" #
-  "https://w3id.org/sirius/ontology/development/08/schema/hasNote": "http://purl.org/dc/terms/description"
-  "https://w3id.org/sirius/ontology/development/08/schema/atTime": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime"
-  "https://w3id.org/sirius/ontology/development/08/schema/assignsTo": "http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#includesObject" #
-  "https://w3id.org/sirius/ontology/development/08/schema/isCarriedOutBy": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant"
-  "https://w3id.org/sirius/ontology/development/08/schema/takesPlaceIn": "http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation"
-  "https://w3id.org/sirius/ontology/development/08/schema/continues": "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes" #
-  "https://w3id.org/sirius/ontology/development/08/schema/isDocumentedBy": "http://www.w3.org/ns/prov#wasInfluencedBy" #
-  "https://w3id.org/sirius/ontology/development/08/schema/isComposedOf": "http://www.ontologydesignpatterns.org/cp/owl/componency.owl#hasComponent" #
-  "https://w3id.org/sirius/ontology/development/08/schema/hasValue": "http://www.w3.org/ns/prov#value" #
-  "https://w3id.org/sirius/ontology/development/08/schema/hasContent": "http://www.w3.org/ns/prov#value" #
-  "https://w3id.org/sirius/ontology/development/08/schema/refersTo": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses" #
-  "https://w3id.org/sirius/ontology/development/08/schema/InformationObject": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept" #
-  "https://w3id.org/sirius/ontology/development/08/schema/Statement": "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject" #
-  "https://w3id.org/sirius/ontology/development/08/schema/isMotivatedBy": "http://www.w3.org/ns/prov#wasDerivedFrom" #
-  "https://w3id.org/sirius/ontology/development/08/schema/hasParticipant": "http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant"
+  "https://w3id.org/sirius/ontology/development/08/schema/AssessmentActivity": "https://w3id.org/sirius/ontology/hero/Activity" #http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#Action
+  "https://w3id.org/sirius/ontology/development/08/schema/hasType": "https://w3id.org/sirius/ontology/hero/hasType" #http://purl.org/dc/terms/type
+  "https://w3id.org/sirius/ontology/development/08/schema/assigns": "https://w3id.org/sirius/ontology/hero/assigns" #http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity
+  "https://w3id.org/sirius/ontology/development/08/schema/hasNote": "https://w3id.org/sirius/ontology/hero/hasNote" #http://purl.org/dc/terms/description
+  "https://w3id.org/sirius/ontology/development/08/schema/atTime": "https://w3id.org/sirius/ontology/hero/hasTimeInterval" #http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#atTime
+  "https://w3id.org/sirius/ontology/development/08/schema/assignsTo": "https://w3id.org/sirius/ontology/hero/assignsTo" #http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#includesObject
+  "https://w3id.org/sirius/ontology/development/08/schema/isCarriedOutBy": "https://w3id.org/sirius/ontology/hero/isCarriedOutBy" #http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant
+  "https://w3id.org/sirius/ontology/development/08/schema/takesPlaceIn": "https://w3id.org/sirius/ontology/hero/hasLocation" #http://www.ontologydesignpatterns.org/cp/owl/place.owl#hasLocation
+  "https://w3id.org/sirius/ontology/development/08/schema/continues": "https://w3id.org/sirius/ontology/hero/precedes" #http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes
+  "https://w3id.org/sirius/ontology/development/08/schema/isDocumentedBy": "https://w3id.org/sirius/ontology/hero/isDocumentedBy" #http://www.w3.org/ns/prov#wasInfluencedBy
+  "https://w3id.org/sirius/ontology/development/08/schema/isComposedOf": "https://w3id.org/sirius/ontology/hero/hasComponent" #http://www.ontologydesignpatterns.org/cp/owl/componency.owl#hasComponent
+  "https://w3id.org/sirius/ontology/development/08/schema/hasValue": "https://w3id.org/sirius/ontology/hero/hasContent" #http://www.w3.org/ns/prov#value
+  "https://w3id.org/sirius/ontology/development/08/schema/hasContent": "https://w3id.org/sirius/ontology/hero/hasContent" #http://www.w3.org/ns/prov#value
+  "https://w3id.org/sirius/ontology/development/08/schema/refersTo": "https://w3id.org/sirius/ontology/hero/refersTo" #http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses
+  "https://w3id.org/sirius/ontology/development/08/schema/InformationObject": "https://w3id.org/sirius/ontology/hero/InformationObject" #http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+  "https://w3id.org/sirius/ontology/development/08/schema/Statement": "https://w3id.org/sirius/ontology/hero/LinguisticObject" #http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  "https://w3id.org/sirius/ontology/development/08/schema/isMotivatedBy": "https://w3id.org/sirius/ontology/hero/isMotivatedBy" #http://www.w3.org/ns/prov#wasDerivedFrom
+  "https://w3id.org/sirius/ontology/development/08/schema/hasParticipant": "https://w3id.org/sirius/ontology/hero/hasParticipant" #http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant
   # Named Individuals
   "https://w3id.org/sirius/ontology/development/08/schema/context-description": "http://www.wikidata.org/entity/Q1137655"
   "https://w3id.org/sirius/ontology/development/08/schema/value-estimation": "http://www.wikidata.org/entity/Q4008379"
@@ -95,5 +95,5 @@ mapping_rules:
   "https://w3id.org/sirius/ontology/development/08/schema/dimensions-description": "http://vocab.getty.edu/page/aat/300435430"
   "https://w3id.org/sirius/ontology/development/08/schema/location-description": "http://vocab.getty.edu/page/aat/300435449"
   "https://w3id.org/sirius/ontology/development/08/schema/diagnosis": "http://vocab.getty.edu/page/aat/300438433"
-  "https://w3id.org/sirius/ontology/development/08/schema/plan": "https://www.wikidata.org/wiki/Q1371819"
+  "https://w3id.org/sirius/ontology/development/08/schema/plan": "http://www.wikidata.org/entity/Q1371819"
   "https://w3id.org/sirius/ontology/development/08/schema/budget": "http://vocab.getty.edu/page/aat/300027514"
