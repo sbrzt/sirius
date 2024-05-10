@@ -1,0 +1,796 @@
+<h2 id="description">Description</h2>
+<p>The <em>Heritage Risk Assessment Ontology</em> (HeRO, <a href="https://w3id.org/sirius/ontology/hero">https://w3id.org/sirius/ontology/hero</a>) is a OWL 2 DL ontology for describing risk assessment activities in the cultural and environmental heritage domain in a machine-actionable format. It was developed by using a slightly modified version of the <a href="http://dx.doi.org/10.6084/m9.figshare.3189769">Simplified Agile Methodology for Ontology Development (SAMOD)</a>. </p>
+<p>Both HeRO and its <a href="https://w3id.org/sirius/ontology/hero">documentation</a> are living artefacts that have been and still are being drafted in the context of the <a href="https://sites.google.com/uniroma1.it/changes/">Project CHANGES</a> (&quot;Cultural Heritage Active Innovation For Next-Gen Sustainable Society&quot;), an EU-funded project that aims at increasing, in the Italian context, the curation, and management of cultural heritage artefacts in all forms, expanding the involvement of the general public, making the exhibition potential more sustainable, and including crucial social functions (accessibility, inclusiveness, critical thinking, participation, enjoyment, sustainability) into the cultural heritage environment.</p>
+<p>Currently, HeRO is able to describe the following entities:</p>
+<ul>
+<li>Assessment activities and their provenance information (who carried out or participated in an activity, when, where, what was done, and how);</li>
+<li>Linguistic objects (scientific observations, statements, assertions, speculations, etc.), assigned to objects being examined during assessment activites;</li>
+<li>Information objects (concepts, classifications, categories, etc.), referred to by the linguistic objects and representing the aspects and attributes related in some way to the objects being examined during assessment activities.</li>
+</ul>
+<p>The current version of HeRO reuses a series of Ontology Design Patterns (ODPs) by defining its own set of classes and properties and conceptualizing them as subclasses and subproperties of the reused ODPs&#39; entities. More specifically, HeRO reuses the following models:</p>
+<ul>
+<li><a href="http://www.ontologydesignpatterns.org/cp/owl/basicplanexecution.owl#">Basic Plan Execution ODP</a></li>
+<li><a href="http://www.ontologydesignpatterns.org/cp/owl/componency.owl#">Componency ODP</a></li>
+<li><a href="http://xmlns.com/foaf/0.1/">Friend Of A Friend</a></li>
+<li><a href="http://www.ontologydesignpatterns.org/cp/owl/intensionextension.owl#">Intension Extension ODP</a></li>
+<li><a href="http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#">Object Role ODP</a></li>
+<li><a href="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#">Participation ODP</a></li>
+<li><a href="http://www.ontologydesignpatterns.org/cp/owl/place.owl#">Place ODP</a></li>
+<li><a href="http://www.w3.org/ns/prov#">Provenance Ontology</a></li>
+<li><a href="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#">Sequence ODP</a></li>
+<li><a href="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#">Situation ODP</a></li>
+<li><a href="http://purl.org/dc/terms/">Dublin Core Terms</a></li>
+<li><a href="http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#">Time Indexed Situation ODP</a></li>
+<li><a href="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#">Time Interval ODP</a></li>
+</ul>
+<p>A full version of HeRO is available at <a href="https://w3id.org/sirius/ontology/hero">https://w3id.org/sirius/ontology/hero</a>.</p>
+<p>The next subsections provide a quick overview of all the entities defined, some exemple of usage, and some of the queries that HeRO can answer.</p>
+<h3 id="assessment-activities">Assessment activities</h3>
+<p>In HeRO, the concept of assessment activity represents the core abstraction around which the rest of the ontology is built. As shown in the following diagram, an assessment activity is a first-class object related to a series of other entities that populate and signify its context. </p>
+<p><img src="diagrams/assessment-activity.png" alt="A diagram of an assessment activity, the core entity of HeRO."></p>
+<p>As previously mentioned, HeRO draws constructs from ODPs and uses them as super classes and super properties of its own entities to accurately represent the processes outlined by a risk assessment endeavor, as well as the concepts and relations implicitly expressed in such processes. In particular, an assessment activity (<code>hero:Activity</code>) is a situated action that involves gaining and producing scientific knowledge about some entity being observed by assigning to that entity a series of assertions referring to concepts used to make the assessment. As a result, it has been modelled as a subclass of <code>tisit:TimeIndexedSituation</code> and <code>planex:Action</code> that assigns to a object (<code>owl:Thing</code>) a series of &quot;linguistic objects&quot; (<code>hero:LinguisticObject</code>) representing scientific observations, statements or assertions related to that object. Multiple activities can be sequentialized one after the other with <code>hero:precedes</code>. In addition, an assessment activity is enriched with a packet of additional information covering its type (<code>hero:Type</code>), its temporal horizon (<code>ti:TimeInterval</code>), its geographic context (<code>place:Place</code>), the agents involved in its realization (<code>foaf:Agent</code>), the material documenting how the activity was carried out and based on what sources (<code>foaf:Document</code>), and its textual description (<code>hero:hasNote</code>).</p>
+<h3 id="scientific-assertions-and-concepts">Scientific assertions and concepts</h3>
+<p>As illustrated in the previous section, an assessment activity assigns a series of assertions to the objects being examined. As shown in the following diagram, an assertion (<code>hero:LinguisticObject</code>) is modelled as a subclass of <code>hero:InformationObject</code>, thus incorporating the idea of an assertion as a piece of information, independently from how it is concretely realized. In turn, an assertion refers to some qualitative, quantitative or interpretative conceptual object (<code>hero:InformationObject</code>), modelled as a subclass of <code>intensionextension:InformationObject</code>, that carries some information that is deemed relevant in the context of risk assessment.</p>
+<p><img src="diagrams/objects.png" alt="A diagram of a linguistic object and an information object, the other core entities of HeRO."></p>
+<p>In addition to referring to some concept, an assertion can be classified according to external categorization schemes (<code>hero:Type</code>), can be documented by some document (<code>foaf:Document</code>), can be also motivated by other concepts referred to in other assertions, and expresses some kind of content or value (<code>hero:hasContent</code>). A concept, while also being characterized by a type (<code>hero:Type</code>) and a content (<code>hero:hasContent</code>), can be composed of other conceptual objects (<code>hero:hasComponent</code>).</p>
+<h2 id="examples-of-use">Examples of use</h2>
+<p>HeRO can be used for modelling scenarios related to heritage risk assessment. Note that, due to the wide scope of the classes and properties it uses, the way it has been modelled, and its dependency on external vocabularies for typification, HeRO can be used to model any situation involving assigning scientific assertions expressing some kind of conceptual content to an object in order to examine it. </p>
+<p>In the following subsections we introduce some scenarios pertaining to the cultural heritage risk domain, and we accompany them with exemplar instantiations. </p>
+<p>The prefixes that are used in all the examples provided below are defined as follows:</p>
+<pre><code><span class="hljs-variable">@prefix :</span> &lt;<span class="hljs-attribute">https</span>:<span class="hljs-comment">//w3id.org/sirius/ontology/hero/data/example/&gt; .</span>
+<span class="hljs-variable">@prefix</span> <span class="hljs-attribute">aat</span>: &lt;<span class="hljs-attribute">http</span>:<span class="hljs-comment">//vocab.getty.edu/page/aat/&gt; .</span>
+<span class="hljs-variable">@prefix</span> <span class="hljs-attribute">foaf</span>: &lt;<span class="hljs-attribute">http</span>:<span class="hljs-comment">//xmlns.com/foaf/0.1/&gt; .</span>
+<span class="hljs-variable">@prefix</span> <span class="hljs-attribute">freq</span>: &lt;<span class="hljs-attribute">http</span>:<span class="hljs-comment">//publications.europa.eu/resource/authority/frequency/&gt; .</span>
+<span class="hljs-variable">@prefix</span> <span class="hljs-attribute">hero</span>: &lt;<span class="hljs-attribute">https</span>:<span class="hljs-comment">//w3id.org/sirius/ontology/hero/&gt; .</span>
+<span class="hljs-variable">@prefix</span> <span class="hljs-attribute">owl</span>: &lt;<span class="hljs-attribute">http</span>:<span class="hljs-comment">//www.w3.org/2002/07/owl#&gt; .</span>
+<span class="hljs-variable">@prefix</span> <span class="hljs-attribute">place</span>: &lt;<span class="hljs-attribute">http</span>:<span class="hljs-comment">//www.ontologydesignpatterns.org/cp/owl/place.owl#&gt; .</span>
+<span class="hljs-variable">@prefix</span> <span class="hljs-attribute">rdfs</span>: &lt;<span class="hljs-attribute">http</span>:<span class="hljs-comment">//www.w3.org/2000/01/rdf-schema#&gt; .</span>
+<span class="hljs-variable">@prefix</span> <span class="hljs-attribute">ti</span>: &lt;<span class="hljs-attribute">http</span>:<span class="hljs-comment">//www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#&gt; .</span>
+<span class="hljs-variable">@prefix</span> <span class="hljs-attribute">wd</span>: &lt;<span class="hljs-attribute">http</span>:<span class="hljs-comment">//www.wikidata.org/entity/&gt; .</span>
+</code></pre><h3 id="scenario-1">Scenario 1</h3>
+<p>An assessment activity <code>:assessment-activity-01</code> consisting in the context description of a CHO <code>:baptistery</code>, is taking place in Ravenna, is being carried out by the expert Sara Fiorentino (with the involvement of other stakeholders, such as Comune di Ravenna, Soprintendenza di Ravenna and Università di Bologna), in the time interval starting from 2024-02-01 to 2024-03-01, and is being annotated with the following text: &quot;Octagonal building with sloping roof, featuring four apsidioles corresponding to the cardinal points (partially buried). The mosaic decoration is preserved only on the dome, creating a striking contrast with the rough surface of exposed bricks in the lower part. The mosaic depicts in the center the baptism of Christ in the River Jordan, surrounded by a band with the twelve apostles parading in two rows, meeting at the throne of the etimasia, symbol of the invisible presence of Christ.&quot;
+It is composed of six statements, each assigned to the CHO in question:</p>
+<ol>
+<li><code>:observation-01</code>, which is a descriptive statement referring to the physical properties of the CHO (<code>:concept-01</code>) with the following content: &quot;The Baptistery is externally visible on the N, NW, and NE sides. The west side overlooks the gardens of a private residence, while the south, SW, and SE sides overlook the garden of the Department of Cultural Heritage (University of Bologna).&quot;</li>
+<li><code>:observation-02</code>, which is a descriptive statement referring to the social environment surrounding the CHO (<code>:concept-02</code>) with the following content: &quot;Monumental site in an urban area, open to tourists (with prior admission ticket). The small square where the building is located suffers from a bad reputation, being labeled as a &#39;socially risky area and a neglected place&#39; (reported incident of an abandoned bed frame found at night in the Baptistery&#39;s trench, 11.07.2006, Source: Zaccarini, 2015). Despite the establishment of regulations in 2012 restricting vehicle access to the square, transit and parking for loading/unloading goods are still permitted.&quot;</li>
+<li><code>:observation-03</code>, which is a descriptive statement referring to the political environment surrounding the CHO (<code>:concept-03</code>) with the following content: &quot;The monument is often a subject of debate among various political parties and the Municipality of Ravenna.&quot;. It is documented by <code>:document-01</code></li>
+<li><code>:observation-04</code>, which is a descriptive statement referring to the legal status of the CHO (<code>:concept-04</code>) with the following content: &quot;Owned by the State Property / Ministry of Culture. Since 1996, it has been part of the UNESCO World Heritage Sites list in Italy (&#39;Early Christian Monuments of Ravenna&#39;).&quot;</li>
+<li><code>:observation-05</code>, which is a descriptive statement referring to the administration of the CHO (<code>:concept-05</code>) with the following content: &quot;Since December 2019, it has been managed by the Regional Directorate of Museums of Emilia Romagna, located in Ravenna.&quot;</li>
+<li><code>:observation-06</code>, which is a descriptive statement referring to the economic environment surrounding the CHO (<code>:concept-06</code>) with the following content: &quot;The Law No. 77 of February 20, 2006, establishes that UNESCO sites are excellences of the Italian cultural, landscape, and natural heritage, fundamental elements of our country&#39;s representation at the international level, and states that interventions on them have priority even in terms of the allocation of financial resources.&quot;</li>
+</ol>
+<pre><code><span class="hljs-meta">:assessment-activity-01 a hero:Activity</span> ;
+<span class="hljs-code">    hero:assigns :observation-01 ,</span>
+<span class="hljs-code">        :observation-02 ,</span>
+<span class="hljs-code">        :observation-03 ,</span>
+<span class="hljs-code">        :observation-04 ,</span>
+<span class="hljs-code">        :observation-05 ,</span>
+<span class="hljs-code">        :observation-06 ;</span>
+<span class="hljs-code">    hero:assignsTo :baptistery ;</span>
+<span class="hljs-code">    hero:hasLocation :ravenna ;</span>
+<span class="hljs-code">    hero:hasNote '''Octagonal building with sloping roof, featuring four apsidioles corresponding</span>
+<span class="hljs-code">     to the cardinal points (partially buried). The mosaic decoration is preserved only on the</span>
+<span class="hljs-code">     dome, creating a striking contrast with the rough surface of exposed bricks in the lower</span>
+<span class="hljs-code">     part. The mosaic depicts in the center the baptism of Christ in the River Jordan,</span>
+<span class="hljs-code">     surrounded by a band with the twelve apostles parading in two rows, meeting at the throne</span>
+<span class="hljs-code">     of the etimasia, symbol of the invisible presence of Christ.'''@en ;</span>
+<span class="hljs-code">    hero:hasParticipant :comune-di-ravenna ,</span>
+<span class="hljs-code">        :sara-fiorentino ,</span>
+<span class="hljs-code">        :soprintendenza-di-ravenna ,</span>
+<span class="hljs-code">        :universita-di-bologna ;</span>
+<span class="hljs-code">    hero:hasTimeInterval :time-interval-01 ;</span>
+<span class="hljs-code">    hero:hasType wd:Q1137655 ;</span>
+<span class="hljs-code">    hero:isCarriedOutBy :sara-fiorentino .</span>
+
+<span class="hljs-meta">:concept-01 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q4373292 .</span>
+
+<span class="hljs-meta">:concept-02 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q8425 .</span>
+
+<span class="hljs-meta">:concept-03 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q7163 .</span>
+
+<span class="hljs-meta">:concept-04 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q2628882 .</span>
+
+<span class="hljs-meta">:concept-05 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q5283295 .</span>
+
+<span class="hljs-meta">:concept-06 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q8134 .</span>
+
+<span class="hljs-meta">:document-01 a foaf:Document</span> .
+
+<span class="hljs-meta">:observation-01 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasContent '''The Baptistery is externally visible on the N, NW, and NE sides. The west </span>
+<span class="hljs-code">    side overlooks the gardens of a private residence, while the south, SW, and SE sides </span>
+<span class="hljs-code">    overlook the garden of the Department of Cultural Heritage (University of Bologna).'''@en ;</span>
+<span class="hljs-code">    hero:hasType aat:300435416 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-01 .</span>
+
+<span class="hljs-meta">:observation-02 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasContent '''Monumental site in an urban area, open to tourists (with prior admission </span>
+<span class="hljs-code">    ticket). The small square where the building is located suffers from a bad reputation, being </span>
+<span class="hljs-code">    labeled as a 'socially risky area and a neglected place' (reported incident of an abandoned </span>
+<span class="hljs-code">    bed frame found at night in the Baptistery's trench, 11.07.2006, Source: Zaccarini, 2015). </span>
+<span class="hljs-code">    Despite the establishment of regulations in 2012 restricting vehicle access to the square, </span>
+<span class="hljs-code">    transit and parking for loading/unloading goods are still permitted.'''@en ;</span>
+<span class="hljs-code">    hero:hasType aat:300435416 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-02 .</span>
+
+<span class="hljs-meta">:observation-03 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasContent '''The monument is often a subject of debate among various political parties </span>
+<span class="hljs-code">    and the Municipality of Ravenna.'''@en ;</span>
+<span class="hljs-code">    hero:hasType aat:300435416 ;</span>
+<span class="hljs-code">    hero:isDocumentedBy :document-01 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-03 .</span>
+
+<span class="hljs-meta">:observation-04 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasContent '''Owned by the State Property / Ministry of Culture. Since 1996, it has been </span>
+<span class="hljs-code">    part of the UNESCO World Heritage Sites list in Italy ('Early Christian Monuments of </span>
+<span class="hljs-code">    Ravenna').'''@en ;</span>
+<span class="hljs-code">    hero:hasType aat:300435416 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-04 .</span>
+
+<span class="hljs-meta">:observation-05 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasContent '''Since December 2019, it has been managed by the Regional Directorate of </span>
+<span class="hljs-code">    Museums of Emilia Romagna, located in Ravenna.'''@en ;</span>
+<span class="hljs-code">    hero:hasType aat:300435416 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-05 .</span>
+
+<span class="hljs-meta">:observation-06 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasContent '''The Law No. 77 of February 20, 2006, establishes that UNESCO sites are </span>
+<span class="hljs-code">    excellences of the Italian cultural, landscape, and natural heritage, fundamental elements </span>
+<span class="hljs-code">    of our country's representation at the international level, and states that interventions on </span>
+<span class="hljs-code">    them have priority even in terms of the allocation of financial resources.'''@en ;</span>
+<span class="hljs-code">    hero:hasType aat:300435416 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-06 .</span>
+
+<span class="hljs-meta">:time-interval-01 a ti:TimeInterval</span> ;
+<span class="hljs-code">    ti:hasIntervalEndDate "2024-03-01T23:59:59Z"^^xsd:dateTime ;</span>
+<span class="hljs-code">    ti:hasIntervalStartDate "2024-02-01T00:00:00Z"^^xsd:dateTime .</span>
+
+<span class="hljs-meta">:baptistery a owl:Thing</span> .
+
+<span class="hljs-meta">:ravenna a place:Place</span> .
+
+<span class="hljs-meta">:sara-fiorentino a foaf:Agent</span> .
+
+<span class="hljs-meta">:soprintendenza-di-ravenna a foaf:Agent</span> .
+
+<span class="hljs-meta">:universita-di-bologna a foaf:Agent</span> .
+</code></pre><h3 id="scenario-2">Scenario 2</h3>
+<p>Two assessment activities consisting in the identification of risks related to the CHO <code>:baptistery</code>, are taking place in Ravenna and are being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-03-01 to 2024-04-01. They are:</p>
+<ul>
+<li><p><code>assessment-activity-03</code>, annotated with the text &quot;Floods and heavy rains induce erosion of the baptistery walls&quot;. It is composed of three statements assigned to the CHO:</p>
+<ol>
+<li><code>:observation-10</code>, which is a condition description referring to the potential damage of water-related hazards (<code>:concept-10</code>);</li>
+<li><code>:observation-11</code>, which is a dimensions description referring to the annual occurrence of the potential hazardous event (<code>:concept-11</code>);</li>
+<li><code>:observation-12</code>, which is a location description referring to the region surrounding the CHO as the location of occurrence of the potential hazardous event (<code>:concept-12</code>).</li>
+</ol>
+</li>
+<li><p><code>assessment-activity-04</code>, which is composed of three statements assigned to the CHO:</p>
+<ol>
+<li><code>:observation-13</code>, which is a condition description referring to the potential damage of fire-related hazards (<code>:concept-13</code>);</li>
+<li><code>:observation-14</code>, which is a dimensions description referring to the centennial occurrence of the potential hazardous event (<code>:concept-14</code>);</li>
+<li><code>:observation-15</code>, which is a location description referring to the building in which the CHO is situated as the location of occurrence of the potential hazardous event (<code>:concept-15</code>).</li>
+</ol>
+</li>
+</ul>
+<pre><code><span class="hljs-meta">:assessment-activity-03 a hero:Activity</span> ;
+<span class="hljs-code">    hero:assigns :observation-10 ,</span>
+<span class="hljs-code">        :observation-11 ,</span>
+<span class="hljs-code">        :observation-12 ;</span>
+<span class="hljs-code">    hero:assignsTo :baptistery ;</span>
+<span class="hljs-code">    hero:hasLocation :ravenna ;</span>
+<span class="hljs-code">    hero:hasNote "Floods and heavy rains induce erosion of the baptistery walls."@en ;</span>
+<span class="hljs-code">    hero:hasTimeInterval :time-interval-02 ;</span>
+<span class="hljs-code">    hero:hasType wd:Q5687675 ;</span>
+<span class="hljs-code">    hero:isCarriedOutBy :sara-fiorentino .</span>
+
+<span class="hljs-meta">:assessment-activity-04 a hero:Activity</span> ;
+<span class="hljs-code">    hero:assigns :observation-13 ,</span>
+<span class="hljs-code">        :observation-14 ,</span>
+<span class="hljs-code">        :observation-15 ;</span>
+<span class="hljs-code">    hero:assignsTo :baptistery ;</span>
+<span class="hljs-code">    hero:hasLocation :ravenna ;</span>
+<span class="hljs-code">    hero:hasTimeInterval :time-interval-02 ;</span>
+<span class="hljs-code">    hero:hasType wd:Q5687675 ;</span>
+<span class="hljs-code">    hero:isCarriedOutBy :sara-fiorentino .</span>
+
+<span class="hljs-meta">:concept-10 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q19289049 .</span>
+
+<span class="hljs-meta">:concept-11 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType freq:ANNUAL .</span>
+
+<span class="hljs-meta">:concept-12 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q82794 .</span>
+
+<span class="hljs-meta">:concept-13 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q56497979 .</span>
+
+<span class="hljs-meta">:concept-14 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType freq:OTHER .</span>
+
+<span class="hljs-meta">:concept-15 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q41176 .</span>
+
+<span class="hljs-meta">:observation-10 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300435425 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-10 .</span>
+
+<span class="hljs-meta">:observation-11 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300435430 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-11 .</span>
+
+<span class="hljs-meta">:observation-12 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300435449 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-12 .</span>
+
+<span class="hljs-meta">:observation-13 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300435425 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-13 .</span>
+
+<span class="hljs-meta">:observation-14 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300435430 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-14 .</span>
+
+<span class="hljs-meta">:observation-15 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300435449 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-15 .</span>
+
+<span class="hljs-meta">:time-interval-02 a ti:TimeInterval</span> ;
+<span class="hljs-code">    ti:hasIntervalEndDate "2024-04-01T23:59:59Z"^^xsd:dateTime ;</span>
+<span class="hljs-code">    ti:hasIntervalStartDate "2024-03-01T00:00:00Z"^^xsd:dateTime .</span>
+
+<span class="hljs-meta">:baptistery a owl:Thing</span> .
+
+<span class="hljs-meta">:ravenna a place:Place</span> .
+
+<span class="hljs-meta">:sara-fiorentino a foaf:Agent</span> .
+</code></pre><h3 id="scenario-3">Scenario 3</h3>
+<p>An assessment activity <code>:assessment-activity-05</code>, consisting in the analysis of risks related to a CHO <code>:baptistery</code>, is taking place in Ravenna, is documented in the document <code>:document-03</code> and is being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-04-01 to 2024-05-01, continuing <code>:assessment-activity-03</code>. It is annotated with the following text: &quot;A flood event is expected in the baptistery approximately once every 25 years, most likely affecting the whole heritage asset value per event, resulting in a partial loss.&quot; It is composed of four statements, each assigned to the CHO in question:</p>
+<ol>
+<li><code>:observation-16</code>, which is a dimensions description referring to the frequency of the risk occurrence (<code>:concept-16</code>). In turn, the frequency is composed of three other concepts:<ul>
+<li>low estimate (<code>:concept-16a</code>), with a value of &quot;3.0&quot;;</li>
+<li>probable estimate (<code>:concept-16b</code>), with a value of &quot;3.5&quot;;</li>
+<li>high estimate (<code>:concept-16c</code>), with a value of &quot;4.0&quot;.</li>
+</ul>
+</li>
+<li><code>:observation-17</code>, which is a dimensions description referring to the fractional value loss determined by the risk occurrence (<code>:concept-17</code>). In turn, the fractional value loss is composed of three other concepts:<ul>
+<li>low estimate (<code>:concept-17a</code>), with a value of &quot;4.5&quot;;</li>
+<li>probable estimate (<code>:concept-17b</code>), with a value of &quot;5.0&quot;;</li>
+<li>high estimate (<code>:concept-17c</code>), with a value of &quot;5.0&quot;.</li>
+</ul>
+</li>
+<li><code>:observation-18</code>, , which is a dimensions description referring to the exposure determined by the risk occurrence (<code>:concept-18</code>). In turn, the exposure is composed of three other concepts:<ul>
+<li>low estimate (<code>:concept-18a</code>), with a value of &quot;1.5&quot;;</li>
+<li>probable estimate (<code>:concept-18b</code>), with a value of &quot;2.0&quot;;</li>
+<li>high estimate (<code>:concept-18c</code>), with a value of &quot;2.5&quot;.</li>
+</ul>
+</li>
+<li><code>:observation-19</code>, , which is a dimensions description referring to the magnitude of the risk occurrence (<code>:concept-19</code>). In turn, the magnitude is composed of three other concepts:<ul>
+<li>low estimate (<code>:concept-19a</code>), with a value of &quot;9.0&quot;;</li>
+<li>probable estimate (<code>:concept-19b</code>), with a value of &quot;10.5&quot;;</li>
+<li>high estimate (<code>:concept-19c</code>), with a value of &quot;11.5&quot;.</li>
+</ul>
+</li>
+</ol>
+<p>Another assessment activity <code>:assessment-activity-06</code>, consisting in the analysis of risks related to  <code>:baptistery</code>, is taking place in Ravenna, is documented in the document <code>:document-03</code> and is being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-04-01 to 2024-05-01, continuing <code>:assessment-activity-04</code>. It is annotated with the following text: &quot;A large fire event is expected in the museum approximately once every 300 years, with the fire affecting all or most of the heritage asset value, causing total or almost total loss of value in each affected item.&quot; It consists of four statements:</p>
+<ol>
+<li><code>:observation-20</code>, which is a dimensions description referring to the frequency of the risk occurrence (<code>:concept-20</code>). In turn, the frequency is composed of three other concepts:<ul>
+<li>low estimate (<code>:concept-20a</code>), with a value of &quot;2.0&quot;;</li>
+<li>probable estimate (<code>:concept-20b</code>), with a value of &quot;2.5&quot;;</li>
+<li>high estimate (<code>:concept-20c</code>), with a value of &quot;3.0&quot;.</li>
+</ul>
+</li>
+<li><code>:observation-21</code>, which is a dimensions description referring to the fractional value loss determined by the risk occurrence (<code>:concept-21</code>). In turn, the fractional value loss is composed of three other concepts:<ul>
+<li>low estimate (<code>:concept-21a</code>), with a value of &quot;4.5&quot;;</li>
+<li>probable estimate (<code>:concept-21b</code>), with a value of &quot;5.0&quot;;</li>
+<li>high estimate (<code>:concept-21c</code>), with a value of &quot;5.0&quot;.</li>
+</ul>
+</li>
+<li><code>:observation-22</code>, which is a dimensions description referring to the exposure determined by the risk occurrence (<code>:concept-22</code>). In turn, the exposure is composed of three other concepts:<ul>
+<li>low estimate (<code>:concept-22a</code>), with a value of &quot;4.5&quot;;</li>
+<li>probable estimate (<code>:concept-22b</code>), with a value of &quot;5.0&quot;;</li>
+<li>high estimate (<code>:concept-22c</code>), with a value of &quot;5.0&quot;.</li>
+</ul>
+</li>
+<li><code>:observation-23</code>, which is a dimensions description referring to the magnitude of the risk occurrence (<code>:concept-23</code>). In turn, the magnitude is composed of three other concepts:<ul>
+<li>low estimate (<code>:concept-23a</code>), with a value of &quot;11.0&quot;;</li>
+<li>probable estimate (<code>:concept-23b</code>), with a value of &quot;12.5&quot;;</li>
+<li>high estimate (<code>:concept-23c</code>), with a value of &quot;13.0&quot;.</li>
+</ul>
+</li>
+</ol>
+<pre><code><span class="hljs-meta">:assessment-activity-05 a hero:Activity</span> ;
+<span class="hljs-code">    hero:assigns :observation-16 ,</span>
+<span class="hljs-code">        :observation-17 ,</span>
+<span class="hljs-code">        :observation-18 ,</span>
+<span class="hljs-code">        :observation-19 ;</span>
+<span class="hljs-code">    hero:assignsTo :baptistery ;</span>
+<span class="hljs-code">    hero:hasLocation :ravenna ;</span>
+<span class="hljs-code">    hero:hasNote '''A flood event is expected in the baptistery approximately once every 25 </span>
+<span class="hljs-code">    years, most likely affecting the whole heritage asset value per event, resulting in a partial loss.'''@en ;</span>
+<span class="hljs-code">    hero:hasTimeInterval :time-interval-03 ;</span>
+<span class="hljs-code">    hero:hasType wd:Q217602 ;</span>
+<span class="hljs-code">    hero:isCarriedOutBy :sara-fiorentino ;</span>
+<span class="hljs-code">    hero:isDocumentedBy :document-03 ;</span>
+<span class="hljs-code">    hero:precedes :assessment-activity-03 .</span>
+
+<span class="hljs-meta">:document-03 a foaf:Document</span> .
+
+<span class="hljs-meta">:assessment-activity-06 a hero:Activity</span> ;
+<span class="hljs-code">    hero:assigns :observation-20 ,</span>
+<span class="hljs-code">        :observation-21 ,</span>
+<span class="hljs-code">        :observation-22 ,</span>
+<span class="hljs-code">        :observation-23 ;</span>
+<span class="hljs-code">    hero:assignsTo :baptistery ;</span>
+<span class="hljs-code">    hero:hasLocation :ravenna ;</span>
+<span class="hljs-code">    hero:hasNote '''A large fire event is expected in the museum approximately once every 300 </span>
+<span class="hljs-code">    years, with the fire affecting all or most of the heritage asset value, causing total or </span>
+<span class="hljs-code">    almost total loss of value in each affected item.'''@en ;</span>
+<span class="hljs-code">    hero:hasTimeInterval :time-interval-03 ;</span>
+<span class="hljs-code">    hero:hasType wd:Q217602 ;</span>
+<span class="hljs-code">    hero:isCarriedOutBy :sara-fiorentino ;</span>
+<span class="hljs-code">    hero:isDocumentedBy :document-03 ;</span>
+<span class="hljs-code">    hero:precedes :assessment-activity-04 .</span>
+
+<span class="hljs-meta">:concept-16 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasComponent :concept-16a ,</span>
+<span class="hljs-code">        :concept-16b ,</span>
+<span class="hljs-code">        :concept-16c ;</span>
+<span class="hljs-code">    hero:hasType wd:Q11652 .</span>
+
+<span class="hljs-meta">:concept-16a a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "3.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10585806 .</span>
+
+<span class="hljs-meta">:concept-16b a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "3.5"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q226995 .</span>
+
+<span class="hljs-meta">:concept-16c a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "4.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10578722 .</span>
+
+<span class="hljs-meta">:concept-17 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasComponent :concept-17a ,</span>
+<span class="hljs-code">        :concept-17b ,</span>
+<span class="hljs-code">        :concept-17c ;</span>
+<span class="hljs-code">    hero:hasType wd:Q7523953 .</span>
+
+<span class="hljs-meta">:concept-17a a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "4.5"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10585806 .</span>
+
+<span class="hljs-meta">:concept-17b a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "5.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q226995 .</span>
+
+<span class="hljs-meta">:concept-17c a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "5.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10578722 .</span>
+
+<span class="hljs-meta">:concept-18 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasComponent :concept-18a ,</span>
+<span class="hljs-code">        :concept-18b ,</span>
+<span class="hljs-code">        :concept-18c ;</span>
+<span class="hljs-code">    hero:hasType wd:Q107642367 .</span>
+
+<span class="hljs-meta">:concept-18a a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "1.5"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10585806 .</span>
+
+<span class="hljs-meta">:concept-18b a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "2.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q226995 .</span>
+
+<span class="hljs-meta">:concept-18c a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "2.5"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10578722 .</span>
+
+<span class="hljs-meta">:concept-19 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasComponent :concept-19a ,</span>
+<span class="hljs-code">        :concept-19b ,</span>
+<span class="hljs-code">        :concept-19c ;</span>
+<span class="hljs-code">    hero:hasType wd:Q2154759 .</span>
+
+<span class="hljs-meta">:concept-23 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasComponent :concept-23a ,</span>
+<span class="hljs-code">        :concept-23b ,</span>
+<span class="hljs-code">        :concept-23c ;</span>
+<span class="hljs-code">    hero:hasType wd:Q2154759 .</span>
+
+<span class="hljs-meta">:concept-19a a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "9.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10585806 .</span>
+
+<span class="hljs-meta">:concept-19b a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "10.5"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q226995 .</span>
+
+<span class="hljs-meta">:concept-19c a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "11.5"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10578722 .</span>
+
+<span class="hljs-meta">:concept-20 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasComponent :concept-20a ,</span>
+<span class="hljs-code">        :concept-20b ,</span>
+<span class="hljs-code">        :concept-20c ;</span>
+<span class="hljs-code">    hero:hasType wd:Q11652 .</span>
+
+<span class="hljs-meta">:concept-20a a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "2.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10585806 .</span>
+
+<span class="hljs-meta">:concept-20b a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "2.5"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q226995 .</span>
+
+<span class="hljs-meta">:concept-20c a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "3.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10578722 .</span>
+
+<span class="hljs-meta">:concept-21 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasComponent :concept-21a ,</span>
+<span class="hljs-code">        :concept-21b ,</span>
+<span class="hljs-code">        :concept-21c ;</span>
+<span class="hljs-code">    hero:hasType wd:Q7523953 .</span>
+
+<span class="hljs-meta">:concept-21a a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "4.5"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10585806 .</span>
+
+<span class="hljs-meta">:concept-21b a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "5.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q226995 .</span>
+
+<span class="hljs-meta">:concept-21c a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "5.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10578722 .</span>
+
+<span class="hljs-meta">:concept-22 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasComponent :concept-22a ,</span>
+<span class="hljs-code">        :concept-22b ,</span>
+<span class="hljs-code">        :concept-22c ;</span>
+<span class="hljs-code">    hero:hasType wd:Q107642367 .</span>
+
+<span class="hljs-meta">:concept-22a a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "4.5"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10585806 .</span>
+
+<span class="hljs-meta">:concept-22b a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "5.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q226995 .</span>
+
+<span class="hljs-meta">:concept-22c a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "5.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10578722 .</span>
+
+<span class="hljs-meta">:concept-23a a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "11.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10585806 .</span>
+
+<span class="hljs-meta">:concept-23b a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "12.5"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q226995 .</span>
+
+<span class="hljs-meta">:concept-23c a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "13.0"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q10578722 .</span>
+
+<span class="hljs-meta">:time-interval-03 a ti:TimeInterval</span> ;
+<span class="hljs-code">    ti:hasIntervalEndDate "2024-05-01T23:59:59Z"^^xsd:dateTime ;</span>
+<span class="hljs-code">    ti:hasIntervalStartDate "2024-04-01T00:00:00Z"^^xsd:dateTime .</span>
+
+<span class="hljs-meta">:baptistery a owl:Thing</span> .
+
+<span class="hljs-meta">:ravenna a place:Place</span> .
+
+<span class="hljs-meta">:sara-fiorentino a foaf:Agent</span> .
+</code></pre><h4 id="scenario-4">Scenario 4</h4>
+<p>An assessment activity <code>:assessment-activity-07</code> consisting in the evaluation of risks related to a CHO <code>:baptistery</code>, is taking place in Ravenna and is being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-05-01 to 2024-06-01, continuing <code>:assessment-activity-05</code>. It is annotated with the following text: &quot;The risk of flood (MR = 10.5) has a high priority. It is 100 times smaller than the fire risk. The uncertainty that has been measured amounts to a value equal to 2.5. A risk of this magnitude is equivalent to losing about 0.3% of the heritage asset value every 100 years (or 3% per millennium). The museum direction considers this level of risk as just beyond acceptable, since as a condition the value of MR is slightly higher than 10 and the value of uncertainty is higher than 2.&quot; It consists of one statement assigned to the CHO in question:</p>
+<ol>
+<li><code>:observation-24</code>, which is a diagnosis motivated by <code>:parameter-19</code> and referring to a high level of priority(<code>:concept-24</code>).</li>
+</ol>
+<p>Another assessment activity <code>:assessment-activity-08</code> consisting in the evaluation of risks related to the CHO <code>:baptistery</code> is taking place in Ravenna and is being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-05-01 to 2024-06-01, following <code>:assessment-activity-06</code>. It is annotated with the following text: &quot;The risk of a large fire affecting the baptistery and its contents (MR = 12.5) has an extreme priority. The uncertainty that has been measured amounts to a value equal to 1.0. A risk of this magnitude is equivalent to losing about 3% of the heritage asset value every 10 years (or 30% per century, or 100% in about 300 years). The museum direction considers this level of risk as ‘not acceptable’, since as a condition the value of MR is higher than 10 and the value of uncertainty is lower than 2.&quot; It consists of one statement assigned to the CHO in question:</p>
+<ol>
+<li><code>:observation-26</code>, which is a diagnosis motivated by <code>:parameter-23</code> and referring to a extreme level of priority (<code>:concept-26</code>).</li>
+</ol>
+<pre><code><span class="hljs-meta">:assessment-activity-07 a hero:Activity</span> ;
+<span class="hljs-code">    hero:assigns :observation-24 ;</span>
+<span class="hljs-code">    hero:assignsTo :baptistery ;</span>
+<span class="hljs-code">    hero:hasLocation :ravenna ;</span>
+<span class="hljs-code">    hero:hasNote '''The risk of flood (MR = 10.5) has a high priority. It is 100 times smaller </span>
+<span class="hljs-code">    than the fire risk. The uncertainty that has been measured amounts to a value equal to 2.5. </span>
+<span class="hljs-code">    A risk of this magnitude is equivalent to losing about 0.3% of the heritage asset value </span>
+<span class="hljs-code">    every 100 years (or 3% per millennium). The museum direction considers this level of risk as </span>
+<span class="hljs-code">    just beyond acceptable, since as a condition the value of MR is slightly higher than 10 and </span>
+<span class="hljs-code">    the value of uncertainty is higher than 2.'''@en ;</span>
+<span class="hljs-code">    hero:hasTimeInterval :time-interval-04 ;</span>
+<span class="hljs-code">    hero:hasType wd:Q1379672 ;</span>
+<span class="hljs-code">    hero:isCarriedOutBy :sara-fiorentino ;</span>
+<span class="hljs-code">    hero:precedes :assessment-activity-05 .</span>
+
+<span class="hljs-meta">:assessment-activity-08 a hero:Activity</span> ;
+<span class="hljs-code">    hero:assigns :observation-26 ;</span>
+<span class="hljs-code">    hero:assignsTo :baptistery ;</span>
+<span class="hljs-code">    hero:hasLocation :ravenna ;</span>
+<span class="hljs-code">    hero:hasNote '''The risk of a large fire affecting the baptistery and its contents (MR = 12.5) </span>
+<span class="hljs-code">    has an extreme priority. The uncertainty that has been measured amounts to a value equal to </span>
+<span class="hljs-code">    1.0. A risk of this magnitude is equivalent to losing about 3% of the heritage asset value </span>
+<span class="hljs-code">    every 10 years (or 30% per century, or 100% in about 300 years). The museum direction </span>
+<span class="hljs-code">    considers this level of risk as ‘not acceptable’, since as a condition the value of MR is </span>
+<span class="hljs-code">    higher than 10 and the value of uncertainty is lower than 2.'''@en ;</span>
+<span class="hljs-code">    hero:hasTimeInterval :time-interval-04 ;</span>
+<span class="hljs-code">    hero:hasType wd:Q1379672 ;</span>
+<span class="hljs-code">    hero:isCarriedOutBy :sara-fiorentino ;</span>
+<span class="hljs-code">    hero:precedes :assessment-activity-06 .</span>
+
+<span class="hljs-meta">:concept-24 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q125584111 .</span>
+
+<span class="hljs-meta">:concept-26 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q2154759 .</span>
+
+<span class="hljs-meta">:observation-24 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300438433 ;</span>
+<span class="hljs-code">    hero:isMotivatedBy :concept-19 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-24 .</span>
+
+<span class="hljs-meta">:observation-26 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300438433 ;</span>
+<span class="hljs-code">    hero:isMotivatedBy :concept-23 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-26 .</span>
+
+<span class="hljs-meta">:time-interval-04 a ti:TimeInterval</span> ;
+<span class="hljs-code">    ti:hasIntervalEndDate "2024-06-01T23:59:59Z"^^xsd:dateTime ;</span>
+<span class="hljs-code">    ti:hasIntervalStartDate "2024-05-01T00:00:00Z"^^xsd:dateTime .</span>
+
+<span class="hljs-meta">:baptistery a owl:Thing</span> .
+
+<span class="hljs-meta">:ravenna a place:Place</span> .
+
+<span class="hljs-meta">:sara-fiorentino a foaf:Agent</span> .
+</code></pre><h4 id="scenario-5">Scenario 5</h4>
+<p>An assessment activity <code>:assessment-activity-09</code> consisting in the treatment of risks related to a CHO <code>:baptistery</code>, is taking place in Ravenna and is being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-06-01 to 2024-07-01, following <code>:assessment-activity-07</code>. It is annotated with the following text: &quot;One possible action to protect a baptistery from water damage could be to install a waterproof membrane or coating on the exterior surfaces. This would help prevent water infiltration and damage to the structure. Additionally, regular maintenance such as inspecting for cracks or leaks and repairing them promptly can help mitigate water damage over time&quot;. It consists of three statements, each assigned to the CHO in question:</p>
+<ol>
+<li><code>:observation-29</code>, which is a plan description referring to a blocking action to try managing the described risks (<code>:concept-29</code>);</li>
+<li><code>:observation-30</code>, which is a budget description referring to a capital cost (<code>:concept-30</code>) to implement such action, amounting to &quot;3200&quot; euros.</li>
+<li><code>:observation-31</code>, which is a budget description referring to a maintenance cost (<code>:concept-31</code>) to implement such action, amounting to &quot;120&quot; euros.</li>
+</ol>
+<p>Another assessment activity <code>:assessment-activity-10</code> consisting in the treatment of risks related to a heritage asset <code>:baptistery</code>, is taking place in Ravenna and is being carried out by the expert Sara Fiorentino, in the time interval starting from 2024-06-01 to 2024-07-01, following <code>:assessment-activity-07</code>. It is annotated with the following text: &quot;Use fire-resistant materials: Consider using fire-resistant coatings, fire-rated doors, and fireproof insulation to minimize fire damage.&quot; It consists of three statements, each assigned to the CHO in question:</p>
+<ol>
+<li><code>:observation-32</code>, which is a plan description referring to a blocking action to try managing the described risks (<code>:concept-32</code>);</li>
+<li><code>:observation-33</code>, which is a budget description referring to a capital cost (<code>:concept-33</code>) amounting to &quot;5000&quot; euros;</li>
+<li><code>:observation-34</code>, which is a budget description referring to a maintenance cost (<code>:concept-34</code>), amounting to &quot;375&quot; euros per month.</li>
+</ol>
+<pre><code><span class="hljs-meta">:assessment-activity-09 a hero:Activity</span> ;
+<span class="hljs-code">    hero:assigns :observation-29 ,</span>
+<span class="hljs-code">        :observation-30 ,</span>
+<span class="hljs-code">        :observation-31 ;</span>
+<span class="hljs-code">    hero:assignsTo :baptistery ;</span>
+<span class="hljs-code">    hero:hasLocation :ravenna ;</span>
+<span class="hljs-code">    hero:hasNote '''One possible action to protect a baptistery from water damage could be to </span>
+<span class="hljs-code">    install a waterproof membrane or coating on the exterior surfaces. This would help prevent </span>
+<span class="hljs-code">    water infiltration and damage to the structure. Additionally, regular maintenance such as </span>
+<span class="hljs-code">    inspecting for cracks or leaks and repairing them promptly can help mitigate water damage </span>
+<span class="hljs-code">    over time.'''@en ;</span>
+<span class="hljs-code">    hero:hasTimeInterval :time-interval-05 ;</span>
+<span class="hljs-code">    hero:hasType wd:Q2251595 ;</span>
+<span class="hljs-code">    hero:isCarriedOutBy :sara-fiorentino ;</span>
+<span class="hljs-code">    hero:precedes :assessment-activity-07 .</span>
+
+<span class="hljs-meta">:assessment-activity-10 a hero:Activity</span> ;
+<span class="hljs-code">    hero:assigns :observation-32 ,</span>
+<span class="hljs-code">        :observation-33 ,</span>
+<span class="hljs-code">        :observation-34 ;</span>
+<span class="hljs-code">    hero:assignsTo :baptistery ;</span>
+<span class="hljs-code">    hero:hasLocation :ravenna ;</span>
+<span class="hljs-code">    hero:hasNote '''Use fire-resistant materials: Consider using fire-resistant coatings, </span>
+<span class="hljs-code">    fire-rated doors, and fireproof insulation to minimize fire damage.'''@en ;</span>
+<span class="hljs-code">    hero:hasTimeInterval :time-interval-05 ;</span>
+<span class="hljs-code">    hero:hasType wd:Q2251595 ;</span>
+<span class="hljs-code">    hero:isCarriedOutBy :sara-fiorentino ;</span>
+<span class="hljs-code">    hero:precedes :assessment-activity-08 .</span>
+
+<span class="hljs-meta">:concept-29 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q2956685 .</span>
+
+<span class="hljs-meta">:concept-30 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "3200"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q302208 .</span>
+
+<span class="hljs-meta">:concept-31 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "120"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q831940 .</span>
+
+<span class="hljs-meta">:concept-32 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q2956685 .</span>
+
+<span class="hljs-meta">:concept-33 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "5000"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q302208 .</span>
+
+<span class="hljs-meta">:concept-34 a hero:InformationObject</span> ;
+<span class="hljs-code">    hero:hasContent "375"^^rdfs:Literal ;</span>
+<span class="hljs-code">    hero:hasType wd:Q831940 .</span>
+
+<span class="hljs-meta">:observation-24 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300438433 ;</span>
+<span class="hljs-code">    hero:isMotivatedBy :concept-19 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-24 .</span>
+
+<span class="hljs-meta">:observation-26 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300438433 ;</span>
+<span class="hljs-code">    hero:isMotivatedBy :concept-23 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-26 .</span>
+
+<span class="hljs-meta">:observation-29 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q1371819 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-29 .</span>
+
+<span class="hljs-meta">:observation-30 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300027514 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-30 .</span>
+
+<span class="hljs-meta">:observation-31 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300027514 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-31 .</span>
+
+<span class="hljs-meta">:observation-32 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType wd:Q1371819 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-32 .</span>
+
+<span class="hljs-meta">:observation-33 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300027514 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-33 .</span>
+
+<span class="hljs-meta">:observation-34 a hero:LinguisticObject</span> ;
+<span class="hljs-code">    hero:hasType aat:300027514 ;</span>
+<span class="hljs-code">    hero:refersTo :concept-34 .</span>
+
+<span class="hljs-meta">:time-interval-05 a ti:TimeInterval</span> ;
+<span class="hljs-code">    ti:hasIntervalEndDate "2024-07-01T23:59:59Z"^^xsd:dateTime ;</span>
+<span class="hljs-code">    ti:hasIntervalStartDate "2024-06-01T00:00:00Z"^^xsd:dateTime .</span>
+
+<span class="hljs-meta">:baptistery a owl:Thing</span> .
+
+<span class="hljs-meta">:ravenna a place:Place</span> .
+
+<span class="hljs-meta">:sara-fiorentino a foaf:Agent</span> .
+</code></pre><h3 id="competency-questions">Competency questions</h3>
+<p>HeRO can be used for answering several questions related to risk assessment activities in the cultural and environmental heirtage domains. In the following subsections, we introduce some of them, and we accompany them with exemplar SPARQL queries. </p>
+<p>The prefixes that are used in all the SPARQL queries provided below are defined as follows:</p>
+<pre><code><span class="hljs-string">PREFIX :</span> &lt;<span class="hljs-string">https:</span><span class="hljs-comment">//w3id.org/sirius/ontology/hero/data/example/&gt;</span>
+PREFIX <span class="hljs-string">aat:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//vocab.getty.edu/page/aat/&gt;</span>
+PREFIX <span class="hljs-string">hero:</span> &lt;<span class="hljs-string">https:</span><span class="hljs-comment">//w3id.org/sirius/ontology/hero/&gt;</span>
+PREFIX <span class="hljs-string">owl:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//www.w3.org/2002/07/owl#&gt;</span>
+PREFIX <span class="hljs-string">rdfs:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//www.w3.org/2000/01/rdf-schema#&gt;</span>
+PREFIX <span class="hljs-string">ti:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#&gt;</span>
+PREFIX <span class="hljs-string">wd:</span> &lt;<span class="hljs-string">http:</span><span class="hljs-comment">//www.wikidata.org/entity/&gt;</span>
+</code></pre><h4 id="question-1">Question 1</h4>
+<p>What are the statements assigned to a cultural heritage object that are part of the assessment activity describing its context?</p>
+<pre><code><span class="hljs-selector-tag">SELECT</span> ?<span class="hljs-selector-tag">statement</span> ?<span class="hljs-selector-tag">note</span> ?<span class="hljs-selector-tag">document</span> ?<span class="hljs-selector-tag">concept</span> ?<span class="hljs-selector-tag">concept_type</span> ?<span class="hljs-selector-tag">activity</span> ?<span class="hljs-selector-tag">agent</span> ?<span class="hljs-selector-tag">place</span> ?<span class="hljs-selector-tag">start_date</span> ?<span class="hljs-selector-tag">end_date</span>
+<span class="hljs-selector-tag">WHERE</span> {
+    ?<span class="hljs-selector-tag">activity</span> <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:Activity</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">wd</span><span class="hljs-selector-pseudo">:Q1137655</span> ; 
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:assigns</span> ?<span class="hljs-selector-tag">statement</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasTimeInterval</span> <span class="hljs-selector-attr">[ 
+            ti:hasIntervalStartDate ?start_date ;
+            ti:hasIntervalEndDate ?end_date 
+        ]</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasLocation</span> ?<span class="hljs-selector-tag">place</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:isCarriedOutBy</span> ?<span class="hljs-selector-tag">agent</span> .
+    ?<span class="hljs-selector-tag">statement</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasContent</span> ?<span class="hljs-selector-tag">note</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:refersTo</span> ?<span class="hljs-selector-tag">concept</span> .
+    ?<span class="hljs-selector-tag">concept</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> ?<span class="hljs-selector-tag">concept_type</span> .
+    <span class="hljs-selector-tag">OPTIONAL</span> {
+        ?<span class="hljs-selector-tag">statement</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:isDocumentedBy</span> ?<span class="hljs-selector-tag">document</span> .
+    }
+}
+</code></pre><h4 id="question-2">Question 2</h4>
+<p>Which are the hazards, the types of risk occurence and the risk locations referred to by statements assigned to a cultural heritage object by identification activities?</p>
+<pre><code><span class="hljs-selector-tag">SELECT</span> ?<span class="hljs-selector-tag">activity</span> ?<span class="hljs-selector-tag">hazard_type</span> ?<span class="hljs-selector-tag">occurrence_type</span> ?<span class="hljs-selector-tag">location_type</span> ?<span class="hljs-selector-tag">agent</span> ?<span class="hljs-selector-tag">place</span> ?<span class="hljs-selector-tag">start_date</span> ?<span class="hljs-selector-tag">end_date</span>
+<span class="hljs-selector-tag">WHERE</span> {
+    ?<span class="hljs-selector-tag">activity</span> <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:Activity</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:isCarriedOutBy</span> ?<span class="hljs-selector-tag">agent</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">wd</span><span class="hljs-selector-pseudo">:Q5687675</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasTimeInterval</span> <span class="hljs-selector-attr">[ 
+            ti:hasIntervalStartDate ?start_date ;
+            ti:hasIntervalEndDate ?end_date 
+        ]</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasLocation</span> ?<span class="hljs-selector-tag">place</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:assigns</span> ?<span class="hljs-selector-tag">statement_1</span> ,
+        ?<span class="hljs-selector-tag">statement_2</span> ,
+        ?<span class="hljs-selector-tag">statement_3</span> .
+    ?<span class="hljs-selector-tag">statement_1</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">aat</span><span class="hljs-selector-pseudo">:300435425</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:refersTo</span> <span class="hljs-selector-attr">[
+            hero:hasType ?hazard_type 
+        ]</span> .
+    ?<span class="hljs-selector-tag">statement_2</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">aat</span><span class="hljs-selector-pseudo">:300435430</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:refersTo</span> <span class="hljs-selector-attr">[
+            hero:hasType ?occurrence_type 
+        ]</span> .
+    ?<span class="hljs-selector-tag">statement_3</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">aat</span><span class="hljs-selector-pseudo">:300435449</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:refersTo</span> <span class="hljs-selector-attr">[
+            hero:hasType ?location_type 
+        ]</span> .
+}
+</code></pre><h4 id="question-3">Question 3</h4>
+<p>What are the low, probable and high estimates of the measures that are referred to by statements assigned to a cultural heirtage object by analysis activities?</p>
+<pre><code><span class="hljs-selector-tag">SELECT</span> <span class="hljs-selector-tag">DISTINCT</span> ?<span class="hljs-selector-tag">activity</span> ?<span class="hljs-selector-tag">statement</span> ?<span class="hljs-selector-tag">type</span> ?<span class="hljs-selector-tag">low_estimate_value</span> ?<span class="hljs-selector-tag">prob_estimate_value</span> ?<span class="hljs-selector-tag">high_estimate_value</span> ?<span class="hljs-selector-tag">agent</span> ?<span class="hljs-selector-tag">place</span> ?<span class="hljs-selector-tag">start_date</span> ?<span class="hljs-selector-tag">end_date</span>
+<span class="hljs-selector-tag">WHERE</span> {
+    ?<span class="hljs-selector-tag">activity</span> <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:Activity</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">wd</span><span class="hljs-selector-pseudo">:Q217602</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:isCarriedOutBy</span> ?<span class="hljs-selector-tag">agent</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasTimeInterval</span> <span class="hljs-selector-attr">[ 
+            ti:hasIntervalStartDate ?start_date ;
+            ti:hasIntervalEndDate ?end_date 
+        ]</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasLocation</span> ?<span class="hljs-selector-tag">place</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:assigns</span> ?<span class="hljs-selector-tag">statement</span> .
+    ?<span class="hljs-selector-tag">statement</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">aat</span><span class="hljs-selector-pseudo">:300435430</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:refersTo</span> ?<span class="hljs-selector-tag">concept</span> .
+    ?<span class="hljs-selector-tag">concept</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> ?<span class="hljs-selector-tag">type</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasComponent</span> ?<span class="hljs-selector-tag">low_estimate</span> ,
+        ?<span class="hljs-selector-tag">prob_estimate</span> , 
+        ?<span class="hljs-selector-tag">high_estimate</span> .
+    ?<span class="hljs-selector-tag">low_estimate</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">wd</span><span class="hljs-selector-pseudo">:Q10585806</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasContent</span> ?<span class="hljs-selector-tag">low_estimate_value</span> .
+    ?<span class="hljs-selector-tag">prob_estimate</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">wd</span><span class="hljs-selector-pseudo">:Q226995</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasContent</span> ?<span class="hljs-selector-tag">prob_estimate_value</span> .
+    ?<span class="hljs-selector-tag">high_estimate</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">wd</span><span class="hljs-selector-pseudo">:Q10578722</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasContent</span> ?<span class="hljs-selector-tag">high_estimate_value</span> .
+}
+</code></pre><h4 id="question-4">Question 4</h4>
+<p>What are the priority levels referred to by statements assigned to a cultural heritage object by evaluation activities?</p>
+<pre><code>SELECT ?activity ?note ?priority_level ?agent ?place ?start_date ?end_date
+<span class="hljs-class">WHERE </span>{
+    ?activity a hero:Activity ;
+<span class="hljs-symbol">        hero:</span>hasType wd:Q1379672 ;
+<span class="hljs-symbol">        hero:</span>hasNote ?note ;
+<span class="hljs-symbol">        hero:</span>isCarriedOutBy ?agent ;
+<span class="hljs-symbol">        hero:</span>hasTimeInterval [ 
+<span class="hljs-symbol">            ti:</span>hasIntervalStartDate ?start_date ;
+<span class="hljs-symbol">            ti:</span>hasIntervalEndDate ?end_date 
+        ] ;
+<span class="hljs-symbol">        hero:</span>hasLocation ?place ;
+<span class="hljs-symbol">        hero:</span>assigns [
+<span class="hljs-symbol">            hero:</span>hasType aat:<span class="hljs-number">300438433</span> ;
+<span class="hljs-symbol">            hero:</span>refersTo [ 
+<span class="hljs-symbol">                hero:</span>hasType ?priority_level 
+            ]
+        ]
+}
+</code></pre><h4 id="question-5">Question 5</h4>
+<p>What are the treatment actions, capital costs and maintenance costs being referred to by the statements assigned to a cultural heritage object by treatment activities?</p>
+<pre><code><span class="hljs-selector-tag">SELECT</span> <span class="hljs-selector-tag">DISTINCT</span> ?<span class="hljs-selector-tag">activity</span> ?<span class="hljs-selector-tag">note</span> ?<span class="hljs-selector-tag">action</span> ?<span class="hljs-selector-tag">capital_cost_value</span> ?<span class="hljs-selector-tag">maintenance_cost_value</span> ?<span class="hljs-selector-tag">agent</span> ?<span class="hljs-selector-tag">place</span> ?<span class="hljs-selector-tag">start_date</span> ?<span class="hljs-selector-tag">end_date</span>
+<span class="hljs-selector-tag">WHERE</span> {
+    ?<span class="hljs-selector-tag">activity</span> <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:Activity</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">wd</span><span class="hljs-selector-pseudo">:Q2251595</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasNote</span> ?<span class="hljs-selector-tag">note</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:isCarriedOutBy</span> ?<span class="hljs-selector-tag">agent</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasTimeInterval</span> <span class="hljs-selector-attr">[ 
+            ti:hasIntervalStartDate ?start_date ;
+            ti:hasIntervalEndDate ?end_date 
+        ]</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasLocation</span> ?<span class="hljs-selector-tag">place</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:assigns</span> ?<span class="hljs-selector-tag">statement_1</span> ,
+        ?<span class="hljs-selector-tag">statement_2</span> ,
+        ?<span class="hljs-selector-tag">statement_3</span> .
+    ?<span class="hljs-selector-tag">statement_1</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">wd</span><span class="hljs-selector-pseudo">:Q1371819</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:refersTo</span> ?<span class="hljs-selector-tag">concept_1</span> .
+    ?<span class="hljs-selector-tag">concept_1</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> ?<span class="hljs-selector-tag">action</span> .
+    ?<span class="hljs-selector-tag">statement_2</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">aat</span><span class="hljs-selector-pseudo">:300027514</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:refersTo</span> ?<span class="hljs-selector-tag">capital_cost</span> .
+    ?<span class="hljs-selector-tag">capital_cost</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">wd</span><span class="hljs-selector-pseudo">:Q302208</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasContent</span> ?<span class="hljs-selector-tag">capital_cost_value</span> .
+    ?<span class="hljs-selector-tag">statement_3</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">aat</span><span class="hljs-selector-pseudo">:300027514</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:refersTo</span> ?<span class="hljs-selector-tag">maintenance_cost</span> .
+    ?<span class="hljs-selector-tag">maintenance_cost</span> <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasType</span> <span class="hljs-selector-tag">wd</span><span class="hljs-selector-pseudo">:Q831940</span> ;
+        <span class="hljs-selector-tag">hero</span><span class="hljs-selector-pseudo">:hasContent</span> ?<span class="hljs-selector-tag">maintenance_cost_value</span> .
+}
+</code></pre>

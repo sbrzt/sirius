@@ -1,11 +1,20 @@
-# ATLAS Data Model
+---
+title: Heritage Risk Assessment Ontology (HeRO)
+release: 2023-11-30
+latest update: 2024-04-30
+latest version: 2.0.0
+author: Barzaghi, Sebastian
+format: JSON-LD, RDF/XML, N-Triples, Turtle
+license: https://creativecommons.org/licenses/by/4.0/
+cite as: Barzaghi, S. (2023). ATLAS Data Model (2.0.0). Zenodo. https://doi.org/10.5281/zenodo.10225594
+---
+
+# HeRO
 
 ## Description
-The ATLAS data model is used to structure the knowledge graph storing the data used in the ATLAS web platform within the SIRIUS project. It has been developed by using a slightly modified version of the **Simplified Agile Methodology for Ontology Development (SAMOD)**: 
+The _Heritage Risk Assessment Ontology_ (HeRO, https://w3id.org/sirius/ontology/hero) is a OWL 2 DL ontology for describing risk assessment activities in the cultural, environmental and digital heritage domain in a machine-actionable format. It was developed by using a slightly modified version of the [Simplified Agile Methodology for Ontology Development (SAMOD)](http://dx.doi.org/10.6084/m9.figshare.3189769). 
 
-> Peroni, S. (2016). SAMOD: an agile methodology for the development of ontologies. figshare. http://dx.doi.org/10.6084/m9.figshare.3189769
-
-This repository contains the full documentation produced during the development of the data model. In particular:
+This repository contains the full documentation produced during the development of HeRO. In particular:
 * the `data` directory contains the full set of refactored *ABoxes*, one for each iteration, written in the Turtle RDF serialization;
 * the `development` directory contains a folder per development iteration, each containing a full test case with:
     - a **motivating scenario**, which defines the scope of the single iteration, along with some examples;
@@ -20,21 +29,3 @@ This repository contains the full documentation produced during the development 
 * the `diagrams` directory contains the full set of Graffoo diagrams representing the refactored model of each iteration;
 * the `docs` directory contains the full set of files related to the final model and its versions in time;
 * the `sparql` directory contains the full set of refactored Formal Competency Questions.
-
-## Creator
-Barzaghi, Sebastian ([0000-0002-0799-1527](https://orcid.org/0000-0002-0799-1527))
-
-## Date
-2023-11-30
-
-## Language
-en
-
-## License
-CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
-
-## Version
-1.0.0
-
-## Cite as
-Barzaghi, S. (2023). ATLAS Data Model (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.10225594

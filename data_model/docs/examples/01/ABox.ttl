@@ -1,0 +1,356 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix freq: <http://publications.europa.eu/resource/authority/frequency/> .
+@prefix hero: <https://w3id.org/sirius/ontology/hero/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix place: <http://www.ontologydesignpatterns.org/cp/owl/place.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ti: <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/> a owl:Ontology ;
+    owl:imports <https://w3id.org/sirius/ontology/hero> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/assessment-activity-01> a hero:Activity ;
+    hero:assigns <https://w3id.org/sirius/ontology/hero/examples/01/observation-01>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-02>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-03>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-04>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-05>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-06> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/hero/examples/01/library> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/hero/examples/01/ravenna> ;
+    hero:hasNote """
+        The Classense Library, situated in Ravenna, Italy, occupies a historic building originally used as a convent. Its architecture boasts intricate details, including vaulted ceilings and ornate furnishings, characteristic of the region's cultural heritage.
+
+        Inside, visitors encounter a diverse collection of books, manuscripts, and artworks spanning various disciplines such as literature, history, art, and philosophy. The library's holdings include rare manuscripts and valuable editions, providing insights into Ravenna's cultural and intellectual traditions.
+
+        Beyond its archival resources, the Classense Library serves as a venue for exhibitions, lectures, and cultural events, fostering a dynamic atmosphere of intellectual exchange. It attracts scholars, researchers, and the public alike, offering opportunities for exploration and discovery.
+    """@en ;
+    hero:hasParticipant <https://w3id.org/sirius/ontology/hero/examples/01/comune-di-ravenna>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/sara-fiorentino>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/soprintendenza-di-ravenna>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/universita-di-bologna> ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/hero/examples/01/time-interval-01> ;
+    hero:hasType wd:Q1137655 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/hero/examples/01/sara-fiorentino> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/assessment-activity-02> a hero:Activity ;
+    hero:assigns <https://w3id.org/sirius/ontology/hero/examples/01/observation-07>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-08>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-09> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/hero/examples/01/library> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/hero/examples/01/ravenna> ;
+    hero:hasNote "The digital collection of the Classense Library offers a comprehensive and accessible resource for scholars, researchers, and enthusiasts interested in exploring the cultural heritage of Ravenna. With its diverse array of digitized manuscripts, rare books, and artworks, the collection provides invaluable insights into the region's history, art, and literature."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/hero/examples/01/time-interval-01> ;
+    hero:hasType wd:Q4008379 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/hero/examples/01/sara-fiorentino> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/assessment-activity-09> a hero:Activity ;
+    hero:assigns <https://w3id.org/sirius/ontology/hero/examples/01/observation-29>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-30>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-31> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/hero/examples/01/library> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/hero/examples/01/ravenna> ;
+    hero:hasNote "Regular backups should be performed, and multiple copies of the digital collection should be stored securely in different locations."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/hero/examples/01/time-interval-05> ;
+    hero:hasType wd:Q2251595 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/hero/examples/01/sara-fiorentino> ;
+    hero:precedes <https://w3id.org/sirius/ontology/hero/examples/01/assessment-activity-07> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/document-02> a foaf:Document .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/assessment-activity-03> a hero:Activity ;
+    hero:assigns <https://w3id.org/sirius/ontology/hero/examples/01/observation-10>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-11>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-12> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/hero/examples/01/library> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/hero/examples/01/ravenna> ;
+    hero:hasNote "Storage devices such as hard drives or servers storing the digital collection may experience hardware failures, leading to data loss or corruption."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/hero/examples/01/time-interval-02> ;
+    hero:hasType wd:Q5687675 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/hero/examples/01/sara-fiorentino> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/assessment-activity-05> a hero:Activity ;
+    hero:assigns <https://w3id.org/sirius/ontology/hero/examples/01/observation-16>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-17>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-18>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/observation-19> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/hero/examples/01/library> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/hero/examples/01/ravenna> ;
+    hero:hasNote "A dissociation event related to hardware failure is expected in the library approximately once every five years."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/hero/examples/01/time-interval-03> ;
+    hero:hasType wd:Q217602 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/hero/examples/01/sara-fiorentino> ;
+    hero:isDocumentedBy <https://w3id.org/sirius/ontology/hero/examples/01/document-03> ;
+    hero:precedes <https://w3id.org/sirius/ontology/hero/examples/01/assessment-activity-03> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/assessment-activity-07> a hero:Activity ;
+    hero:assigns <https://w3id.org/sirius/ontology/hero/examples/01/observation-24> ;
+    hero:assignsTo <https://w3id.org/sirius/ontology/hero/examples/01/library> ;
+    hero:hasLocation <https://w3id.org/sirius/ontology/hero/examples/01/ravenna> ;
+    hero:hasNote "The risk of hardware failure (MR = 12.5) has an extreme priority. A risk of this magnitude is equivalent to losing about 3% of the heritage asset value every 10 years (or 30% per century, or 100% in about 300 years). The museum direction considers this level of risk as ‘not acceptable’, since as a condition the value of MR is higher than 10 and the value of uncertainty is lower than 2."@en ;
+    hero:hasTimeInterval <https://w3id.org/sirius/ontology/hero/examples/01/time-interval-04> ;
+    hero:hasType wd:Q1379672 ;
+    hero:isCarriedOutBy <https://w3id.org/sirius/ontology/hero/examples/01/sara-fiorentino> ;
+    hero:precedes <https://w3id.org/sirius/ontology/hero/examples/01/assessment-activity-05> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/comune-di-ravenna> a foaf:Agent .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-01> a hero:InformationObject ;
+    hero:hasType wd:Q4373292 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-02> a hero:InformationObject ;
+    hero:hasType wd:Q8425 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-03> a hero:InformationObject ;
+    hero:hasType wd:Q7163 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-04> a hero:InformationObject ;
+    hero:hasType wd:Q2628882 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-05> a hero:InformationObject ;
+    hero:hasType wd:Q5283295 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-06> a hero:InformationObject ;
+    hero:hasType wd:Q8134 .
+
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-07> a hero:InformationObject ;
+    hero:hasType wd:Q2534289 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-08> a hero:InformationObject ;
+    hero:hasType wd:Q1474521 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-09> a hero:InformationObject ;
+    hero:hasContent "4.5"^^rdfs:Literal ;
+    hero:hasType wd:Q194112 .
+
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-10> a hero:InformationObject ;
+    hero:hasType wd:Q18663 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-11> a hero:InformationObject ;
+    hero:hasType freq:QUINQUENNIAL .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-12> a hero:InformationObject ;
+    hero:hasType wd:Q1058733 .
+
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-16> a hero:InformationObject ;
+    hero:hasComponent <https://w3id.org/sirius/ontology/hero/examples/01/concept-16a>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/concept-16b>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/concept-16c> ;
+    hero:hasType wd:Q11652 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-16a> a hero:InformationObject ;
+    hero:hasContent "2.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10585806 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-16b> a hero:InformationObject ;
+    hero:hasContent "2.5"^^rdfs:Literal ;
+    hero:hasType wd:Q226995 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-16c> a hero:InformationObject ;
+    hero:hasContent "3.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10578722 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-17> a hero:InformationObject ;
+    hero:hasComponent <https://w3id.org/sirius/ontology/hero/examples/01/concept-17a>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/concept-17b>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/concept-17c> ;
+    hero:hasType wd:Q7523953 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-17a> a hero:InformationObject ;
+    hero:hasContent "4.5"^^rdfs:Literal ;
+    hero:hasType wd:Q10585806 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-17b> a hero:InformationObject ;
+    hero:hasContent "5.0"^^rdfs:Literal ;
+    hero:hasType wd:Q226995 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-17c> a hero:InformationObject ;
+    hero:hasContent "5.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10578722 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-18> a hero:InformationObject ;
+    hero:hasComponent <https://w3id.org/sirius/ontology/hero/examples/01/concept-18a>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/concept-18b>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/concept-18c> ;
+    hero:hasType wd:Q107642367 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-18a> a hero:InformationObject ;
+    hero:hasContent "4.5"^^rdfs:Literal ;
+    hero:hasType wd:Q10585806 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-18b> a hero:InformationObject ;
+    hero:hasContent "5.0"^^rdfs:Literal ;
+    hero:hasType wd:Q226995 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-18c> a hero:InformationObject ;
+    hero:hasContent "5.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10578722 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-19a> a hero:InformationObject ;
+    hero:hasContent "11.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10585806 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-19b> a hero:InformationObject ;
+    hero:hasContent "12.5"^^rdfs:Literal ;
+    hero:hasType wd:Q226995 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-19c> a hero:InformationObject ;
+    hero:hasContent "13.0"^^rdfs:Literal ;
+    hero:hasType wd:Q10578722 .
+
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-24> a hero:InformationObject ;
+    hero:hasType wd:Q125584111 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-26> a hero:InformationObject ;
+    hero:hasType wd:Q2154759 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-29> a hero:InformationObject ;
+    hero:hasType wd:Q1717246 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-30> a hero:InformationObject ;
+    hero:hasContent "6000"^^rdfs:Literal ;
+    hero:hasType wd:Q302208 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-31> a hero:InformationObject ;
+    hero:hasContent "6000"^^rdfs:Literal ;
+    hero:hasType wd:Q831940 .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/document-01> a foaf:Document .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-01> a hero:LinguisticObject ;
+    hero:hasContent "The Classense Library in Ravenna features a blend of architectural elements that combine historical charm with modern utility. Housed within a former convent, the building's exterior reflects intricate craftsmanship typical of its era. Inside, visitors encounter spacious rooms with vaulted ceilings and simple yet elegant furnishings. The layout provides ample space for browsing through its collection of books and manuscripts."@en ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-01> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-02> a hero:LinguisticObject ;
+    hero:hasContent "The Classense Library in Ravenna holds significance within its social context as a hub for intellectual and cultural exchange. Situated in a community known for its appreciation of art and history, the library serves as a focal point for residents and visitors alike. Its presence reflects a commitment to preserving and sharing knowledge, fostering a sense of collective identity and pride."@en ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-02> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-03> a hero:LinguisticObject ;
+    hero:hasContent "The Classense Library in Ravenna operates within a political context that values the preservation of cultural heritage and the promotion of education. As a public institution, it receives support from local government entities committed to fostering literacy and intellectual growth."@en ;
+    hero:hasType aat:300435416 ;
+    hero:isDocumentedBy <https://w3id.org/sirius/ontology/hero/examples/01/document-01> ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-03> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-04> a hero:LinguisticObject ;
+    hero:hasContent "The Classense Library in Ravenna operates within a legal framework that governs its establishment, operation, and obligations as a public institution. Its legal status is defined by statutes and regulations that outline its organizational structure, funding mechanisms, and responsibilities to the community."@en ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-04> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-05> a hero:LinguisticObject ;
+    hero:hasContent "Administratively, the library is overseen by local authorities responsible for its strategic direction and resource allocation."@en ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-05> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-06> a hero:LinguisticObject ;
+    hero:hasContent "Its presence contributes to the city's cultural economy, attracting visitors interested in exploring its rich literary heritage and historical significance."@en ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-06> .
+
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-07> a hero:LinguisticObject ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-07> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-08> a hero:LinguisticObject ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-08> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-09> a hero:LinguisticObject ;
+    hero:hasType aat:300435416 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-09> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-10> a hero:LinguisticObject ;
+    hero:hasType aat:300435425 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-10> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-11> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-11> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-12> a hero:LinguisticObject ;
+    hero:hasType aat:300435449 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-12> .
+
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-16> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-16> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-17> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-17> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-18> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-18> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-19> a hero:LinguisticObject ;
+    hero:hasType aat:300435430 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-19> .
+
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-24> a hero:LinguisticObject ;
+    hero:hasType aat:300438433 ;
+    hero:isMotivatedBy <https://w3id.org/sirius/ontology/hero/examples/01/concept-19> ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-24> .
+
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-29> a hero:LinguisticObject ;
+    hero:hasType wd:Q1371819 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-29> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-30> a hero:LinguisticObject ;
+    hero:hasType aat:300027514 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-30> .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/observation-31> a hero:LinguisticObject ;
+    hero:hasType aat:300027514 ;
+    hero:refersTo <https://w3id.org/sirius/ontology/hero/examples/01/concept-31> .
+
+
+<https://w3id.org/sirius/ontology/hero/examples/01/soprintendenza-di-ravenna> a foaf:Agent .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/universita-di-bologna> a foaf:Agent .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/concept-19> a hero:InformationObject ;
+    hero:hasComponent <https://w3id.org/sirius/ontology/hero/examples/01/concept-19a>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/concept-19b>,
+        <https://w3id.org/sirius/ontology/hero/examples/01/concept-19c> ;
+    hero:hasType wd:Q2154759 .
+
+
+<https://w3id.org/sirius/ontology/hero/examples/01/document-03> a foaf:Document .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/time-interval-01> a ti:TimeInterval ;
+    ti:hasIntervalEndDate "2024-03-01T23:59:59Z" ;
+    ti:hasIntervalStartDate "2024-02-01T00:00:00Z" .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/time-interval-02> a ti:TimeInterval ;
+    ti:hasIntervalEndDate "2024-04-01T23:59:59Z" ;
+    ti:hasIntervalStartDate "2024-03-01T00:00:00Z" .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/time-interval-03> a ti:TimeInterval ;
+    ti:hasIntervalEndDate "2024-05-01T23:59:59Z" ;
+    ti:hasIntervalStartDate "2024-04-01T00:00:00Z" .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/time-interval-04> a ti:TimeInterval ;
+    ti:hasIntervalEndDate "2024-06-01T23:59:59Z" ;
+    ti:hasIntervalStartDate "2024-05-01T00:00:00Z" .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/time-interval-05> a ti:TimeInterval ;
+    ti:hasIntervalEndDate "2024-07-01T23:59:59Z" ;
+    ti:hasIntervalStartDate "2024-06-01T00:00:00Z" .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/library> a owl:Thing .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/ravenna> a place:Place .
+
+<https://w3id.org/sirius/ontology/hero/examples/01/sara-fiorentino> a foaf:Agent .

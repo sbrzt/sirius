@@ -9,7 +9,7 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 
 <https://w3id.org/sirius/ontology/data/08/> a owl:Ontology ;
-    owl:imports hero: .
+    owl:imports <https://w3id.org/sirius/ontology/hero> .
 
 <https://w3id.org/sirius/ontology/data/08/assessment-activity-01> a hero:Activity ;
     hero:assigns <https://w3id.org/sirius/ontology/data/08/observation-01>,

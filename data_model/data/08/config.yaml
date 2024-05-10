@@ -50,9 +50,9 @@ mapping_rules:
   "https://w3id.org/sirius/ontology/development/08/schema/isComposedOf": "https://w3id.org/sirius/ontology/hero/hasComponent" #http://www.ontologydesignpatterns.org/cp/owl/componency.owl#hasComponent
   "https://w3id.org/sirius/ontology/development/08/schema/hasValue": "https://w3id.org/sirius/ontology/hero/hasContent" #http://www.w3.org/ns/prov#value
   "https://w3id.org/sirius/ontology/development/08/schema/hasContent": "https://w3id.org/sirius/ontology/hero/hasContent" #http://www.w3.org/ns/prov#value
-  "https://w3id.org/sirius/ontology/development/08/schema/refersTo": "https://w3id.org/sirius/ontology/hero/refersTo" #http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses
-  "https://w3id.org/sirius/ontology/development/08/schema/InformationObject": "https://w3id.org/sirius/ontology/hero/InformationObject" #http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
-  "https://w3id.org/sirius/ontology/development/08/schema/Statement": "https://w3id.org/sirius/ontology/hero/LinguisticObject" #http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+  "https://w3id.org/sirius/ontology/development/08/schema/refersTo": "https://w3id.org/sirius/ontology/hero/refersTo" #http://www.ontologydesignpatterns.org/cp/owl/intensionextension.owl#expresses
+  "https://w3id.org/sirius/ontology/development/08/schema/InformationObject": "https://w3id.org/sirius/ontology/hero/InformationObject" #http://www.ontologydesignpatterns.org/cp/owl/intensionextension.owl#InformationObject
+  "https://w3id.org/sirius/ontology/development/08/schema/Statement": "https://w3id.org/sirius/ontology/hero/LinguisticObject" #
   "https://w3id.org/sirius/ontology/development/08/schema/isMotivatedBy": "https://w3id.org/sirius/ontology/hero/isMotivatedBy" #http://www.w3.org/ns/prov#wasDerivedFrom
   "https://w3id.org/sirius/ontology/development/08/schema/hasParticipant": "https://w3id.org/sirius/ontology/hero/hasParticipant" #http://www.ontologydesignpatterns.org/cp/owl/participation.owl#hasParticipant
   # Named Individuals
